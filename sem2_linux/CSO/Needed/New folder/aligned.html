@@ -1,0 +1,166 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>
+Word Alignment
+</title>
+</head><body bgcolor="white">
+<center>
+<h1>
+Word Alignment
+</h1>
+</center>
+
+
+   <b>Word alignment</b> is not a particularly difficult concept,
+but it is fairly important, because it does show up in unusual places.
+<h3>
+What you know
+</h3>
+    We've defined a <i>word</i> to mean 4 bytes.  To store a word
+in byte-addressable memory (i.e. where each element of memory
+is one byte), you have to break up the 32 bit quantity into 4 bytes.
+Thus, if the word was <b>0x01ab23cd</b>, it's broken up into 
+<b>0x01</b>, <b>0xab</b>, <b>0x23</b>, <b>0xcd</b>.  
+<p>
+    You can store this in two ways.  If it's big endian, than the most
+significant byte (i.e., <b>0x01</b>) is stored in the smallest of four
+consective addresses.  The data <b>0xab</b>, <b>0x23</b>, <b>0xcx</b>
+are stored in the following three memory addresses.  Thus, if you
+stored the first byte in address 1000, the remaining bytes are stored
+in addresses 1001, 1002, and 1003.  
+</p><p>
+   For little endian, you store the least significant byte (<b>0xcd</b>)
+in the smallest address (in our example, this is address 1000),
+then <b>0x23</b>, <b>0xab</b>, and <b>0x01</b>.   Thus, it's stored
+in reverse order.
+</p><p>
+   Even though it's somewhat inaccurate to say this, we say a word is
+stored at, say, address 1000.  That is, we pick the smallest address,
+and say that's where the data is located in memory.   Thus, if the
+data has N bytes, then it is stored in address <b>A</b> to
+<b>A + N - 1</b>, and we say that the data is at address <b>A</b>.
+
+</p><h3>
+Word alignment
+</h3>
+   <i>However</i>, there's a second issue.  For reasons of making
+hardware simpler (and sometimes because the ISA defines it this way),
+words are often stored at <i>word aligned</i> addresses.
+<p>
+   Word-aligned means the address is stored at an address
+that's divisible by 4.  If you look at an address that's
+divisible by 4 and written in binary, you see that the last
+two bits are 0.
+</p><p>
+   Why is this interesting?  Whenever you're dealing with word
+quantities they must appear at word aligned addresses.  Consider
+the following structure (written in C++):
+<font size="+2">
+<pre>struct Foo {
+   char x ;  <font color="red">// 1 byte</font>
+   int y ;   <font color="red">// 4 byte, must be word-aligned</font>
+   char z ;  <font color="red">// 1 byte</font>
+   int w ;   <font color="red">// 4 byte, must be word-aligned</font>
+} ;
+</pre>
+</font>
+  In C/C++, data is stored in the order declared.  Thus, <b>x</b>, 
+<b>y</b>, <b>z</b>, and <b>w</b> appear in that order in memory.
+</p><p>
+  In principle, the amount of memory needed by <b>Foo</b> should be 10
+bytes (1 byte for each <b>char</b>, 4 bytes for each <b>int</b>
+variable).  
+</p><p>
+   <i>However</i>, due to word aligment, it will probably take more
+than 10 bytes.  In particular, if <b>y</b> and <b>w</b> are both
+word aligned, and <b>z</b> is in between, there will be 3 unusued
+bytes.   Thus, the structure may be 13 bytes large, with 3 filler
+bytes, used for <i>padding</i>.   
+</p><p>
+    To see this in action, try declaring a structure or class
+as above, then use the <b>sizeof</b> operator, and see how
+many bytes it has.
+</p><p>
+   Byte quantities can be stored at any address in memory.  Halfword
+quantities (16 bits) are often stored at half-word aligned addresses
+(addresses divisible by 2).  Doubleword quantities (64 bits) are often
+stored at double-word aligned addresses (addresses divisible by 8).
+You see these restrictions most often on a RISC ISA.
+</p><p>
+  CISC ISAs may not necessarily require alignment of words, etc.
+
+</p><h3>
+Chart
+</h3>
+
+   This chart summarizes the characteristics of word-alignment.
+<p>
+</p><center>
+
+<table border="1" cellpadding="3">
+<tbody><tr bgcolor="pink">
+  <td> 
+     Quantity
+  </td>
+  <td> 
+     Address divisible by
+  </td>
+  <td> 
+     (Binary) address ends in
+  </td>
+</tr>
+
+<tr>
+  <td> 
+     Byte
+  </td>
+  <td align="center"> 
+     1
+  </td>
+  <td align="center"> 
+     anything
+  </td>
+</tr>
+
+<tr>
+  <td> 
+     Halfword (16 bits)
+  </td>
+  <td align="center"> 
+     2
+  </td>
+  <td align="center"> 
+     0
+  </td>
+</tr>
+
+<tr>
+  <td> 
+     Word (32 bits)
+  </td>
+  <td align="center"> 
+     4
+  </td>
+  <td align="center"> 
+     00
+  </td>
+</tr>
+
+<tr>
+  <td> 
+     Doubleword (64 bits)
+  </td>
+  <td align="center"> 
+     8
+  </td>
+  <td align="center"> 
+     000
+  </td>
+</tr>
+
+</tbody></table>
+</center>
+
+
+
+</body></html>

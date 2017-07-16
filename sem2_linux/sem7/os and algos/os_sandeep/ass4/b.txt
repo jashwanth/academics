@@ -1,0 +1,1 @@
+alias rm='/home/sandeep/study/sem 5/os/ass4/2.sh'
