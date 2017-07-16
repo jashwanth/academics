@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'LEDG_Driver:u0|Cont[20]'
+Slack : -4.327
+TNS   : -33.731
+
+Type  : Slow Model Setup 'clock'
+Slack : -2.388
+TNS   : -46.137
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.505
+TNS   : -2.505
+
+Type  : Slow Model Hold 'LEDG_Driver:u0|Cont[20]'
+Slack : 4.871
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -2.064
+TNS   : -118.109
+
+Type  : Slow Model Minimum Pulse Width 'LEDG_Driver:u0|Cont[20]'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Fast Model Setup 'LEDG_Driver:u0|Cont[20]'
+Slack : -1.884
+TNS   : -14.527
+
+Type  : Fast Model Setup 'clock'
+Slack : -1.460
+TNS   : -13.863
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.690
+TNS   : -1.690
+
+Type  : Fast Model Hold 'LEDG_Driver:u0|Cont[20]'
+Slack : 2.636
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -2.000
+TNS   : -110.380
+
+Type  : Fast Model Minimum Pulse Width 'LEDG_Driver:u0|Cont[20]'
+Slack : -0.500
+TNS   : -8.000
+
+------------------------------------------------------------

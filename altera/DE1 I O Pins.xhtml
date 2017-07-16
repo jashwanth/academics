@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+  <head>
+
+    <title>DE1 I/O Pins</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="../css/style-all.css"
+    />
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="../css/style-screen.css"
+    />
+    <link rel="stylesheet"
+          type="text/css"
+          media="print"
+          href="../css/style-print.css"
+    />
+
+    <style type="text/css" media="all">
+      .greenled { background-color: #efe; color: #000; }
+      .redled { background-color: #fef; color: #000; }
+      .clock, .hex0, .hex2, .key, .switch { background-color: #eef; color: #000; }
+      .hex1, .hex3 { background-color: #ffe; color: #000; }
+      [colspan="2"] {font-weight:normal;font-style:italic;}
+    </style>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>
+
+  <body>
+
+    <div id="header">
+      <h1>DE1 I/O Pins</h1>
+    </div>
+
+    <div id="content">
+      <h2>Clocks, Buttons, Switches, and Seven Segment Displays</h2>
+
+      <div class="whitebox">
+
+        <p>
+          The <strong>Cyclone II EP2C20F484C7 FPGA</strong> on the DE1 logic kit is connected to four seven segment
+          displays, (Hex_0, Hex_1, Hex_2, and Hex_3), ten slide switches (Switch_0 through Switch_9), four push buttons
+          (Key_0 through Key_3), ten red LEDs (Red_LED_0 through Red_LED_9), and eight green LEDs (Green_LED_0 through
+          Green_LED_7).
+        </p>
+
+        <p>
+          The slide switches produce logic &ldquo;1&rdquo; when pushed away from the edge of the board, and the push
+          buttons produce logic &ldquo;0&rdquo; when pressed. The segments of the seven segment displays light up when
+          connected to logic &ldquo;0,&rdquo; and the LEDs light up when connected to logic &ldquo;1&rdquo;.  The
+          following table shows which FPGA pin numbers are connected to these devices.
+        </p>
+
+        <p>
+          The segments of a seven-segment display are normally named A&ndash;G, starting at the top, going clockwise,
+          and ending with the center segment. The array names in the table refer to the segments using subscript
+          values 0&ndash;6 in the same order.
+        </p>
+
+        <p class="standout_box">
+          To make the process of pin assignment easier, the following table is in alphabetical order, which should match
+          the order of the pins listed by the Quartus Pin Assignment Editor, provided you name your pins and pin groups
+          alphabetically: <span class="variableName">Clock&hellip;</span>, <span
+          class="variableName">Green&hellip;</span>, <span class="variableName">Hex_0&hellip;</span>, <span
+          class="variableName">Hex_1&hellip;</span>, <span class="variableName">Hex_2&hellip;</span>, <span
+          class="variableName">Hex_3&hellip;</span>, <span class="variableName">Key&hellip;</span>, <span
+          class="variableName">Red&hellip;</span>, and <span class="variableName">Switch&hellip;</span> in that order.
+        </p>
+
+        <table summary="DE1 Pin Numbers">
+          <col width="50%" /><col width="50%" />
+          <tr><th>Connection</th><th>Pin Location</th></tr>
+
+          <tr><th colspan="2">Clocks</th></tr>
+          <tr class="clock">
+            <td>27 MHz Clock</td>
+            <td>PIN_D12 and PIN_E12</td>
+          </tr>
+          <tr class="clock">
+            <td>50 MHz Clock</td><td>PIN_L1</td>
+          </tr>
+          <tr class="clock">
+            <td>24 MHz Clock</td><td>PIN_A12 and PIN_B12</td>
+          </tr>
+
+          <tr><th colspan="2">Green LEDs</th></tr>
+          <tr class="greenled"><td>Green_LED_0</td><td>PIN_U22</td></tr>
+          <tr class="greenled"><td>Green_LED_1</td><td>PIN_U21</td></tr>
+          <tr class="greenled"><td>Green_LED_2</td><td>PIN_V22</td></tr>
+          <tr class="greenled"><td>Green_LED_3</td><td>PIN_V21</td></tr>
+          <tr class="greenled"><td>Green_LED_4</td><td>PIN_W22</td></tr>
+          <tr class="greenled"><td>Green_LED_5</td><td>PIN_W21</td></tr>
+          <tr class="greenled"><td>Green_LED_6</td><td>PIN_Y22</td></tr>
+          <tr class="greenled"><td>Green_LED_7</td><td>PIN_Y21</td></tr>
+
+          <tr><th colspan="2">Seven-segment Displays</th></tr>
+          <tr class="hex0">
+            <td>Hex_0[0]</td><td>PIN_J2</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[1]</td><td>PIN_J1</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[2]</td><td>PIN_H2</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[3]</td><td>PIN_H1</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[4]</td><td>PIN_F2</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[5]</td><td>PIN_F1</td></tr>
+          <tr class="hex0">
+            <td>Hex_0[6]</td><td>PIN_E2</td></tr>
+          <tr class="hex0">
+            <td>Hex_0, Decimal Point</td><td>No Connection</td></tr>
+
+          <tr class="hex1">
+            <td>Hex_1[0]</td><td>PIN_E1</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[1]</td><td>PIN_H6</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[2]</td><td>PIN_H5</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[3]</td><td>PIN_H4</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[4]</td><td>PIN_G3</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[5]</td><td>PIN_D2</td></tr>
+          <tr class="hex1">
+            <td>Hex_1[6]</td><td>PIN_D1</td></tr>
+          <tr class="hex1">
+            <td>Hex_1, Decimal Point</td><td>No Connection</td></tr>
+
+          <tr class="hex2">
+            <td>Hex_2[0]</td><td>PIN_G5</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[1]</td><td>PIN_G6</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[2]</td><td>PIN_C2</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[3]</td><td>PIN_C1</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[4]</td><td>PIN_E3</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[5]</td><td>PIN_E4</td></tr>
+          <tr class="hex2">
+            <td>Hex_2[6]</td><td>PIN_D3</td></tr>
+          <tr class="hex2">
+            <td>Hex_2, Decimal Point</td><td>No Connection</td></tr>
+
+          <tr class="hex3">
+            <td>Hex_3[0]</td><td>PIN_F4</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[1]</td><td>PIN_D5</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[2]</td><td>PIN_D6</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[3]</td><td>PIN_J4</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[4]</td><td>PIN_L8</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[5]</td><td>PIN_F3</td></tr>
+          <tr class="hex3">
+            <td>Hex_3[6]</td><td>PIN_D4</td></tr>
+          <tr class="hex3">
+            <td>Hex_3, Decimal Point</td><td>No Connection</td></tr>
+
+          <tr><th colspan="2">Push Buttons</th></tr>
+          <tr class="key"><td>Key_0</td><td>PIN_R22</td></tr>
+          <tr class="key"><td>Key_1</td><td>PIN_R21</td></tr>
+          <tr class="key"><td>Key_2</td><td>PIN_T22</td></tr>
+          <tr class="key"><td>Key_3</td><td>PIN_T21</td></tr>
+
+          <tr><th colspan="2">Red LEDs</th></tr>
+          <tr class="redled"><td>Red_LED_0</td><td>PIN_R20</td></tr>
+          <tr class="redled"><td>Red_LED_1</td><td>PIN_R19</td></tr>
+          <tr class="redled"><td>Red_LED_2</td><td>PIN_U19</td></tr>
+          <tr class="redled"><td>Red_LED_3</td><td>PIN_Y19</td></tr>
+          <tr class="redled"><td>Red_LED_4</td><td>PIN_T18</td></tr>
+          <tr class="redled"><td>Red_LED_5</td><td>PIN_V19</td></tr>
+          <tr class="redled"><td>Red_LED_6</td><td>PIN_Y18</td></tr>
+          <tr class="redled"><td>Red_LED_7</td><td>PIN_U18</td></tr>
+          <tr class="redled"><td>Red_LED_8</td><td>PIN_R18</td></tr>
+          <tr class="redled"><td>Red_LED_9</td><td>PIN_R17</td></tr>
+
+          <tr><th colspan="2">Slide Switches</th></tr>
+          <tr class="switch"><td>Switch_0</td><td>PIN_L22</td></tr>
+          <tr class="switch"><td>Switch_1</td><td>PIN_L21</td></tr>
+          <tr class="switch"><td>Switch_2</td><td>PIN_M22</td></tr>
+          <tr class="switch"><td>Switch_3</td><td>PIN_V12</td></tr>
+          <tr class="switch"><td>Switch_4</td><td>PIN_W12</td></tr>
+          <tr class="switch"><td>Switch_5</td><td>PIN_U12</td></tr>
+          <tr class="switch"><td>Switch_6</td><td>PIN_U11</td></tr>
+          <tr class="switch"><td>Switch_7</td><td>PIN_M2</td></tr>
+          <tr class="switch"><td>Switch_8</td><td>PIN_M1</td></tr>
+          <tr class="switch"><td>Switch_9</td><td>PIN_L2</td></tr>
+
+        </table>
+
+      </div>
+    </div>
+
+    <div id="footer">
+        <a href="/">Vickery Home</a>&nbsp;-&nbsp;<a
+           href="http://validator.w3.org/check?uri=referer">XHTML</a>&nbsp;-&nbsp;<a
+           href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a><em>Last&nbsp;updated&nbsp;2010-02-24.</em>
+    </div>
+  </body>
+</html>
+

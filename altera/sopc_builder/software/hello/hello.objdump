@@ -1,0 +1,556 @@
+
+hello.elf:     file format elf32-littlenios2
+hello.elf
+architecture: nios2, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x08000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00021000 paddr 0x00021000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00002000 vaddr 0x08000000 paddr 0x08000000 align 2**12
+         filesz 0x000001e4 memsz 0x000001e4 flags r-x
+    LOAD off    0x000021e4 vaddr 0x080001e4 paddr 0x080001e8 align 2**12
+         filesz 0x00000004 memsz 0x00000004 flags rw-
+    LOAD off    0x000021ec vaddr 0x080001ec paddr 0x080001ec align 2**12
+         filesz 0x00000000 memsz 0x0000000c flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00021000  00021000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text         000001cc  08000000  08000000  00002000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata       00000018  080001cc  080001cc  000021cc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .rwdata       00000004  080001e4  080001e8  000021e4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  4 .bss          0000000c  080001ec  080001ec  000021ec  2**2
+                  ALLOC, SMALL_DATA
+  5 .comment      00000026  00000000  00000000  000021e8  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 00000168  00000000  00000000  00002210  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_pubnames 000001b8  00000000  00000000  00002378  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_info   0000094d  00000000  00000000  00002530  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev 00000509  00000000  00000000  00002e7d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_line   000014f4  00000000  00000000  00003386  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_frame  00000188  00000000  00000000  0000487c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    0000050f  00000000  00000000  00004a04  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_loc    0000011b  00000000  00000000  00004f13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_alt_sim_info 00000010  00000000  00000000  00005030  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_ranges 00000020  00000000  00000000  00005040  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .thread_model 00000003  00000000  00000000  00005d99  2**0
+                  CONTENTS, READONLY
+ 17 .cpu          00000005  00000000  00000000  00005d9c  2**0
+                  CONTENTS, READONLY
+ 18 .simulation_enabled 00000001  00000000  00000000  00005da1  2**0
+                  CONTENTS, READONLY
+ 19 .stderr_dev   0000000b  00000000  00000000  00005da2  2**0
+                  CONTENTS, READONLY
+ 20 .stdin_dev    0000000b  00000000  00000000  00005dad  2**0
+                  CONTENTS, READONLY
+ 21 .stdout_dev   0000000b  00000000  00000000  00005db8  2**0
+                  CONTENTS, READONLY
+ 22 .sopc_system_name 0000000b  00000000  00000000  00005dc3  2**0
+                  CONTENTS, READONLY
+ 23 .quartus_project_dir 00000036  00000000  00000000  00005dce  2**0
+                  CONTENTS, READONLY
+ 24 .jdi          0000438d  00000000  00000000  00005e04  2**0
+                  CONTENTS, READONLY
+ 25 .sopcinfo     00031c12  00000000  00000000  0000a191  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00021000 l    d  .entry	00000000 .entry
+08000000 l    d  .text	00000000 .text
+080001cc l    d  .rodata	00000000 .rodata
+080001e4 l    d  .rwdata	00000000 .rwdata
+080001ec l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_pubnames	00000000 .debug_pubnames
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+08000038 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 hello_world_small.c
+00000000 l    df *ABS*	00000000 alt_load.c
+08000054 l     F .text	00000020 alt_load_section
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_putstr.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_write.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_irq.c
+00000000 l    df *ABS*	00000000 strlen.c
+080000e0 g     F .text	0000002c alt_main
+080001e8 g       *ABS*	00000000 __flash_rwdata_start
+0800010c g     F .text	00000038 alt_putstr
+00021000 g     F .entry	0000000c __reset
+08000000 g       *ABS*	00000000 __flash_exceptions_start
+080001f0 g     O .bss	00000004 alt_argv
+080081e4 g       *ABS*	00000000 _gp
+080001a4 g     F .text	00000008 altera_nios2_irq_init
+00020000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+080001f8 g       *ABS*	00000000 __bss_end
+0800019c g     F .text	00000004 alt_dcache_flush_all
+080001e8 g       *ABS*	00000000 __ram_rwdata_end
+080001e4 g       *ABS*	00000000 __ram_rodata_end
+080001e4 g     O .rwdata	00000004 jtag_uart_0
+080001f8 g       *ABS*	00000000 end
+08800000 g       *ABS*	00000000 __alt_stack_pointer
+08000168 g     F .text	00000034 altera_avalon_jtag_uart_write
+08000000 g     F .text	0000003c _start
+08000144 g     F .text	00000004 alt_sys_init
+080001e4 g       *ABS*	00000000 __ram_rwdata_start
+080001cc g       *ABS*	00000000 __ram_rodata_start
+080001f8 g       *ABS*	00000000 __alt_stack_base
+080001ec g       *ABS*	00000000 __bss_start
+0800003c g     F .text	00000018 main
+080001f4 g     O .bss	00000004 alt_envp
+080001cc g       *ABS*	00000000 __flash_rodata_start
+08000148 g     F .text	00000020 alt_irq_init
+080001ec g     O .bss	00000004 alt_argc
+00021100 g       *ABS*	00000000 __ram_exceptions_start
+080001e8 g       *ABS*	00000000 _edata
+080001f8 g       *ABS*	00000000 _end
+00021100 g       *ABS*	00000000 __ram_exceptions_end
+08000000 g       *ABS*	00000000 __alt_mem_sdram_1
+0002100c g       .entry	00000000 exit
+08800000 g       *ABS*	00000000 __alt_data_end
+0002100c g       .entry	00000000 _exit
+080001ac g     F .text	00000020 strlen
+080001a0 g     F .text	00000004 alt_icache_flush_all
+08000074 g     F .text	0000006c alt_load
+
+
+
+Disassembly of section .entry:
+
+00021000 <__reset>:
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+   21000:	00420034 	movhi	at,2048
+    ori r1, r1, %lo(_start)
+   21004:	08400014 	ori	at,at,0
+    jmp r1
+   21008:	0800683a 	jmp	at
+
+0002100c <_exit>:
+	...
+
+Disassembly of section .text:
+
+08000000 <_start>:
+#if (NIOS2_NUM_OF_SHADOW_REG_SETS == 0)    
+    /*
+     * Now that the caches are initialized, set up the stack pointer.
+     * The value provided by the linker is assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+ 8000000:	06c22034 	movhi	sp,2176
+    ori sp, sp, %lo(__alt_stack_pointer)
+ 8000004:	dec00014 	ori	sp,sp,0
+
+    /* Set up the global pointer. */
+    movhi gp, %hi(_gp)
+ 8000008:	06820034 	movhi	gp,2048
+    ori gp, gp, %lo(_gp)
+ 800000c:	d6a07914 	ori	gp,gp,33252
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+ 8000010:	00820034 	movhi	r2,2048
+    ori r2, r2, %lo(__bss_start)
+ 8000014:	10807b14 	ori	r2,r2,492
+
+    movhi r3, %hi(__bss_end)
+ 8000018:	00c20034 	movhi	r3,2048
+    ori r3, r3, %lo(__bss_end)
+ 800001c:	18c07e14 	ori	r3,r3,504
+
+    beq r2, r3, 1f
+ 8000020:	10c00326 	beq	r2,r3,8000030 <_start+0x30>
+
+0:
+    stw zero, (r2)
+ 8000024:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+ 8000028:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+ 800002c:	10fffd36 	bltu	r2,r3,8000024 <_start+0x24>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+ 8000030:	80000740 	call	8000074 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+ 8000034:	80000e00 	call	80000e0 <alt_main>
+
+08000038 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+ 8000038:	003fff06 	br	8000038 <alt_after_alt_main>
+
+0800003c <main>:
+ */
+
+#include "sys/alt_stdio.h"
+
+int main()
+{ 
+ 800003c:	deffff04 	addi	sp,sp,-4
+  alt_putstr("Hello from Nios II!\n");
+ 8000040:	01020034 	movhi	r4,2048
+ 8000044:	21007304 	addi	r4,r4,460
+ */
+
+#include "sys/alt_stdio.h"
+
+int main()
+{ 
+ 8000048:	dfc00015 	stw	ra,0(sp)
+  alt_putstr("Hello from Nios II!\n");
+ 800004c:	800010c0 	call	800010c <alt_putstr>
+ 8000050:	003fff06 	br	8000050 <main+0x14>
+
+08000054 <alt_load_section>:
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+ 8000054:	2900051e 	bne	r5,r4,800006c <alt_load_section+0x18>
+ 8000058:	f800283a 	ret
+  {
+    while( to != end )
+    {
+      *to++ = *from++;
+ 800005c:	20800017 	ldw	r2,0(r4)
+ 8000060:	21000104 	addi	r4,r4,4
+ 8000064:	28800015 	stw	r2,0(r5)
+ 8000068:	29400104 	addi	r5,r5,4
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+ 800006c:	29bffb1e 	bne	r5,r6,800005c <alt_load_section+0x8>
+ 8000070:	f800283a 	ret
+
+08000074 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+ 8000074:	deffff04 	addi	sp,sp,-4
+  /* 
+   * Copy the .rwdata section. 
+   */
+
+  alt_load_section (&__flash_rwdata_start, 
+ 8000078:	01020034 	movhi	r4,2048
+ 800007c:	21007a04 	addi	r4,r4,488
+ 8000080:	01420034 	movhi	r5,2048
+ 8000084:	29407904 	addi	r5,r5,484
+ 8000088:	01820034 	movhi	r6,2048
+ 800008c:	31807a04 	addi	r6,r6,488
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+ 8000090:	dfc00015 	stw	ra,0(sp)
+  /* 
+   * Copy the .rwdata section. 
+   */
+
+  alt_load_section (&__flash_rwdata_start, 
+ 8000094:	80000540 	call	8000054 <alt_load_section>
+
+  /*
+   * Copy the exception handler.
+   */
+
+  alt_load_section (&__flash_exceptions_start, 
+ 8000098:	01020034 	movhi	r4,2048
+ 800009c:	21000004 	addi	r4,r4,0
+ 80000a0:	014000b4 	movhi	r5,2
+ 80000a4:	29444004 	addi	r5,r5,4352
+ 80000a8:	018000b4 	movhi	r6,2
+ 80000ac:	31844004 	addi	r6,r6,4352
+ 80000b0:	80000540 	call	8000054 <alt_load_section>
+
+  /*
+   * Copy the .rodata section.
+   */
+
+  alt_load_section (&__flash_rodata_start, 
+ 80000b4:	01020034 	movhi	r4,2048
+ 80000b8:	21007304 	addi	r4,r4,460
+ 80000bc:	01420034 	movhi	r5,2048
+ 80000c0:	29407304 	addi	r5,r5,460
+ 80000c4:	01820034 	movhi	r6,2048
+ 80000c8:	31807904 	addi	r6,r6,484
+ 80000cc:	80000540 	call	8000054 <alt_load_section>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+ 80000d0:	800019c0 	call	800019c <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+ 80000d4:	dfc00017 	ldw	ra,0(sp)
+ 80000d8:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+ 80000dc:	80001a01 	jmpi	80001a0 <alt_icache_flush_all>
+
+080000e0 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+ 80000e0:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+ 80000e4:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+ 80000e8:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+ 80000ec:	80001480 	call	8000148 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+ 80000f0:	80001440 	call	8000144 <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+ 80000f4:	d1200217 	ldw	r4,-32760(gp)
+ 80000f8:	d1600317 	ldw	r5,-32756(gp)
+ 80000fc:	d1a00417 	ldw	r6,-32752(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+ 8000100:	dfc00017 	ldw	ra,0(sp)
+ 8000104:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+ 8000108:	800003c1 	jmpi	800003c <main>
+
+0800010c <alt_putstr>:
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided fputs() routine.
+ */
+int 
+alt_putstr(const char* str)
+{
+ 800010c:	defffe04 	addi	sp,sp,-8
+ 8000110:	dc000015 	stw	r16,0(sp)
+ 8000114:	dfc00115 	stw	ra,4(sp)
+ 8000118:	2021883a 	mov	r16,r4
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
+ 800011c:	80001ac0 	call	80001ac <strlen>
+ 8000120:	800b883a 	mov	r5,r16
+ 8000124:	100d883a 	mov	r6,r2
+ 8000128:	01020034 	movhi	r4,2048
+ 800012c:	21007904 	addi	r4,r4,484
+ 8000130:	000f883a 	mov	r7,zero
+#else
+    return fputs(str, stdout);
+#endif
+}
+ 8000134:	dfc00117 	ldw	ra,4(sp)
+ 8000138:	dc000017 	ldw	r16,0(sp)
+ 800013c:	dec00204 	addi	sp,sp,8
+int 
+alt_putstr(const char* str)
+{
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
+ 8000140:	80001681 	jmpi	8000168 <altera_avalon_jtag_uart_write>
+
+08000144 <alt_sys_init>:
+ */
+
+void alt_sys_init( void )
+{
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+}
+ 8000144:	f800283a 	ret
+
+08000148 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+ 8000148:	deffff04 	addi	sp,sp,-4
+ 800014c:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_IRQ_INIT ( CPU_0, cpu_0);
+ 8000150:	80001a40 	call	80001a4 <altera_nios2_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts ()
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+ 8000154:	00800044 	movi	r2,1
+ 8000158:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+ 800015c:	dfc00017 	ldw	ra,0(sp)
+ 8000160:	dec00104 	addi	sp,sp,4
+ 8000164:	f800283a 	ret
+
+08000168 <altera_avalon_jtag_uart_write>:
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+  unsigned int base = sp->base;
+ 8000168:	21000017 	ldw	r4,0(r4)
+
+  const char * end = ptr + count;
+ 800016c:	298f883a 	add	r7,r5,r6
+ 8000170:	20c00104 	addi	r3,r4,4
+ 8000174:	00000606 	br	8000190 <altera_avalon_jtag_uart_write+0x28>
+
+  while (ptr < end)
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+ 8000178:	18800037 	ldwio	r2,0(r3)
+ 800017c:	10bfffec 	andhi	r2,r2,65535
+ 8000180:	10000326 	beq	r2,zero,8000190 <altera_avalon_jtag_uart_write+0x28>
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+ 8000184:	28800007 	ldb	r2,0(r5)
+ 8000188:	29400044 	addi	r5,r5,1
+ 800018c:	20800035 	stwio	r2,0(r4)
+{
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+
+  while (ptr < end)
+ 8000190:	29fff936 	bltu	r5,r7,8000178 <altera_avalon_jtag_uart_write+0x10>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+
+  return count;
+}
+ 8000194:	3005883a 	mov	r2,r6
+ 8000198:	f800283a 	ret
+
+0800019c <alt_dcache_flush_all>:
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+ 800019c:	f800283a 	ret
+
+080001a0 <alt_icache_flush_all>:
+void alt_icache_flush_all (void)
+{
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+#endif
+}
+ 80001a0:	f800283a 	ret
+
+080001a4 <altera_nios2_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+ 80001a4:	000170fa 	wrctl	ienable,zero
+}
+ 80001a8:	f800283a 	ret
+
+080001ac <strlen>:
+ 80001ac:	20800007 	ldb	r2,0(r4)
+ 80001b0:	10000526 	beq	r2,zero,80001c8 <strlen+0x1c>
+ 80001b4:	2007883a 	mov	r3,r4
+ 80001b8:	18c00044 	addi	r3,r3,1
+ 80001bc:	18800007 	ldb	r2,0(r3)
+ 80001c0:	103ffd1e 	bne	r2,zero,80001b8 <strlen+0xc>
+ 80001c4:	1905c83a 	sub	r2,r3,r4
+ 80001c8:	f800283a 	ret

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Aug 31 19:17:43 2012
+Quartus II 64-Bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : DE1_Media_Computer
+Top-level Entity Name : DE1_Media_Computer
+Family : Cyclone II
+Device : EP2C20F484C7
+Timing Models : Final
+Total logic elements : 13,025 / 18,752 ( 69 % )
+    Total combinational functions : 11,670 / 18,752 ( 62 % )
+    Dedicated logic registers : 8,257 / 18,752 ( 44 % )
+Total registers : 8577
+Total pins : 240 / 315 ( 76 % )
+Total virtual pins : 0
+Total memory bits : 113,769 / 239,616 ( 47 % )
+Embedded Multiplier 9-bit elements : 11 / 52 ( 21 % )
+Total PLLs : 2 / 4 ( 50 % )

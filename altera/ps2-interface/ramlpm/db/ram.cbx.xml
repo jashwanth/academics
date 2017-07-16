@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ram">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram|ramlpm:r|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ege1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

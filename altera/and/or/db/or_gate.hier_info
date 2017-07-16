@@ -1,0 +1,6 @@
+|or_gate
+a => c.IN0
+b => c.IN1
+clock => ~NO_FANOUT~
+
+

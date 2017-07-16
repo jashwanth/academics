@@ -1,0 +1,102 @@
+# Reading C:/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# do keyboard_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\91\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\91\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/Reset_Delay.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module Reset_Delay
+# 
+# Top level modules:
+# 	Reset_Delay
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Pattern.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module VGA_Pattern
+# 
+# Top level modules:
+# 	VGA_Pattern
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/VGA_Audio_PLL.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module VGA_Audio_PLL
+# 
+# Top level modules:
+# 	VGA_Audio_PLL
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT_4.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module SEG7_LUT_4
+# 
+# Top level modules:
+# 	SEG7_LUT_4
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module SEG7_LUT
+# 
+# Top level modules:
+# 	SEG7_LUT
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ps2_keyboard.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ps2_keyboard
+# 
+# Top level modules:
+# 	ps2_keyboard
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/keyboard.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module keyboard
+# 
+# Top level modules:
+# 	keyboard
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ram.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# vlog -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga {C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Controller.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module VGA_Controller
+# 
+# Top level modules:
+# 	VGA_Controller
+# 
+vsim work.keyboard
+# vsim work.keyboard 
+# Loading work.keyboard
+# Loading work.Reset_Delay
+# Loading work.VGA_Audio_PLL
+# ** Warning: (vsim-3010) [TSCALE] - Module 'VGA_Audio_PLL' has a `timescale directive in effect, but previous modules do not.
+#         Region: /keyboard/p1
+# ** Error: (vsim-3033) C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/VGA_Audio_PLL.v(85): Instantiation of 'altpll' failed. The design unit was not found.
+#         Region: /keyboard/p1
+#         Searched libraries:
+#             C:\Users\Jashwanth\Desktop\4th_sem\altera\ps2-interface\keyboard_mem\simulation\modelsim\rtl_work
+# Loading work.VGA_Controller
+# ** Warning: (vsim-3009) [TSCALE] - Module 'VGA_Controller' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /keyboard/u8
+# Loading work.VGA_Pattern
+# ** Warning: (vsim-3009) [TSCALE] - Module 'VGA_Pattern' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /keyboard/u3
+# Loading work.SEG7_LUT_4
+# ** Warning: (vsim-3009) [TSCALE] - Module 'SEG7_LUT_4' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /keyboard/u5
+# Loading work.SEG7_LUT
+# ** Warning: (vsim-3009) [TSCALE] - Module 'SEG7_LUT' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /keyboard/u5/u0
+# Loading work.ps2_keyboard
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ps2_keyboard' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /keyboard/u6
+# Loading work.ram
+# ** Error: (vsim-3033) C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ram.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+#         Region: /keyboard/r1
+#         Searched libraries:
+#             C:\Users\Jashwanth\Desktop\4th_sem\altera\ps2-interface\keyboard_mem\simulation\modelsim\rtl_work
+# Error loading design
+vsim work.VGA_Pattern
+# vsim work.VGA_Pattern 
+# Loading work.VGA_Pattern

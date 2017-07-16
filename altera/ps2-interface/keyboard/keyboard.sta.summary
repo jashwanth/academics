@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'p1|altpll_component|pll|clk[0]'
+Slack : -7.735
+TNS   : -60.932
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -6.130
+TNS   : -241.051
+
+Type  : Slow Model Setup 'Cont[24]'
+Slack : -1.946
+TNS   : -24.423
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.506
+TNS   : -2.506
+
+Type  : Slow Model Hold 'p1|altpll_component|pll|clk[0]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Cont[24]'
+Slack : 0.628
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'p1|altpll_component|pll|clk[0]'
+Slack : -4.744
+TNS   : -196.022
+
+Type  : Slow Model Removal 'p1|altpll_component|pll|clk[0]'
+Slack : 4.200
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.631
+TNS   : -126.275
+
+Type  : Slow Model Minimum Pulse Width 'Cont[24]'
+Slack : -0.611
+TNS   : -17.108
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : 18.518
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'p1|altpll_component|pll|clk[0]'
+Slack : 18.730
+TNS   : 0.000
+
+Type  : Fast Model Setup 'p1|altpll_component|pll|clk[0]'
+Slack : -3.804
+TNS   : -30.192
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.704
+TNS   : -41.514
+
+Type  : Fast Model Setup 'Cont[24]'
+Slack : -0.201
+TNS   : -1.666
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.692
+TNS   : -1.692
+
+Type  : Fast Model Hold 'p1|altpll_component|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Cont[24]'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'p1|altpll_component|pll|clk[0]'
+Slack : -2.992
+TNS   : -125.570
+
+Type  : Fast Model Removal 'p1|altpll_component|pll|clk[0]'
+Slack : 2.759
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -103.380
+
+Type  : Fast Model Minimum Pulse Width 'Cont[24]'
+Slack : -0.500
+TNS   : -14.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_27[0]'
+Slack : 18.518
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'p1|altpll_component|pll|clk[0]'
+Slack : 18.841
+TNS   : 0.000
+
+------------------------------------------------------------

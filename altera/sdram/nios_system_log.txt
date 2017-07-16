@@ -1,0 +1,84 @@
+Altera SOPC Builder Version 12.02 Build 263
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2013.04.03 14:38:39 (*) mk_custom_sdk starting
+# 2013.04.03 14:38:39 (*) Reading project C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system.ptf.
+
+# 2013.04.03 14:38:39 (*) Finding all CPUs
+# 2013.04.03 14:38:39 (*) Finding all available components
+# 2013.04.03 14:38:39 (*) Reading C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/.sopc_builder/install.ptf
+
+# 2013.04.03 14:38:39 (*) Found 63 components
+
+# 2013.04.03 14:38:40 (*) Finding all peripherals
+
+# 2013.04.03 14:38:40 (*) Finding software components
+
+# 2013.04.03 14:38:40 (*) (Legacy SDK Generation Skipped)
+# 2013.04.03 14:38:40 (*) (All TCL Script Generation Skipped)
+# 2013.04.03 14:38:40 (*) (No Libraries Built)
+# 2013.04.03 14:38:40 (*) (Contents Generation Skipped)
+# 2013.04.03 14:38:40 (*) mk_custom_sdk finishing
+
+# 2013.04.03 14:38:40 (*) Starting generation for system: nios_system.
+
+.
+.
+.
+..
+.
+
+# 2013.04.03 14:38:42 (*) Running Generator Program for cpu_0
+
+# 2013.04.03 14:38:43 (*) Starting Nios II generation
+# 2013.04.03 14:38:43 (*)   Checking for plaintext license.
+# 2013.04.03 14:38:44 (*)   Couldn't query license setup in Quartus directory c:/altera/12.0sp2/quartus
+# 2013.04.03 14:38:44 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2013.04.03 14:38:44 (*)   LM_LICENSE_FILE environment variable is empty
+# 2013.04.03 14:38:44 (*)   Plaintext license not found.
+# 2013.04.03 14:38:44 (*)   No license required to generate encrypted Nios II/e.
+
+# 2013.04.03 14:38:44 (*)   Getting CPU configuration settings
+# 2013.04.03 14:38:44 (*)   Elaborating CPU configuration settings
+# 2013.04.03 14:38:44 (*)   Creating all objects for CPU
+# 2013.04.03 14:38:45 (*)   Generating HDL from CPU objects
+# 2013.04.03 14:38:45 (*)   Creating plain-text HDL
+# 2013.04.03 14:38:50 (*) Done Nios II generation
+
+# 2013.04.03 14:38:50 (*) Running Generator Program for sdram_0
+
+# 2013.04.03 14:38:52 (*) Running Generator Program for jtag_uart_0
+
+# 2013.04.03 14:38:53 (*) Running Generator Program for switch
+
+# 2013.04.03 14:38:53 (*) Running Generator Program for LED_S
+
+# 2013.04.03 14:38:54 (*) Running Generator Program for onchip_memory2_0
+
+.
+
+
+# 2013.04.03 14:38:55 (*) Running Test Generator Program for sdram_0
+
+# 2013.04.03 14:38:55 (*) Making arbitration and system (top) modules.
+
+# 2013.04.03 14:39:01 (*) Generating Quartus symbol for top level: nios_system
+
+# 2013.04.03 14:39:01 (*) Symbol C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system.bsf already exists, no need to regenerate
+# 2013.04.03 14:39:01 (*) Creating command-line system-generation script: C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system_generation_script
+
+# 2013.04.03 14:39:01 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.04.03 14:39:01 (*) Completed generation for system: nios_system.
+# 2013.04.03 14:39:01 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system.ptf 
+  System HDL Model : C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system.vhd 
+  System Generation Script : C:/Users/Jashwanth/Desktop/4th_sem/altera/sdram/nios_system_generation_script 
+
+# 2013.04.03 14:39:01 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Mar 01 16:06:31 2013
+Quartus II Version : 11.0 Build 157 04/27/2011 SJ Web Edition
+Revision Name : and_gate
+Top-level Entity Name : and_gate
+Family : Stratix III
+Logic utilization : N/A
+    Combinational ALUTs : 1
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 3
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

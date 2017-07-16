@@ -1,0 +1,122 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 168 88 360 104)
+	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
+	(text "PLD_CLOCKINPUT" (rect 5 0 102 12)(font "Arial" ))
+	(pt 192 8)
+	(drawing
+		(line (pt 108 12)(pt 133 12))
+		(line (pt 108 4)(pt 133 4))
+		(line (pt 137 8)(pt 192 8))
+		(line (pt 108 12)(pt 108 4))
+		(line (pt 133 4)(pt 137 8))
+		(line (pt 133 12)(pt 137 8))
+	)
+	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 112 104 168 120))
+)
+(pin
+	(output)
+	(rect 232 192 408 208)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "LEDG[7..0]" (rect 31 4 86 16)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect 408 208 464 224))
+)
+(symbol
+	(rect 416 48 896 232)
+	(text "first_nios2_system" (rect 184 -1 312 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 41 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 208 72))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 101 84 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 208 112))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "pio_0_external_connection_export[7..0]" (rect 0 0 225 14)(font "Arial" (font_size 8)))
+		(text "pio_0_external_connection_export[7..0]" (rect 4 141 229 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 208 152)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 193 43 210 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 213 67 227 79)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 179 83 212 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 213 107 249 119)(font "Arial" (color 0 0 0)))
+		(text "pio_0_external_connection" (rect 54 123 228 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 213 147 243 159)(font "Arial" (color 0 0 0)))
+		(text " first_nios2_system " (rect 393 168 495 180)(font "Arial" ))
+		(line (pt 209 52)(pt 209 76))
+		(line (pt 210 52)(pt 210 76))
+		(line (pt 209 92)(pt 209 116))
+		(line (pt 210 92)(pt 210 116))
+		(line (pt 209 132)(pt 209 156))
+		(line (pt 210 132)(pt 210 156))
+		(line (pt 208 32)(pt 272 32))
+		(line (pt 272 32)(pt 272 168))
+		(line (pt 208 168)(pt 272 168))
+		(line (pt 208 32)(pt 208 168))
+		(line (pt 0 0)(pt 480 0))
+		(line (pt 480 0)(pt 480 184))
+		(line (pt 0 184)(pt 480 184))
+		(line (pt 0 0)(pt 0 184))
+	)
+)
+(connector
+	(pt 360 96)
+	(pt 384 96)
+)
+(connector
+	(pt 384 96)
+	(pt 384 120)
+)
+(connector
+	(pt 384 120)
+	(pt 416 120)
+)
+(connector
+	(pt 416 200)
+	(pt 408 200)
+	(bus)
+)

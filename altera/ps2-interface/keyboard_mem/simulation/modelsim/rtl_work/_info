@@ -1,0 +1,147 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Jashwanth\Desktop\4th_sem\altera\ps2-interface\keyboard_mem\simulation\modelsim
+vkeyboard
+ISQ6VHTUXT1QIIKHnMI<OQ1
+VA;ZgLCVoWE:PW;IbCATQQ1
+w1380371840
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/keyboard.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/keyboard.v
+L0 1
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+Z3 !s92 -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem -O0
+!s100 MhzXkj0`;g6lY406zZEHZ1
+!s85 0
+!s101 -O0
+vps2_keyboard
+Iz_lWD9jVX]YWikZzOAJ@C3
+VI7ZZQ_^44ZM8B66l50F@H2
+w1124983124
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ps2_keyboard.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ps2_keyboard.v
+L0 11
+R1
+r1
+31
+R2
+R3
+!s100 M>6o9Q`GmNI?W@O:TcONd0
+!s85 0
+!s101 -O0
+vram
+ID`fHZED5k;A94czZez82g3
+V@lYdXz]QXi8ZEjN^<ZZXO0
+w1380367765
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ram.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/ram.v
+L0 39
+R1
+r1
+31
+R2
+R3
+!s100 <IXEa@mVcj`V_8UT9zAT=3
+!s85 0
+!s101 -O0
+vReset_Delay
+Io=YF8^5g1E`h5Y]l1?PY;0
+VDoL>1[=KXh_Qfl<A4]Nfm0
+w1134403290
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/Reset_Delay.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/Reset_Delay.v
+L0 1
+R1
+r1
+31
+R2
+n@reset_@delay
+R3
+!s100 S6J?nJS>K]Of6Q<g]^`8P3
+!s85 0
+!s101 -O0
+vSEG7_LUT
+II0Pc6^LgEo^B@]HHooA]o2
+VUbYATRA9<`nKUR_ZQPcUN2
+w1126922536
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT.v
+L0 1
+R1
+r1
+31
+R2
+R3
+n@s@e@g7_@l@u@t
+!s100 TTYCVnBP2^l;h0Y1eN29M0
+!s85 0
+!s101 -O0
+vSEG7_LUT_4
+IebGPNRjJo<<AkIhlBT?oV0
+VYP@a=FGMU_P0^i<SY2Shl1
+w1379935761
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT_4.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/SEG7_LUT_4.v
+L0 1
+R1
+r1
+31
+R2
+R3
+n@s@e@g7_@l@u@t_4
+!s100 ;[1b?V>Kn1Nl?fBfdZH?e2
+!s85 0
+!s101 -O0
+vVGA_Audio_PLL
+IjZHhdIOYQKL3;Z2Rj:Lh=1
+Vj7eWo8O3FnAlWUjH@UjmB3
+w1134744278
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/VGA_Audio_PLL.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/VGA_Audio_PLL.v
+L0 36
+R1
+r1
+31
+R2
+R3
+n@v@g@a_@audio_@p@l@l
+!s100 f5QiG?46V`Bd]W1l9[B[]0
+!s85 0
+!s101 -O0
+vVGA_Controller
+!s100 6emHOEOa^3EeEaf31^9Zg3
+IzB@;VHn]5:M20;hb_FfzM1
+VG?Y8^i4RdR6M[n9^HJ`z30
+w1380130282
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Controller.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Controller.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Param.h
+L0 1
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga -O0
+n@v@g@a_@controller
+vVGA_Pattern
+IY5Yb6`4M;FGEnDhEVf;kS1
+VD8l>EW==XaPA_UlUG5`nL0
+w1380128457
+8C:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Pattern.v
+FC:/Users/Jashwanth/Desktop/4th_sem/altera/ps2-interface/keyboard_mem/vga/VGA_Pattern.v
+L0 1
+R1
+r1
+31
+R2
+n@v@g@a_@pattern
+!s100 7k?U4GDHKOh[^D_okVT9H1
+!s85 0
+!s101 -O0
+R4

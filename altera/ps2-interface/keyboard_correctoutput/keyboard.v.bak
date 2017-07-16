@@ -1,0 +1,18 @@
+module keyboard
+{
+    CLOCK_24,						//	24 MHz
+	 CLOCK_27,						//	27 MHz
+	 CLOCK_50,						//	50 MHz
+	 EXT_CLOCK,						//	External Clock
+	 KEY,							//	Pushbutton[3:0]
+	 SW,								//	Toggle Switch[9:0]
+	 VGA_HS,							//	VGA H_SYNC
+	 VGA_VS,							//	VGA V_SYNC
+	 VGA_R,   						//	VGA Red[3:0]
+	 VGA_G,	 						//	VGA Green[3:0]
+	 VGA_B,  						//	VGA Blue[3:0]
+
+ 
+ 
+ 
+ }
