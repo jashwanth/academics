@@ -1,0 +1,39 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/krr/Desktop/vhdl/vga/ --output-directory=C:/Users/krr/Desktop/vhdl/vga/pll/ --report-file=bsf:C:/Users/krr/Desktop/vhdl/vga/pll.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=AUTO --component-file=C:/Users/krr/Desktop/vhdl/vga/pll.qsys
+Progress: Loading vga/pll.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 12.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: pll.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: pll.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: pll.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/krr/Desktop/vhdl/vga/ --output-directory=C:/Users/krr/Desktop/vhdl/vga/pll/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/krr/Desktop/vhdl/vga/pll.sopcinfo --report-file=html:C:/Users/krr/Desktop/vhdl/vga/pll.html --report-file=qip:C:/Users/krr/Desktop/vhdl/vga/pll/synthesis/pll.qip --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=AUTO --component-file=C:/Users/krr/Desktop/vhdl/vga/pll.qsys
+Progress: Loading vga/pll.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 12.0]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: pll.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: pll.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: pll.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: pll: Generating pll "pll" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: No Avalon connections, skipping transform 
+Info: altpll_0: "pll" instantiated altpll "altpll_0"
+Info: pll: Done pll" with 2 modules, 2 files, 11181 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
