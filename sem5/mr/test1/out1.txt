@@ -1,0 +1,5196 @@
+MobileSim Started
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot1
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 10 seconds
+bot_number = 0,robot angle=0.000000, robot pose=(1027.782593, 0.000000)
+
+r = 0.00,rdirectMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 10 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 30 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot2
+r = 0.00,rdirectMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 20 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=200.00 mm/sec, vr=200.00 mm/sec, then sleeping for 25 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot
+r = 0.00,rdirectMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=150.00 mm/sec, vr=150.00 mm/sec, then sleeping for 30 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 20 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=-100.00 mm/sec, vr=-100.00 mm/sec, then sleeping for 10 seconds
+bot_number = 0,robot angle=0.000000, robot pose=(25.415001, 0.000000)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1338.862183, 2948.982666)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3695.849365, 3875.947998)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1805.989868, 189.074203)
+
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-414.28 mm/sec, vr=91.51 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.966809, robot pose=(-0.508300, 0.000000)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1338.353882, 2946.441162)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3694.324463, 3874.423096)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1804.464966, 189.582504)
+
+omnicx = 376.999634, omnicy = 75.867981
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-407.50 mm/sec, vr=118.08 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=9.931765, robot pose=(-26.939899, -1.524900)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1327.171265, 2922.042725)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3676.025635, 3855.107666)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1782.099854, 205.848099)
+
+omnicx = 332.262939, omnicy = 153.961685
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-381.79 mm/sec, vr=185.04 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=23.994441, robot pose=(-64.554100, -10.674300)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1305.314453, 2875.279297)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3638.411377, 3818.001709)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1739.402588, 235.837799)
+
+omnicx = 288.528839, omnicy = 232.621246
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-321.86 mm/sec, vr=276.42 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=38.936035, robot pose=(-88.952499, -23.890100)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1274.308105, 2810.216797)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3588.089600, 3767.171875)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1680.439819, 276.501801)
+
+omnicx = 245.808350, omnicy = 311.835907
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-241.30 mm/sec, vr=348.96 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=53.965520, robot pose=(-93.018898, -28.464800)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1244.318359, 2744.137695)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3536.243164, 3716.341797)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1621.477051, 318.690704)
+
+omnicx = 202.726898, omnicy = 390.854828
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-137.35 mm/sec, vr=401.42 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=68.995005, robot pose=(-85.394402, -13.215800)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1213.312134, 2678.058838)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3485.413086, 3664.495117)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1561.497559, 359.863007)
+
+omnicx = 160.676666, omnicy = 470.427307
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=-30.42 mm/sec, vr=423.17 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=83.936598, robot pose=(-74.211800, 24.906700)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1182.305786, 2612.488037)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3433.058105, 3613.156982)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1502.026489, 401.543610)
+
+omnicx = 118.276649, omnicy = 549.813965
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=77.93 mm/sec, vr=417.05 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=98.966083, robot pose=(-73.703499, 84.886101)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1151.299561, 2546.409180)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3382.228271, 3562.326904)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1442.047119, 443.732513)
+
+omnicx = 75.536240, omnicy = 629.017883
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=188.47 mm/sec, vr=380.11 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=113.995568, robot pose=(-92.510597, 160.622803)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1121.309814, 2480.330078)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3330.381592, 3510.480225)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1382.067749, 485.921387)
+
+omnicx = 33.850040, omnicy = 708.781677
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=279.27 mm/sec, vr=319.39 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=127.970353, robot pose=(-135.716095, 236.867798)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1090.303467, 2414.251221)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3279.043213, 3459.142090)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1323.104858, 526.585388)
+
+omnicx = -8.166640, omnicy = 788.371887
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=347.15 mm/sec, vr=243.91 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=129.991862, robot pose=(-193.662292, 304.980011)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1059.297241, 2348.172119)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3228.213379, 3407.295410)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1263.125488, 568.774292)
+
+omnicx = -50.505451, omnicy = 867.791199
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=358.62 mm/sec, vr=226.69 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=119.972206, robot pose=(-246.525497, 374.617096)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(1029.307495, 2282.093018)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3176.366699, 3356.465332)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1204.162720, 610.963196)
+
+omnicx = -91.768997, omnicy = 947.774414
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=312.59 mm/sec, vr=286.86 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=107.931039, robot pose=(-284.648010, 454.928497)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(998.301208, 2216.014160)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3125.028320, 3304.110596)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1144.183350, 652.643799)
+
+omnicx = -133.346146, omnicy = 1027.595093
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=250.55 mm/sec, vr=342.38 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=102.921211, robot pose=(-308.538086, 542.864380)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(967.294922, 2150.443359)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3073.181885, 3253.280518)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1085.220459, 693.816101)
+
+omnicx = -173.833023, omnicy = 1107.974243
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=218.31 mm/sec, vr=363.78 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=106.964230, robot pose=(-330.903290, 629.783691)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(936.288574, 2085.381104)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(3022.351807, 3202.450439)
+
+bot_number = 3,robot angle=144.933456, robot pose=(1025.241089, 735.496704)
+
+omnicx = -214.625610, omnicy = 1188.198730
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=242.12 mm/sec, vr=348.39 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=117.950696, robot pose=(-362.926208, 711.619995)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(906.298889, 2019.302002)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2971.013428, 3150.095703)
+
+bot_number = 3,robot angle=144.933456, robot pose=(966.278320, 777.685608)
+
+omnicx = -255.717255, omnicy = 1268.270386
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=308.13 mm/sec, vr=291.64 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=126.915652, robot pose=(-408.673187, 786.848389)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(875.292603, 1953.223022)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2919.166992, 3099.265625)
+
+bot_number = 3,robot angle=144.933456, robot pose=(906.298889, 818.857910)
+
+omnicx = -295.700745, omnicy = 1348.901123
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=348.94 mm/sec, vr=241.33 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=124.982034, robot pose=(-463.569611, 857.502075)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(844.286316, 1887.144043)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2868.336914, 3047.418945)
+
+bot_number = 3,robot angle=144.933456, robot pose=(846.319519, 860.538513)
+
+omnicx = -335.976929, omnicy = 1429.386108
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=344.08 mm/sec, vr=248.22 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=115.929186, robot pose=(-510.841492, 932.730530)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(813.280029, 1821.064941)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2816.490234, 2996.080811)
+
+bot_number = 3,robot angle=144.933456, robot pose=(787.356689, 902.727417)
+
+omnicx = -375.131989, omnicy = 1510.422363
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=304.87 mm/sec, vr=295.05 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=107.931039, robot pose=(-544.897583, 1014.566772)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(783.290283, 1755.494263)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2765.152100, 2944.234131)
+
+bot_number = 3,robot angle=144.933456, robot pose=(727.377319, 944.916321)
+
+omnicx = -413.156311, omnicy = 1591.995361
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=271.22 mm/sec, vr=326.25 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=106.964230, robot pose=(-570.820923, 1101.994385)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(752.283997, 1689.415283)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2713.305420, 2893.404053)
+
+bot_number = 3,robot angle=144.933456, robot pose=(668.414490, 985.580322)
+
+omnicx = -448.601990, omnicy = 1674.721436
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=292.41 mm/sec, vr=307.40 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=108.985740, robot pose=(-589.627991, 1158.923950)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(721.277710, 1623.336304)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2662.475342, 2842.065918)
+
+bot_number = 3,robot angle=144.933456, robot pose=(608.435120, 1027.769165)
+
+omnicx = -477.004120, omnicy = 1760.122314
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=385.69 mm/sec, vr=176.75 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=105.997421, robot pose=(-626.733887, 1270.750000)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(691.288025, 1557.257324)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2611.137207, 2790.219238)
+
+bot_number = 3,robot angle=144.933456, robot pose=(549.472290, 1069.958130)
+
+omnicx = -474.814880, omnicy = 1850.095703
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=396.31 mm/sec, vr=151.46 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=93.956255, robot pose=(-644.524414, 1352.586304)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(660.281677, 1491.178345)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2559.290527, 2739.389160)
+
+bot_number = 3,robot angle=144.933456, robot pose=(489.492889, 1110.622070)
+
+omnicx = -462.155212, omnicy = 1939.200928
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=358.58 mm/sec, vr=226.76 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=78.926770, robot pose=(-643.507812, 1438.997314)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(629.275391, 1425.099243)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2508.460449, 2687.034180)
+
+bot_number = 3,robot angle=144.933456, robot pose=(429.005188, 1152.811035)
+
+omnicx = -448.487061, omnicy = 2028.156982
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=291.06 mm/sec, vr=308.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=66.973495, robot pose=(-620.125977, 1524.900024)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(628.258789, 1423.066040)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2456.105713, 2636.204346)
+
+bot_number = 3,robot angle=144.933456, robot pose=(370.042389, 1194.999878)
+
+omnicx = -433.803284, omnicy = 2116.950928
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=224.98 mm/sec, vr=359.70 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=62.930476, robot pose=(-582.003479, 1605.719727)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(627.242188, 1420.016357)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2405.275635, 2584.357666)
+
+bot_number = 3,robot angle=144.933456, robot pose=(310.062988, 1236.680542)
+
+omnicx = -418.096741, omnicy = 2205.569824
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=209.87 mm/sec, vr=368.72 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=66.973495, robot pose=(-543.372681, 1683.997925)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(623.175781, 1412.391846)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2354.445557, 2533.019287)
+
+bot_number = 3,robot angle=144.933456, robot pose=(251.100204, 1277.852783)
+
+omnicx = -399.819519, omnicy = 2293.694336
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=257.42 mm/sec, vr=337.25 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=72.950132, robot pose=(-522.024109, 1738.894287)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(608.435120, 1380.368896)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2302.090820, 2482.189453)
+
+bot_number = 3,robot angle=144.933456, robot pose=(191.120804, 1319.533447)
+
+omnicx = -375.948792, omnicy = 2380.470947
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=315.15 mm/sec, vr=284.04 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=74.971642, robot pose=(-492.034393, 1855.803345)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(582.003479, 1325.472534)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2251.260742, 2430.342773)
+
+bot_number = 3,robot angle=144.933456, robot pose=(132.158005, 1361.722290)
+
+omnicx = -345.135315, omnicy = 2465.031738
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=354.19 mm/sec, vr=233.56 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=70.928623, robot pose=(-467.127686, 1942.722656)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(551.505493, 1259.393555)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2199.414062, 2379.004395)
+
+bot_number = 3,robot angle=144.933456, robot pose=(72.178596, 1402.894653)
+
+omnicx = -304.799103, omnicy = 2545.486572
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enterdiff 1
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=374.95 mm/sec, vr=198.53 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=58.975348, robot pose=(-433.071594, 2025.575439)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(521.007507, 1193.314453)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2148.075684, 2327.157959)
+
+bot_number = 3,robot angle=144.933456, robot pose=(13.215800, 1444.575195)
+
+omnicx = -251.682449, omnicy = 2618.140625
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=365.85 mm/sec, vr=214.83 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=44.912672, robot pose=(-381.225006, 2096.737549)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(490.001190, 1127.235474)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2096.229248, 2276.327881)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-46.763599, 1486.764160)
+
+omnicx = -187.375854, omnicy = 2681.106201
+updating
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enterdiff 1
+enterdiff 2
+angleupdate
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=351.01 mm/sec, vr=238.31 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=31.992588, robot pose=(-314.129395, 2154.683594)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(459.503204, 1061.156494)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(2045.399170, 2224.481201)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-106.742996, 1528.953003)
+
+omnicx = -112.838013, omnicy = 2731.545410
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=339.13 mm/sec, vr=254.93 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=21.972931, robot pose=(-234.326294, 2197.889160)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(428.496887, 995.077515)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1994.060913, 2173.143066)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-165.705795, 1569.616943)
+
+omnicx = -30.571590, omnicy = 2768.045166
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=289.60 mm/sec, vr=310.05 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=15.996294, robot pose=(-150.456802, 2228.895508)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(398.507202, 929.506775)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1942.214355, 2122.312988)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-225.685196, 1611.805908)
+
+omnicx = 51.694832, omnicy = 2804.544922
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=255.75 mm/sec, vr=338.52 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=16.963103, robot pose=(-64.045799, 2252.785645)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(367.500885, 863.427795)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1891.384277, 2070.466309)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-284.648010, 1653.994751)
+
+omnicx = 133.961258, omnicy = 2841.044678
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=261.42 mm/sec, vr=334.15 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=24.961250, robot pose=(20.840300, 2282.775391)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(336.494598, 797.348816)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1839.029419, 2019.128052)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-344.627411, 1694.658813)
+
+omnicx = 216.227676, omnicy = 2877.544434
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=305.37 mm/sec, vr=294.53 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=28.916378, robot pose=(101.660004, 2324.964111)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(306.504913, 731.269775)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1788.199341, 1967.281494)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-403.590210, 1736.847656)
+
+omnicx = 298.494110, omnicy = 2914.044189
+updating
+enter
+enter
+enter
+fucksum
+The robot is already running, cannot run it again.
+Setting vl=324.96 mm/sec, vr=272.77 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=27.949569, robot pose=(181.971405, 2368.677979)
+
+bot_number = 1,robot angle=-114.962377, robot pose=(285.156311, 687.047729)
+
+bot_number = 2,robot angle=-134.913799, robot pose=(1737.369385, 1916.451538)
+
+bot_number = 3,robot angle=144.933456, robot pose=(-463.569611, 1778.528320)
+
+omnicx = 380.760529, omnicy = 2950.543945
+Disconnecting from robot.
+Disconnecting from robot.
+Disconnecting from robot.
+Disconnecting from robot.

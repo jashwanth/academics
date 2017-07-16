@@ -1,0 +1,13 @@
+Simulation environment expected to be in the part 1 of the project is Opencv/Qt/Any other UI. Other softwares installed may not be used for this part alone. But if you have written your code in object oriented then its easy to re use them for the next parts. 
+Inputs will be 
+* no of obstacles (circles) 
+* obstacle initial locations 
+* their velocities 
+* robot initial location 
+* robot velocity 
+* goal location 
+
+Robots and obstacles will be circles drawn in OpenCV/QT/Other UIs. Once these inputs are given to the code, it should show how the robot changes its path when travelling towards the goal position because of the obstacles. 
+
+You algorithm will be tested with different sets of the above inputs. 
+Any doubts please post in this thread.

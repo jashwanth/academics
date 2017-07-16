@@ -1,0 +1,733 @@
+MobileSim Started
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot1
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 10 seconds
+bot_number = 0,robot angle=0.000000, robot pose=(1045.573120, 0.000000)
+
+r = 0.00,rdirectMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 10 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 30 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot2
+r = 0.00,rdirectMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec, then sleeping for 20 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=200.00 mm/sec, vr=200.00 mm/sec, then sleeping for 25 seconds
+r = 1.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+The robot is already running, cannot run it again.
+Setting vl=-100.00 mm/sec, vr=-100.00 mm/sec, then sleeping for 10 seconds
+bot_number = 0,robot angle=0.000000, robot pose=(3.049800, 0.000000)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1324.629761, 2967.789795)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3872.737793, 4059.952637)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=-30.32 mm/sec, vr=423.18 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.052156, robot pose=(-11.182600, 0.000000)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1324.121460, 2966.264893)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3871.212891, 4058.427734)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=-8.65 mm/sec, vr=424.18 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.225498, robot pose=(19.823700, 2.541500)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1314.463745, 2944.407959)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3854.438965, 4041.145508)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=64.21 mm/sec, vr=419.38 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.487812, robot pose=(72.686897, 20.840300)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1294.131836, 2901.202393)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3820.382812, 4007.089355)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=170.36 mm/sec, vr=388.56 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.837564, robot pose=(152.998306, 77.769897)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1255.500977, 2816.316406)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3754.303711, 3941.010498)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=292.86 mm/sec, vr=306.97 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.081470, robot pose=(204.844894, 147.915298)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1214.328735, 2728.380615)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3686.191650, 3872.389893)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=358.08 mm/sec, vr=227.55 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.098344, robot pose=(242.967407, 228.735001)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1193.488403, 2684.158447)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3651.118896, 3838.333740)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=361.63 mm/sec, vr=221.87 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.783874, robot pose=(307.521515, 325.820312)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1162.482056, 2618.079346)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3583.006592, 3770.221680)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=274.90 mm/sec, vr=323.15 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.644280, robot pose=(350.726990, 366.992615)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1132.492432, 2553.017090)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3549.458984, 3735.148926)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=233.08 mm/sec, vr=354.50 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.558376, robot pose=(450.862091, 434.596497)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1091.320068, 2465.081055)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3480.330078, 3667.036621)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=194.72 mm/sec, vr=376.94 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.644280, robot pose=(525.582214, 484.918213)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1050.147827, 2377.145264)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3429.500000, 3615.190186)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=232.15 mm/sec, vr=355.11 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.854438, robot pose=(592.677795, 542.864380)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(1029.307495, 2333.431396)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3377.145264, 3564.360107)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=300.68 mm/sec, vr=299.32 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.098344, robot pose=(662.823181, 641.982910)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(988.135193, 2245.495605)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3309.032959, 3495.231201)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=363.74 mm/sec, vr=218.40 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.081470, robot pose=(700.945679, 722.802612)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(957.128906, 2179.416504)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3257.186279, 3444.401367)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=359.65 mm/sec, vr=225.06 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.854438, robot pose=(747.709290, 796.506104)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(927.139221, 2113.337402)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3206.356445, 3393.062988)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=299.29 mm/sec, vr=300.70 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.627406, robot pose=(811.755127, 858.518677)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(896.132874, 2047.258545)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3154.001465, 3341.216309)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=223.35 mm/sec, vr=360.71 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.558376, robot pose=(885.966919, 908.840393)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(865.126587, 1981.179443)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3103.171387, 3290.386475)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=197.33 mm/sec, vr=375.58 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.627406, robot pose=(959.670410, 956.620605)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(835.136902, 1915.100464)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3052.341553, 3238.031494)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=222.16 mm/sec, vr=361.45 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.925002, robot pose=(1046.589722, 1034.898804)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(804.130615, 1850.038086)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(3000.494873, 3187.201416)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=317.91 mm/sec, vr=280.95 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.064596, robot pose=(1094.878174, 1109.618896)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(763.466614, 1762.102173)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2949.156494, 3135.354980)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=353.50 mm/sec, vr=234.59 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.977158, robot pose=(1140.625244, 1187.897095)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(732.460327, 1696.023193)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2880.027832, 3067.242676)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=331.20 mm/sec, vr=265.15 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.802282, robot pose=(1195.521606, 1259.567383)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(701.453979, 1630.452515)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2829.197754, 3015.395996)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=279.44 mm/sec, vr=319.23 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.731718, robot pose=(1260.583984, 1322.596558)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(681.122009, 1586.230347)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2795.141602, 2981.340088)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=255.62 mm/sec, vr=338.61 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.767000, robot pose=(1306.839355, 1363.768921)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(650.115723, 1520.151367)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2726.012939, 2913.227783)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=266.79 mm/sec, vr=329.88 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.871312, robot pose=(1368.851929, 1428.831299)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(619.109375, 1454.072388)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2692.465088, 2878.155029)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=299.11 mm/sec, vr=300.89 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.958750, robot pose=(1422.731689, 1498.976685)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(589.119690, 1388.501709)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2640.110107, 2827.325195)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=323.71 mm/sec, vr=274.25 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.941876, robot pose=(1475.594849, 1572.680176)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(558.113403, 1322.422729)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2589.280273, 2775.478516)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=318.48 mm/sec, vr=280.31 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.871312, robot pose=(1530.999634, 1644.858765)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(517.449402, 1234.486816)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2537.433594, 2724.140137)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=297.30 mm/sec, vr=302.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.802282, robot pose=(1611.819336, 1735.844482)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(486.443115, 1169.424438)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2469.321289, 2655.011475)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=269.36 mm/sec, vr=327.79 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.819156, robot pose=(1673.831909, 1800.906860)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(455.436798, 1103.345459)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2417.474854, 2604.181396)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=274.30 mm/sec, vr=323.67 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.906594, robot pose=(1731.778076, 1867.494141)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(425.447113, 1037.266357)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2366.136475, 2553.351318)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=279.39 mm/sec, vr=319.28 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=0.958750, robot pose=(1786.674561, 1939.672852)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(394.440796, 971.187378)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2298.024414, 2484.222656)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=295.66 mm/sec, vr=304.28 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1851.736938, 2041.841064)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(353.268494, 883.251526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2246.177734, 2433.392578)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(322.262207, 817.172485)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2195.347656, 2381.037598)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(291.255890, 751.093506)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+ArTcpConnection::write: Write failed, closing connection.
+ArTcpConnection::write: Write failed, closing connection.
+ArTcpConnection::write: Write failed, closing connection.
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+Aria: Received signal 'SIGINT'. Exiting.
+Disconnecting from robot.
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+Disconnecting from robot.
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+Disconnecting from robot.
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+bot_number = 0,robot angle=1.029314, robot pose=(1898.500488, 2119.611084)
+
+bot_number = 1,robot angle=-2.006472, robot pose=(261.266205, 685.014526)
+
+bot_number = 2,robot angle=-2.354690, robot pose=(2175.015625, 2362.230713)
+
+updating
+The robot is already running, cannot run it again.
+Setting vl=316.38 mm/sec, vr=282.68 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=250.00 mm/sec, vr=250.00 mm/sec

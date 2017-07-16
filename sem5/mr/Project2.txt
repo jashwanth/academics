@@ -1,0 +1,18 @@
+
+
+Project 2: EKF Localization
+---------------------------
+
+Consider an environment with point landmarks, whose locations are known. In this environment give a set of waypoints for the robots to follow.
+At each waypoint perform EKF Localization to localize the robot. Clearly depict
+
+1. The prediction model, with prediction covariance ellipses of robot state. Show how the ellipse area increases as it moves from one landmark to another (Sep 28th) 
+
+2. The measurement and update equations as the robot updates its state and covariance. The corresponding covariance ellipse after the update needs to be shown. 
+Do it now as the robot moves from one waypoint to another for each waypoint (Oct 5th)
+
+3. Interface MATLAB routines used for above with C routines for moving the robot and getting measurements to landmarks. Note this is required if you did 1,2 in MATLAB. Show this with an environment simulated in mobile sim/ QT/ OpenCV etc. (Oct 12th)
+
+4. Show it on the robot (Oct 17th)
+
+

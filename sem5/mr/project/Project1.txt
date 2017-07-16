@@ -1,0 +1,10 @@
+1. Develop a simulation environment in which you are able to avoid multiple moving obstacles through the velocity obstacle method taught in class. In simulation there should be as many moving obstacles as possible and they should be of some finite size. The robot and the moving obstacles move along straight lines as per their velocities. Note that this is important since velocities are crucial for this algorithm, you should move the robot and obstacles as per their velocities. The robot would change its velocity and hence direction through the velocity obstacle method as it encounters these obstacles. After avoiding the obstacles it would start moving towards its goal. The algorithm terminates once the robot successfully reaches its goal.
+2. Now check the algorithm when the moving obstacles also change their directions, you could assume that they move along predefined piecewise linear paths with predefined velocities. Is your algorithm able to cope with changing directions of obstacles?
+3. Modify the algorithm to a differential drive robot by computing the appropriate left and right wheel velocities that avoid the obstacles and show in simulation.
+4. Implement the algorithm of 3 on the Amigobot as it avoids another Amigobot emulating a moving obstacle.
+You should be able to clearly demonstrate the acceleration limits of your system and that the acceleration and deceleration are within these specified limits.
+Timeline:
+Part 1: 29 Aug
+Part 2: 31 Aug
+Part 3: 10 Sep
+Part 4: 20 Sep

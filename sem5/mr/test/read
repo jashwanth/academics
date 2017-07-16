@@ -1,0 +1,405 @@
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+0.000000 0.000000
+
+0.000000 0.000000
+
+2.541500 0.000000
+
+16.773900 0.000000
+
+16.773900 0.000000
+
+27.956500 0.000000
+
+41.680600 0.000000
+
+58.962800 0.000000
+
+102.676600 0.000000
+
+102.676600 0.000000
+
+128.599900 0.000000
+
+157.573000 0.000000
+
+188.579300 0.000000
+
+223.652000 0.000000
+
+261.774500 0.000000
+
+301.930200 0.000000
+
+range < stop right move Warning: Task 'Packet Handler' took 526 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 526 ms, (100 ms normal 250 ms warning)
+503.725300 0.000000
+
+range < stop right move Warning: Task 'Packet Handler' took 544 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 544 ms, (100 ms normal 250 ms warning)
+746.692700 0.000000
+
+range < stop right move but l_r < r_r Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+StallRecover: Both motors stalled driving_backward turning
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+757.875300 0.000000
+
+range < stop right move but l_r < r_r Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+700.437400 7.624500
+
+range < stop right move but l_r < r_r Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+616.059600 41.680600
+
+range < stop right move Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+540.322900 91.494000
+
+range < stop right move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+469.160900 148.931900
+
+range < stop right move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+401.048700 208.911300
+
+range < stop right move Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+335.478000 270.923900
+
+range < stop right move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+268.382400 332.936500
+
+range < stop right move Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 578 ms, (100 ms normal 250 ms warning)
+202.303400 394.949100
+
+180.446500 415.789400
+
+169.263900 425.955400
+
+157.064700 435.613100
+
+157.064700 435.613100
+
+146.390400 446.795700
+
+135.207800 456.961700
+
+124.025200 466.619400
+
+113.350900 477.802000
+
+102.168300 487.968000
+
+91.494000 497.625700
+
+80.311400 508.808300
+
+58.454500 528.632000
+
+47.271900 539.814600
+
+47.271900 539.814600
+
+35.072700 549.980600
+
+24.398400 559.638300
+
+13.215800 569.804300
+
+2.033200 580.986900
+
+2.033200 580.986900
+
+-8.641100 590.644600
+
+-19.823700 600.810600
+
+-41.680600 621.650900
+
+-52.863200 631.816900
+
+-52.863200 631.816900
+
+-63.537500 642.999500
+
+-74.720100 652.657200
+
+-97.593600 673.497500
+
+-108.776200 683.663500
+
+-108.776200 683.663500
+
+-119.958800 693.829500
+
+-130.633100 704.503800
+
+-141.815700 714.669800
+
+-152.998300 724.835800
+
+-163.672600 735.510100
+
+-163.672600 735.510100
+
+-174.855200 745.676100
+
+-196.712100 766.516400
+
+-208.911300 776.682400
+
+-208.911300 776.682400
+
+StallRecover: done
+-219.585600 786.848400
+
+-228.735000 795.997800
+
+-240.934200 805.655500
+
+-242.967400 807.688700
+
+-242.967400 807.688700
+
+-243.984000 807.688700
+
+-242.459100 807.180400
+
+-237.376100 805.147200
+
+-230.259900 801.080800
+
+-230.259900 801.080800
+
+-207.386400 790.406500
+
+-192.137400 784.306900
+
+-173.330300 777.190700
+
+-173.330300 777.190700
+
+-152.490000 769.057900
+
+-127.075000 761.433400
+
+-100.135100 752.284000
+
+-70.145400 743.134600
+
+-70.145400 743.134600
+
+-1.016600 724.327500
+
+37.614200 714.161500
+
+76.753300 704.503800
+
+116.909000 695.354400
+
+116.909000 695.354400
+
+195.695500 678.072200
+
+234.834600 669.431100
+
+274.990300 661.298300
+
+313.621100 654.182100
+
+range < stop left move Warning: Task 'Packet Handler' took 497 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 497 ms, (100 ms normal 250 ms warning)
+512.874700 618.092800
+
+range < stop left move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+711.620000 585.053300
+
+range < stop left move Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+991.693300 542.356100
+
+range < stop left move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+1231.610900 507.283400
+
+range < stop left move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+1550.823300 459.503200
+
+range < stop left move Warning: Task 'Packet Handler' took 578 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+1790.740900 424.430500
+
+range < stop left move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+2070.814200 382.241600
+
+range < stop left move Warning: Task 'Packet Handler' took 579 ms to run (longer than the 250 warning time)
+Warning: ArRobot sync tasks too long at 579 ms, (100 ms normal 250 ms warning)
+2310.731800 348.185500
+
+2390.534900 337.002900
+
+2430.690600 331.411600
+
+2470.846300 326.328600
+
+2510.493700 321.245600
+
+2550.649400 316.162600
+
+2590.805100 310.063000
+
+2630.960800 305.488300
+
+2670.608200 300.405300
+
+2670.608200 300.405300
+
+2750.919600 289.222700
+
+2791.583600 284.139700
+
+2831.739300 279.056700
+
+2871.895000 274.482000
+
+2911.542400 268.382400
+
+2951.698100 263.299400
+
+3031.501200 253.133400
+
+3071.656900 248.050400
+
+3111.812600 242.459100
+
+3111.812600 242.459100
+
+3151.968300 237.376100
+
+3191.615700 232.293100
+
+3231.771400 227.210100
+
+3311.574500 216.027500
+
+3311.574500 216.027500
+
+3351.730200 211.452800
+
+3431.533300 200.270200
+
+3472.705600 195.187200
+
+3512.861300 190.104200
+
+3552.508700 185.021200
+
+3592.664400 179.429900
+
+3672.975800 169.263900
+
+3712.623200 164.180900
+
+3752.778900 159.097900
+
+3752.778900 159.097900
+
+3792.934600 153.506600
+
+3832.582000 148.423600
+
+3872.737700 143.340600
+
+3952.540800 132.158000
+
+3992.696500 127.075000
+
+4032.852200 122.500300
+
+4072.499600 117.417300
+
+4112.655300 111.317700
+
+4153.827600 106.234700
+
+4153.827600 106.234700
+
+4193.983300 101.151700
+
+4233.630700 96.068700
+
+4273.786400 91.494000
+
+4313.942100 85.394400
+
+4353.589500 80.311400
+
+4393.745200 75.228400
+
+4433.900900 70.145400
+
+4433.900900 70.145400
+
+4513.704000 59.471100
+
+4553.859700 54.388100
+
+4593.507100 49.305100
+
+4633.662800 43.205500
+
+4633.662800 43.205500
+
+4710.924400 33.039500
+
+4746.505400 29.481400
+
+4779.544900 24.398400
+
+4808.518000 21.348600
+
+4836.982800 17.282200
+
+4836.982800 17.282200
+
+4836.982800 17.282200
+
+4888.829400 11.182600
+
+4911.702900 8.132800
+
+4948.808800 3.049800
+
+4948.808800 3.049800
+
+4962.532900 2.033200
+
+4973.715500 1.016600
+
+4981.848300 -0.000000
+
+4987.947900 -0.508300
+
+4987.947900 -0.508300
+
+4989.981100 -0.508300
+
+4989.981100 -0.508300
+
+Disconnecting from robot.

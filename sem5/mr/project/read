@@ -1,0 +1,716 @@
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot1
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+r = 0.00,rdirectMotionExample: Finished distance
+Movement Done
+r = 0.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+directMotionExample: Finished distance
+Movement Done
+r = 0.00,rThe robot is already running, cannot run it again.
+directMotionExample: Finished turn
+Movement Done
+Connecting to simulator through tcp.
+
+Syncing 0
+Syncing 1
+Syncing 2
+Connected to robot.
+Name: MobileSim
+Type: Pioneer
+Subtype: amigo
+Loaded robot parameters from amigo.p
+Connected to Robot2
+r = 0.00,rdirectMotionExample: Distance timed out
+Movement Done
+bc2 command executed
+bc2 command executed
+bc2 command executed
+bc2 command executed
+bc2 command executed
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4705.333008, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(7616.875488, -2000.000000)
+
+updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+Setting vl=236.97 mm/sec, vr=154.42 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+ArTcpConnection::write: Write failed, closing connection.
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4702.283203, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8006.741699, -2000.000000)
+
+omnicx = 58.708572, omnicy = 287.618408
+x = 0updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.79 mm/sec, vr=154.70 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4678.393066, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8030.631836, -2000.000000)
+
+omnicx = 117.431526, omnicy = 275.305237
+x = 1updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.61 mm/sec, vr=154.98 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4647.386719, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8060.621582, -2000.000000)
+
+omnicx = 176.168869, omnicy = 263.060913
+x = 2updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.42 mm/sec, vr=155.26 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4617.396973, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8091.627930, -2000.000000)
+
+omnicx = 234.920624, omnicy = 250.885925
+x = 3updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.24 mm/sec, vr=155.54 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4587.407715, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8121.617188, -2000.000000)
+
+omnicx = 293.686798, omnicy = 238.780762
+x = 4updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.05 mm/sec, vr=155.82 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4556.401367, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8151.606934, -2000.000000)
+
+omnicx = 352.467407, omnicy = 226.745880
+x = 5updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=235.86 mm/sec, vr=156.10 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4526.411621, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8182.613281, -2000.000000)
+
+omnicx = 411.262482, omnicy = 214.781799
+x = 6updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=235.67 mm/sec, vr=156.39 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4496.421875, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8212.603516, -2000.000000)
+
+omnicx = 470.072021, omnicy = 202.889023
+x = 7updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=238.18 mm/sec, vr=152.54 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4465.415527, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8242.592773, -2000.000000)
+
+omnicx = 528.680786, omnicy = 190.043259
+x = 8updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.98 mm/sec, vr=152.87 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4435.425781, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8273.598633, -2000.000000)
+
+omnicx = 587.306824, omnicy = 177.276718
+x = 9updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.77 mm/sec, vr=153.19 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4405.436035, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8303.588867, -2000.000000)
+
+omnicx = 645.950195, omnicy = 164.589935
+x = 10updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.56 mm/sec, vr=153.51 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4375.446289, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8333.578125, -2000.000000)
+
+omnicx = 704.610901, omnicy = 151.983505
+x = 11updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.35 mm/sec, vr=153.84 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+Aria: Received signal 'SIGINT'. Exiting.
+Disconnecting from robot.
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4344.439941, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 763.288940, omnicy = 139.458038
+x = 12updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.13 mm/sec, vr=154.17 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4314.450195, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 821.984314, omnicy = 127.014145
+x = 13updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.91 mm/sec, vr=154.50 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+ArTcpConnection::write: Write failed, closing connection.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4284.460938, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 880.697083, omnicy = 114.652412
+x = 14updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.70 mm/sec, vr=154.84 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 939.427185, omnicy = 102.373474
+x = 15updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.48 mm/sec, vr=155.17 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+Disconnecting from robot.
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 998.174683, omnicy = 90.177948
+x = 16updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=236.25 mm/sec, vr=155.51 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 1056.939575, omnicy = 78.066475
+x = 17updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=238.71 mm/sec, vr=151.71 mm/sec
+The robot is already running, cannot run it again.
+ArTcpConnection::write: Write failed, closing connection.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 1115.503052, omnicy = 65.015663
+x = 18updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=238.47 mm/sec, vr=152.09 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+Disconnecting from robot.
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 1174.087036, omnicy = 52.057526
+x = 19updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=238.23 mm/sec, vr=152.47 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 1232.691650, omnicy = 39.192791
+x = 20updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.99 mm/sec, vr=152.85 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+bot_number = 0,robot angle=0.000000, robot pose=(0.000000, 0.000000)
+
+bot_number = 1,robot angle=-179.914363, robot pose=(4253.454590, 593.520508)
+
+bot_number = 2,robot angle=0.000000, robot pose=(8353.910156, -2000.000000)
+
+omnicx = 1291.316772, omnicy = 26.422192
+x = 21updating
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+angleupdate
+enterdiff 1
+enterdiff 2
+fuckdiff
+The robot is already running, cannot run it again.
+Setting vl=237.74 mm/sec, vr=153.23 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
+The robot is already running, cannot run it again.
+Setting vl=100.00 mm/sec, vr=100.00 mm/sec
