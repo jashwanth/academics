@@ -1,0 +1,12 @@
+close all;
+clc;
+clear all;
+Ts = 0.01;
+t = 0.01:0.01:100;
+x = cos(2*pi*t);
+figure(1);
+plot(t,x);
+f = 1./t;
+y = fft(x);
+figure(2);
+plot(f,y);

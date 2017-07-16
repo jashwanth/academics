@@ -1,0 +1,4 @@
+set(vid,'ReturnedColorSpace','rgb')
+vid = videoinput('winvideo', 1);
+set(vid,'ReturnedColorSpace','rgb')
+preview(vid)

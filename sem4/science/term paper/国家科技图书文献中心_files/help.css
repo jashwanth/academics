@@ -1,0 +1,54 @@
+/* nstl-helpCSS lime */
+@import url("head.css");
+@import url("foot.css");
+@import url("common.css");
+/**login**/
+#login{
+height:36px;
+background-image:url(../images/login_bg.gif);
+width:958px;
+border-left:#98C7DB 1px solid;
+border-right:#98C7DB 1px solid;
+border-bottom:#98C7DB 1px solid;
+}
+/**frame**/
+.fl{
+width:232px;
+float:left;
+}
+.fr{
+width:662px;
+float:right;
+margin-left:18px;
+}
+
+/**helpleft**/
+.helplefttop{
+background-image:url(../images/help.gif);
+height:85px;
+}
+.helpleftbom{
+border-bottom:1px #5A8BAE solid;
+border-right:1px #5A8BAE solid;
+border-left:1px #5A8BAE solid;
+padding:5px;
+}
+.helpleftbtn{
+background-image:url(../images/helpbtn.gif);
+width:190px;
+height:21px;
+color:#000;
+font-size:12px;
+padding-left:22px;
+text-align:left;
+padding-top:8px;
+margin-top:3px;
+}
+.helpleftbtn a{
+color:#000;
+text-decoration:none;
+}
+.helpleftbtn a:hover{
+color:red;
+text-decoration:none;
+}

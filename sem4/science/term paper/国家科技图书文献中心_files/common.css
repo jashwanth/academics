@@ -1,0 +1,253 @@
+/* nstl-indexCSS lime */
+/**common**/
+body{
+background-image:url(../images/bg.gif);
+padding:0px;
+text-align:center;
+margin:0 auto;
+}
+#head,#nav,#topnav,#logo,#nav,#banner,#bomnav,#copyright,#main,#login{
+margin:0 auto;
+}
+/**
+a:link{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+a:visited{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+a:hover{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+a:active{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+**/
+form{
+margin:0px;
+}
+.tab{
+width:960px;
+}
+font{
+font-size:12px;
+}
+table td{
+font-size:12px;
+}
+.box{
+font-size:8px;
+height:8px;
+clear:both;
+}
+img{
+border:0px;
+}
+span.red{
+color:red;
+}
+span.bold{
+font-weight:bold;
+}
+input.rcommon{
+border:1px #98C7DB solid;
+}
+/**main**/
+#main{
+border-left:#98C7DB 1px solid;
+border-right:#98C7DB 1px solid;
+background-color:#FFFFFF;
+padding-left:11px;
+padding-right:11px;
+padding-top:15px;
+padding-bottom:15px; 
+width:918px;
+min-height:635px;
+height:auto;/*IE7*/
+_height:635px;/*IE6*/
+display:table;/*firefox,opera*/
+
+}
+/**login**/
+.login{
+height:36px;
+width:918px;
+padding-bottom:7px;
+}
+.loginl{
+width:694px;
+float:left;
+padding-top:3px;
+}
+.loginl1{
+width:50px;
+float:left;
+}
+.loginl2{
+width:80px;
+float:left;
+font-size:14px;
+font-weight:bold;
+padding-top:10px;
+}
+.loginl3{
+width:50px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:12px;
+}
+.loginl4{
+width:100px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:5px;
+}
+.loginl4 input{
+border:1px #98C7DB solid;
+height:20px;
+}
+.loginl5{
+width:50px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:12px;
+}
+.loginl6{
+width:100px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:5px;
+}
+.loginl6 input{
+border:1px #98C7DB solid;
+height:20px;
+}
+.loginl7{
+width:80px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:5px;
+}
+.loginl7 div{
+background-image:url(../images/btn_bg.gif);
+width:55px;
+height:18px;
+text-align:center;
+color:#fff;
+padding-top:6px;
+}
+.loginl8{
+width:180px;
+float:left;
+text-align:left;
+font-size:12px;
+padding-top:12px;
+color:#0065B5;
+}
+.loginl8 a{
+color:#0065B5;
+text-decoration:underline;
+}
+.loginl8 a:hover{
+color:#0065B5;
+text-decoration:underline;
+}
+.loginr{
+width:224px;
+float:right;
+padding-top:6px;
+}
+/**newslist新闻列表**/
+.newslist{
+list-style-type:none;
+text-align:left;
+padding-top:10px;
+margin:0px;
+}
+.newslist ul{
+padding:0px;
+margin:0px;
+}
+.newslist li{
+list-style-type:none;
+height:18px;
+font-size:12px;
+COLOR: #00659F;
+text-align:left;
+clear:both;
+padding-left:6px;
+}
+.newslist li A:link{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+.newslist li A:visited{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+.newslist li A:hover{font-size:12px;COLOR: #666666;TEXT-DECORATION: none;}
+.newslist li A:active{font-size:12px;COLOR: #00659F;TEXT-DECORATION: none;}
+
+.upbtn{
+background-image:url(../images/btn_bg.gif);
+width:55px;
+height:18px;
+text-align:center;
+color:#fff;
+padding-top:6px;
+}
+.upbtn a{
+color:#fff;
+text-decoration:none;
+}
+.upbtn a:hover{
+color:#fff;
+text-decoration:none;
+}
+/**sitearea**/
+.sitearea{
+border-bottom:1px #D9D9D9 dotted;
+background-image:url(../images/piont_7.gif);
+background-repeat:no-repeat;
+height:27px;
+font-size:12px;
+text-align:left;
+padding-left:25px;
+}
+/**txt**/
+.txtmain{
+font-size:14px;
+line-height:180%;
+padding:10px 10px;
+min-height:550px;
+height:auto;/*IE7*/
+_height:550px;/*IE6*/
+display:table;/*firefox,opera*/
+text-align:left;
+}
+.txtmain span.font12{
+font-size:12px;
+}
+.txtmain a{
+color:#0065B6;
+text-decoration:underline;
+}
+.txtmain a:hover{
+color:red;
+text-decoration:underline;
+}
+.txtmain table{
+border:1px #ccc solid;
+}
+/**txttit**/
+.txttit{
+height:46px;
+border-bottom:1px #D9D9D9 solid;
+
+background-image:url(../images/s3titbg.gif);
+background-repeat:no-repeat;
+background-position:right;
+text-align:right;
+}
+.txttit div{
+background-image:url(../images/s1titpiont.gif);
+float:left;
+font-size:14px;
+font-weight:bold;
+color:#000000;
+background-repeat:no-repeat;
+background-position:0px 15px;
+padding-top:15px;
+padding-left:30px;
+}

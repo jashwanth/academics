@@ -1,0 +1,79 @@
+                       Assignment-2
+
+My assignment is about communication systems.
+1)Input signal:
+  This can be of the text,audio,stationary or moving image.
+2)Directionality
+ Two way system is one which receives and transmits signal.
+ One way signal is one which either receives or transmits signals.
+3)Timing :
+  This is about timing of signals or concurrence or coincidence of receiving and transmitting signals.
+  This may include face to face interaction,radio,TV etc..
+  whereas email or SMS or MMS are non-simulataneous meaning  message creation and presentation processes 
+  are separate and that the message was made available in some storage medium. 
+4)Transmission mode:
+  This implies communication can be wired or wireless.
+  Many CITs use combinations of both wired and wireless, including broadcast and cable television, radio 
+  and cordless and cellular telephones.
+  Fibre optic – data transferred through pulses of light. Extremely fast
+5)Analog discrete/digital signal:
+  Digital data are easy to process and access.So in many stages analog data are converted to digital mode
+  and vice-versa.
+6)Number of Access points:
+  Communication mode may be one-one or one-many or many-one.
+  So the access points differ in various communication modes.
+  For example, it is now possible to hold audio conference calls among hundreds of people. 
+  Yet experience indicates that conference calls with more than eight to ten people generate confusion over 
+  turn-taking, and larger conference calls prove quite unwieldy for group discussion.
+7)Types of connection:
+  There are three basic types of connections: switched, networked, and broadcast.
+  Switched:
+  In chat box both sender and receiver should be online to communicate with each other.
+  Networked:
+  e-mail, pass information from one node in a network to another, but the sender and receiver’s terminal 
+  devices are typically never connected to each other.
+  Broadcasting:
+  Broadcaster simply broadcasts the signal to be received and receiver receives only if it is switched 
+  on(Ex: T.V).
+8)Bandwidth:
+  Electromagnetic spectrum is appropriately divided by the government and sold to companies.The share 
+  may vary from few Kilohz to Megahzs.
+  Narrowband spectrum is allocated for telephone calls and  broadband refers to cable television conduit.
+9)Storage:
+  This also has been important attribute of communication and information technologies.
+  content in the storage may be  Preserved ,Retrieved,Searched or Modified.
+10)User interface:
+   User interface design or user interface engineering is the design of computers, appliances, machines, 
+   mobile communication devices, software applications, and websites with the focus on the user's experience 
+   and interaction. The goal of user interface design is to make the user's interaction as simple and efficient 
+   as possible, in terms of accomplishing user goals—what is often called user-centered design.
+
+Some non-functional attributes of the communication systems are
+1)Protocols:
+  A protocol is a set of rules which governs the transfer of data between sender and receiver.
+  This determines the security of network system.
+  Examples of protocols are: token ring, CSMA/CD(Carrier Sense Multiple Access/Collision Detection), X.25, TCP/IP
+2)Error checking:
+  In information theory and coding theory with applications in computer science and telecommunication, 
+  error detection and correction or error control are techniques that enable reliable delivery of digital 
+  data over unreliable communication channels. Many communication channels are subject to channel noise, 
+  and thus errors may be introduced during transmission from the source to a receiver. Error detection 
+  techniques allow detecting such errors, while error correction enables reconstruction of the original data.
+3)Transmission speed:
+  This depends on Bandwidth:The amount of data which can be transmitted on a medium over a fixed amount of 
+  time (second). It is measured on Bits per Second or Baud rate.
+  Bits per second: A measure of transmission speed. The number of bits (0 0r 1) which can be transmitted in a second
+  Baud rate:: Is a measure of how fast a change of state occurs (i.e. a change from 0 to 1).
+  
+Characteristics of communication systems:
+A communication system has 5 main components. All of which function together to create a helpful and create an 
+operational system that properly communicates. 
+A Data Source: This where the data is originally made or sent from. An example of this could be a networked computer. 
+The Data Source then sends the data to the Transmitter: This is where the data is encoded into a form useful for the 
+transmission medium to send. 
+The Transmitter sends the data along the Transmission Medium to a 
+Receiver: There the data will be decoded from the form that it was sent in. This will enable the Destination to read 
+the data in the correct format. 
+The Destination: This is where the data finally completes it's trip and arrives. The destination is simply the place 
+where the data was directed to at the start of the Communication System.
+   

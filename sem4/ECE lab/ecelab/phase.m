@@ -1,0 +1,21 @@
+close all;
+clear all;
+x = zeros(1,15);
+z = ones(1,5);
+for j = 6:10 
+    x(1,j) = z(1,j - 5);
+end;
+figure(1);
+plot(x);
+y = fft(x);
+figure(2);
+plot(abs(y));
+p = angle(y);
+m = abs(y);
+f = p + rand(size(p));
+s = m.*exp(i*f);
+figure(3);
+plot(abs(s));
+u = ifft(s);
+figure(4);
+plot(abs(u));

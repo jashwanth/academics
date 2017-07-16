@@ -1,0 +1,58 @@
+% amplitude distortion
+a = ones(1,10);
+b = zeros(1,10);
+c = [ a b a b];
+subplot(2,4,1);
+plot(c);
+ylabel('original signal');
+Aspectrum = abs(fft(c));
+subplot(2,4,2);
+plot(Aspectrum);
+ylabel('amplitude spectrum of undistorted signal');
+r = rand(size(Aspectrum));
+Aspectrum = Aspectrum.*r;
+subplot(2,4,3);
+plot(Aspectrum);
+ylabel('amplitude spectrum of distorted signal');
+d = ifft(Aspectrum);
+subplot(2,4,4);
+plot(d);
+ylabel('distorted signal');
+%phase distortion
+Phasespectrum = phase(fft(c));
+subplot(2,4,5);
+plot(Phasespectrum);
+ylabel('phase spectrum of undistorted signal');
+r2 = rand(size(Phasespectrum));
+Phasespectrum = Phasespectrum.*r2;
+subplot(2,4,6);
+plot(Phasespectrum);
+ylabel('phase spectrum distorted signal');
+%bandlimited channel channel distortion
+fftx = (fft(c,1024));
+ffta = fftshift(fftx);
+subplot(2,4,7);
+plot(c);
+subplot(2,4,8);
+
+%figure(2);
+%ffta(1:400) = 0;
+%ffta(700:1000)=0;
+%plot(ffta);
+ 
+ 
+%Distortion caused by band limited channel (ISI)
+a=zeros(1,10);
+b=ones(1,10);
+x=[a b a];
+figure(2);
+subplot(3,1,1);
+plot(x);
+fftx=fft(x,1024);
+temp=fftshift(fftx);
+temp(1:400)=0;
+temp(600:1000)=0;
+subplot(3,1,2);
+plot(abs(temp));
+subplot(3,1,3);
+plot(abs(ifft(temp))),axis([0 60 0 1.5]) ;

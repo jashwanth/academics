@@ -1,0 +1,30 @@
+ 
+Matlab Program:
+%to verify sampling theoreom%critical sampling
+f=1400;
+t=0:1/f:13/f;
+x=cos(2*pi*400*t)+cos(2*pi*700*t);
+Xm=abs(fft(x));n=0:length(x)-1;
+figure(1)
+stem(100*n,Xm),grid,zoom;
+xlabel('frequency'); 
+ylabel('magnitude');
+title('criticle sampling');
+%under samplingf=700;
+t=0:1/f:6/f;
+x=cos(2*pi*400*t)+cos(2*pi*700*t);
+Xm=abs(fft(x));k=0:length(x)-1;
+figure(2)stem(100*k,Xm),grid,zoom;
+xlabel('frequency'); 
+ylabel('magnitude');
+title('under sampling');
+%over samplingf=2000;
+t=0:1/f:27/f;
+x=cos(2*pi*400*t)+cos(2*pi*700*t);
+Xm=abs(fft(x));k=0:length(x)-1;
+figure(3)stem(100*k,Xm),grid,zoom;
+xlabel('frequency'); 
+ylabel('magnitude');
+title('over sampling');
+
+http://www.scribd.com/doc/30060414/Matlab-Practicals-NSIT

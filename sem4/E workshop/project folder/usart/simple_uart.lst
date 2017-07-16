@@ -1,0 +1,158 @@
+   1               		.file	"simple_uart.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	uart0_init
+  18               	uart0_init:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 86E8      		ldi r24,lo8(-122)
+  25 0002 80BD      		out 64-32,r24
+  26               	.LM3:
+  27 0004 8FE2      		ldi r24,lo8(47)
+  28 0006 89B9      		out 41-32,r24
+  29               	.LM4:
+  30 0008 10BC      		out 64-32,__zero_reg__
+  31               	.LM5:
+  32 000a 88E1      		ldi r24,lo8(24)
+  33 000c 8AB9      		out 42-32,r24
+  34               	/* epilogue start */
+  35               	.LM6:
+  36 000e 0895      		ret
+  37               	.LFE6:
+  39               	.global	uart_transmit
+  41               	uart_transmit:
+  42               	.LFB7:
+  43               	.LM7:
+  44               	/* prologue: function */
+  45               	/* frame size = 0 */
+  46               	.LVL0:
+  47               	.L4:
+  48               	.LM8:
+  49 0010 5D9B      		sbis 43-32,5
+  50 0012 00C0      		rjmp .L4
+  51               	.LM9:
+  52 0014 8CB9      		out 44-32,r24
+  53               	/* epilogue start */
+  54               	.LM10:
+  55 0016 0895      		ret
+  56               	.LFE7:
+  58               	.global	show_terminal
+  60               	show_terminal:
+  61               	.LFB8:
+  62               	.LM11:
+  63 0018 DF93      		push r29
+  64 001a CF93      		push r28
+  65 001c 00D0      		rcall .
+  66 001e 00D0      		rcall .
+  67 0020 0F92      		push __tmp_reg__
+  68 0022 CDB7      		in r28,__SP_L__
+  69 0024 DEB7      		in r29,__SP_H__
+  70               	/* prologue: function */
+  71               	/* frame size = 5 */
+  72               	.LM12:
+  73 0026 DE01      		movw r26,r28
+  74 0028 1196      		adiw r26,1
+  75 002a E0E0      		ldi r30,lo8(C.0.1266)
+  76 002c F0E0      		ldi r31,hi8(C.0.1266)
+  77 002e 85E0      		ldi r24,lo8(5)
+  78               	.L8:
+  79 0030 0190      		ld r0,Z+
+  80 0032 0D92      		st X+,r0
+  81 0034 8150      		subi r24,lo8(-(-1))
+  82 0036 01F4      		brne .L8
+  83               	.LBB6:
+  84               	.LBB7:
+  85               	.LM13:
+  86 0038 86E8      		ldi r24,lo8(-122)
+  87 003a 80BD      		out 64-32,r24
+  88               	.LM14:
+  89 003c 8FE2      		ldi r24,lo8(47)
+  90 003e 89B9      		out 41-32,r24
+  91               	.LM15:
+  92 0040 10BC      		out 64-32,__zero_reg__
+  93               	.LM16:
+  94 0042 88E1      		ldi r24,lo8(24)
+  95 0044 8AB9      		out 42-32,r24
+  96 0046 FE01      		movw r30,r28
+  97 0048 3196      		adiw r30,1
+  98               	.LBE7:
+  99               	.LBE6:
+ 100               	.LM17:
+ 101 004a 9E01      		movw r18,r28
+ 102 004c 295F      		subi r18,lo8(-(7))
+ 103 004e 3F4F      		sbci r19,hi8(-(7))
+ 104               	.L10:
+ 105               	.LM18:
+ 106 0050 8081      		ld r24,Z
+ 107               	.L9:
+ 108               	.LBB8:
+ 109               	.LBB9:
+ 110               	.LM19:
+ 111 0052 5D9B      		sbis 43-32,5
+ 112 0054 00C0      		rjmp .L9
+ 113               	.LM20:
+ 114 0056 8CB9      		out 44-32,r24
+ 115 0058 3196      		adiw r30,1
+ 116               	.LBE9:
+ 117               	.LBE8:
+ 118               	.LM21:
+ 119 005a E217      		cp r30,r18
+ 120 005c F307      		cpc r31,r19
+ 121 005e 01F4      		brne .L10
+ 122               	/* epilogue start */
+ 123               	.LM22:
+ 124 0060 0F90      		pop __tmp_reg__
+ 125 0062 0F90      		pop __tmp_reg__
+ 126 0064 0F90      		pop __tmp_reg__
+ 127 0066 0F90      		pop __tmp_reg__
+ 128 0068 0F90      		pop __tmp_reg__
+ 129 006a CF91      		pop r28
+ 130 006c DF91      		pop r29
+ 131 006e 0895      		ret
+ 132               	.LFE8:
+ 134               	.global	main
+ 136               	main:
+ 137               	.LFB9:
+ 138               	.LM23:
+ 139               	/* prologue: function */
+ 140               	/* frame size = 0 */
+ 141               	.LM24:
+ 142 0070 0E94 0000 		call show_terminal
+ 143               	.LM25:
+ 144 0074 80E0      		ldi r24,lo8(0)
+ 145 0076 90E0      		ldi r25,hi8(0)
+ 146               	/* epilogue start */
+ 147 0078 0895      		ret
+ 148               	.LFE9:
+ 150               		.data
+ 153               	C.0.1266:
+ 154 0000 61        		.byte	97
+ 155 0001 62        		.byte	98
+ 156 0002 63        		.byte	99
+ 157 0003 64        		.byte	100
+ 158 0004 65        		.byte	101
+ 207               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 simple_uart.c
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:2      *ABS*:0000003f __SREG__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:5      *ABS*:00000034 __CCP__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:18     .text:00000000 uart0_init
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:41     .text:00000010 uart_transmit
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:60     .text:00000018 show_terminal
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:153    .data:00000000 C.0.1266
+C:\Users\JASHWA~1\AppData\Local\Temp/cc9ZlcRA.s:136    .text:00000070 main
+
+UNDEFINED SYMBOLS
+__do_copy_data

@@ -1,0 +1,165 @@
+@charset "gb2312";
+/*nstl-site css*/
+/*main layout*/
+body
+   {margin:0;padding:0;font-size:12px;}
+img
+   {border:0}
+table
+   {font-size:9pt;color:#000;}
+   /*hit*/
+a{color:blue;text-decoration:underline;}
+a:hover{color:blue;text-decoration:underline;}
+/*other layout*/
+table.all
+        {width:100%;height:100%;}
+table.nei
+        {width:778px;border:1px #6191AB solid;padding:1px;}
+table.nav
+        {width:100%;height:28px;}
+table.left
+        {width:175px;border:1px #567796 solid;border-bottom:0px;}
+table.content
+        {width:100%;margin-top:2px;}
+/*top*/
+.toptd{width:87px;}
+.toptd a{color:#fff;text-decoration:none;}
+.toptd a:hover{color:#ffcc00;text-decoration:none;}
+/*left*/
+.tdspace
+       {margin-top:2px;}
+.ban
+     {letter-spacing:2px;margin-top:2px;padding-top:4px;width:173px;height:21;background-image:url(../img/ban-bg.jpg);color:#fff;padding-left:6px;}
+.btn{padding-top:3px;width:41px;height:20px;background-image:url(../img/login-btnbg.jpg);color:#fff;text-align:center;}
+.btn a{color:#fff;text-decoration:none;}
+.btn a:hover{color:#fff;text-decoration:underline;}
+.forget{font-size:12px;}
+.forget a{color:#000;text-decoration:none;}
+.forget a:hover{color:#B37D84;text-decoration:underline;}
+.news{width:100%;margin-top:2px;}
+.news td{height:17px;}
+.news a{color:#000;font-size:12px;text-decoration:none;}
+.news a:hover{color:#FF9900;font-size:12px;text-decoration:underline;}
+.more{color:#666;height:18px;}
+.more a{color:#666;text-decoration:none;}
+.more a:hover{color:#FF9900;text-decoration:underline;}
+/*center content*/
+.cban
+     {width:139px;margin:2px;}
+.cbantop
+     {width:139px;height:21px;background-image:url(../img/cban-top.jpg);color:#fff;text-align:center;padding-top:5px;}
+.cbancenter
+           {text-align:center;line-height:18px;}
+.cbancenter a{color:#000;text-decoration:none;}
+.cbancenter a:hover{color:#FF9900;text-decoration:underline;}
+/*link*/
+.link
+    {width:586px;margin-top:2px;}
+.link td
+     {font-size:12px;color:#fff;height:35px;}
+/*bomnav*/
+.bomnav
+       {margin-top:0px;width:100%;height:20px;color:#000;text-align:center;background-image:url(../img/bom-navbg.jpg);}
+.bomnav a{color:#000;text-decoration:none;}
+.bomnav a:hover{color:#5F83A4;text-decoration:none;}
+/*copyright*/
+.copyright
+       {line-height:20px;width:100%;height:62px;background-image:url(../img/bom-bg.jpg);color:#fff;text-align:center;}
+/*input*/
+input.find{border:1px #666666 solid;color:#333333;height:20px;}
+
+/*二级页面*/
+/*左侧*/
+.leftban
+       {width:100%;letter-spacing:2px;padding-top:4px;height:21;background-image:url(../img/left-bg2.gif);color:#fff;padding-left:6px;}
+.dateintro
+          {width:100%;padding:4px;font-size:12px;color:#000;line-height:18px;}
+.cnav 
+     {padding-left:4px;color:#004265;background-image:url(../img/nav-bg.gif);height:23px;border-bottom:1px #57859D solid;}
+.ccont
+      {padding-left:8px;height:32px;color:#887B07;font-weight:bold;}
+.cleft
+       {width:20%;padding-left:6px;border-top:#efefef 1px solid;border-bottom:#efefef 1px solid;font-weight:bold;height:18px;}
+.cright
+        {border:#efefef 1px solid;margin-top:2px; }
+.cright td 
+        {height:24px;}
+.cright a
+        {color:#000000;text-decoration:none;}
+.cright a:hover
+         {color:#ffcc00;text-decoration:underline;}
+.crightnav
+         {width:100%;}
+.crightnav a
+          {color:#000000;text-decoration:none;}
+.crightnav a:hover
+             {color:#8C6300;text-decoration:underline;}
+input.crightbtn
+              {height:22px;border:#8FB0C9 1px solid;color:#000;background-image:url(../img/crightbtn.gif);}
+.clefttop
+             {width:100%;height:47px;background-image:url(../img/left-topbg.jpg);text-align:center;padding:6px;}
+.clefttopbtn
+          {text-align:center;font-size:12px;color:#fff;FILTER: progid:DXImageTransform.Microsoft.Glow(color=7E7705,strength=2);}
+.clefttop2
+           {width:100%;padding:6px;}
+.clefttop2btnlist
+             {margin-top:2px;}
+.clefttop2btn
+              {text-align:center;font-size:12px;color:#fff;FILTER: progid:DXImageTransform.Microsoft.Glow(color=446A81,strength=2);}
+.clefttop2btn a
+                {color:#fff;text-decoration:none;}
+.clefttop2btn a:hover
+                {color:#FDFBDF;text-decoration:underline;}
+.ccon
+                 {width:549px;padding:8px;font-size:12px;line-height:24px;border:1px #A0BDCD solid;border-bottom:0px;text-indent:24px;}
+.ccon a
+           {color:#065B8A;font-weight:bold;text-decoration:none;font-size:14px;}
+.ccon a:hover
+            {color:#FF9900;text-decoration:underline;}
+.conlist
+           {width:100%;}
+.conlist td
+          {height:18px;}
+.conlist a
+           {color:#065B8A;text-decoration:none;font-weight:normal;font-size:12px;}
+.conlist a:hover
+             {color:#FF9900;text-decoration:none;}
+.conlisttop
+          {background-color:#A0BDCD;height:18px;text-align:center;}
+.conlisttd1
+            {background-color:#F1FAFF;height:18px;padding:2px;}
+.conlisttd2
+           {background-color:#fff;height:18px;padding:2px;}
+/*分页*/
+.classpage 
+          {font-size:12px;text-align:right;color:#4181A0;width:100%;border:1px #efefef solid;padding:2px;height:18px;}
+.classpage a
+           {color:#4181A0;text-decoration:none;font-size:12px;font-weight:normal;}
+.classpage a:hover
+          {color:#000;text-decoration:underline;}
+/*站点地图*/
+.map
+    {width:100%;}
+.map a
+       {color:#666666;text-decoration:none;font-size:12px;font-weight:normal;padding-left:3px;line-height:18px;}
+.map a:hover
+         {color:#ffcc00;text-decoration:none;}
+.maptit
+     {font-weight:bold;}
+/*预印本服务*/
+.enav{width:99%;border:1px #57859D solid;border-top:0px;padding:3px;color:#336784;}
+.enav a{color:#336784;text-decoration:none;}
+.enav a:hover{color:#ffcc00;text-decoration:underline;}
+.ebtn
+     {
+	  color:#336784; 
+	  width:100%;
+	  border:#336784 1px solid;
+	  height:20px;color:#336784;
+	  padding-left:3px;
+	  background-image:url(../img/piont-3.gif);
+	  background-repeat:no-repeat;
+	  background-position:90%;
+	  }
+.ebtn a{color:#336784;text-decoration:none;}
+.ebtn a:hover{color:#ffcc00;text-decoration:underline;}

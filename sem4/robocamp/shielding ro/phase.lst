@@ -1,0 +1,79 @@
+   1               		.file	"phase.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 80E2      		ldi r24,lo8(32)
+  25 0002 81BB      		out 49-32,r24
+  26               	.LBB4:
+  27               	.LBB5:
+  28               	.LM3:
+  29 0004 82E8      		ldi r24,lo8(-126)
+  30 0006 8FBD      		out 79-32,r24
+  31               	.LM4:
+  32 0008 8DE1      		ldi r24,lo8(29)
+  33 000a 8EBD      		out 78-32,r24
+  34               	.LM5:
+  35 000c 80EE      		ldi r24,lo8(12000)
+  36 000e 9EE2      		ldi r25,hi8(12000)
+  37 0010 97BD      		out (70)+1-32,r25
+  38 0012 86BD      		out 70-32,r24
+  39               	.LM6:
+  40 0014 80E7      		ldi r24,lo8(6000)
+  41 0016 97E1      		ldi r25,hi8(6000)
+  42 0018 9BBD      		out (74)+1-32,r25
+  43 001a 8ABD      		out 74-32,r24
+  44               	.L2:
+  45 001c 00C0      		rjmp .L2
+  46               	.LBE5:
+  47               	.LBE4:
+  48               	.LFE2:
+  50               	.global	PWM_init
+  52               	PWM_init:
+  53               	.LFB3:
+  54               	.LM7:
+  55               	/* prologue: function */
+  56               	/* frame size = 0 */
+  57               	.LM8:
+  58 001e 82E8      		ldi r24,lo8(-126)
+  59 0020 8FBD      		out 79-32,r24
+  60               	.LM9:
+  61 0022 8DE1      		ldi r24,lo8(29)
+  62 0024 8EBD      		out 78-32,r24
+  63               	.LM10:
+  64 0026 80EE      		ldi r24,lo8(12000)
+  65 0028 9EE2      		ldi r25,hi8(12000)
+  66 002a 97BD      		out (70)+1-32,r25
+  67 002c 86BD      		out 70-32,r24
+  68               	.LM11:
+  69 002e 80E7      		ldi r24,lo8(6000)
+  70 0030 97E1      		ldi r25,hi8(6000)
+  71 0032 9BBD      		out (74)+1-32,r25
+  72 0034 8ABD      		out 74-32,r24
+  73               	/* epilogue start */
+  74               	.LM12:
+  75 0036 0895      		ret
+  76               	.LFE3:
+ 110               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 phase.c
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:2      *ABS*:0000003f __SREG__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:5      *ABS*:00000034 __CCP__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:18     .text:00000000 main
+C:\Users\JASHWA~1\AppData\Local\Temp/ccccEZZK.s:52     .text:0000001e PWM_init
+
+NO UNDEFINED SYMBOLS

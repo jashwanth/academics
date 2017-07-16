@@ -1,0 +1,3 @@
+% random process
+r = -pi + 2*pi*rand(100);
+n = 100;

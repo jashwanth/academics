@@ -1,0 +1,14 @@
+clear all;
+close all;
+t = 0.1:0.1:10;
+x = sin(t);
+m = max(abs(x));
+y = x + m;
+z = round(y);
+i = 8;
+c = ((i-1).*y)./(2.*m);
+w = round(c);
+a_quant = (2.*w.*m)./(i-1) - m;
+e = x - a_quant;
+figure(1);
+plot(t,a_quant);
