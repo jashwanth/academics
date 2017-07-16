@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 13.3 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Users\kanna\academic\Embeded\FPGA\softwares\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe
+-intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_display.twx led_display.ncd -o
+led_display.twr led_display.pcf -ucf led_display.ucf
+
+Design file:              led_display.ncd
+Physical constraint file: led_display.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2011-10-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |C<0>           |    7.504|
+A<0>           |C<1>           |    6.849|
+A<0>           |C<2>           |    6.974|
+A<0>           |C<3>           |    6.967|
+A<0>           |C<4>           |    6.787|
+A<0>           |C<5>           |    7.210|
+A<0>           |C<6>           |    6.068|
+A<1>           |C<0>           |    6.681|
+A<1>           |C<1>           |    7.947|
+A<1>           |C<2>           |    8.003|
+A<1>           |C<3>           |    7.734|
+A<1>           |C<4>           |    7.925|
+A<1>           |C<5>           |    6.329|
+A<1>           |C<6>           |    6.775|
+A<2>           |C<0>           |    7.156|
+A<2>           |C<1>           |    7.874|
+A<2>           |C<2>           |    7.852|
+A<2>           |C<3>           |    7.894|
+A<2>           |C<4>           |    7.817|
+A<2>           |C<5>           |    6.869|
+A<2>           |C<6>           |    6.930|
+A<3>           |C<0>           |    7.157|
+A<3>           |C<1>           |    8.548|
+A<3>           |C<2>           |    8.793|
+A<3>           |C<3>           |    8.076|
+A<3>           |C<4>           |    8.551|
+A<3>           |C<5>           |    6.832|
+A<3>           |C<6>           |    7.152|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Nov 19 17:03:10 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

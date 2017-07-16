@@ -1,0 +1,123 @@
+
+exp1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000a8  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  000000fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000001b  00000000  00000000  0000011c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00000080  00000000  00000000  00000137  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 0000004e  00000000  00000000  000001b7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   00000088  00000000  00000000  00000205  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000020  00000000  00000000  00000290  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    00000072  00000000  00000000  000002b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 52 00 	jmp	0xa4	; 0xa4 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+int main(void)
+{
+  unsigned int i=0;
+  while(1)
+  {
+    DDRA = 0b11111011;
+  6c:	3b ef       	ldi	r19, 0xFB	; 251
+	PORTA= 0b00000000;
+	for(i=0;i<4;i++)
+	{
+	  PORTA|=i;
+	  PORTA|=PINA2<<(3+i);
+  6e:	62 e0       	ldi	r22, 0x02	; 2
+  70:	70 e0       	ldi	r23, 0x00	; 0
+int main(void)
+{
+  unsigned int i=0;
+  while(1)
+  {
+    DDRA = 0b11111011;
+  72:	3a bb       	out	0x1a, r19	; 26
+	PORTA= 0b00000000;
+  74:	1b ba       	out	0x1b, r1	; 27
+  76:	43 e0       	ldi	r20, 0x03	; 3
+  78:	50 e0       	ldi	r21, 0x00	; 0
+	for(i=0;i<4;i++)
+	{
+	  PORTA|=i;
+  7a:	9b b3       	in	r25, 0x1b	; 27
+  7c:	84 2f       	mov	r24, r20
+  7e:	83 50       	subi	r24, 0x03	; 3
+  80:	89 2b       	or	r24, r25
+  82:	8b bb       	out	0x1b, r24	; 27
+	  PORTA|=PINA2<<(3+i);
+  84:	2b b3       	in	r18, 0x1b	; 27
+  86:	cb 01       	movw	r24, r22
+  88:	04 2e       	mov	r0, r20
+  8a:	02 c0       	rjmp	.+4      	; 0x90 <main+0x24>
+  8c:	88 0f       	add	r24, r24
+  8e:	99 1f       	adc	r25, r25
+  90:	0a 94       	dec	r0
+  92:	e2 f7       	brpl	.-8      	; 0x8c <main+0x20>
+  94:	28 2b       	or	r18, r24
+  96:	2b bb       	out	0x1b, r18	; 27
+  98:	4f 5f       	subi	r20, 0xFF	; 255
+  9a:	5f 4f       	sbci	r21, 0xFF	; 255
+  unsigned int i=0;
+  while(1)
+  {
+    DDRA = 0b11111011;
+	PORTA= 0b00000000;
+	for(i=0;i<4;i++)
+  9c:	47 30       	cpi	r20, 0x07	; 7
+  9e:	51 05       	cpc	r21, r1
+  a0:	61 f7       	brne	.-40     	; 0x7a <main+0xe>
+  a2:	e7 cf       	rjmp	.-50     	; 0x72 <main+0x6>
+
+000000a4 <_exit>:
+  a4:	f8 94       	cli
+
+000000a6 <__stop_program>:
+  a6:	ff cf       	rjmp	.-2      	; 0xa6 <__stop_program>

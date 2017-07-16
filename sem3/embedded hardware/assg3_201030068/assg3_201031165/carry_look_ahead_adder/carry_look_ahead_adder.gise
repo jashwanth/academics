@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="carry_look_ahead_adder.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cla_adder.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="cla_adder.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="cla_adder.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cla_adder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="cla_adder.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cla_adder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cla_adder.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cla_adder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="cla_adder.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cla_adder.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="cla_adder.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="cla_adder.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="cla_adder.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cla_adder.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="cla_adder.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cla_adder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cla_adder.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="cla_adder.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="cla_adder.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="cla_adder.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cla_adder.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="cla_adder.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cla_adder.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cla_adder_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="cla_adder_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cla_adder_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cla_adder_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cla_adder_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="cla_adder_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cla_adder_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cla_adder_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="cla_adder_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="cla_adder_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cla_adder_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cla_adder_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cla_adder_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="cla_adder_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cla_adder_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cla_adder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="pfa.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="pfa.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="pfa.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="pfa.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pfa.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="pfa.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="pfa.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="pfa.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pfa_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pfa_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pfa_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1321647998" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1321647998">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321649687" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2929147755253334132" xil_pn:start_ts="1321649687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321649687" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8653667697161507430" xil_pn:start_ts="1321649687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321647998" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1321647998">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321649687" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8357409257567962482" xil_pn:start_ts="1321649687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321647998" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1321647998">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321649687" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4965930380754786972" xil_pn:start_ts="1321649687">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321691124" xil_pn:in_ck="4712025889747598719" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5938741614957081451" xil_pn:start_ts="1321691108">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.lso"/>
+      <outfile xil_pn:name="cla_adder.ngc"/>
+      <outfile xil_pn:name="cla_adder.ngr"/>
+      <outfile xil_pn:name="cla_adder.prj"/>
+      <outfile xil_pn:name="cla_adder.stx"/>
+      <outfile xil_pn:name="cla_adder.syr"/>
+      <outfile xil_pn:name="cla_adder.xst"/>
+      <outfile xil_pn:name="cla_adder_vhdl.prj"/>
+      <outfile xil_pn:name="cla_adder_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1321694220" xil_pn:in_ck="4712025889747597467" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1952115674604873369" xil_pn:start_ts="1321694220">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1321789199" xil_pn:in_ck="-4312925867476939635" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3314295748184392807" xil_pn:start_ts="1321789190">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.bld"/>
+      <outfile xil_pn:name="cla_adder.ngd"/>
+      <outfile xil_pn:name="cla_adder_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1321789207" xil_pn:in_ck="3228695818045362097" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1321789199">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.pcf"/>
+      <outfile xil_pn:name="cla_adder_map.map"/>
+      <outfile xil_pn:name="cla_adder_map.mrp"/>
+      <outfile xil_pn:name="cla_adder_map.ncd"/>
+      <outfile xil_pn:name="cla_adder_map.ngm"/>
+      <outfile xil_pn:name="cla_adder_map.xrpt"/>
+      <outfile xil_pn:name="cla_adder_summary.xml"/>
+      <outfile xil_pn:name="cla_adder_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1321789221" xil_pn:in_ck="-4098322306632841366" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1321789207">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.ncd"/>
+      <outfile xil_pn:name="cla_adder.pad"/>
+      <outfile xil_pn:name="cla_adder.par"/>
+      <outfile xil_pn:name="cla_adder.ptwx"/>
+      <outfile xil_pn:name="cla_adder.unroutes"/>
+      <outfile xil_pn:name="cla_adder.xpi"/>
+      <outfile xil_pn:name="cla_adder_pad.csv"/>
+      <outfile xil_pn:name="cla_adder_pad.txt"/>
+      <outfile xil_pn:name="cla_adder_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1321789245" xil_pn:in_ck="4712025889747589842" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1321789231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.bgn"/>
+      <outfile xil_pn:name="cla_adder.bit"/>
+      <outfile xil_pn:name="cla_adder.drc"/>
+      <outfile xil_pn:name="cla_adder.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1321789221" xil_pn:in_ck="5919133724406208685" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1321789218">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="cla_adder.twr"/>
+      <outfile xil_pn:name="cla_adder.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

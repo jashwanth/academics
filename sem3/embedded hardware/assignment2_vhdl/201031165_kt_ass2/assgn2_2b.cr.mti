@@ -1,0 +1,9 @@
+C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_2b.vhd {1 {vcom -work work -2002 -explicit C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_2b.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package adder
+-- Compiling entity adder_4bit
+-- Compiling architecture arch1 of adder_4bit
+
+} {} {}}

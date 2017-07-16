@@ -1,0 +1,6 @@
+AR ripple_4bit behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/ripple_adder/ripple_4bit.vhd sub00/vhpl03 1321644204
+EN fa NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd sub00/vhpl00 1321644201
+EN halfadder NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.vhd sub00/vhpl04 1321644199
+EN ripple_4bit NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/ripple_adder/ripple_4bit.vhd sub00/vhpl02 1321644203
+AR fa behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd sub00/vhpl01 1321644202
+AR halfadder behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.vhd sub00/vhpl05 1321644200

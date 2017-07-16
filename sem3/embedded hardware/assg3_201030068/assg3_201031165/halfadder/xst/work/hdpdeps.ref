@@ -1,0 +1,8 @@
+V3 4
+FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.vhd 2011/11/18.21:12:30 O.76xd
+EN work/halfadder 1321632274 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/halfadder/Behavioral 1321632275 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.vhd \
+      EN work/halfadder 1321632274

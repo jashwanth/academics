@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\fulladder_assgn3\fa.ncd
+OUTFILE=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\fulladder_assgn3\fa.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\fulladder_assgn3
+LICENSE=WebPack
+USER_INFO=208508029_0_0_578

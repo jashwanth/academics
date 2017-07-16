@@ -1,0 +1,22 @@
+V3 12
+FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.vhd 2011/11/19.02:26:18 O.76xd
+EN work/cla_adder 1321691118 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/cla_adder/Behavioral 1321691119 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.vhd \
+      EN work/cla_adder 1321691118
+FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd 2011/11/18.22:55:42 O.76xd
+EN work/fa 1321648721 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd \
+      PB ieee/std_logic_1164 1317710503 LB work
+AR work/fa/Behavioral 1321648722 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd \
+      EN work/fa 1321648721 CP halfadder
+FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/partial_fa/pfa.vhd 2011/11/19.01:35:56 O.76xd
+EN work/pfa 1321649590 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/partial_fa/pfa.vhd \
+      PB ieee/std_logic_1164 1317710503
+AR work/pfa/Behavioral 1321649591 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/partial_fa/pfa.vhd \
+      EN work/pfa 1321649590 CP fa

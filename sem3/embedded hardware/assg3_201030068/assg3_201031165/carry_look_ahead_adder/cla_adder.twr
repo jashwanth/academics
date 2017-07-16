@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+Release 13.3 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Users\kanna\academic\Embeded\FPGA\softwares\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe
+-intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cla_adder.twx cla_adder.ncd -o
+cla_adder.twr cla_adder.pcf -ucf cla_adder.ucf
+
+Design file:              cla_adder.ncd
+Physical constraint file: cla_adder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2011-10-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Cout           |   10.750|
+A<0>           |S<0>           |    7.043|
+A<0>           |S<1>           |    7.651|
+A<0>           |S<2>           |    8.654|
+A<0>           |S<3>           |    9.461|
+A<1>           |Cout           |   10.157|
+A<1>           |S<1>           |    6.891|
+A<1>           |S<2>           |    8.061|
+A<1>           |S<3>           |    8.868|
+A<2>           |Cout           |    8.207|
+A<2>           |S<2>           |    5.969|
+A<2>           |S<3>           |    6.918|
+A<3>           |Cout           |    7.416|
+A<3>           |S<3>           |    6.158|
+B<0>           |Cout           |   10.997|
+B<0>           |S<0>           |    7.290|
+B<0>           |S<1>           |    7.898|
+B<0>           |S<2>           |    8.901|
+B<0>           |S<3>           |    9.708|
+B<1>           |Cout           |   10.073|
+B<1>           |S<1>           |    6.986|
+B<1>           |S<2>           |    7.977|
+B<1>           |S<3>           |    8.784|
+B<2>           |Cout           |    9.189|
+B<2>           |S<2>           |    7.245|
+B<2>           |S<3>           |    7.900|
+B<3>           |Cout           |    8.481|
+B<3>           |S<3>           |    7.165|
+C              |Cout           |   11.712|
+C              |S<0>           |    8.005|
+C              |S<1>           |    8.613|
+C              |S<2>           |    9.616|
+C              |S<3>           |   10.423|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Nov 20 17:10:20 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

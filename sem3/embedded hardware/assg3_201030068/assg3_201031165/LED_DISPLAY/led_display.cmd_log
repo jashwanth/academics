@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_display.ucf -p xc3s500e-fg320-4 led_display.ngc led_display.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o led_display_map.ncd led_display.ngd led_display.pcf 
+par -w -intstyle ise -ol high -t 1 led_display_map.ncd led_display.ncd led_display.pcf 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_display.ucf -p xc3s500e-fg320-4 led_display.ngc led_display.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o led_display_map.ncd led_display.ngd led_display.pcf 
+par -w -intstyle ise -ol high -t 1 led_display_map.ncd led_display.ncd led_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_display.twx led_display.ncd -o led_display.twr led_display.pcf -ucf led_display.ucf 
+bitgen -intstyle ise -f led_display.ut led_display.ncd 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_display.ucf -p xc3s500e-fg320-4 led_display.ngc led_display.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o led_display_map.ncd led_display.ngd led_display.pcf 
+par -w -intstyle ise -ol high -t 1 led_display_map.ncd led_display.ncd led_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_display.twx led_display.ncd -o led_display.twr led_display.pcf -ucf led_display.ucf 
+bitgen -intstyle ise -f led_display.ut led_display.ncd 

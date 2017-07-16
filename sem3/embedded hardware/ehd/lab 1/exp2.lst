@@ -1,0 +1,47 @@
+   1               		.file	"exp2.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 80EF      		ldi r24,lo8(-16)
+  25 0002 81BB      		out 49-32,r24
+  26               	.LM3:
+  27 0004 12BA      		out 50-32,__zero_reg__
+  28               	.LM4:
+  29 0006 9FE0      		ldi r25,lo8(15)
+  30               	.L5:
+  31               	.LM5:
+  32 0008 80B3      		in r24,48-32
+  33               	.LM6:
+  34 000a 807F      		andi r24,lo8(-16)
+  35 000c 01F0      		breq .L2
+  36               	.LM7:
+  37 000e 92BB      		out 50-32,r25
+  38 0010 00C0      		rjmp .L5
+  39               	.L2:
+  40               	.LM8:
+  41 0012 12BA      		out 50-32,__zero_reg__
+  42 0014 00C0      		rjmp .L5
+  43               	.LFE2:
+  69               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 exp2.c
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:2      *ABS*:0000003f __SREG__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:5      *ABS*:00000034 __CCP__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccrAgQ4a.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

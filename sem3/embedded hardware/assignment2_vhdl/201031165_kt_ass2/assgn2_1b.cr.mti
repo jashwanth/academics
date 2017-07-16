@@ -1,0 +1,36 @@
+C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fsm
+-- Compiling architecture behavioral of fsm
+
+} {} {}} G:/Q1/structural/flip-flop.vhdl {1 {vcom -work work -2002 -explicit G:/Q1/structural/flip-flop.vhdl
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity ff
+-- Compiling architecture behav of ff
+
+} {} {}} C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1a.vhd {1 {vcom -work work -2002 -explicit C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1a.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity sequence
+-- Compiling architecture arch of sequence
+
+} {} {}} G:/Q1/structural/fsm_struct.vhd {1 {vcom -work work -2002 -explicit G:/Q1/structural/fsm_struct.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity yo1
+-- Compiling architecture struct of yo1
+
+} {} {}} C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1b.vhd {1 {vcom -work work -2002 -explicit C:/Users/kanna/academic/Embeded/FPGA/codes/Testing/assgn2_1b.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity jk_ff_vhdl
+-- Compiling architecture behav of jk_ff_vhdl
+
+} {} {}}

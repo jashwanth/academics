@@ -1,0 +1,39 @@
+Release 13.3 ngdbuild O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+C:\Users\kanna\academic\Embeded\FPGA\softwares\ISE_DS\ISE\bin\nt64\unwrapped\ngd
+build.exe -intstyle ise -dd _ngo -nt timestamp -uc led_display.ucf -p
+xc3s500e-fg320-4 led_display.ngc led_display.ngd
+
+Reading NGO file
+"C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY/led_display.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "led_display.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 157236 kilobytes
+
+Writing NGD file "led_display.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "led_display.bld"...

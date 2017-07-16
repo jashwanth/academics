@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Sat Nov 19 00:25:50 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Cout" LOCATE = SITE "K15" LEVEL 1;
+COMP "A" LOCATE = SITE "G18" LEVEL 1;
+COMP "B" LOCATE = SITE "H18" LEVEL 1;
+COMP "C" LOCATE = SITE "K18" LEVEL 1;
+COMP "S" LOCATE = SITE "K14" LEVEL 1;
+SCHEMATIC END;
+

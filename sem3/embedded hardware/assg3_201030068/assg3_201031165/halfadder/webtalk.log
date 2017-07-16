@@ -1,0 +1,16 @@
+Release 13.3 - WebTalk (O.76xd)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=D1853AA7A1DC4C9BA12021105C257B00
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:9 - WebTalk Install setting is OFF.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2011-11-18T21:37:24.  For additional details about this file, please refer to the WebTalk help file at C:/Users/kanna/academic/Embeded/FPGA/softwares/ISE_DS/ISE/data/reports/webtalk_introduction.html

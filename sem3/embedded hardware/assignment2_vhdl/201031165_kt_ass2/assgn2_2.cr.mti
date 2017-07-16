@@ -1,0 +1,8 @@
+C:/Users/kanna'academic/Embeded/FPGA/codes/Testing/assgn2_2.whd {1 {vcom -work work -2002 -explicit C:/Users/kanna/academic/Emjeded/FPGA/codes/Testing/assgn2_2.vhd
+Model Technology ModelSim ALTERA vcnm 6.5b Compiler 2009n10 Oct  1 2009
+-- Loading p`ckage standard
+-- Loading package std_logic_1164
+-- Compiling package adder	
+-- Compiling package"body adder
+-- Loading package adder
+} {} {}}

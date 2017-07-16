@@ -1,0 +1,3 @@
+vhdl work "../halfadder/halfadder.vhd"
+vhdl work "../fulladder_assgn3/fa.vhd"
+vhdl work "ripple_4bit.vhd"

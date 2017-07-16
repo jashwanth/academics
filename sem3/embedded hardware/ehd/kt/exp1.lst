@@ -1,0 +1,64 @@
+   1               		.file	"exp1.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 8BE7      		ldi r24,lo8(123)
+  25 0002 8ABB      		out 58-32,r24
+  26 0004 20E0      		ldi r18,lo8(0)
+  27 0006 30E0      		ldi r19,hi8(0)
+  28               	.LVL0:
+  29 0008 40E0      		ldi r20,lo8(0)
+  30               	.LVL1:
+  31               	.L2:
+  32               	.LM3:
+  33 000a 2BBB      		out 59-32,r18
+  34               	.LM4:
+  35 000c 89B3      		in r24,57-32
+  36               	.LM5:
+  37 000e 2F5F      		subi r18,lo8(-(1))
+  38 0010 3F4F      		sbci r19,hi8(-(1))
+  39 0012 8470      		andi r24,lo8(4)
+  40 0014 90E0      		ldi r25,lo8(0)
+  41 0016 022E      		mov r0,r18
+  42 0018 00C0      		rjmp 2f
+  43 001a 880F      	1:	lsl r24
+  44 001c 991F      		rol r25
+  45 001e 0A94      	2:	dec r0
+  46 0020 02F4      		brpl 1b
+  47               	.LM6:
+  48 0022 482B      		or r20,r24
+  49               	.LM7:
+  50 0024 2430      		cpi r18,4
+  51 0026 3105      		cpc r19,__zero_reg__
+  52 0028 01F4      		brne .L2
+  53               	.LM8:
+  54 002a 4BBB      		out 59-32,r20
+  55               	.LM9:
+  56 002c 80E0      		ldi r24,lo8(0)
+  57 002e 90E0      		ldi r25,hi8(0)
+  58               	/* epilogue start */
+  59 0030 0895      		ret
+  60               	.LFE6:
+  86               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 exp1.c
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:2      *ABS*:0000003f __SREG__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:5      *ABS*:00000034 __CCP__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JASHWA~1\AppData\Local\Temp/ccuqHbMf.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

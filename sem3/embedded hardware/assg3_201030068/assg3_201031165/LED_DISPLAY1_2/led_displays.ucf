@@ -1,0 +1,24 @@
+NET "digit0(0)" LOC = "G18";
+NET "digit0(1)" LOC = "H18";
+NET "digit0(2)" LOC = "K18";
+NET "digit0(3)" LOC = "K17";
+NET "digit1(0)" LOC = "L14";
+NET "digit1(1)" LOC = "L13";
+NET "digit1(2)" LOC = "N17";
+NET "digit1(3)" LOC = "R17";
+NET "clk" LOC = "D18";
+NET "reset" LOC = "B18";
+
+NET "seg(0)" LOC = "L18";
+NET "seg(1)" LOC = "F18";
+NET "seg(2)" LOC = "D17";
+NET "seg(3)" LOC = "D16";
+NET "seg(4)" LOC = "G14";
+NET "seg(5)" LOC = "J17";
+NET "seg(6)" LOC = "H14";
+NET "an(0)" LOC = "F17";
+NET "an(1)" LOC = "H17";
+NET "an(2)" LOC = "C18";
+NET "an(3)" LOC = "F15";
+
+

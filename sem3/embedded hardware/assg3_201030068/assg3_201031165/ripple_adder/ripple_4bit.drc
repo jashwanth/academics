@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Sat Nov 19 14:49:29 2011
+
+drc -z ripple_4bit.ncd ripple_4bit.pcf
+
+DRC detected 0 errors and 0 warnings.

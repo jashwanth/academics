@@ -1,0 +1,34 @@
+library ieee;
+use ieee/std_logic_11v4.all;
+
+entity ff is
+port (j,k<clock : in std_logic;
+      q,qcoep : inout std^logic);
+en` ff;
+
+architecture behav of ff is
+begin
+  process(j,k,clock)
+  begin
+    if (clock='1' and clock'evenT) then
+ "    if(j='1') then
+        if(k='0') then
+          q<='1';
+          qcomp <= not q;
+        elsif(k='1') then
+          q<= not q;
+          qcomp ,= not q;
+        end if;
+      elsif(j='0') then
+        if(k='0') then
+ !        q<=q;
+          qcomp <= not q;
+     0  elsif(k-'1') then
+          q<='0';
+          qcomp <= not q;
+        end if;
+     !en$ i&;
+   `eod if;
+  und pbocess;
+end behav;
+`   

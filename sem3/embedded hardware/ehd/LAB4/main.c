@@ -1,0 +1,46 @@
+#include<avr/io.h>
+#include "lcd.h"
+#include <avr/delay.h>
+
+void timer_int(void);
+void adjust_pwm(int value);
+
+int main(void){
+	int value;
+	DDRD=0x20;
+	DDRC=0xFF;
+	DDRA=0x00;
+	
+	LCD_init();
+	timer_int();
+	
+	ADMUX=0x40;
+	ADCSRA=0x86;
+	
+	int i;
+	
+	
+	while(1){
+		ADCSRA |= 0x40;
+		while(ADSC==1){}
+		value=ADC;
+		LCD_init();
+		LCD_Print(value,0,0);
+		//adjust_pwm(value);
+		_delay_ms(1000);
+	}
+}
+/*void adjust_pwm(int value){
+	if(value>0){
+		OCR1A=OCR1A-10;
+	}
+	else if(value<0){
+		OCR1A=OCR1A+10;
+	}
+}*/
+void timer_int(){
+	TCCR1A=0x82;
+	TCCR1B=0x12;
+	ICR1=255;
+	OCR1A=200;
+}

@@ -1,0 +1,2 @@
+vhdl work "../halfadder/halfadder.vhd"
+vhdl work "fa.vhd"

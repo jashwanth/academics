@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Sun Nov 20 18:05:43 2011
+
+drc -z led_displays.ncd led_displays.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,6 @@
+EN fa NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd sub00/vhpl00 1321648721
+EN cla_adder NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.vhd sub00/vhpl04 1321691118
+AR pfa behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/partial_fa/pfa.vhd sub00/vhpl03 1321649591
+AR cla_adder behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.vhd sub00/vhpl05 1321691119
+AR fa behavioral C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/fulladder_assgn3/fa.vhd sub00/vhpl01 1321648722
+EN pfa NULL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/partial_fa/pfa.vhd sub00/vhpl02 1321649590

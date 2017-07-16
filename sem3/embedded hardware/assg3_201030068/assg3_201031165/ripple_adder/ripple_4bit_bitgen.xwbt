@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\ripple_adder\ripple_4bit.ncd
+OUTFILE=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\ripple_adder\ripple_4bit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\kanna\academic\Embeded\FPGA\codes_fpga\ripple_adder
+LICENSE=WebPack
+USER_INFO=208508029_0_0_578

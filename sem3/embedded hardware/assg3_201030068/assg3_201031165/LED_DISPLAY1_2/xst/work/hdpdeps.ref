@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY1_2/led_displays.vhd 2011/11/20.18:02:52 O.76xd
+EN work/led_displays 1321792392 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY1_2/led_displays.vhd \
+      PB ieee/std_logic_1164 1317710503 PB ieee/NUMERIC_STD 1317710508
+AR work/led_displays/Arch 1321792393 \
+      FL C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/LED_DISPLAY1_2/led_displays.vhd \
+      EN work/led_displays 1321792392

@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cla_adder.ucf -p xc3s500e-fg320-4 cla_adder.ngc cla_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cla_adder_map.ncd cla_adder.ngd cla_adder.pcf 
+par -w -intstyle ise -ol high -t 1 cla_adder_map.ncd cla_adder.ncd cla_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cla_adder.twx cla_adder.ncd -o cla_adder.twr cla_adder.pcf -ucf cla_adder.ucf 
+bitgen -intstyle ise -f cla_adder.ut cla_adder.ncd 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/cla_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cla_adder.ucf -p xc3s500e-fg320-4 cla_adder.ngc cla_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cla_adder_map.ncd cla_adder.ngd cla_adder.pcf 
+par -w -intstyle ise -ol high -t 1 cla_adder_map.ncd cla_adder.ncd cla_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cla_adder.twx cla_adder.ncd -o cla_adder.twr cla_adder.pcf -ucf cla_adder.ucf 
+bitgen -intstyle ise -f cla_adder.ut cla_adder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cla_adder.ucf -p xc3s500e-fg320-4 cla_adder.ngc cla_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cla_adder_map.ncd cla_adder.ngd cla_adder.pcf 
+par -w -intstyle ise -ol high -t 1 cla_adder_map.ncd cla_adder.ncd cla_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cla_adder.twx cla_adder.ncd -o cla_adder.twr cla_adder.pcf -ucf cla_adder.ucf 
+bitgen -intstyle ise -f cla_adder.ut cla_adder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cla_adder.ucf -p xc3s500e-fg320-4 cla_adder.ngc cla_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cla_adder_map.ncd cla_adder.ngd cla_adder.pcf 
+par -w -intstyle ise -ol high -t 1 cla_adder_map.ncd cla_adder.ncd cla_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cla_adder.twx cla_adder.ncd -o cla_adder.twr cla_adder.pcf -ucf cla_adder.ucf 
+bitgen -intstyle ise -f cla_adder.ut cla_adder.ncd 

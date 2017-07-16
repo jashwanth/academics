@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s700a-fg484-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/halfadder/halfadder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s500e-fg320-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+par -w -intstyle ise -ol high -t 1 halfadder_map.ncd halfadder.ncd halfadder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml halfadder.twx halfadder.ncd -o halfadder.twr halfadder.pcf -ucf halfadder.ucf 
+bitgen -intstyle ise -f halfadder.ut halfadder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc halfadder.ucf -p xc3s500e-fg320-4 halfadder.ngc halfadder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o halfadder_map.ncd halfadder.ngd halfadder.pcf 
+par -w -intstyle ise -ol high -t 1 halfadder_map.ncd halfadder.ncd halfadder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml halfadder.twx halfadder.ncd -o halfadder.twr halfadder.pcf -ucf halfadder.ucf 
+bitgen -intstyle ise -f halfadder.ut halfadder.ncd 

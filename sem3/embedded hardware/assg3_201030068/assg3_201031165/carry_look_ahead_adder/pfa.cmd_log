@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/pfa.xst" -ofn "C:/Users/kanna/academic/Embeded/FPGA/codes_fpga/carry_look_ahead_adder/pfa.syr" 
