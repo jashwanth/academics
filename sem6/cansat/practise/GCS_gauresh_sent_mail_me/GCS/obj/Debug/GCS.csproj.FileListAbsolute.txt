@@ -1,0 +1,12 @@
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\bin\Debug\GCS.exe.config
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.csprojResolveAssemblyReference.cache
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.gcs.resources
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.Properties.Resources.resources
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.csproj.GenerateResource.Cache
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\bin\Debug\GCS.exe
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\bin\Debug\GCS.pdb
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.exe
+c:\users\beware\documents\visual studio 2012\Projects\GCS\GCS\obj\Debug\GCS.pdb
+C:\Users\Jashwanth\Desktop\4th_sem\sem6\cansat\practise\GCS_gauresh_sent_mail_me\GCS\bin\Debug\GCS.exe.config
+C:\Users\Jashwanth\Desktop\4th_sem\sem6\cansat\practise\GCS_gauresh_sent_mail_me\GCS\obj\Debug\GCS.exe
+C:\Users\Jashwanth\Desktop\4th_sem\sem6\cansat\practise\GCS_gauresh_sent_mail_me\GCS\obj\Debug\GCS.pdb

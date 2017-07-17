@@ -1,0 +1,1159 @@
+
+1
+00:00:00,000 --> 00:00:05,003
+Okay, welcome back. So in the last
+lecture, we derived the equations for
+
+2
+00:00:05,003 --> 00:00:10,084
+optical flow. In this lecture we're going
+to study them in greater depth, and show
+
+3
+00:00:10,084 --> 00:00:16,045
+what use they provide us for computer
+vision, or, in fact, any biological vision
+
+4
+00:00:16,045 --> 00:00:22,013
+system. So let me begin by reminding you
+of the equations which we derived last
+
+5
+00:00:22,013 --> 00:00:27,095
+time. These were shown last time, and the
+way to understand. These, is that there is
+
+6
+00:00:27,095 --> 00:00:33,042
+a transitional component and a rotation
+component. I want to make one bit of
+
+7
+00:00:33,042 --> 00:00:38,067
+notation clear. These, these are vector
+equations, so they are, I've kind of
+
+8
+00:00:38,067 --> 00:00:45,017
+written them out in a compact way, But
+These are two vector equations, which
+
+9
+00:00:45,017 --> 00:00:52,060
+really consist of the two, two scalar
+equations. So in fact, if I take this,
+
+10
+00:00:52,060 --> 00:01:00,054
+This, this matrix vector multiplication,
+and I can read out. I will get two rows.
+
+11
+00:01:00,054 --> 00:01:05,077
+And similarly I will get two rows here,
+and these are also two rows. So if we
+
+12
+00:01:05,077 --> 00:01:10,073
+consider the first row, I will, that
+corresponds to the equation for X start,
+
+13
+00:01:10,073 --> 00:01:15,096
+and the bottom row corresponds to the
+equation for Y dot. So just to make clear
+
+14
+00:01:15,096 --> 00:01:21,032
+that I have expressed in a compact way
+using vector notation what really are two
+
+15
+00:01:21,032 --> 00:01:26,028
+separate equations, one for the X
+component of the optical flow, and one for
+
+16
+00:01:26,028 --> 00:01:31,064
+the Y component of the optical flow. So
+let's go, going and first we'll concern
+
+17
+00:01:31,064 --> 00:01:39,013
+ourselves with the transitional component
+on this red stuff here. So, what's the
+
+18
+00:01:39,013 --> 00:01:46,071
+optical flow pure translation? If the
+motion is purely translation we can ignore
+
+19
+00:01:46,071 --> 00:01:52,094
+the rotational component because the omega
+is a, a zero. Omega x omega by omega Z a
+
+20
+00:01:52,094 --> 00:01:59,010
+zero, and then the flow field is given by
+these two expressions, this is just from
+
+21
+00:01:59,010 --> 00:02:04,004
+the previous slide, just substitute
+omega=0. Okay, I want to get some
+
+22
+00:02:04,004 --> 00:02:10,043
+intuition about this, how am I going to do
+this? Because just leaving this as formula
+
+23
+00:02:10,043 --> 00:02:15,059
+is, is, doesn't give us proper
+understanding, So we're going to gain
+
+24
+00:02:15,059 --> 00:02:22,049
+intuition by considering this special case
+of translation along the optical axis. So
+
+25
+00:02:22,049 --> 00:02:29,024
+what's this special case? So this is, this
+translation, but the translation is along
+
+26
+00:02:29,024 --> 00:02:35,041
+the z axis. So imagine that there is a
+camera moving. But its movement is just
+
+27
+00:02:35,041 --> 00:02:40,073
+movement along the z axis. There is no
+movement along x and y. There is no
+
+28
+00:02:40,073 --> 00:02:45,075
+rotation. So imagine that you're just
+looking straight ahead, and you're walking
+
+29
+00:02:45,075 --> 00:02:50,080
+in the direction in which you're looking.
+Right? This is what most of us should do
+
+30
+00:02:50,080 --> 00:02:55,098
+most of the time. What does the flow field
+become? We can start with the expressions
+
+31
+00:02:55,098 --> 00:03:00,059
+here, and we can substitute that t sub X,
+and t sub Y as zero. So we get the
+
+32
+00:03:00,059 --> 00:03:06,035
+expressions shown here for the X component
+of the optical flow U, and the Y component
+
+33
+00:03:06,035 --> 00:03:12,022
+of the optical flow. And let me do my
+standard trick of writing these two scalar
+
+34
+00:03:12,022 --> 00:03:17,025
+equations as one vector equation and
+that's what I do here. So this U, V
+
+35
+00:03:17,025 --> 00:03:23,013
+transposed really means little U, little V
+as a vector, and this X, Y transposed as X
+
+36
+00:03:23,013 --> 00:03:28,058
+and Y as a vector. So these are column
+vectors, and here these are row vectors,
+
+37
+00:03:28,058 --> 00:03:37,026
+which have been transposed with a letter T
+[sound]. Okay. [sound]. So we get a fairly
+
+38
+00:03:37,026 --> 00:03:43,043
+simple looking expression. So the optical
+flow vector is proportional to the
+
+39
+00:03:43,043 --> 00:03:49,012
+position vector x, y, and the
+proportionality factor is tz upon z. Let's
+
+40
+00:03:49,012 --> 00:03:56,022
+see if we can plot this out. Okay, so I
+repeat. Uv is, is, UV the optical flow
+
+41
+00:03:56,022 --> 00:04:02,073
+vector, the optical flow vector here, this
+is the position vector and the
+
+42
+00:04:02,073 --> 00:04:09,088
+proportionality constant is TZ upon Z.
+This diagram shows what the optical flow
+
+43
+00:04:09,088 --> 00:04:17,076
+field looks like in this case. So first of
+all, what happens when we are at the
+
+44
+00:04:17,076 --> 00:04:25,006
+origin? So the origin here, So at the
+origin x=0, y=0. So the optical flow must
+
+45
+00:04:25,006 --> 00:04:31,025
+be zero. Uv must be 0,0 And the origin. So
+that's shown here, by the, this is the
+
+46
+00:04:31,025 --> 00:04:36,078
+origin of the image plane. And at the
+origin what we should have is the optical
+
+47
+00:04:36,078 --> 00:04:42,018
+flow vectors are of length zero. The
+optical flow vector is a scalar multiple
+
+48
+00:04:42,018 --> 00:04:47,071
+of the position vector. This has a very
+simple meaning. This means that all, if I
+
+49
+00:04:47,071 --> 00:04:56,002
+have a point. X, Y So there is,
+essentially, the position vector which is
+
+50
+00:04:56,002 --> 00:05:02,065
+drawn here in blue. The optical flow
+vector at the location XY is in the same
+
+51
+00:05:02,065 --> 00:05:10,011
+direction, scaled by some factor, and that
+sca-, factor is TZ upon Z. And but it
+
+52
+00:05:10,011 --> 00:05:17,002
+points in the s-, in the direction of, the
+position vector XY. So this means that,
+
+53
+00:05:17,002 --> 00:05:23,043
+all the, the optical flow, so, at this
+location here, XY. The position vector is
+
+54
+00:05:23,043 --> 00:05:30,051
+going to be like this. So the optical flow
+vector is in, a scaled copy of that, The
+
+55
+00:05:30,051 --> 00:05:37,042
+scaling factor being given by TZ upon Z.
+So the optical flow pattern has this very
+
+56
+00:05:37,042 --> 00:05:43,064
+beautiful starburst like Pattern to it.
+All these vectors appear to be streaming
+
+57
+00:05:43,064 --> 00:05:49,070
+out; actually they are streaming out when
+we are approaching an object. So imagine
+
+58
+00:05:49,070 --> 00:05:55,042
+that I am driving, and I am driving
+headlong towards a wall. So the wall is
+
+59
+00:05:55,042 --> 00:06:01,095
+ahead of me at ten meters. Its Z is
+constant at ten meters, and I'm driving
+
+60
+00:06:01,095 --> 00:06:08,049
+towards it. Well, I hope I'll break at
+some point, but before I do, I see this
+
+61
+00:06:08,049 --> 00:06:15,011
+optical flow pattern, which is all these
+arrows streaming out. Okay. What will
+
+62
+00:06:15,011 --> 00:06:21,035
+happen if I was? Reverse in the car, if I
+was driving back. Well, at that point what
+
+63
+00:06:21,035 --> 00:06:27,023
+will happen is that the sign of TZ will,
+will flip. So all these vectors, instead
+
+64
+00:06:27,023 --> 00:06:32,096
+of pointing outwards would be pointing
+inwards. So when I'm driving towards a
+
+65
+00:06:32,096 --> 00:06:38,040
+wall, the optical flow is streaming
+outwards. When I'm driving away from a
+
+66
+00:06:38,040 --> 00:06:44,006
+wall, I, I'm reversing from a wall, the
+optical flow vectors will be streaming
+
+67
+00:06:44,006 --> 00:06:50,033
+inwards. And this proportional artifact is
+TZ upon Z. So that's, that's a very nice
+
+68
+00:06:50,033 --> 00:06:56,040
+property of the optical flow field. The
+lengths of these vectors are proportional
+
+69
+00:06:56,040 --> 00:07:02,026
+to TZ upon Z, and let's try to get a
+better understanding of that. Okay, there
+
+70
+00:07:02,026 --> 00:07:09,043
+is one little problem which confronts us
+in our, in our analysis of the optical
+
+71
+00:07:09,043 --> 00:07:16,006
+flow-field corresponding to pure
+translation. So the, the, this property is
+
+72
+00:07:16,006 --> 00:07:23,034
+called the Scale Factor Ambiguity. So
+imagine that I took the... The world, and
+
+73
+00:07:23,034 --> 00:07:29,082
+I made the world K times bigger, and I
+made mov, my movement K times faster. So I
+
+74
+00:07:29,082 --> 00:07:36,037
+made the world Z becomes KZ. So imagine
+that everything in the world is twice as
+
+75
+00:07:36,037 --> 00:07:42,076
+big, and I move twice as fast. What'll
+happen to the optical flow? Since TZ upon
+
+76
+00:07:42,076 --> 00:07:49,056
+Z, that ratio is not going to be changed;
+the optical flow field will be exactly the
+
+77
+00:07:49,056 --> 00:07:55,074
+same. So this is something we have known
+how to exploit for quite s ome time.
+
+78
+00:07:55,074 --> 00:08:01,065
+People in the movie making business can
+make these tiny toy sets with a tiny
+
+79
+00:08:01,065 --> 00:08:07,080
+Godzilla and a tiny building. And then
+they have, they can move the camera only a
+
+80
+00:08:07,080 --> 00:08:13,064
+little bit, but the optical flow may be
+the same as if you had a fast moving
+
+81
+00:08:13,064 --> 00:08:19,080
+camera and a larger world. So the optical
+flow vector is unchanged. This tells us
+
+82
+00:08:19,080 --> 00:08:25,084
+that we have no hope of recovering the
+absolute. Speed TZ or the absolute depth
+
+83
+00:08:25,084 --> 00:08:31,084
+Z. So in a sense this is bad news because
+our goal was to use the optical field,
+
+84
+00:08:31,084 --> 00:08:37,069
+flow field to tell us something about
+depth in the scene. And there is no way
+
+85
+00:08:37,069 --> 00:08:43,061
+out. There is no way to recover absolute
+depth in meters and absolute speed in
+
+86
+00:08:43,061 --> 00:08:49,069
+meters per second. But there is one little
+important thing we can do, In fact the
+
+87
+00:08:49,069 --> 00:08:55,054
+most important thing with respect to
+navigation. I want you to tell me what Z
+
+88
+00:08:55,054 --> 00:09:06,041
+upon TZ is. So the units of z, z is a
+distance In meters. D sub z is a speed In
+
+89
+00:09:06,041 --> 00:09:13,062
+meters/ second. Okay. What is this ratio
+tell me? This ratio is, so imagine there
+
+90
+00:09:13,062 --> 00:09:20,074
+is a wall at a distance of Z and I am
+going at speed t/Z directly towards it.
+
+91
+00:09:20,074 --> 00:09:30,032
+Well Z upon tZ is the time to collision.
+So you can work out that the units of this
+
+92
+00:09:30,032 --> 00:09:37,018
+are in seconds. So z upon tz is, is in how
+many seconds am I going to collide with
+
+93
+00:09:37,018 --> 00:09:43,087
+the wall. So, and here the scale factor
+ambiguity doesn't come into play because.
+
+94
+00:09:43,087 --> 00:09:49,035
+It could be that the z is in kilometers,
+and t sub z is in kilometers per second,
+
+95
+00:09:49,035 --> 00:09:54,082
+or z is in meters and tz is in meters per
+second. It's the ratio that matters. If
+
+96
+00:09:54,082 --> 00:10:00,042
+you're moving faster, but the world is, is
+bigger, it will take you the same time to
+
+97
+00:10:00,042 --> 00:10:05,038
+collision, or time to contact. So, the
+important point is that this
+
+98
+00:10:05,038 --> 00:10:12,017
+proportionality factor tells us about the
+time to collision. And now, here is a bit
+
+99
+00:10:12,017 --> 00:10:16,086
+of advice. If you are driving towards a
+wall just keep the time to contact
+
+100
+00:10:16,086 --> 00:10:22,017
+positive. That will keep you out of
+trouble. So, in fact, this advice seems to
+
+101
+00:10:22,017 --> 00:10:28,015
+be followed by insects and bugs and so on
+and so forth. There have been quite a few
+
+102
+00:10:28,015 --> 00:10:33,093
+experiments done by biologists, which
+demonstrate that time to contact is a very
+
+103
+00:10:33,093 --> 00:10:39,027
+valuable variable, which is in f act used.
+So, what you do is, you can control
+
+104
+00:10:39,027 --> 00:10:44,089
+essentially breaking behavior, by making
+down decrees as, as appropriate as, okay.
+
+105
+00:10:44,089 --> 00:10:50,077
+I'm not gonna get, get into the details of
+those studies. But The beautiful result is
+
+106
+00:10:50,077 --> 00:10:55,078
+that from the optical flow field we can
+determine time to contact, which is in
+
+107
+00:10:55,078 --> 00:11:00,086
+fact the variable we want to use for
+controlling our braking behavior, so as to
+
+108
+00:11:00,086 --> 00:11:06,098
+avoid colliding with obstacles. Let me now
+turn to the case of general translation. I
+
+109
+00:11:06,098 --> 00:11:12,042
+did, now the bush, the baby case
+corresponding to translation along the
+
+110
+00:11:12,042 --> 00:11:18,034
+optical axis. What happens when we
+consider a general translation? So we have
+
+111
+00:11:18,034 --> 00:11:24,091
+a piece of X, a piece of Y, and a piece of
+Z. So to work this out, let's start with
+
+112
+00:11:24,091 --> 00:11:32,023
+the figuring out when is the optical flow
+00. So in the previous case the optical
+
+113
+00:11:32,023 --> 00:11:38,093
+flow is zero at the origin. In this case
+the optical flow will be zero at the
+
+114
+00:11:38,093 --> 00:11:46,065
+following points. Let's figure out. When
+the X component of optical flow is zero,
+
+115
+00:11:46,065 --> 00:11:55,043
+minus X plus minus T sub X plus X T sub Z
+equals zero. X should be equal to T sub X
+
+116
+00:11:55,043 --> 00:12:04,042
+upon T sub Z. Minus T sub Y plus Y T sub Z
+should be zero which implies that Y equals
+
+117
+00:12:04,042 --> 00:12:13,026
+T sub Y upon T sub Z. What this tells me
+is, if I consider the point. Tx upon TC,
+
+118
+00:12:13,026 --> 00:12:33,030
+Ts of Y on Ts of Z, at this location the
+optical flow. Uv is 0,0. So, this point Tx
+
+119
+00:12:33,030 --> 00:12:39,038
+upon tz, ty upon tz is the moral
+equivalent of the origin in the previous
+
+120
+00:12:39,038 --> 00:12:53,086
+case. We will call this point. The focus
+of expansion And, let me do a little
+
+121
+00:12:53,086 --> 00:13:00,013
+calculation to show why this term is
+appropriate. What we should do is, let's
+
+122
+00:13:00,013 --> 00:13:06,064
+take the optical flow fee, but let's do a
+change of coordinates. So, imagine that
+
+123
+00:13:06,064 --> 00:13:13,007
+instead of taking the standard origin,
+which is zero, zero. Let's consider a new
+
+124
+00:13:13,007 --> 00:13:19,003
+origin, and let's make the new origin at
+the point TX upon TZ And TY upon
+
+125
+00:13:19,003 --> 00:13:25,036
+[inaudible]. So therefore, we have changed
+coordinates from X to X prime, and Y to Y
+
+126
+00:13:25,036 --> 00:13:31,053
+prime by just a simple shift. So in this
+diagram, I have XY, which is the standard
+
+127
+00:13:31,053 --> 00:13:37,084
+coordinate system. And then I have a new
+coordinate system for X prime, Y prime. So
+
+128
+00:13:37,084 --> 00:13:44,098
+the optical flow field in the
+neo-coordinate system. So let's go back to
+
+129
+00:13:44,098 --> 00:13:50,098
+the expression here. So, here we have the
+optical flow field in the XY coordinate
+
+130
+00:13:50,098 --> 00:13:56,076
+system, and instead we want to write it
+out in the X prime Y prime coordinate
+
+131
+00:13:56,076 --> 00:14:02,061
+system. And we'll do a change of color,
+origin from XY to X prime Y prime, and
+
+132
+00:14:02,061 --> 00:14:08,069
+rewrite these expressions in the X prime Y
+prime coordinate system. Again, I leave
+
+133
+00:14:08,069 --> 00:14:14,077
+you to work this out, but if you do that,
+you are going to get an expression which
+
+134
+00:14:14,077 --> 00:14:22,085
+now looks very simple. It is that uv. In
+the x prime, y prime coordinate system has
+
+135
+00:14:22,085 --> 00:14:34,038
+the simple tz upon z. X prime, Y prime. So
+we again get this scale factor
+
+136
+00:14:34,038 --> 00:14:42,084
+relationship. That we saw in the, the easy
+case, but now we have to refer everything
+
+137
+00:14:42,084 --> 00:14:50,067
+to a new coordinates system at TX upon TC,
+TY upon TC. So the, we'll call this TX
+
+138
+00:14:50,067 --> 00:14:58,039
+upon TC at, at, TY upon TC to be F, the
+F-foy, [sound] F-foy is how we abbreviate
+
+139
+00:14:58,039 --> 00:15:08,014
+it but this corresponds to the focus of
+expansion [sound]. And why do we use the
+
+140
+00:15:08,014 --> 00:15:14,021
+stub? Recall that in the, in the case of
+translation along the Z axis, the optical
+
+141
+00:15:14,021 --> 00:15:20,044
+flow vectors appeared to stream outwards
+from the origin, and we could call the
+
+142
+00:15:20,044 --> 00:15:26,020
+origin the focus of expansion, because
+that's the point from which all these
+
+143
+00:15:26,020 --> 00:15:32,035
+vectors appear to be streaming outwards.
+Here, these vectors will be streaming out
+
+144
+00:15:32,035 --> 00:15:38,042
+with respect to the point TX upon TZ, TY
+upon TZ. So these are the coordinates of
+
+145
+00:15:38,042 --> 00:15:44,075
+the focus of expansion. So in a sense if I
+have an optical flow field all I have to
+
+146
+00:15:44,075 --> 00:15:50,049
+do is look and it corresponds to peer
+translation. There will be a point at
+
+147
+00:15:50,049 --> 00:15:56,062
+which the flow field is zero at which the
+flow is zero and all the vectors will
+
+148
+00:15:56,062 --> 00:16:02,044
+appear to be streaming out from there.
+That is the focus of expansion. And the
+
+149
+00:16:02,044 --> 00:16:08,013
+focus of expansion directly tells me about
+the direction of translation, because it,
+
+150
+00:16:08,013 --> 00:16:13,061
+the coordinates of the focus of expansion
+give me tx upon tz, ty upon tz. So this
+
+151
+00:16:13,061 --> 00:16:18,082
+basically is information about the
+translation vector t. It does not have
+
+152
+00:16:18,082 --> 00:16:24,046
+absolute information about the magnitude
+of DX comma DY comma DZ. But we can never
+
+153
+00:16:24,046 --> 00:16:30,023
+get hope to get that because of the scale
+factor ambiguity. All we can hope to do is
+
+154
+00:16:30,023 --> 00:16:36,000
+to r ecover the direction of transmission.
+And the location of the focus of expansion
+
+155
+00:16:36,000 --> 00:16:43,021
+gives us exactly that. [sound]. So, now we
+have understood the case of translation,
+
+156
+00:16:43,021 --> 00:16:49,047
+Which is which is beautiful Because the
+case of translation. It shows us that we
+
+157
+00:16:49,047 --> 00:16:56,030
+cannot recover the absolute velocity of
+translation. We can recover the time to
+
+158
+00:16:56,030 --> 00:17:03,030
+collision; we can recover the direction
+the direction of translation. Of course,
+
+159
+00:17:03,030 --> 00:17:09,088
+in the general case we don't just have
+translation, we also have rotation. So
+
+160
+00:17:09,088 --> 00:17:17,040
+this rotation component is, is described
+here. This is the rotation component. So I
+
+161
+00:17:17,040 --> 00:17:22,080
+could. Spend a few slides on trying to
+understand the rotation component. So
+
+162
+00:17:22,080 --> 00:17:28,038
+imagine that there is no translation at
+all, the camera is just rotating. Well. I
+
+163
+00:17:28,038 --> 00:17:33,092
+can do that, but there is really not that
+much insight there. It's kind of boring.
+
+164
+00:17:33,092 --> 00:17:39,032
+If you move the, if you rotate the camera,
+well the ball will appear to rotate. But
+
+165
+00:17:39,032 --> 00:17:44,060
+it tells you nothing whatsoever about the,
+the distance of objects in the world
+
+166
+00:17:44,060 --> 00:17:50,020
+Because if you see this expression, Z does
+not figure. It only depends on image plane
+
+167
+00:17:50,020 --> 00:17:55,033
+coordinates with X and Y, which we know.
+And. The omega vector, omega x, omega y,
+
+168
+00:17:55,033 --> 00:18:00,092
+omega z, So therefore the flow field, the
+rotational flow field will tell us what's,
+
+169
+00:18:00,092 --> 00:18:06,045
+hap, how we are rotating. So it will tell
+us information about omega. It won't tell
+
+170
+00:18:06,045 --> 00:18:11,093
+us anything about the C. So, so here is a
+straightforward story. Now, if we have
+
+171
+00:18:11,093 --> 00:18:17,040
+translation and rotation going on at the
+same time, then algorithmitically we do
+
+172
+00:18:17,040 --> 00:18:23,021
+have a challenge of trying to separate the
+translational and rotational components. A
+
+173
+00:18:23,021 --> 00:18:29,009
+number of algorithms have been developed
+for that, but I won't get into the details
+
+174
+00:18:29,009 --> 00:18:34,036
+of that. What I'm gonna do know, is to
+just show you some pictures of the flow
+
+175
+00:18:34,036 --> 00:18:41,073
+fields and how they reveal information
+about the scene. [sound]. So here's an
+
+176
+00:18:41,073 --> 00:18:48,045
+example. This is what the flow field looks
+like if I'm translating along the Z axis
+
+177
+00:18:48,045 --> 00:18:54,093
+towards a wall edge. So there is a focus
+of expansion, which is at the origin. All
+
+178
+00:18:54,093 --> 00:19:01,065
+these vectors are streaming out because
+I'm driving towards the wall. And that' s
+
+179
+00:19:01,065 --> 00:19:08,077
+about it. It's, there's a focus of
+expansion is at the origin. And we have
+
+180
+00:19:08,077 --> 00:19:16,074
+information in the lengths of these
+vectors about the time to contact. Okay,
+
+181
+00:19:16,074 --> 00:19:22,070
+this is what the optical flow looks like
+for points on a road. So here I'm
+
+182
+00:19:22,070 --> 00:19:29,071
+imagining that I'm driving on a road and
+so the upper half of the image plane is
+
+183
+00:19:29,071 --> 00:19:36,008
+the sky. The lower half of the image plane
+is the, the ground. There is a horizon
+
+184
+00:19:36,008 --> 00:19:42,085
+here if you like and the optical flow
+vectors are, are, so here the Z varies. So
+
+185
+00:19:42,085 --> 00:19:49,013
+since the Z varies, these are nearer
+points. And these are points essentially
+
+186
+00:19:49,013 --> 00:19:53,085
+at infinity. These are far points. So,
+recall that in the optical flow
+
+187
+00:19:53,085 --> 00:19:59,026
+translational component there is a one
+upon z factor, so when z is at infinity,
+
+188
+00:19:59,026 --> 00:20:05,007
+the optical flow has to be zero. And when
+points are nearer, the optical flow is
+
+189
+00:20:05,007 --> 00:20:10,038
+larger. So this is what the flow looks
+like on the road. And, you can have a
+
+190
+00:20:10,038 --> 00:20:16,004
+chance to experience this, particularly
+when you're driving after it has rained.
+
+191
+00:20:16,004 --> 00:20:21,085
+So the, the water on the, water drops on
+the road surface, they enable you to sense
+
+192
+00:20:21,085 --> 00:20:27,016
+the optical flow more vividly, and you
+will exactly perceive these vectors.
+
+193
+00:20:28,003 --> 00:20:34,019
+Another way to think about this is that.
+The focus of expansion is really the
+
+194
+00:20:34,019 --> 00:20:40,094
+vanishing point corresponding to the, the
+vector of translation, because when I'm
+
+195
+00:20:40,094 --> 00:20:46,071
+driving. Every point in the road is moving
+with velocity minus T. So these are all
+
+196
+00:20:46,071 --> 00:20:52,015
+vectors, and these are all parallel to
+each other. So there must be a vanishing
+
+197
+00:20:52,015 --> 00:20:57,073
+point of this family of parallel lines.
+And what is that vanishing point? That is
+
+198
+00:20:57,073 --> 00:21:03,017
+the focus of expansion. So the focus of
+expansion is, really, just the vanishing
+
+199
+00:21:03,017 --> 00:21:08,091
+point that we studied earlier in disguise.
+Okay. This is the truly boding case. So
+
+200
+00:21:08,091 --> 00:21:14,075
+imagine that, I am translating along the
+X-axis in front of a wall. So I am just
+
+201
+00:21:14,075 --> 00:21:20,045
+moving the camera to the side, the wall
+that's in some fixed distance. Nothing
+
+202
+00:21:20,045 --> 00:21:26,021
+changes. The optical flow is as boding as
+you get. Okay, here is the optical flow
+
+203
+00:21:26,021 --> 00:21:32,005
+field when you keep rotating the camera
+about its axis. So you get this rotational
+
+204
+00:21:32,005 --> 00:21:38,003
+pattern, it tells us what you are doing to
+the camer A. It doesn't tell us anything
+
+205
+00:21:38,003 --> 00:21:44,002
+about whether the wall is near or far, or
+whether we are going to collide with it in
+
+206
+00:21:44,002 --> 00:21:50,077
+five seconds or 5,000 seconds. Here's an
+interesting case. This is rotating about
+
+207
+00:21:50,077 --> 00:21:56,056
+the Y axes which giving the coordinates
+system we like to use in camera's is, is
+
+208
+00:21:56,056 --> 00:22:02,071
+vertical. So when you rotating about the y
+axis this is what the flow field will look
+
+209
+00:22:02,071 --> 00:22:10,027
+like. Let me conclude by talking about the
+importance of optical flow. The big idea
+
+210
+00:22:10,027 --> 00:22:15,089
+that I want you to take away from these
+last few lectures is that, suppose an
+
+211
+00:22:15,089 --> 00:22:21,038
+animal or a robot could analyze its radio
+signal, and measure the optical flow
+
+212
+00:22:21,038 --> 00:22:26,079
+field. It could use this data to compute
+depth and [inaudible] motion depth, Z
+
+213
+00:22:26,079 --> 00:22:33,078
+affects Y And ego motion which is the
+translational and rotational velocity. You
+
+214
+00:22:33,078 --> 00:22:40,009
+may not get exactly the Z or exactly the
+T, you may, you may get some ratios of
+
+215
+00:22:40,009 --> 00:22:46,017
+that but that is good enough for
+controlling your movement. There is a fair
+
+216
+00:22:46,017 --> 00:22:52,072
+amount of evidence from perceptual and
+neuroscience studies that animals in fact
+
+217
+00:22:52,072 --> 00:22:59,012
+have both the ability to measure optical
+flow. So this is required so there is some
+
+218
+00:22:59,012 --> 00:23:04,089
+neural hardware that is needed to measure
+optical flow given the imagine of the
+
+219
+00:23:04,089 --> 00:23:10,066
+function of time. Given the video data And
+That, given that we have computed the
+
+220
+00:23:10,066 --> 00:23:16,021
+optical flow. Given that we have measured
+the optical flow. Can we use it, to
+
+221
+00:23:16,021 --> 00:23:24,017
+control. A moment, avoid obstacles, et
+cetera, and flies use it, diving birds use
+
+222
+00:23:24,017 --> 00:23:31,089
+it. Many, many animals use it, and we
+could use it for robots. There is in this
+
+223
+00:23:31,089 --> 00:23:38,053
+whole enterprise this req, requirement
+that we must have a way of computing the
+
+224
+00:23:38,053 --> 00:23:44,065
+optical flow field given reduced signal.
+And I have not told you how to do that.
+
+225
+00:23:44,065 --> 00:23:50,022
+This requires work; it's not trivial
+because essentially to measure the optical
+
+226
+00:23:50,022 --> 00:23:55,038
+flow we need a way to know what are
+corresponding points over time. So if
+
+227
+00:23:55,038 --> 00:24:01,016
+there is a location XY in one time frame
+and then I say that this point has moved
+
+228
+00:24:01,016 --> 00:24:05,082
+to x+delta, x comma y+delta y. I need a
+way to say that this is that there is a
+
+229
+00:24:05,082 --> 00:24:11,054
+notion of corresponding points over time.
+And this requires an algorithm and some
+
+230
+00:24:11,054 --> 00:24:17,054
+computation. We are going to study that
+later. For now I've just shown you how, if
+
+231
+00:24:17,054 --> 00:24:24,009
+we could measure the optical f, flow field
+we could use it for a number of useful
+
+232
+00:24:24,009 --> 00:24:26,051
+Applications. Thank you.

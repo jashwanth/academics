@@ -1,0 +1,395 @@
+
+1
+00:00:00,000 --> 00:00:04,061
+Hello, So, let's continue with the
+properties of Orthogonal Transformations
+
+2
+00:00:04,061 --> 00:00:09,079
+and now what we're gonna do is to study
+them by the matrices corresponding to this
+
+3
+00:00:09,079 --> 00:00:14,084
+transformations. And why do we care? The
+reason why we care is that rotation is an
+
+4
+00:00:14,084 --> 00:00:19,071
+Orthogonal Transformation and we need to
+have a really good expertise with, to
+
+5
+00:00:19,071 --> 00:00:24,074
+dealing with rotations and [inaudible]
+revision. So, I'm gonna take you through a
+
+6
+00:00:24,074 --> 00:00:29,090
+mat like chair which is on properties of
+rotations. But we're gonna, rotations are
+
+7
+00:00:29,090 --> 00:00:34,016
+special classes of Orthogonal
+Transformations. It turns out the two
+
+8
+00:00:34,016 --> 00:00:42,007
+kinds of Orthogonal Transformations.
+[inaudible] rotations And the other
+
+9
+00:00:42,007 --> 00:00:51,024
+reflections. But, let's get to this in a
+second. What I'm gonna do is, we are gonna
+
+10
+00:00:51,024 --> 00:01:07,014
+study Orthogonal Transformations Through
+the matrices. So, Orthogonal
+
+11
+00:01:07,014 --> 00:01:13,002
+Transformation are Linear Transformations
+and therefore they correspond to, matrix
+
+12
+00:01:13,002 --> 00:01:18,068
+multiplication. What we're gonna do is to
+study properties of those matrices. So,
+
+13
+00:01:18,068 --> 00:01:42,051
+supposed we have a point B represented by
+a column vector. We have an Orthogonal
+
+14
+00:01:42,051 --> 00:01:58,034
+Transformation psi which corresponds to A
+matrix A. So therefore, psi of the point,
+
+15
+00:01:58,034 --> 00:02:08,074
+applied to the point b is really the
+matrix a Multiplied with the column at the
+
+16
+00:02:08,074 --> 00:02:29,007
+b. So, we know that this is a Orthogonal
+Transformation. And What can we say about
+
+17
+00:02:29,007 --> 00:02:43,053
+its matrix? As an Orthogonal
+Transformation, it has some special
+
+18
+00:02:43,053 --> 00:02:59,003
+properties. What does that imply about the
+matrix a? We call The matrix Associated
+
+19
+00:03:00,080 --> 00:03:22,003
+With an Orthogonal Transformation An
+Orthogonal matrix. So, in other words, we
+
+20
+00:03:22,003 --> 00:03:29,069
+are gonna start to study properties of
+Orthogonal Matrices. Okay, let's do that.
+
+21
+00:03:30,047 --> 00:03:52,052
+So let's start to use the definition Of an
+Orthogonal Transformation. So let's say we
+
+22
+00:03:52,052 --> 00:04:04,010
+have two vectors, a and b. So, a dot
+product with b is the same as psi of a dot
+
+23
+00:04:04,010 --> 00:04:15,074
+product with psi of b, okay? But now, what
+is psi of a? This is a * a where a is the,
+
+24
+00:04:15,074 --> 00:04:34,085
+big A is the matrix, Corresponding to the
+transformation To psi And, psi of b Is A *
+
+25
+00:04:34,085 --> 00:04:46,065
+b, okay? So let's capture this. So we want
+to show that a dot b is the same as psi of
+
+26
+00:04:46,065 --> 00:04:59,012
+a * dot product with psi of b. So, how's t
+hat gonna work out? How do I compute? So
+
+27
+00:04:59,012 --> 00:05:11,004
+what's the dot product in, in matrix with,
+with the notation, With matrix notation?
+
+28
+00:05:16,089 --> 00:05:22,014
+So, let's take an example. We want to
+compute the dot product of two vectors, a
+
+29
+00:05:22,014 --> 00:05:28,035
+and b. And this is really the same as you
+take the transpose of the vector a and
+
+30
+00:05:28,035 --> 00:05:34,076
+then you do a matrix vector multiplication
+with b. So, suppose a was a three by one
+
+31
+00:05:34,076 --> 00:05:40,095
+vector and b was a three by one vector,
+what is a transpose is going to be? It's
+
+32
+00:05:40,095 --> 00:05:47,037
+the one by three vector and b is going to
+be a three by one vector. And when we do
+
+33
+00:05:47,037 --> 00:05:53,071
+the multiplication and this way we get a
+one by one vector which the [inaudible]
+
+34
+00:05:53,071 --> 00:06:23,039
+number. So, this is a standard way To Get
+scalar product. Okay. So let's go back to
+
+35
+00:06:23,039 --> 00:06:31,025
+our condition. The dot product of a and b
+must be the same as the dot product of psi
+
+36
+00:06:31,025 --> 00:06:42,051
+a and psi b. This is by definition. Okay?
+So, let's rewrite this. This is gonna be a
+
+37
+00:06:42,051 --> 00:06:53,061
+transpose b. Now we are thinking in terms
+of vector notation. Vectors and what is
+
+38
+00:06:53,061 --> 00:07:09,019
+psi of a going to be? This is going to be
+a, A dot product with ab. Okay, How do I
+
+39
+00:07:09,019 --> 00:07:19,056
+capture this dot product? What I have to
+do is to take the transpose draft on this
+
+40
+00:07:19,056 --> 00:07:29,000
+case. So, aa transpose ab. And let's
+simplify that out, that gives me a
+
+41
+00:07:29,000 --> 00:07:41,013
+transposed a transposed ab. Okay, let's
+rewrite this. Therefore, a transpose b = a
+
+42
+00:07:41,013 --> 00:08:14,051
+transposed. So, this is a relationship
+which is true For all choices Of a and b.
+
+43
+00:08:16,083 --> 00:08:45,080
+So, just for simplicity Consider a and b
+in r2. So therefore, there are Two by one
+
+44
+00:08:45,080 --> 00:09:10,061
+column vectors. So we can now consider A
+and b to be [inaudible] Unit vectors,
+
+45
+00:09:10,061 --> 00:09:42,035
+various choices of basis vectors, 01 or
+Ten. So, for example We could have Ab 1,0
+
+46
+00:09:42,035 --> 00:09:55,098
+and 1,0. So, like a unit vector along the
+x-axis. And what we know is that a
+
+47
+00:09:55,098 --> 00:10:10,044
+transpose b is = a transposed, a transpose
+ab. Definition of Orthogonal
+
+48
+00:10:10,044 --> 00:10:28,077
+Transformation. Okay. So, but, now we can
+take these particular specific examples.
+
+49
+00:10:28,077 --> 00:10:45,094
+So, if Br, Then what do we get? So a
+transpose b will give me one. Okay, That's
+
+50
+00:10:45,094 --> 00:10:54,087
+what we get on the left hand side. What
+happens on the right hand side? On the
+
+51
+00:10:54,087 --> 00:11:03,083
+right hand side, I have. One, zero
+transposed. Then I have this matrix a
+
+52
+00:11:03,083 --> 00:11:17,092
+transposed a. And let's just call this
+matrix c11, c12, c21, c22. And what I have
+
+53
+00:11:17,092 --> 00:11:28,016
+done is, I defined c to be the matrix a
+transposed a. And, here I have 1,0. Okay.
+
+54
+00:11:28,016 --> 00:11:45,035
+So let's simplify this further. This gives
+me zero. So, it gives me one Zero, C11,
+
+55
+00:11:45,035 --> 00:12:00,024
+c12, c21, c22, One, zero. And what is this
+going to give me? This essentially selects
+
+56
+00:12:00,024 --> 00:12:09,081
+out c11. And now, we know that these two
+relationships together tell us that c one,
+
+57
+00:12:09,081 --> 00:12:18,003
+one must be equal to one. So, let, let's
+just pause a little bit so that we are not
+
+58
+00:12:18,003 --> 00:12:24,061
+totally lost. What I did was, I had a
+relationship which I wanted to, I wanted
+
+59
+00:12:24,061 --> 00:12:31,050
+to study the properties of a transposed a.
+And what I did was I picked up particular
+
+60
+00:12:31,050 --> 00:12:38,010
+choice of the vector a and a particular
+choice of the vector b. And, from that I
+
+61
+00:12:38,010 --> 00:12:44,087
+showed that this matrix a transposed a,
+which I'm calling c, has the property that
+
+62
+00:12:44,087 --> 00:12:51,005
+c11 is = one. And I can now try out
+different choices of a and b which will
+
+63
+00:12:51,005 --> 00:13:08,034
+effectively select different entries in c
+And By, By this kind of process We can
+
+64
+00:13:08,034 --> 00:13:22,048
+show That c is the identity matrix one,
+one, zero, zero. And this is, of course,
+
+65
+00:13:22,048 --> 00:13:33,056
+the matrix a transposed a. Now this is
+really not that surprising because if you
+
+66
+00:13:33,056 --> 00:13:42,012
+recall my basic set up a transposed b was
+a transposed * this matrix a transposed
+
+67
+00:13:42,012 --> 00:13:50,005
+ab. And if that kind of leads one to
+expect that this matrix must be the
+
+68
+00:13:50,005 --> 00:14:03,048
+identity matrix I, where i Is the identity
+matrix one, zero, zero, one. So that's
+
+69
+00:14:03,048 --> 00:14:23,025
+what we have shown. So, So, what we have
+shown is that And sometimes, this is used
+
+70
+00:14:23,025 --> 00:14:34,060
+as a definition. This is used as
+definition, As the definition of an
+
+71
+00:14:34,060 --> 00:14:49,078
+Orthogonal Matrix. In other words, a
+matrix a is said to be Orthogonal if it
+
+72
+00:14:49,078 --> 00:14:58,074
+has the property that a transposed a = i.
+Okay, So, let's plug ahead, a transposed a
+
+73
+00:14:58,074 --> 00:15:06,034
+= i. Actually, you can see a lot from
+this. So, I'm gonna just try to derive
+
+74
+00:15:06,034 --> 00:15:12,094
+some conclusions [inaudible]. This just
+says that a transpose is equal to the
+
+75
+00:15:12,094 --> 00:15:18,082
+inverse of the matrix a because the
+property of an inverse obviously is that a
+
+76
+00:15:18,082 --> 00:15:24,020
+* a inverse should be equal to the
+identity and here a transpose will serve
+
+77
+00:15:24,020 --> 00:15:29,051
+as the rule. So, this is very nice. This
+means that when we want to find the
+
+78
+00:15:29,051 --> 00:15:35,010
+inverse of an Orthogonal Matrix, all you
+do is you just transpose it. The rules
+
+79
+00:15:35,010 --> 00:15:40,062
+become columns and vice versa and now
+you've got the inverse, so this is very

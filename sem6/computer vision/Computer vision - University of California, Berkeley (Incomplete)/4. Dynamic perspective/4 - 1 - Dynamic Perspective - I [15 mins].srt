@@ -1,0 +1,675 @@
+
+1
+00:00:00,000 --> 00:00:06,083
+Hello, welcome to the class again. And,
+finally we start to see some vision
+
+2
+00:00:06,083 --> 00:00:13,057
+applications of all the math that we
+studied on rotations and translations. So
+
+3
+00:00:13,057 --> 00:00:20,045
+in this lecture we're gonna study dynamic
+perspective. The question is what happens
+
+4
+00:00:20,045 --> 00:00:26,067
+when a camera moves? A moving camera gives
+us a lot more information than a static
+
+5
+00:00:26,067 --> 00:00:32,044
+camera. It gives us information about
+depth in the scene. And it reveals what
+
+6
+00:00:32,044 --> 00:00:38,006
+the so called ego motion is. Ego means I,
+so therefore, ego motion means the
+
+7
+00:00:38,006 --> 00:00:47,050
+movement of the camera. So, let's proceed.
+So let me remind you of the pinhole
+
+8
+00:00:47,050 --> 00:00:52,080
+camera. We studied this in earlier
+lectures. So, there, there is some object
+
+9
+00:00:52,080 --> 00:00:58,075
+out in the world, and that projects to an
+image, and we have the standard equations
+
+10
+00:00:58,075 --> 00:01:04,040
+of perspective projection. We derived them
+earlier, but I will in fact consider
+
+11
+00:01:04,040 --> 00:01:10,028
+simpler versions of those, where first of
+all we get rid of the negative sign, and
+
+12
+00:01:10,028 --> 00:01:17,081
+then secondly we can as well assume that F
+is equal to one. Assume f is equal one,
+
+13
+00:01:17,081 --> 00:01:23,028
+and why is that allowed? We can just
+measure everything in units of focal
+
+14
+00:01:23,028 --> 00:01:31,015
+length. So then the equations will become
+x equals. Upper case XO, divided by Z. And
+
+15
+00:01:31,015 --> 00:01:37,061
+little y is upper case Y divided by Z. So
+those are, those are straightforward
+
+16
+00:01:37,061 --> 00:01:44,016
+simple, simplified versions of the
+equations for pinhole camera, the pinhole
+
+17
+00:01:44,016 --> 00:01:51,050
+camera model of prospective prediction.
+Okay. So what happens when the camera
+
+18
+00:01:51,050 --> 00:01:58,011
+moves with respect to the world? So when a
+point XYZ in the world moves relative to
+
+19
+00:01:58,011 --> 00:02:04,024
+the camera, its projection in the image,
+which we use lowercase letters for xy,
+
+20
+00:02:04,024 --> 00:02:11,068
+moves as well. This movement in the image
+plane is called optimal flow. So suppose
+
+21
+00:02:11,068 --> 00:02:19,001
+that the point XY moves to the point X
+plus delta XY plus delta Y in time delta
+
+22
+00:02:19,001 --> 00:02:26,025
+T. Then we, we can divide delta XY delta
+T. And that's considered the X component
+
+23
+00:02:26,025 --> 00:02:33,049
+of the optical flow. And we can divide
+delta Y by delta T, and that's considered
+
+24
+00:02:33,049 --> 00:02:42,008
+the Y component of the optical flow. So
+the optical flow is a vector. It's a two
+
+25
+00:02:42,008 --> 00:02:56,020
+dimensional vector, and at every point. Xy
+in the image. So let's take an example. So
+
+26
+00:02:56,020 --> 00:03:01,099
+the example that I'm showing here is that
+you do a J.J. Gibson. Gibson was a
+
+27
+00:03:01,099 --> 00:03:08,023
+psychologist who emphasized the importance
+of optical flow, for vision perception. So
+
+28
+00:03:08,023 --> 00:03:13,096
+in this diagram what you see is the
+optical flow, for a pilot landing a plane.
+
+29
+00:03:13,096 --> 00:03:19,004
+So when a pilot is trying to land the
+plane, let's say this is where he is going
+
+30
+00:03:19,004 --> 00:03:24,000
+to land. And what you see here is the
+runway. What the pilot will see, as he or
+
+31
+00:03:24,000 --> 00:03:29,008
+she approaches the runway, is that, the
+various points on the ground will appear
+
+32
+00:03:29,008 --> 00:03:34,017
+as if they are streaming out. It's the
+same sensation that you get when you are
+
+33
+00:03:34,017 --> 00:03:39,081
+driving, when you're driving through a
+tunnel. And this, these vectors, these are
+
+34
+00:03:39,081 --> 00:03:46,037
+these two dimensional vectors. Each of
+these vectors is the u, v. The x component
+
+35
+00:03:46,037 --> 00:03:53,017
+is u, and the y component is v. And these
+obviously are functions of x, y because at
+
+36
+00:03:53,017 --> 00:03:59,029
+a location here, they point outwards and
+to the right. At a location here they
+
+37
+00:03:59,029 --> 00:04:04,057
+point outwards and to the left, and so
+forth. So that's why we use the term
+
+38
+00:04:04,057 --> 00:04:11,056
+vector field Because we have a vector at
+every point And as a function of X and Y,
+
+39
+00:04:11,056 --> 00:04:17,060
+the vector can vary from point to point.
+Let's take up another example, also due to
+
+40
+00:04:17,060 --> 00:04:23,049
+Gibson. This is what the optical flow
+field looks like from the side window of a
+
+41
+00:04:23,049 --> 00:04:29,031
+car. So imagine that you're driving on a
+f-, on a highway and you're looking out
+
+42
+00:04:29,031 --> 00:04:36,052
+from the side, So all these vectors here
+correspond to the optical flow And that's
+
+43
+00:04:36,052 --> 00:04:42,063
+pretty straight forward. Notice that the
+vectors are of different lengths. So these
+
+44
+00:04:42,063 --> 00:04:48,053
+vectors are big, and the vectors here are
+small. Well why is that? Well they. That
+
+45
+00:04:48,053 --> 00:04:54,072
+corresponds to the fact that those points
+are far away. The alignment is not moving.
+
+46
+00:04:54,072 --> 00:05:00,077
+The ground is not moving. What's moving is
+the car. So the relative velocity is, is
+
+47
+00:05:00,077 --> 00:05:06,032
+given by the fact that if the car is
+moving at. Some translational velocity T,
+
+48
+00:05:06,032 --> 00:05:11,069
+the ground is moving relative to it at
+minus T. So all the points in the ground
+
+49
+00:05:11,069 --> 00:05:17,027
+undergo the same movement, but there are
+some points which are nearer to you, those
+
+50
+00:05:17,027 --> 00:05:22,078
+will give rise to bigger optical flow
+vectors and there are points which are far
+
+51
+00:05:22,078 --> 00:05:28,016
+away and those will cause small optical f
+low vectors. But this example directly
+
+52
+00:05:28,016 --> 00:05:33,062
+tells you that we have some information
+here to tell us about the depth. Because
+
+53
+00:05:33,062 --> 00:05:39,042
+essentially, the smaller optical flow for
+vectors correspond of large Z. And we'll
+
+54
+00:05:39,042 --> 00:05:46,033
+be able to figure this out exactly
+mathematically in a few slides. [sound] So
+
+55
+00:05:46,033 --> 00:05:52,050
+let me tell you the outline of what we
+will do in the, in the next few slides. So
+
+56
+00:05:52,050 --> 00:05:58,038
+first of all we are going to derive an
+equation which relates the optical flow
+
+57
+00:05:58,038 --> 00:06:04,041
+field to the scene depth and the motion of
+the camera. So this is the fundamental
+
+58
+00:06:04,041 --> 00:06:10,036
+equation of optical flow. And we will do
+this by simple geometrical analysis and
+
+59
+00:06:10,036 --> 00:06:16,002
+this analysis will exploit the
+representation of, of rigid body motion as
+
+60
+00:06:16,002 --> 00:06:21,084
+some combination of translation and
+rotation. That's after we have done that
+
+61
+00:06:21,084 --> 00:06:27,094
+we are gonna to try to make sense of this.
+We are gonna to try to interpret this and
+
+62
+00:06:27,094 --> 00:06:33,032
+get some physical [inaudible]. And
+basically what we will find is that the
+
+63
+00:06:33,032 --> 00:06:38,099
+transitional component of the optical flow
+is the more important one. And that
+
+64
+00:06:38,099 --> 00:06:44,058
+reveals something about Z, the depth, as
+well as the transitional vector T. The
+
+65
+00:06:44,058 --> 00:06:50,017
+rotation of the component of the flow
+field is, also important but, less so. Its
+
+66
+00:06:50,017 --> 00:06:55,076
+main purpose is to tell us something about
+commotion. It tells us about how the
+
+67
+00:06:55,076 --> 00:07:01,027
+camera is rotating. It doesn't tell us
+anything about the scene. So we'll try to
+
+68
+00:07:01,027 --> 00:07:06,054
+understand that as well. It will fall out,
+more or less, straightforwardly from the
+
+69
+00:07:06,054 --> 00:07:11,068
+equations. So let's get down to business.
+Our goal is going to be to derive the
+
+70
+00:07:11,068 --> 00:07:16,082
+equation which relates the optical flow
+field to see in depth, Z affects Y, and
+
+71
+00:07:16,082 --> 00:07:23,060
+the motion of the camera T omega. Okay, so
+let's get going. How does the point X, and
+
+72
+00:07:23,060 --> 00:07:28,091
+note that I always use upper case
+quantities for scene variables, how does
+
+73
+00:07:28,091 --> 00:07:34,059
+the point X in the scene move? So let's
+we're gonna give the movement to the
+
+74
+00:07:34,059 --> 00:07:40,019
+camera. So assume that the camera has a
+translational velocity which has three
+
+75
+00:07:40,019 --> 00:07:47,060
+components [inaudible] X, [inaudible] Y. T
+sub y, t sub z, and an angular velocity,
+
+76
+00:07:47,060 --> 00:07:55,034
+which is given by the components of omega.
+How do I characterize the movement of a po
+
+77
+00:07:55,034 --> 00:08:00,099
+int in the scene? The movement of a point
+in the scene is equal and opposite to the
+
+78
+00:08:00,099 --> 00:08:06,049
+movement of the camera. So the camera's
+movement is given by t And omega. So in
+
+79
+00:08:06,049 --> 00:08:12,031
+the scene, so points in the scene will
+appear to move equal and opposite. So
+
+80
+00:08:12,031 --> 00:08:18,083
+that, so we have a translational term and
+a rotational term given here and the minus
+
+81
+00:08:18,083 --> 00:08:25,042
+signs are because the camera is moving and
+we consider movement of some point in the
+
+82
+00:08:25,042 --> 00:08:32,047
+scene and x dot here is essentially the
+standard notation for Temporal derivative,
+
+83
+00:08:32,047 --> 00:08:41,014
+where X is a vector. Dx upon dt is given
+by X dot. Okay, so once we have this
+
+84
+00:08:41,014 --> 00:08:48,031
+vector equation, 3.1 in this notation. I
+can write it out in coordinates, and, this
+
+85
+00:08:48,031 --> 00:08:55,040
+is just working out this vector product.
+And if you do that, you should get this
+
+86
+00:08:55,040 --> 00:09:01,045
+expression. So this is quite
+straightforward, and now we have expressed
+
+87
+00:09:01,045 --> 00:09:07,079
+the moment of a point in the scene. In
+terms of how the x coordinates changes,
+
+88
+00:09:07,079 --> 00:09:14,042
+how the y coordinate changes, and how the
+z coordinate changes using the information
+
+89
+00:09:14,042 --> 00:09:23,002
+about The transitional vector, and here,
+this, this X, y, and Z correspond to sort
+
+90
+00:09:23,002 --> 00:09:33,043
+of the scene coordinates. Okay. I should
+perhaps have used upper-case for X, Y and
+
+91
+00:09:33,043 --> 00:09:41,067
+Z here, because these are meant to be
+scene coordinates. Okay, so now we are
+
+92
+00:09:41,067 --> 00:09:46,047
+going to consider the effect of
+projection. So far in fact we had no
+
+93
+00:09:46,047 --> 00:09:52,005
+notion of perspective projection. It was
+just some ob, the camera is some object
+
+94
+00:09:52,005 --> 00:09:57,055
+moving, and then we had, we had described
+relative movement as a combination of
+
+95
+00:09:57,055 --> 00:10:03,070
+translation and rotation. So the equations
+of perspective projections are given here.
+
+96
+00:10:04,048 --> 00:10:10,038
+So the only little trick here is that, I
+assume F=1, this is not a big deal. I, I
+
+97
+00:10:10,038 --> 00:10:16,059
+am just saying that instead of measuring
+in centimeters or meters, I measured it in
+
+98
+00:10:16,059 --> 00:10:22,080
+measure length in units of focal length.
+This is a kind of trick physicists use all
+
+99
+00:10:22,080 --> 00:10:27,073
+the time. If you, if I want too, I could
+actually have the f in there and get it
+
+100
+00:10:27,073 --> 00:10:33,007
+through the equations. In any case, it's
+not a big deal. So what we have to do is
+
+101
+00:10:33,007 --> 00:10:39,001
+to take the derivative. So if I have
+little x equals upper-case X upon Z, I
+
+102
+00:10:39,001 --> 00:10:45,027
+have to now take the deriv ative of the
+circumspect to time. So now we have the
+
+103
+00:10:45,027 --> 00:10:51,078
+standard formula. So, how do I take the
+derivative of a fraction where X is the
+
+104
+00:10:51,078 --> 00:10:58,028
+numerator and Z is the denominator? Well,
+we take the, the denominator gets squared
+
+105
+00:10:58,028 --> 00:11:06,063
+and we get X dot Z, minus Z dot X. This is
+standard Calculus, right, calculus for the
+
+106
+00:11:06,063 --> 00:11:12,045
+derivative of the ratio of two functions.
+So that's what will give us this
+
+107
+00:11:12,045 --> 00:11:18,066
+expression right here and I'll get a
+similar expression for why not. So this is
+
+108
+00:11:18,066 --> 00:11:24,024
+totally straight forward. So this just a
+consequence of calculus, we are
+
+109
+00:11:24,024 --> 00:11:30,046
+considering how the little x, how the
+image plain projection little x and image
+
+110
+00:11:30,046 --> 00:11:36,099
+plain projection little y, how that
+changes when, when I over time. And these
+
+111
+00:11:36,099 --> 00:11:50,031
+here I should really have, uppercase Y and
+Z should have been used. So this is a
+
+112
+00:11:50,031 --> 00:11:55,060
+error in my slide. I used lower case
+quantities here but they should all have
+
+113
+00:11:55,060 --> 00:12:05,019
+been upper case, because these are seen
+quantities. >> Okay. >> So let's move
+
+114
+00:12:05,019 --> 00:12:12,097
+right along. So now what we have to do is
+to plug in, expressions for the temporal
+
+115
+00:12:12,097 --> 00:12:23,041
+derivatives of X and Y and so forth, from,
+from the expression here. So that's what I
+
+116
+00:12:23,041 --> 00:12:31,083
+do. So I take. So I, let's say I take this
+equation, and then x dot. I plug in x-dot
+
+117
+00:12:31,083 --> 00:12:38,092
+from here, and I plug in z-dot from here,
+and, that will give me, little x-dot, and
+
+118
+00:12:38,092 --> 00:12:45,051
+then I can simplify a little bit using
+that fact that little x is x over z, and
+
+119
+00:12:45,051 --> 00:12:52,026
+little y is y over z. So I'm going to not
+go through the algebra for you here, but
+
+120
+00:12:52,026 --> 00:12:59,018
+you should sit down and verify it, and you
+should be able to work out this equation,
+
+121
+00:12:59,018 --> 00:13:05,087
+so please...very farthest, It's just
+calculation, but it's worth doing. So we
+
+122
+00:13:05,087 --> 00:13:11,013
+have now got an expression. This is the
+grand equations that I'm interested in.
+
+123
+00:13:11,013 --> 00:13:17,009
+And I'm going to rewrite it so you can see
+this. Let's keep, get the [inaudible]
+
+124
+00:13:17,009 --> 00:13:23,073
+right again. So what is X dot and Y dot?
+So this is, as always X dot means d sub X
+
+125
+00:13:23,073 --> 00:13:30,055
+upon d T and Y dot means d Y upon d T. So
+these are the two components of optical
+
+126
+00:13:30,055 --> 00:13:36,087
+flow, respectively the X component and Y
+component. And what we did over the
+
+127
+00:13:36,087 --> 00:13:43,070
+previous slide was to derive relationship
+between thes e guys and movement in the
+
+128
+00:13:43,070 --> 00:13:50,076
+scene. And the movement in the scene has a
+translation component And a rotation
+
+129
+00:13:50,076 --> 00:13:57,009
+component. And then we have little x,
+little y, these are just coordinates
+
+130
+00:13:57,009 --> 00:14:02,068
+[inaudible]. And, then we have this
+fellow, Z, and Z is in general, actually
+
+131
+00:14:02,068 --> 00:14:08,082
+going to be a function of little x and
+little y. And this is, of course, depth in
+
+132
+00:14:08,082 --> 00:14:19,091
+the scene. So what do we observe? We
+observe that the translational component
+
+133
+00:14:19,091 --> 00:14:27,083
+has, has a dependence on that. So this sky
+is going to tell us something about seeing
+
+134
+00:14:27,083 --> 00:14:41,020
+death. The rotation component has no
+dependence on Z. So, what the rotation
+
+135
+00:14:41,020 --> 00:14:45,005
+component does is, it just tells us about
+rotation.

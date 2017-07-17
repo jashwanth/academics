@@ -1,0 +1,883 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A SIMPLE PRIOR FREE METHOD FOR NON-RIGID STRUCTURE FROM MOTION FACTORIZATION
+\end_layout
+
+\begin_layout Author
+Yuchao Dai , Hongdong Li , Mingyi He
+\end_layout
+
+\begin_layout Standard
+About : 
+\end_layout
+
+\begin_layout Itemize
+This paper proposes a simple prior free method for solving non rigid structure
+ from motion factorization problems.
+\end_layout
+
+\begin_layout Itemize
+The success of the paper lies in the fact that it doesnot assume constraints
+ on non rigidity o camera motions
+\end_layout
+
+\begin_layout Itemize
+The paper discusses about the factorisation problem of measurement matrix
+ and techniques employed to accurately extract non-rigid shape and camera
+ motion.
+\end_layout
+
+\begin_layout Standard
+Introduction :
+\end_layout
+
+\begin_layout Subsection
+Tomasi - kanade Factorization
+\end_layout
+
+\begin_layout Standard
+Suppose we track P feature points over F frames in an image stream.
+ Let the trajectories of image coordinates be 
+\begin_inset Formula ${(u_{fp},v_{fp})}$
+\end_inset
+
+ where
+\begin_inset Formula $f=1,2,...F$
+\end_inset
+
+ and 
+\begin_inset Formula $p=1,2,......P$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+The measurement matrix is formed as follows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\left[\begin{array}{ccccc}
+u_{11} & u_{12} & . & . & u_{1p}\\
+u_{21} & . & . & . & u_{2p}\\
+. & . & . & . & .\\
+. & . & . & . & .\\
+. & . & . & . & .\\
+v_{11} & v_{12} & . & . & v_{1p}\\
+. & . & . & . & .\\
+. & . & . & . & .\\
+v_{f1} & v_{f2} & v_{f3} & . & v_{fp}
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The individual elements are substracted from mean of each frame.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u_{ij}=u_{ij}-meanx_{i}$
+\end_inset
+
+where 
+\begin_inset Formula $meanx_{i}=1/P\sum u_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{ij}=v_{ij}-meany_{i}$
+\end_inset
+
+where 
+\begin_inset Formula $meany_{i}=1/P\sum v_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The new matrix is called registered rank matrix.
+ 
+\end_layout
+
+\begin_layout Itemize
+Coordinate frame orientation is adjusted that world origin is at centroid
+ of P world points whose P feature points are tracked in image stream.
+\end_layout
+
+\begin_layout Standard
+With such a arrangement W can decomposed into RS where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\left[\begin{array}{c}
+i_{1}^{'}\\
+i_{2}^{'}\\
+.\\
+.\\
+.\\
+j_{1}^{'}\\
+j_{2}^{'}\\
+.\\
+.\\
+j_{f}^{'}
+\end{array}\right]$
+\end_inset
+
+where 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $j_{1}$
+\end_inset
+
+ are along scan lines and columns of 
+\begin_inset Formula $1^{st}$
+\end_inset
+
+ image in the stream.
+ 
+\begin_inset Formula $(dimension=2F\times3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\left[\begin{array}{cccc}
+s_{1} & . & . & s_{p}\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $S$
+\end_inset
+
+ is the shape matrix .
+\begin_inset Formula $(dimension=3\times P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we come most important and powerful theorem of factorization which is
+ rank theorem .
+ 
+\end_layout
+
+\begin_layout Section*
+RANK THEOREM:
+\end_layout
+
+\begin_layout Itemize
+Without noise the registered measrement matrix is atmost rank 3.Even if the
+ matrix is noisy the best possible shape and rotation estimate is obtained
+ by considering only the three greatest singular values of W.
+\end_layout
+
+\begin_layout Itemize
+By using SVD decomposition 
+\begin_inset Formula $W^{'}=U^{'}D^{'}V^{'}$
+\end_inset
+
+ .Then we can assign 
+\begin_inset Formula $R^{'}=U^{'}D^{'}$
+\end_inset
+
+ and 
+\begin_inset Formula $S^{'}=V^{'}$
+\end_inset
+
+.
+ This solution is true only up to 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix 
+\begin_inset Formula $Q$
+\end_inset
+
+ because 
+\begin_inset Formula $R=R^{'}Q$
+\end_inset
+
+ and 
+\begin_inset Formula $S=Q^{-1}S^{'}$
+\end_inset
+
+ are also possible solutions.
+\end_layout
+
+\begin_layout Itemize
+To find 
+\begin_inset Formula $Q$
+\end_inset
+
+ we introduce metric constraints for ex : 
+\begin_inset Formula $i_{1}\times i{}_{1}^{'}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $i_{1}\times i{}_{2}^{'}=0$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+Even now the solution is determined to a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ rotation matrix hence another constraint that world frame is initially
+ parallel to first frame.
+\end_layout
+
+\begin_layout Itemize
+Finally rotation matrix and shape matrix can be found for each frame and
+ the results were as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 26-04-2013 16-45-01.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bregler's work:
+\end_layout
+
+\begin_layout Standard
+Abstract :
+\end_layout
+
+\begin_layout Itemize
+This paper addresses the problem of recovering 3D non-rigid shape models
+ from image sequences.
+\end_layout
+
+\begin_layout Itemize
+Here 3D shapes in each frame is a linear combination of a set of basis.
+\end_layout
+
+\begin_layout Itemize
+This paper demonstrates a new technique for recovering 3D non-rigid shape
+ models from 2D image sequences recorded with a single camera.
+\end_layout
+
+\begin_layout Itemize
+All existing methods for nonrigid 3D shapes either require an a-priori model
+ or require multiple views.
+\end_layout
+
+\begin_layout Itemize
+This is the first algorithm that can tackle this problem without the use
+ of a prior model and without multiple view or other 3D input.
+\end_layout
+
+\begin_layout Standard
+Explanation:
+\end_layout
+
+\begin_layout Itemize
+The shape of the non-rigid object is described as a keyframe basis set
+\begin_inset Formula $S_{1},S_{2},S_{3}........$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The shape of a specific configuration is a linear combination of basis set.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\sum_{i=1}^{k}L_{i}S_{i}(dimension=3\times P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\begin{array}{ccccc}
+u1 & u2 & . & . & up\\
+v1 & v2 & . & . & vp
+\end{array}\right]=R\times S+T(u_{i},v_{i})$
+\end_inset
+
+are 2-D image points in a frame.
+\end_layout
+
+\begin_layout Standard
+where
+\begin_inset Formula $R=\left[\begin{array}{ccc}
+r1 & r2 & r3\\
+r4 & r5 & r6
+\end{array}\right]$
+\end_inset
+
+contains first two rows of rotation matrix.
+\end_layout
+
+\begin_layout Itemize
+We eliminate T by subtracting the mean of all 2D points, and henceforth
+ can assume that S is centered at the origin.
+\end_layout
+
+\begin_layout Itemize
+After adding temporal index to each frame we form measurement matrix W.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\left[\begin{array}{cccccc}
+l_{1}^{1}R^{1} & . & . & . & . & l_{k}^{1}R^{1}\\
+. & . & . & . & . & .\\
+. & . & . & . & . & .\\
+l_{1}^{N}R^{N} & . & . & . & . & l_{k}^{N}R^{N}
+\end{array}\right]\times\left[\begin{array}{c}
+S_{1}\\
+S_{2}\\
+.\\
+.\\
+S_{K}
+\end{array}\right]$
+\end_inset
+
+for N frames 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=QB(dimensionofQ=2N\times3KandB=3K\times P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Q can be factorised into configuration weights and pose matrix in each frame
+ .
+\end_layout
+
+\begin_layout Standard
+The transformation matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ maps all 
+\begin_inset Formula $R_{t}$
+\end_inset
+
+ into an orthonormal
+\begin_inset Formula $R_{t}=R_{t}^{'}\times G$
+\end_inset
+
+.
+ which is found using least square methods.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 26-04-2013 21-51-02.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Track the eye brows, upper and lower eye lids, 5 nose points, outer and
+ inner boundary of the lips, and the chin contour using 
+\end_layout
+
+\begin_layout Standard
+apperance based 2D tracking technique.
+\end_layout
+
+\begin_layout Section*
+Paper work:
+\end_layout
+
+\begin_layout Itemize
+In a 2004 paper, Xiao et al.
+ proved that the problem itself is indeed ill-posed or under-constrained,
+ in the sense that, based on the orthonormality constraint alone, one cannot
+ recover the non-rigid shape bases and the corresponding shape coefficients
+ uniquely.
+\end_layout
+
+\begin_layout Itemize
+To resolve this ambiguity, Xiao et al.
+ suggested to add extraneous “basis constraints” so as to make the system
+ well-constrained.
+\end_layout
+
+\begin_layout Itemize
+Akhter et al.
+ made an important theoretical progress in [2] which reveals that: although
+ the ambiguity in shape basis is inherent, the 3D shape itself can be recovered
+ uniquely without ambiguity.
+\end_layout
+
+\begin_layout Itemize
+Based on the linear combination model , the non-rigid shape Si belongs to
+  
+\begin_inset Formula $R(3\times P)$
+\end_inset
+
+ can be represented as a linear combination of K shape bases Bk belong to
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $R(3\times P)$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ with shape coefficients cik as
+\begin_inset Formula $S_{i}=\sum cikBk$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Under orthographic camera model, the coordinates of the 2D image points
+ observed at frame i are given by 
+\begin_inset Formula $W_{i}=R_{i}S_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $R{}_{i}$
+\end_inset
+
+ contains first two rows of ith camera rotation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\left[\begin{array}{ccc}
+C_{11}R_{1} & \ldots & C_{1k}R_{1}\\
+\vdots & \ddots & \vdots\\
+C_{f1}R_{1} & \cdots & C_{fk}R_{f}
+\end{array}\right]\times\left[\begin{array}{c}
+B_{1}\\
+\vdots\\
+\vdots\\
+B_{k}
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+= 
+\begin_inset Formula $R(C\times I{}_{3})B$
+\end_inset
+
+ where 
+\begin_inset Formula $R=blkdiag(R_{1},R_{2},R_{3}............)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Pi\times B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(dimension of 
+\begin_inset Formula $\Pi=3\times k$
+\end_inset
+
+ and dimension of 
+\begin_inset Formula $B=3\times k$
+\end_inset
+
+ )
+\end_layout
+
+\begin_layout Standard
+However this decomposition is not unique as any non singular matrix G can
+ be inserted between as 
+\begin_inset Formula $\Pi GG^{-1}B$
+\end_inset
+
+ .
+ This G which rectifies 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ is called Euclidean corrective matrix .
+\end_layout
+
+\begin_layout Standard
+Orthonormality constraints in the 
+\begin_inset Formula $\Pi$
+\end_inset
+
+ matrix can be imposed to recover a Gram Matrix 
+\begin_inset Formula $Q{}_{k}$
+\end_inset
+
+ such that 
+\begin_inset Formula $Q_{k}=G_{k}G{}^{T}{}_{k}$
+\end_inset
+
+.(dimension of 
+\begin_inset Formula $Q_{k}=3k\times3k$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Akhter et al showed that the fundamental ambiguity does not necessarily
+ lead to an ambiguous shape .
+ Orthonormality constraints alone is in fact sufficient to recover a unique
+ (unambiguous) non-rigid shape (provided that a previously-overlooked rank-3
+ constraint on 
+\begin_inset Formula $Q{}_{k}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Denote ith double rows of 
+\begin_inset Formula $\widehat{\Pi}$
+\end_inset
+
+ as 
+\begin_inset Formula $\widehat{\Pi}{}_{2i-1:2i}$
+\end_inset
+
+and kth triplet og 
+\begin_inset Formula $G$
+\end_inset
+
+ as 
+\begin_inset Formula $G{}_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{2i-1}*Q_{k}*\Pi_{2i-1}^{'}=\Pi{}_{2i}*Q_{k}*\Pi^{'}{}_{2i},\Pi_{2i-1}*Q_{k}*\Pi^{'}{}_{2i}=0$
+\end_inset
+
+------- (Eq)
+\end_layout
+
+\begin_layout Part*
+Theorem:
+\end_layout
+
+\begin_layout Standard
+All the solutions of 
+\begin_inset Formula $Q_{k}$
+\end_inset
+
+to linear system of (Eq) form a linear subspace of dimension 
+\begin_inset Formula $2K^{2}-K.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above equation is converted into the form 
+\begin_inset Formula $Aq_{k}=0$
+\end_inset
+
+ where 
+\begin_inset Formula $q_{k}=vec(Q_{k})$
+\end_inset
+
+ is 
+\begin_inset Formula $9k^{2}$
+\end_inset
+
+column vector .
+ 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ is the nullspace of the vector 
+\begin_inset Formula $A$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Part*
+Intersection theorem:
+\end_layout
+
+\begin_layout Standard
+Under nondegenerate and noise-free conditions, any correct solution of Qk
+ (i.e.
+ the Gram matrix of a column-triplet of the true Euclidean corrective matrix
+ Gk) must lie in the intersection of the (2K2−K) dimensional null-space
+ of A and a rank-3 positive semi-definite matrix cone, i.e., Qk belongs to
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${Avec(Q_{k})=0}∩{Qk\succ0}∩{rank(Q_{k})=3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The three steps to solve the above algorithm are 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M$
+\end_inset
+
+easurement noise may increase rank of 
+\begin_inset Formula $Q_{k}$
+\end_inset
+
+ and the problem is to minimise 
+\begin_inset Formula $rank(Q_{k})$
+\end_inset
+
+.
+ Nuclear norm minimization is the tightest convex relaxation for the rank
+ minimization problem (above) which is NP-hard.
+ Now 
+\begin_inset Formula $trace(Q_{k}^{*})=rank(Q_{k}^{*})$
+\end_inset
+
+.
+ So the problem reduces to 
+\begin_inset Formula $min(trace(Q_{k})$
+\end_inset
+
+) such that 
+\begin_inset Formula $Avec(Q_{k})=0$
+\end_inset
+
+ and 
+\begin_inset Formula $Q_{k}$
+\end_inset
+
+ is semi-definite matrix.This is a standard semi definite programming problem
+ (SDP) of fixed size 
+\begin_inset Formula $(2k^{2}-k)$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+Once Gk find similarly 
+\begin_inset Formula $G_{1},G_{2},.....$
+\end_inset
+
+ and form G matrix.
+\end_layout
+
+\begin_layout Itemize
+Once 
+\begin_inset Formula $G_{k}$
+\end_inset
+
+ is solved, the rotation at every frame 
+\begin_inset Formula $i=1,···,F$
+\end_inset
+
+ can be solved by using
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{\Pi}_{2i-1:2i}G_{k}$
+\end_inset
+
+ = 
+\begin_inset Formula $C_{ik}R_{i}$
+\end_inset
+
+ , 
+\begin_inset Formula $i=1,2,...F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Estimate S by Rank Minimisation
+\end_layout
+
+\begin_layout Standard
+valid solution to shape matrix is formulated as following rank minisization
+ problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $rank(s)\leq3\times k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=RS$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution to the above problem is unique and is given as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=R^{\dagger}W=(R^{T}(RR^{T})^{-1})W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+Experiments:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 27-04-2013 19-03-29.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 27-04-2013 19-08-53.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conclusion:
+\end_layout
+
+\begin_layout Standard
+This paper advocates a novel prior-free approach to nonrigid factorization.
+ Our method is purely convex, very easy to implement, and is guaranteed
+ to converge to an optimal solution 
+\end_layout
+
+\begin_layout Standard
+(at least approximately up to certain relaxation).
+\end_layout
+
+\end_body
+\end_document

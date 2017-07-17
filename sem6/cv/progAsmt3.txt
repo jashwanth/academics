@@ -1,0 +1,84 @@
+
+		  CS5765. Computer Vision. Spring 2013
+
+			Programming Assignment 3
+
+			Deadline 1: March 22, 2013
+
+
+This assignment is to study interest points and applications.  They are
+used heavily in modern visual recognition.  
+This assignment is to be
+done in teams of 2.  It has two parts: the first part is a study on
+different interest points and descriptors. 
+The second part is an
+implementation of a standard object recognition pipeline and testing its
+performance on different datasets.
+
+
+
+
+
+Due on March 22th
+
+  You will study the properties and behaviour of common interest points
+  such as Harris Corners, SIFT, SURF, etc. They are available on OpenCV
+  
+and Matlab. There is a very useful library called VLFeat
+  (www.vlfeat.org) that you can use for different tasks of this
+  assignment.
+
+ 
+
+In Part 1, you have to use various detectors and descriptors to find
+  interest points in the image. These interest points can be used to
+  find correspondences 
+between images in the feature space. 
+These
+  matches are noisy but still work when combined with a robust estimator
+  like RANSAC.
+
+  The task is to estimate the Fundamental Matrix between 2 images using
+  
+SIFT and SURF features for matching points between them. RANSAC is
+  absolutely necessary here. Estimate F by matching interest points.  
+Be
+  aware of how the ratio test is used to match SIFT features. You should
+  report standard measures like reprojection error to understand the
+  
+quality of the fundamental matrix.
+
+  You should build a web-based interface using which one can submit a 2
+  images to your system. The F will be computed 
+for them using the above
+  process. To demonstrate the results, display the 2 image side-by-side.
+  Select 8-10 random matches between the images.
+Mark the points in the
+  "first" (or "left") image and draw the corresponding epipolar line in
+  the other image. Use colors to match the points and lines.
+
+ 
+
+
+
+You should also submit a report comparing the performance of different
+  descriptors on a few example image pairs. 
+Compare the time to find the
+  interest points, the time to find the matches, as well as the F.
+  
+Explain your findings and state possible reasons. You are encouraged
+  to try out several descriptors; use of at least SIFT and SURF is
+  manadatory.
+
+ 
+The VLFeat repository contains libraries for many descriptors. Do try
+  those out and get a comprehensive understanding on how well each does.
+  
+You should use the code, but understand what is going on at each step
+  and why.
+
+ 
+ You should produce a comprehensive report on your findings from these
+  experiments. Comprehension of the process is the key take away from
+  this assignment.
+

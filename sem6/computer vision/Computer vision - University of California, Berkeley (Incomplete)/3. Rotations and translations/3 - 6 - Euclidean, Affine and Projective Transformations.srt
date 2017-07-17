@@ -1,0 +1,789 @@
+
+1
+00:00:00,000 --> 00:00:05,057
+Hello. Welcome back. So, in the last
+lecture, we started various properties of
+
+2
+00:00:05,057 --> 00:00:11,082
+Orthogonal Transformations specifically
+rotations and three dimensions. So, by now
+
+3
+00:00:11,082 --> 00:00:17,097
+you must be wondering Is there more. We
+have studied rotations, we have studied
+
+4
+00:00:17,097 --> 00:00:23,086
+translations. Is there more having the set
+of Rigid Body Motions, how should we think
+
+5
+00:00:23,086 --> 00:00:29,042
+about it in general? And here, there is a
+theorem and the theorem is that any Rigid
+
+6
+00:00:29,042 --> 00:00:34,050
+Body Motion can be expressed as an
+Orthogonal Transformation followed by a
+
+7
+00:00:34,050 --> 00:00:39,051
+translation. So, we don't need to consider
+anything other than Orthogonal
+
+8
+00:00:39,051 --> 00:00:45,038
+Transformations and translations. A manual
+Orthogonal Transformations, there are ones
+
+9
+00:00:45,038 --> 00:00:50,048
+which have determinant plus one and
+determinant minus one and we will be
+
+10
+00:00:50,048 --> 00:00:55,038
+concerned with deter, those
+transformations which are determinant plus
+
+11
+00:00:55,038 --> 00:01:00,090
+one. And something these are called Proper
+Rigid Body Motions and deter, special
+
+12
+00:01:00,090 --> 00:01:07,000
+Orthogonal Group is used. Okay. So, now we
+can ask the question, here is a certain
+
+13
+00:01:07,000 --> 00:01:13,030
+form of this transformation. Can we say
+more about the structure of the set of
+
+14
+00:01:13,030 --> 00:01:22,040
+Rigid Body Transformations, So one
+observation here is that the composition
+
+15
+00:01:22,040 --> 00:01:29,039
+of two isometries is an isometry. So, how
+do we go about proving this? So there is
+
+16
+00:01:29,039 --> 00:01:35,062
+one isometry given by. The formula here
+and let's say another isometry given by
+
+17
+00:01:35,062 --> 00:01:41,069
+this formula. So here, a1 and a2 are the
+Orthogonal Matrices. They will correspond
+
+18
+00:01:41,069 --> 00:01:47,098
+to the rotation part if the determinant is
+plus one. And then there's a translation
+
+19
+00:01:47,098 --> 00:01:53,074
+given by t1 or t2. So, if we combine this
+two, do we get another isometry? Well,
+
+20
+00:01:53,074 --> 00:02:00,011
+that's really straight forward thing. We
+just do the algebra so here let's say we
+
+21
+00:02:00,011 --> 00:02:06,013
+first. We have the point a, we apply psi
+two and then we apply psi one so that will
+
+22
+00:02:06,013 --> 00:02:12,094
+give me this kind of an equation here. And
+then if I try to the algebra, I get.
+
+23
+00:02:12,094 --> 00:02:21,026
+Something else which is a3a + t3 where a3
+is a1a2 and the t3 is a1t2 + t1. And this
+
+24
+00:02:21,026 --> 00:02:29,028
+is again in form of an Orthogonal Matrix
+multiplying a vector plus a translation.
+
+25
+00:02:29,028 --> 00:02:37,068
+So what we see is that composition of two
+isometries is therefore an Isometry. Well
+
+26
+00:02:37,068 --> 00:02:43,068
+generally, Isometry is constit ute a group
+in the mathematical sense. And again, if
+
+27
+00:02:43,068 --> 00:02:50,005
+you don't know the definition if a group,
+you can look it up on Wikipedia. So When
+
+28
+00:02:50,005 --> 00:02:55,058
+you have element of a group and some
+operations, we can get new elements of the
+
+29
+00:02:55,058 --> 00:03:00,068
+group. And, and there has to be an
+identity element. So, what will be the
+
+30
+00:03:00,068 --> 00:03:06,045
+identity isometry. It will correspond to
+a. Being i, so the Orthogonal Matrix is i
+
+31
+00:03:06,045 --> 00:03:12,046
+which does nothing. And the translation
+part should then be just zero and that if
+
+32
+00:03:12,046 --> 00:03:18,033
+I have an Isometry corresponding to an
+Orthogonal Matrix which is the identity
+
+33
+00:03:18,033 --> 00:03:24,035
+and the translation which is zero, I will
+have nothing happened as a result of it.
+
+34
+00:03:24,035 --> 00:03:29,084
+There is an inverse so, if there is a
+Isometry specified by the Orthogonal
+
+35
+00:03:29,084 --> 00:03:35,091
+Matrix a and translation vector t, we can
+compute what. Should be the Isometry
+
+36
+00:03:35,091 --> 00:03:41,006
+applied to the result of the first
+transformation so as to bring us back to
+
+37
+00:03:41,006 --> 00:03:46,081
+the identity and this leave as an exercise
+to you. You should be able to work this
+
+38
+00:03:46,081 --> 00:03:52,003
+out. Isometries are, are the composition
+of Isometry is also shared in to that
+
+39
+00:03:52,003 --> 00:04:00,061
+second, straight forward thing to work
+out. Now let's turn to the same form that
+
+40
+00:04:00,089 --> 00:04:09,020
+transformation is matrix multiplication of
+the input vector a and then after that
+
+41
+00:04:09,020 --> 00:04:15,090
+there's an addition of a translation
+vector t. But now what we do is, we
+
+42
+00:04:15,090 --> 00:04:22,089
+generalize a little bit. What we say is
+that a is no longer required to be
+
+43
+00:04:22,089 --> 00:04:31,062
+Orthogonal, a is any nonsingular Matrix in
+this case. Meaning that we require that
+
+44
+00:04:31,062 --> 00:04:37,007
+it's determinant be, not be zero but
+that's it. So you can see clearly that
+
+45
+00:04:37,007 --> 00:04:42,086
+this is a proper generalization of the set
+of isometries or Rigid Body Motions
+
+46
+00:04:42,086 --> 00:04:48,080
+because Orthogonal Matrices are obviously
+nonsingular so everything just works, it's
+
+47
+00:04:48,080 --> 00:04:54,059
+gonna work out there. But what does this
+bias this notion of Affine Transformation?
+
+48
+00:04:54,059 --> 00:05:00,038
+It's a more general notion, what does it
+bias? It buys us more flexibility. So
+
+49
+00:05:00,038 --> 00:05:07,020
+here, I am going to give you an example
+where this is the input, this is the input
+
+50
+00:05:07,020 --> 00:05:13,084
+and this, for example, you can think of a
+four points of the square is input. Now,
+
+51
+00:05:13,084 --> 00:05:20,074
+there are Orthogonal Transformations we
+know about such as rotation, right? That
+
+52
+00:05:20,074 --> 00:05:28,040
+will do, that will give you something like
+this. But Rotations or rotations followed
+
+53
+00:05:28,040 --> 00:05:35,028
+by translations cannot give you effects
+such as an isotropic scaling or share. How
+
+54
+00:05:35,028 --> 00:05:41,016
+are these can be captured by a fine
+transformations? So for example, an
+
+55
+00:05:41,016 --> 00:05:47,062
+isotropic scaling, Let's just think of
+what that matrix a must be. For example,
+
+56
+00:05:47,062 --> 00:05:53,031
+it could be something like two, zero,
+zero, one. If, with a matrix like that,
+
+57
+00:05:53,031 --> 00:05:58,075
+what will happen is that the x dimension
+will get magnified by two, and the y
+
+58
+00:05:58,075 --> 00:06:04,034
+dimension remains unchanged. So that's an
+Isotropic Scaling and this is allowed
+
+59
+00:06:04,034 --> 00:06:10,029
+under the set of Affine Transforms. And we
+can have other kinds of matrices a and
+
+60
+00:06:10,029 --> 00:06:16,053
+some of these will give rights to shares.
+So and obviously Where, rotations are
+
+61
+00:06:16,053 --> 00:06:24,089
+already included. Okay let's test our
+understanding of affine transforms with
+
+62
+00:06:24,089 --> 00:06:31,065
+isometrics by studying how many parameters
+are required to specify an isometry versus
+
+63
+00:06:31,065 --> 00:06:38,009
+an affine transform. So, let's think about
+isometrics. So, isometry in two dimensions
+
+64
+00:06:38,009 --> 00:06:43,098
+so, in two dimensions, an isometry is a
+rotation and how many parameters are
+
+65
+00:06:43,098 --> 00:06:50,064
+required for that one. Any translation for
+that you require two so you need three
+
+66
+00:06:50,064 --> 00:06:57,001
+parameters to specify an isometry or a
+Rigid Body Motion in two dimensions. What
+
+67
+00:06:57,001 --> 00:07:03,038
+about for Affine transforms? So, they're
+gonna have two by two matrix so that has
+
+68
+00:07:03,038 --> 00:07:08,095
+four parameters. And then the translation
+part which will have two parameters, so
+
+69
+00:07:08,095 --> 00:07:13,052
+therefore, we get a total of six
+parameters. Okay now, you may want to
+
+70
+00:07:13,052 --> 00:07:18,096
+think through what will happen in 3D. If
+you want pause over there now and try to
+
+71
+00:07:18,096 --> 00:07:23,078
+figure it out before I give you the
+answer. So, in 3D, either isometry
+
+72
+00:07:23,078 --> 00:07:30,011
+[inaudible] in orthogonal matrix followed
+by translation, So, the orthogonal matrix
+
+73
+00:07:30,011 --> 00:07:35,090
+are, is gonna have three independent
+parameters. And the translation will be
+
+74
+00:07:35,090 --> 00:07:44,016
+another three parameters For a total of
+six. When we consider Affine transforms in
+
+75
+00:07:44,016 --> 00:07:49,093
+3d, what are we gonna get? We're gonna get
+a three by three matrix and so the three y
+
+76
+00:07:49,093 --> 00:07:55,042
+three matrix will have nine parameters,
+and then there will be translation which
+
+77
+00:07:55,042 --> 00:08:00,091
+is going to be three parameters so for a
+total of twelve. So we see clearly that
+
+78
+00:08:00,091 --> 00:08:11,028
+Affine Transforms are more general, they
+require more parameters to specify. So,
+
+79
+00:08:11,028 --> 00:08:17,021
+the big picture can be understood better
+if we try to ask the question, what
+
+80
+00:08:17,021 --> 00:08:22,009
+remains unchanged under the
+transformation. So, mathematically, the
+
+81
+00:08:22,009 --> 00:08:28,008
+term we use is invariance. What are the
+invariance in the transformation. So under
+
+82
+00:08:28,008 --> 00:08:33,036
+Euclidean Transformations, we design them
+to be such that the preserved length. So
+
+83
+00:08:33,036 --> 00:08:38,031
+if we have two points, the, the, the
+distance between them should be unchanged.
+
+84
+00:08:38,031 --> 00:08:42,074
+That was essentially our definition of
+Isometry. So in the Euclidean
+
+85
+00:08:42,074 --> 00:08:48,003
+Transformations, lengths are preserved,
+angles are preserved, as well as area And
+
+86
+00:08:48,003 --> 00:08:53,073
+volume and so forth. Under Affine
+Transforms, we already saw this thing
+
+87
+00:08:53,073 --> 00:08:59,052
+called an Isotropic Scaling case that
+lengths are not preserved, angles are not
+
+88
+00:08:59,052 --> 00:09:04,052
+preserved, areas are not preserved.
+However, some things are preserved.
+
+89
+00:09:04,052 --> 00:09:10,002
+Remember these Affine Transforms are
+Linear Transformations for the better
+
+90
+00:09:10,002 --> 00:09:15,088
+translation. And, you can see that if two
+lines were parallel to begin with. Then,
+
+91
+00:09:15,088 --> 00:09:22,079
+if we apply a transformation, these two
+lines remain lines and they might be moved
+
+92
+00:09:22,079 --> 00:09:29,028
+about, they might be farther apart, but
+they'll remain parallel. Parallel lines
+
+93
+00:09:29,028 --> 00:09:36,011
+remain parallel. Another nice property is
+that the property of being the midpoint
+
+94
+00:09:36,011 --> 00:09:42,093
+remains. So, supposed I have points A. And
+see and then there is a point b which is
+
+95
+00:09:42,093 --> 00:09:49,082
+the midpoint of a, b, c and now, we
+transform by an affine transform. Will,
+
+96
+00:09:49,082 --> 00:09:59,060
+the line will remain a line. That length
+may change. But, let's say the point a
+
+97
+00:09:59,060 --> 00:10:05,045
+transformed to here and the point c is
+transformed to here, the point b will
+
+98
+00:10:05,045 --> 00:10:12,001
+remain the midpoint. So, that is preserved
+and again, you can verify all these from
+
+99
+00:10:12,001 --> 00:10:18,028
+the properties that you know. Essentially
+the fact that there's a Linear Transform
+
+100
+00:10:18,028 --> 00:10:24,032
+involved makes all these understandable.
+Okay, so, so, here are the big picture. We
+
+101
+00:10:24,032 --> 00:10:32,023
+have the set of affine transforms and
+within the set of affine transforms. We
+
+102
+00:10:32,023 --> 00:10:50,089
+have in there the set of Euclidean
+transformed. And specifically there's one
+
+103
+00:10:50,089 --> 00:11:06,099
+particular point. This is t he, The
+identity And this corresponds to a=i and
+
+104
+00:11:06,099 --> 00:11:12,035
+the translation part being the zero
+vector. So, the identity is included in
+
+105
+00:11:12,035 --> 00:11:18,022
+Euclidean Transforms and of course, the
+identity is included in Affine Transforms.
+
+106
+00:11:18,022 --> 00:11:24,001
+But the next question we can ask is; now
+we got a more general set of transforms
+
+107
+00:11:24,001 --> 00:11:29,088
+and these constitute the group as well.
+But all of these as general as we need to
+
+108
+00:11:29,088 --> 00:11:40,072
+be. Okay? Let's think there is a set of
+transformations that are called Projective
+
+109
+00:11:40,072 --> 00:11:47,002
+Transformations but let me first motivate
+why we need that. We studied Prospective
+
+110
+00:11:47,002 --> 00:11:53,002
+Projection, that's after [inaudible]
+version motivation here. Under Prospective
+
+111
+00:11:53,002 --> 00:11:59,039
+Projection, lines on a ground plane which
+will parallel. They projected two lines on
+
+112
+00:11:59,039 --> 00:12:05,024
+the image plane that intersected. So
+parallelism was not a property that was
+
+113
+00:12:05,024 --> 00:12:10,058
+preserved. And, affine transforms preserve
+parallel itself. So, we now know that
+
+114
+00:12:10,058 --> 00:12:16,046
+Prospective Projection cannot be modeled y
+an Affine Transform. And since we want to
+
+115
+00:12:16,046 --> 00:12:22,006
+play around with Prospective Projection,
+we need to consider a more general family
+
+116
+00:12:22,006 --> 00:12:27,073
+of transformations. The answer is provided
+by this family of transformations called
+
+117
+00:12:27,073 --> 00:12:33,033
+Projective Transformations. These are even
+more general that Affine Transforms and
+
+118
+00:12:33,033 --> 00:12:41,058
+this include Prospective Projection as a
+special case. What are Projective
+
+119
+00:12:41,058 --> 00:12:48,054
+Transformation? These are Linear
+Transformations. Okay, so far so easy. In
+
+120
+00:12:48,054 --> 00:12:53,028
+fact, you don't need to add the
+translation parts separately. The
+
+121
+00:12:53,028 --> 00:12:59,028
+translation can be folded into the Linear
+Transformation. But, this used something
+
+122
+00:12:59,028 --> 00:13:05,022
+called Homogeneous Coordinates. Okay, so
+now we have another new piece to explain.
+
+123
+00:13:05,079 --> 00:13:11,074
+Homogeneous coordinates, I'm really not
+going to get into too much detail on this
+
+124
+00:13:11,074 --> 00:13:17,002
+because this is after of course in
+computer vision and not of course on
+
+125
+00:13:17,024 --> 00:13:23,054
+mathematics. I encourage you to look it up
+in Wikipedia. I'll just give you a little
+
+126
+00:13:23,054 --> 00:13:29,013
+taste of what this whole idea is about.
+Supposed we have a point in
+
+127
+00:13:29,013 --> 00:13:36,043
+three-dimensional r3. So normally, we
+might modulate by, by some three vector,
+
+128
+00:13:36,043 --> 00:13:44,002
+x, y, z, these are the normal Euclidean
+coordinates. What we do is we add another
+
+129
+00:13:44,002 --> 00:13:50,088
+fo urth coordinate. So, we have now
+coordinates x1, x2, x3, x4. But the
+
+130
+00:13:50,088 --> 00:13:57,048
+property is that, any two such vectors are
+regarded as the same vector if they are
+
+131
+00:13:57,048 --> 00:14:03,092
+scaling multiple to each other. So in a
+settled sense, the degrees of freedom are
+
+132
+00:14:03,092 --> 00:14:10,044
+still three. So sometimes you can think of
+this as, you can go from x1, x2, x3, x4 by
+
+133
+00:14:10,044 --> 00:14:16,062
+just dividing by the fourth coordinate.
+Now, that's, doesn't do anything very
+
+134
+00:14:16,062 --> 00:14:22,087
+exciting unless the fourth coordinate is
+zero. And that corresponds to the
+
+135
+00:14:22,087 --> 00:14:29,004
+so-called point of infinity. In fact,
+there are many points of infinity, So
+
+136
+00:14:29,030 --> 00:14:35,031
+homogeneous coordinates enable one to
+represent All the things that we have
+
+137
+00:14:35,031 --> 00:14:39,086
+talked about so far, rotations,
+translations, and so forth, all by a
+
+138
+00:14:39,086 --> 00:14:44,082
+single matrix. So in, when we are
+concerned with three dimensional space,
+
+139
+00:14:44,082 --> 00:14:50,062
+so, in three dimensional space the normal
+points would have three coordinate but
+
+140
+00:14:50,062 --> 00:14:56,028
+Homogeneous coordinates would make us get
+to full vectors and so the matrix, that
+
+141
+00:14:56,028 --> 00:15:01,003
+would be in more for a Linear
+Transformation will be a four by four
+
+142
+00:15:01,003 --> 00:15:06,014
+matrix. Actually, it will have only
+fifteen independent parameters because
+
+143
+00:15:06,035 --> 00:15:12,015
+overall. If, if you might apply all the
+entries of this matrix by a non-zero
+
+144
+00:15:12,015 --> 00:15:18,025
+Scalar, nothing changes because Scalar
+multiples correspond to the same point in
+
+145
+00:15:18,025 --> 00:15:23,009
+projective space. These transformations
+are used a lot in computer graphics
+
+146
+00:15:23,009 --> 00:15:27,092
+because in computer graphics when you want
+to render objects, you want to rotate
+
+147
+00:15:27,092 --> 00:15:32,051
+them, translate them, project them and all
+of these can be captured as Linear
+
+148
+00:15:32,051 --> 00:15:36,092
+Transformations and Homogeneous
+Coordination. So the, there is support for
+
+149
+00:15:36,092 --> 00:15:42,007
+these kinds of computer available in
+graphics hardware. I'm going to stop my
+
+150
+00:15:42,007 --> 00:15:48,044
+coverage of this topic right here because
+we'll, we may need to know a little bit
+
+151
+00:15:48,044 --> 00:15:54,088
+more about Projective Transformations but
+we'll develop it as a necessary field that
+
+152
+00:15:54,088 --> 00:16:01,080
+I don't want the course to become a dry
+mathematical review. So I'll just
+
+153
+00:16:01,080 --> 00:16:07,030
+summarize the final story here. We are
+concerned with three main families of
+
+154
+00:16:07,030 --> 00:16:12,008
+transformations, Projective
+Transformations, Affine Transformations,
+
+155
+00:16:12,008 --> 00:16:17,079
+and Euclidean Transformations. Euclideans
+are the most specific. These are Rigid
+
+156
+00:16:17,079 --> 00:16:23,008
+Body Transformations and they preserve
+distances, angles, areas, etc. Affine
+
+157
+00:16:23,008 --> 00:16:28,051
+Transforms are the more, the next
+generalization and Projective is the most
+
+158
+00:16:28,051 --> 00:16:31,072
+general of all. Thank you.

@@ -1,0 +1,392 @@
+﻿1
+	For a 4-bit parallel adder, if the carry-in is connected to a logical HIGH, the result is:
+	
+
+	
+
+A.
+	the same as if the carry-in is tied LOW since the least significant carry-in is ignored.
+	B.
+	that carry-out will always be HIGH.
+	C.
+	a one will be added to the final result.
+	D.
+	the carry-out is ignored.
+	
+
+	
+
+Ans : C
+
+
+2
+	In a TTL circuit, if an excessive number of load gate inputs are connected, ________.
+	
+
+	
+
+A.
+	VOH(min) drops below VOH
+	B.
+	VOH drops below VOH(min)
+	C.
+	VOH exceeds VOH(min)
+	D.
+	VOH and VOH(min) are unaffected
+	
+
+	 Ans:B
+
+
+3.In the 555 timer circuit,What does the discharge transistor do ?
+A.
+	charge the external capacitor to stop the timing
+	B.
+	charge the external capacitor to start the timing over again
+	C.
+	discharge the external capacitor to stop the timing
+	D.
+	discharge the external capacitor to start the timing over again
+	
+
+Ans: D
+
+
+ 4
+	Triggering a retriggerable one shot during pulse generation will:
+	
+
+	
+
+A.
+	time out the original pulse
+	B.
+	extend the pulse to this trigger width
+	C.
+	have no effect
+	D.
+	double the original pulse width
+	
+
+	
+
+Ans: B
+
+
+
+
+5
+	The main concern when using a pull-down resistor is:
+	
+
+	
+
+A.
+	the low power dissipation of the resistor
+	B.
+	it will keep a floating terminal LOW
+	C.
+	the high power dissipation of the resistor
+	D.
+	it will cause false triggering
+	
+
+	
+
+Ans: C
+
+
+
+
+6 
+	When the inputs to a flip-flop are changing at the same time that the active trigger edge of the input clock is making its transition, this condition is called:
+	
+
+	
+
+A.
+	racing
+	B.
+	toggling
+	C.
+	slave loading
+	D.
+	pulse timing
+	
+
+	
+
+Ans: A
+
+
+7
+	The difference between a PLA and a PAL is:
+	
+
+	
+
+A.
+	The PLA has a programmable OR plane and a programmable AND plane, while the PAL only has a programmable AND plane.
+	B.
+	The PAL has a programmable OR plane and a programmable AND plane, while the PLA only has a programmable AND plane.
+	C.
+	The PAL has more possible product terms than the PLA.
+	D.
+	PALs and PLAs are the same thing.
+	
+
+	
+
+Ans: A
+
+
+8
+	What is the difference between combinational logic and sequential logic?
+	
+
+	
+
+A.
+	Combinational circuits are not triggered by timing pulses, sequential circuits are triggered by timing pulses.
+	B.
+	Combinational and sequential circuits are both triggered by timing pulses.
+	C.
+	Neither circuit is triggered by timing pulses.
+	
+
+	
+
+Ans: A
+9
+	If an analog signal is to be converted to an 8-bit resolution, how many comparators are used in a parallel-encoded ADC?
+	
+
+	
+
+A.
+	127
+	B.
+	128
+	C.
+	255
+	D.
+	256
+	
+
+	
+
+Ans D
+
+
+ 10
+	The quantization error in an analog-to-digital converter can be reduced by:
+	
+
+	
+
+A.
+	increasing the number of bits in the counter and DAC.
+	B.
+	decreasing the number of bits in the counter and increasing the number of bits in the DAC.
+	C.
+	increasing the number of bits in the counter and decreasing the number of bits in the DAC.
+	D.
+	decreasing the number of bits in the counter and DAC.
+	
+
+	
+
+Ans: A
+
+
+11
+	In a TTL circuit, if an excessive number of load gate inputs are connected, ________.
+	
+
+	
+
+A.
+	VOH(min) drops below VOH
+	B.
+	VOH drops below VOH(min)
+	C.
+	VOH exceeds VOH(min)
+	D.
+	VOH and VOH(min) are unaffected
+	
+
+	
+
+Ans:B
+
+
+ 12
+	A certain gate draws 1.8 A when its output is HIGH and 3.3 µA when its output is LOW. VCC is 5 V and the gate is operated on a 50% duty cycle. What is the average power dissipation (PD)?
+	
+
+	
+
+A.
+	2.55 W
+	B.
+	1.27 W
+	C.
+	12.75 W
+	D.
+	5 W
+	
+
+	
+
+Ans: C
+
+
+13
+	What must be done to interface TTL to CMOS?
+	
+
+	
+
+A.
+	A dropping resistor must be used on the CMOS 12 V supply to reduce it to 5 V for the TTL.
+	B.
+	As long as the CMOS supply voltage is 5 V, they can be interfaced; however, the fan-out of the TTL is limited to five CMOS gates.
+	C.
+	A 5 V Zener diode must be placed across the inputs of the TTL gates in order to protect them from the higher output voltages of the CMOS gates.
+	D.
+	A pull-up resistor must be used between the TTL output-CMOS input node and Vcc; the value of RP will depend on the number of CMOS gates connected to the node.
+	
+
+	Ans: D
+
+
+
+
+ 14
+	What type of circuit is shown below, and how is the output ordinarily connected?
+
+	
+
+	
+
+A.
+	It is an open-collector gate and is used to drive loads that cannot be connected directly to Vcc due to high noise levels.
+	B.
+	It represents an active-LOW inverter and is used in negative logic systems.
+	C.
+	It is an open-collector gate. An external load must be connected between the output terminal and an appropriate supply voltage.
+	D.
+	Any of the above could be correct, depending on the specific application involved.
+	
+
+	
+
+Ans: C
+ 15
+	What type of circuit is represented in the given figure, and which statement best describes its operation?
+
+	
+
+	
+
+A.
+	It is a tristate inverter. When the ENABLE input is HIGH, the output is effectively an open circuit—it is neither LOW nor HIGH.
+	B.
+	It is a programmable inverter. It can be programmed to function as either an active LOW or an active HIGH inverter.
+	C.
+	It is an active LOW buffer, which can be turned on and off by the ENABLE input.
+	D.
+	None of the above.
+	
+
+	
+
+Ans: A
+
+
+
+
+16
+	What type of logic circuit is shown below and what logic function is being performed?
+
+	
+
+	
+
+A.
+	It is an NMOS AND gate.
+	B.
+	It is a CMOS AND gate.
+	C.
+	It is a CMOS NOR gate.
+	D.
+	It is a PMOS NAND gate
+	
+
+	Ans: C
+17.which of the following statements about diode is false:
+A)Saturation current doubles by doubling cross section area of diode.
+B)Saturation current depends on the depletion layer voltage of diode.
+C)Saturation current is a strong function of temperature.
+D)The current in the reverse bias condition is nearly same as saturation current.
+Ans:B
+
+
+18)Two D flip flops are connected as a synchronous counter that goes through the following Qb,Qa sequence 00->01->11->10->00....
+The combination to the inputs Da ,Db are
+A)Da = Qa,Db=Qb
+B)Da=Qb,Db=Qa
+C)Da=Qa',Db=Qb'
+D)Da=Qb',Db = qa
+Ans:D
+
+
+19)Select false statement:
+A)Bistable multivibrators use positive feedback loop control mechanism.
+B)555 timer can be connected to implement monostable and astable multivibrators.
+C)Duty cycle of 555 timer Astable vibrator can be adjusted at any given value.
+D)Monostable multivibrator need an input trigger to get output signal.
+Ans:C
+
+
+20)On the fourth clock pulse ,a 4 bit Johnson counter sequence is Q0 =1,Q1=1,Q2=1,Q3=1 .On the eleventh colck pulse the sequence is
+A)Q0 =1 ,Q1=0 ,Q2=0 ,Q3=0
+B)Q0 =1 ,Q1=1 ,Q2=0 ,Q3=0
+C)Q0 =1 ,Q1=1 ,Q2=1 ,Q3=1
+D)Q0 = 1,Q1=1 ,Q2=1 ,Q3=0
+
+
+21)Select the false statement:
+A)The capacitor added in parallel to a feedback resistor of inverting amplifier op - amp creates low pass filter.
+B)The purpose of a buffer constructed with op-amp is to isolate input signal from rest of the circuit.
+C)The open loop gain of an op-amp depends on the values of the resistors used in the electrical circuit.
+D)Op amp can be used to implement non  linear function e^x + ln x.
+Ans:C
+
+
+22)An Op Amp difference amplifier has a difference mode gain Ad of 500 and a common mode gain Ac of 0.002. Its common mode rejection ratio in decibels is therefore 
+A)100
+B)108
+C)120.6
+D)118.4
+Ans:B
+
+
+23)Considering the body effect calculate the threshold voltage of nmos transistor.
+Vt0 = 0.7v,ϕf = 0.4,ϒ = 0.5,Vsb = 3 v. The symbols have their usual meanings.
+A)1.1 v 
+B)1.2 v
+C)1.3 v
+D)1.4 v
+Ans:B
+
+
+24)The parameter that limits the maximum operational frequency of a flip flop is
+A)set up and hold time
+B)Clock pulse high and low time
+C)propagation delay time
+D)Clock transition time
+Ans:C
+
+
+25)

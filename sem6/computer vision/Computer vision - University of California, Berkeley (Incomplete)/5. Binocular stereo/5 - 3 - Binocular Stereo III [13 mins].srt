@@ -1,0 +1,570 @@
+
+1
+00:00:00,000 --> 00:00:06,006
+Welcome back. We're ready to resume study
+of Geometry of Stereopsis and now we are
+
+2
+00:00:06,006 --> 00:00:11,070
+ready to tackle the general case. So, the
+general case, we don't know how the two
+
+3
+00:00:11,070 --> 00:00:17,048
+cameras are arranged in space and we still
+have to figure out what the depths of
+
+4
+00:00:17,048 --> 00:00:23,033
+points are. And this happens often enough,
+like very common scenario is we download
+
+5
+00:00:23,033 --> 00:00:33,072
+images from the Internet. So for example
+these could be many people taking
+
+6
+00:00:33,072 --> 00:00:39,025
+photographs of Eiffel Tower or any
+landmark that you might like and what we
+
+7
+00:00:39,025 --> 00:00:44,077
+want to do is to generate a 3D model of
+the Eiffel tower from this multiple
+
+8
+00:00:44,077 --> 00:00:49,049
+photographs so. In this case, we do not
+know how these photo, where these
+
+9
+00:00:49,049 --> 00:00:54,074
+photographs were taken from. There is some
+unknown Euclidean transformation which
+
+10
+00:00:54,074 --> 00:01:00,012
+relates these cameras, we don't know that.
+What we should be able to do otherwise to
+
+11
+00:01:00,012 --> 00:01:05,050
+solve for point correspondences among the
+images and somehow figure out everything.
+
+12
+00:01:05,050 --> 00:01:10,029
+Figure out how those two cameras are
+arranged in space as well as what the
+
+13
+00:01:10,029 --> 00:01:15,051
+depths of points are. Of course, the
+general problem requires multiple cameras,
+
+14
+00:01:15,051 --> 00:01:20,095
+not just two. I mean, you have thousands
+of tourists taking pictures of the same
+
+15
+00:01:20,095 --> 00:01:26,074
+object in, in, in some tourist spot. But
+we'll currently study the case for two
+
+16
+00:01:26,074 --> 00:01:32,048
+cameras and the general cases fairly
+straight forward. So let's go to it and.
+
+17
+00:01:33,071 --> 00:01:40,022
+What we have to understand here is the
+notion of Epipolar Geometry. So, this is a
+
+18
+00:01:40,022 --> 00:01:46,056
+multiple but I'll try to take you this
+notion in a series of slides. So, I have
+
+19
+00:01:46,056 --> 00:01:53,006
+this basic diagram that I want you to try
+to understand and get a good physical
+
+20
+00:01:53,006 --> 00:01:59,032
+inclusion for. So, we have some point
+amendable and it is imaged in two cameras.
+
+21
+00:01:59,032 --> 00:02:05,090
+The two cameras have camera center c1 for
+the first camera and c2 for the second
+
+22
+00:02:05,090 --> 00:02:11,067
+camera. I could say first the camera, the
+second camera or I could say left camera
+
+23
+00:02:11,067 --> 00:02:16,086
+and right camera. Pretty soon that left
+and right camera will seems to be
+
+24
+00:02:16,086 --> 00:02:22,076
+meaningful because it could be the left
+camera just above the right camera and so
+
+25
+00:02:22,076 --> 00:02:28,010
+on but let's say that this notation for
+now. I want you to get a sense of a
+
+26
+00:02:28,010 --> 00:02:33,093
+physical picture here. So C1 here is the
+pin hole an d then we have the image plate
+
+27
+00:02:33,093 --> 00:02:41,014
+and where is the image plate? The image
+plate is f units Behind c1. So, c1 is in
+
+28
+00:02:41,014 --> 00:02:47,088
+front of the image plane. So, please don't
+make the mistake of assuming that c1 lies
+
+29
+00:02:47,088 --> 00:02:54,055
+in the image plane. C1 does not lie in the
+image plane, c1 is the pinhole, c1 is the
+
+30
+00:02:54,055 --> 00:03:05,074
+center of projection. C1 is in front of
+the left camera. Similarly, c2 is in front
+
+31
+00:03:05,074 --> 00:03:13,029
+of the right camera. It's in, it's in
+front by distances of f. It's not lying on
+
+32
+00:03:13,029 --> 00:03:20,057
+the image plane of the camera. Okay. So
+now this diagram illustrates how image
+
+33
+00:03:20,057 --> 00:03:27,003
+projection happens so we have M which is
+the point in the world. C1 does inter
+
+34
+00:03:27,003 --> 00:03:34,017
+projection so we can draw the line between
+M and C1 The real Going through C1 from M
+
+35
+00:03:34,017 --> 00:03:41,013
+and that way intersects the image plane
+from camera one at some point and let's
+
+36
+00:03:41,013 --> 00:03:48,044
+call that point M1. Similarly the ray from
+M through C2 intersects camera two at the
+
+37
+00:03:48,044 --> 00:03:55,035
+point ends at two so ends at two is the
+projection. So M1 and M2 do lie on the
+
+38
+00:03:55,035 --> 00:04:03,014
+image planes of the respective cameras but
+C1 and C2 are in fact by distance of F, So
+
+39
+00:04:03,014 --> 00:04:09,093
+far so good. What I'm gonna take you
+through is the definition of Epipolar
+
+40
+00:04:09,093 --> 00:04:17,031
+plane. Okay. It's a fairly straight
+forward definition bit it will give us a
+
+41
+00:04:17,031 --> 00:04:24,013
+lot of image so it's what's understanding
+[inaudible] detail. If there's a point m
+
+42
+00:04:24,013 --> 00:04:30,054
+in the world, consider the plane formed by
+m, c1 and c2. So, it's a point in the
+
+43
+00:04:30,054 --> 00:04:36,069
+world and the two cameras, center of
+projection, m, c1, c2. So, this is a plane
+
+44
+00:04:36,069 --> 00:04:43,059
+and here it is shown by this, this dash
+lines and this [inaudible] plane, we call
+
+45
+00:04:43,059 --> 00:04:52,088
+the Epipolar plane. Okay. Note that we can
+describe it as MC1C2 but I could also
+
+46
+00:04:52,088 --> 00:05:01,051
+describe it as MM1, the projection of, of
+the point M in camera one or And then n2
+
+47
+00:05:01,051 --> 00:05:07,062
+which is the projection of MA camera two.
+So if I consider m, m1, m2, that is the
+
+48
+00:05:07,062 --> 00:05:13,073
+same plane. In fact, this is gonna be
+important because we are eventually going
+
+49
+00:05:13,073 --> 00:05:19,044
+to make observations just from images.
+Those tourists have uploaded those
+
+50
+00:05:19,044 --> 00:05:26,002
+photographs and now we have only access to
+those photographs. So, that's the concept
+
+51
+00:05:26,002 --> 00:05:32,052
+of Epipolar plane. Now there can be many
+Epipolar planes because we can have
+
+52
+00:05:32,052 --> 00:05:39,042
+different points and we could choose the
+point on a new point m which does not lies
+
+53
+00:05:39,042 --> 00:05:46,041
+on this Epipolar plane in which case we'll
+get a new Epipolar plane. Sometimes people
+
+54
+00:05:46,041 --> 00:05:53,042
+use Book of Epipolar Planes because why,
+why is it a book? Well consider, think of
+
+55
+00:05:53,042 --> 00:06:00,037
+c1, c2 as being the spine of this book and
+the entire fact, all the Epipolar Planes.
+
+56
+00:06:00,037 --> 00:06:07,049
+Go through the lines C1, C2 but it's like
+a book where there is spine of the book,
+
+57
+00:06:07,049 --> 00:06:14,062
+the spine of the book would be C1, C2 and
+then we have all the sheets of the book.
+
+58
+00:06:14,062 --> 00:06:22,051
+Okay so we now understand the notion of
+Epipolar plane. The next important idea is
+
+59
+00:06:22,051 --> 00:06:30,072
+of Epipolar line. Epipolar lines are the
+intersections of the Epipolar plane with
+
+60
+00:06:30,072 --> 00:06:38,014
+the image planes. So we have our Epipolar
+plane, Mc1, c2. It will intersect the
+
+61
+00:06:38,014 --> 00:06:45,031
+image plane of the left camera on some
+line. Okay. So that line is shown here in
+
+62
+00:06:45,031 --> 00:06:51,088
+red and we call that an Epipolar line on
+the left camera or on the first camera
+
+63
+00:06:51,088 --> 00:06:58,061
+depending on what you like. And then, the
+same plane, Mc1, c2 intersects the image
+
+64
+00:06:58,061 --> 00:07:04,086
+plane of the right camera on some other
+line and that shown here and that's.
+
+65
+00:07:04,086 --> 00:07:11,085
+Called the Epipolar line in the second
+camera so we have one Epipolar plane in
+
+66
+00:07:11,085 --> 00:07:18,094
+C1, C2 and it gives rise to two Epipolar
+lines One in the left camera, one in the
+
+67
+00:07:18,094 --> 00:07:27,030
+right camera. Okay. So now I have explicit
+mark these so we have the Epipolar line in
+
+68
+00:07:27,030 --> 00:07:33,093
+the left camera, the Epipolar line in the
+right camera. The big observation here is
+
+69
+00:07:33,093 --> 00:07:39,084
+that the projection of M in the post
+camera which I will call M1 and the
+
+70
+00:07:39,084 --> 00:07:46,004
+projection o M in the second camera which
+is M2. M1 and m2 lay on corresponding
+
+71
+00:07:46,004 --> 00:07:52,008
+Epipolar lines. So, this Epipolar lines
+come in pairs because once that we defined
+
+72
+00:07:52,008 --> 00:07:57,067
+that Epipolar plane, we get the two
+Epipolar lines which corresponds to the
+
+73
+00:07:57,067 --> 00:08:03,093
+intersection with the two image planes And
+the projection of this, all the points in
+
+74
+00:08:03,093 --> 00:08:09,098
+this Epipolar plane and then many of them.
+It's not just the point m but any point
+
+75
+00:08:09,098 --> 00:08:15,095
+which lies on this Epipolar plane is going
+to project to the. In the left camera to
+
+76
+00:08:15,095 --> 00:08:21,033
+the corresponding Epipolar line and in the
+right camera to the other c orresponding
+
+77
+00:08:21,033 --> 00:08:26,026
+Epipolar, Epipolar line, So, note that
+there are some situations in which this
+
+78
+00:08:26,026 --> 00:08:31,006
+Geometry is very simple. So, suppose the
+two cameras are arranged with their
+
+79
+00:08:31,006 --> 00:08:36,006
+optical axis parallel to each other, we
+started this case; this corresponds to
+
+80
+00:08:36,006 --> 00:08:42,049
+looking at infinity. It parallel optical
+axis. In this case, Epipolar, The Epipolar
+
+81
+00:08:42,049 --> 00:08:47,041
+Geometry is particularly simple. All the
+Epipolar lines are horizontal lines so
+
+82
+00:08:47,041 --> 00:08:52,065
+that's a very simple case. But the theory
+I have described in the last few slides is
+
+83
+00:08:52,065 --> 00:08:57,095
+the general theory and this applies to any
+two cameras. They are not required to have
+
+84
+00:08:57,095 --> 00:09:02,094
+intersecting optical axis or parallel
+optical axis or whatever. This will always
+
+85
+00:09:02,094 --> 00:09:07,087
+be true for any two cameras because two
+cameras will have optical center c1, c2,
+
+86
+00:09:07,087 --> 00:09:12,061
+pick a point out in the wall called M.
+Mc1, c2 defines the Epipolar plane, the
+
+87
+00:09:12,061 --> 00:09:20,032
+intersection is defined the Epipolar
+lines. There is one other term I want you
+
+88
+00:09:20,032 --> 00:09:29,025
+to keep in mind. This is the so called
+Epipol. Epipol is, there is an Epipol in
+
+89
+00:09:29,025 --> 00:09:38,045
+each, in each camera and Epipol is the
+projection of the Pinhole of the other
+
+90
+00:09:38,045 --> 00:09:45,089
+camera. So, what is Epipolar e1? E1 is,
+let's state a point c2 which is the center
+
+91
+00:09:45,089 --> 00:09:53,051
+of projection of the second camera and
+let's figure out where c2 projects in the
+
+92
+00:09:53,051 --> 00:10:00,048
+camera and that is call the e1. So,
+essentially, we consider the ray from c2
+
+93
+00:10:00,048 --> 00:10:07,051
+to c1 and then we extend that. And then,
+it will intersect the image plane and that
+
+94
+00:10:07,051 --> 00:10:14,005
+point is e sub one and that's called the
+Epipolar in the left camera. That's just
+
+95
+00:10:14,005 --> 00:10:19,087
+the terminology and the double b, that
+take that same line c1, c2 and now
+
+96
+00:10:19,087 --> 00:10:26,030
+projected to intersect. The second image
+plane, the right camera's image plane and
+
+97
+00:10:26,030 --> 00:10:32,083
+there that intersection point we will call
+e sub two and that's the Epipole in the
+
+98
+00:10:32,083 --> 00:10:39,005
+right camera. Okay, so now we have added
+one more term to our vocabulary. We have
+
+99
+00:10:39,005 --> 00:10:45,039
+Epipolar plane, Epipolar lines and
+Epipoles. Okay so why are we doing all
+
+100
+00:10:45,039 --> 00:10:50,077
+these? We're doing all these because we
+want to deal with the case of images taken
+
+101
+00:10:50,077 --> 00:10:55,061
+back to cameras which are with some
+unknown position with respect to each
+
+102
+00:10:55,061 --> 00:11:00,033
+other. By unknown positi on I mean there
+could be some rotation which and
+
+103
+00:11:00,033 --> 00:11:05,057
+translation which relates the camera to
+its coordinate frame to that of camera
+
+104
+00:11:05,057 --> 00:11:10,055
+one. And we don't know it, it's some
+unknown odd and some unknown [inaudible]
+
+105
+00:11:10,055 --> 00:11:16,045
+and what we have access to other images
+are each of these cameras. So that's going
+
+106
+00:11:16,045 --> 00:11:23,076
+to be the, the general version of the
+synopsis problem. We have given. Some n
+
+107
+00:11:23,076 --> 00:11:30,026
+image points in the left camera and in the
+right camera. And we do not know the
+
+108
+00:11:30,026 --> 00:11:35,079
+relationship between the coordinate frames
+of the two cameras. So, we were given end
+
+109
+00:11:35,079 --> 00:11:40,092
+points correspondences. We do know that,
+that for this end points, we know what
+
+110
+00:11:40,092 --> 00:11:46,031
+that partners are. We know that there is a
+point a in the left image and this end
+
+111
+00:11:46,031 --> 00:11:51,058
+point a prime in the right image, they
+both correspond to the same point out in
+
+112
+00:11:51,058 --> 00:11:56,077
+the world. So, we have given these end
+point correspondences and our goal is to
+
+113
+00:11:56,077 --> 00:12:03,019
+estimate the rotation and translation
+which derives the cameras And the depths
+
+114
+00:12:03,019 --> 00:12:10,096
+of the n points so we'll take that up
+later. Thank you.

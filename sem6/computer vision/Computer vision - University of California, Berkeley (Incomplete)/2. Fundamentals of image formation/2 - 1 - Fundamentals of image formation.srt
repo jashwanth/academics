@@ -1,0 +1,579 @@
+
+1
+00:00:00,000 --> 00:00:06,017
+Okay. Hello? Welcome to the class again.
+So this lecture is going to be about the
+
+2
+00:00:06,017 --> 00:00:13,008
+fundamentals of image formation. So, any
+camera creates an image. The image eye of
+
+3
+00:00:13,008 --> 00:00:18,051
+XY is a measure of how much light is
+captured the pixel XY. We are interested
+
+4
+00:00:18,051 --> 00:00:23,080
+in two questions. First, where is the
+point XYZ in the [inaudible] image and
+
+5
+00:00:23,080 --> 00:00:29,030
+what is the brightness of the resulting
+point XY? So, in this lecture, we'll try
+
+6
+00:00:29,030 --> 00:00:34,086
+to get a handle on the first question
+which is where does the point XYZ in the
+
+7
+00:00:34,086 --> 00:00:40,095
+[inaudible] image? So this is the
+so-called pin hold camera model. The
+
+8
+00:00:40,095 --> 00:00:48,038
+ignore lenses and such for the time being.
+Imagine that all the light in the imaging
+
+9
+00:00:48,038 --> 00:00:55,038
+surface which is at the back here comes
+through the pin hole of the camera and
+
+10
+00:00:55,038 --> 00:01:02,073
+this object therefore we see this point b.
+Is imaged to the point [inaudible]. And
+
+11
+00:01:02,097 --> 00:01:09,008
+let's take note of the coordinate systems
+here. The coordinate system here is
+
+12
+00:01:09,008 --> 00:01:15,075
+located at the pinhole of the camera and
+we have the X, Y and Z axis in the vault.
+
+13
+00:01:15,075 --> 00:01:27,087
+The Z axis is what's called optical axis
+of the camera. And then we have the x and
+
+14
+00:01:27,087 --> 00:01:34,062
+y axis. Notice that in computer version we
+very often follow this coordinate system
+
+15
+00:01:34,062 --> 00:01:40,048
+where y is up and z is away from the
+camera. This is a distinct from the
+
+16
+00:01:40,048 --> 00:01:47,023
+notation usually used in physics where z
+is in the direction of the gravity vector.
+
+17
+00:01:47,023 --> 00:01:52,067
+Okay. Let's stay with this notation. We
+also have a quadrant system on the image
+
+18
+00:01:52,067 --> 00:01:58,087
+plane and that is indicated here by little
+x and little y So that little x and little
+
+19
+00:01:58,087 --> 00:02:04,045
+y notation correspondents to the
+coordinates on the image grain of the
+
+20
+00:02:04,045 --> 00:02:10,050
+camera. So, our goal is going to be to
+figure out the relationship between the
+
+21
+00:02:10,050 --> 00:02:15,069
+coordinates to the point b in the
+3-dimensional vault and the, its
+
+22
+00:02:15,069 --> 00:02:21,082
+coordinates in the projection. And the
+basic equation is given by little x - fx
+
+23
+00:02:21,082 --> 00:02:32,077
+[inaudible] z and little y - fy
+[inaudible] z. So. Okay. So, let's derive
+
+24
+00:02:32,077 --> 00:02:41,094
+this equation. How do we do that? So we're
+gonna proof a special case first and this
+
+25
+00:02:41,094 --> 00:02:47,038
+is about the special case of a point b in
+the y z plane. So let's go back to the
+
+26
+00:02:47,038 --> 00:02:52,089
+events you can remember what's going on
+here. We're going to consider the point b
+
+27
+00:02:52,089 --> 00:02:58,020
+but we consider a special case when it
+lies in the y z plane. We're gonna draw
+
+28
+00:02:58,020 --> 00:03:03,071
+the optical access and we're also going to
+show the projection of b in the image
+
+29
+00:03:03,071 --> 00:03:15,056
+plane. So that's p and this here is the
+projection of p, little p. And what are
+
+30
+00:03:15,056 --> 00:03:27,017
+these distances? This distance, This
+distance here is going to be z. This
+
+31
+00:03:27,017 --> 00:03:37,052
+distance here is going to be F. This
+height here is going to be given by upper
+
+32
+00:03:37,052 --> 00:03:48,068
+case Y. And this Height here is going to
+be given by y, little y but actually it's
+
+33
+00:03:48,068 --> 00:03:55,079
+going to be minus y because the coordinate
+system, in the coordinate system the y
+
+34
+00:03:55,079 --> 00:04:03,012
+axis points upwards. Let's go back so you
+can see that I've drawn this correctly. So
+
+35
+00:04:03,012 --> 00:04:11,042
+if you look at the slide it becomes clear
+what I'm trying to do. I'm trying to draw
+
+36
+00:04:11,042 --> 00:04:19,013
+the coordinates but since the y axis
+points up, distance going down should be
+
+37
+00:04:19,013 --> 00:04:26,043
+marked as -y, okay. So we are back to
+this, back to this equation and now we
+
+38
+00:04:26,043 --> 00:04:42,019
+have a fairly easy job. We use similar
+triangles. The two triangles here are
+
+39
+00:04:42,019 --> 00:04:57,011
+similar to each other so therefore what we
+can say is f / -y = z / Y and this implies
+
+40
+00:04:57,011 --> 00:05:18,043
+that. Y = -f. It's y divided by z. Okay.
+Now this was for the special case when the
+
+41
+00:05:18,043 --> 00:05:28,085
+point P lies in the YZ plane. But really
+this is true Even if the point is, Even if
+
+42
+00:05:28,085 --> 00:05:47,008
+the point P Is not in the y z plane. And
+the way you can convince yourself of that
+
+43
+00:05:47,008 --> 00:05:52,076
+is that all we have to do is to consider
+the projection of b on the y z plane and
+
+44
+00:05:52,076 --> 00:05:58,037
+then the relationship with the two. So we
+have derived this, this equation for the
+
+45
+00:05:58,037 --> 00:06:10,054
+projection of the y coordinate and by
+similar reasoning. We can expect that we
+
+46
+00:06:10,054 --> 00:06:25,008
+will get a relations that is off the type
+x = minus F x upon z. So this just states
+
+47
+00:06:25,008 --> 00:06:32,003
+this and now I've written out this
+equation in sort of nice mathematical
+
+48
+00:06:32,003 --> 00:06:39,075
+notation. So notice a few things here so
+there are some conventions here which is
+
+49
+00:06:39,075 --> 00:06:47,094
+that the lower case quantities are used to
+correspond to variables of the image plane
+
+50
+00:06:47,094 --> 00:06:55,061
+and upper case variables are used for.
+Four points which are in the scene, in the
+
+51
+00:06:55,061 --> 00:07:02,008
+three dimensional scene, So if you notice,
+look at this equation. There's one
+
+52
+00:07:02,008 --> 00:07:09,023
+annoying property of this equation which
+is that there are these minus signs The x
+
+53
+00:07:09,023 --> 00:07:15,087
+- FX upon Z, y - FY upon Z. Now what these
+minus signs correspond to is that the
+
+54
+00:07:15,087 --> 00:07:22,093
+image is inverted. The image is inverted
+both upside down as well as left to right.
+
+55
+00:07:23,033 --> 00:07:30,025
+And this is something you can find
+annoying but this is actually true of
+
+56
+00:07:30,025 --> 00:07:37,072
+projection of images even in the retina
+and in fact the diagram that I have is
+
+57
+00:07:37,072 --> 00:07:44,020
+from the cuts [inaudible]. So, we do this.
+The image is in fact actually inverted.
+
+58
+00:07:44,020 --> 00:07:50,034
+So, this caused many people a lot of
+consternation back at once upon a time
+
+59
+00:07:50,034 --> 00:07:56,063
+even people such as Leonardo Da Vinci and
+they proposed various designs of what
+
+60
+00:07:56,063 --> 00:08:02,062
+could happen in the eye so as to avoid
+this emotion not to do the recollection.
+
+61
+00:08:02,062 --> 00:08:09,036
+But, this is really not so much of a big
+deal. The point is that the brain can
+
+62
+00:08:09,036 --> 00:08:16,034
+interpret the image the right way and for
+a camera, it's life is particularly easy
+
+63
+00:08:16,034 --> 00:08:23,024
+because software can simply flip the image
+drop down and right left and after we
+
+64
+00:08:23,024 --> 00:08:29,088
+apply this trick, what we get is much
+nicer looking equations which is x = fX /
+
+65
+00:08:29,088 --> 00:08:37,012
+ZyF * Y / Z. So we got rid of the issue of
+lateral emotion and top down flipping.
+
+66
+00:08:37,041 --> 00:08:42,094
+Good. So now, we are ready to start to
+understand the mathematics of Perspective
+
+67
+00:08:42,094 --> 00:08:48,097
+projection. And, for this, I have picked
+this drawing. It's actually drawing not an
+
+68
+00:08:48,097 --> 00:08:54,093
+image but since the drawing is trying to
+be accurate about perspective, we can
+
+69
+00:08:54,093 --> 00:09:01,019
+consider this. So, on this, in this image
+which let's say corresponds to a camera
+
+70
+00:09:01,019 --> 00:09:07,076
+taking a picture of some telephone post
+and some cat eye and a road and some grass
+
+71
+00:09:07,076 --> 00:09:14,017
+and so forth, let's try to look for some
+phenomena which arise due to perspective
+
+72
+00:09:14,017 --> 00:09:20,052
+projection. So here's one. Parallel lines
+in the image can merge to a vanishing
+
+73
+00:09:20,052 --> 00:09:26,046
+point so the parallel lines that are
+considered here are the feet of the radius
+
+74
+00:09:26,046 --> 00:09:32,056
+pulls and the tops of the pulls. The tops
+of the pulls is constringent at one line.
+
+75
+00:09:32,056 --> 00:09:38,013
+The free to the pulls corresponds to
+another line and the two sides of the
+
+76
+00:09:38,013 --> 00:09:44,031
+road. And all of these appear to converge
+to a vanishing point. So note that this is
+
+77
+00:09:44,031 --> 00:09:50,016
+a phenomenon of perspective. The Lines
+themselves do not meet in 3-dimensional
+
+78
+00:09:50,016 --> 00:09:56,029
+space they're parallel to each other but
+the projection in the image are here to
+
+79
+00:09:56,029 --> 00:10:07,032
+meet. So can we explain this? Okay. Here's
+another observation. So we have that
+
+80
+00:10:07,032 --> 00:10:15,024
+nearer objects are lowered in the image so
+here I denoted y1, y2, y3. The y
+
+81
+00:10:15,024 --> 00:10:24,013
+coordinates of the feat of these pulls and
+you'll notice that the nearer pull has
+
+82
+00:10:24,013 --> 00:10:35,038
+foot y1 which is closer which is lower in
+the image. Nearer objects are bigger. This
+
+83
+00:10:35,038 --> 00:10:40,050
+again you should not be surprised. So
+let's take up some of this properties and
+
+84
+00:10:40,050 --> 00:10:47,040
+try to prove them mathematically. So first
+let's take up this property that parallel
+
+85
+00:10:47,040 --> 00:10:53,028
+lines can merge to a vanishing point. How
+will we go about proving this? So let
+
+86
+00:10:53,028 --> 00:11:00,027
+there be a point a and a direction vector
+d and three dimensional space and what
+
+87
+00:11:00,027 --> 00:11:07,088
+we'll do now is to write down the equation
+of point on this line and what can we say
+
+88
+00:11:07,088 --> 00:11:14,087
+about that? We can write the equation of a
+general point on this line as, here are
+
+89
+00:11:14,087 --> 00:11:26,089
+the three coordinates x, y and z and these
+are equal to A sub x, a sub y, a sub z. +
+
+90
+00:11:26,089 --> 00:11:43,067
+lambda * D sub x, d sub y, and d sub z. So
+x here land so let me draw a picture here
+
+91
+00:11:43,067 --> 00:11:54,017
+so suppose we have. We have some point a
+and the we consider some line going
+
+92
+00:11:54,017 --> 00:12:05,087
+through it and that direction of this line
+is d. And so we'll get a point here which
+
+93
+00:12:05,087 --> 00:12:20,008
+is a +. D and then there might be a point
+here which is a + 2d. And there might be a
+
+94
+00:12:20,008 --> 00:12:28,092
+point here which is a -d And so on so the
+general way to think about it is that we
+
+95
+00:12:28,092 --> 00:12:37,007
+have this parameter lambda and lambda
+ranges between it, it can go to infinity
+
+96
+00:12:37,007 --> 00:12:45,032
+in one direction or it can go to -infinity
+to consider points to the other side.
+
+97
+00:12:46,013 --> 00:12:54,034
+Okay. So by [inaudible] we get different
+points of this line, So let's now if we
+
+98
+00:12:54,034 --> 00:13:02,015
+get on the projection of this point, how
+do we do that? So, what's, let's look at
+
+99
+00:13:02,015 --> 00:13:12,020
+the x coordinate so we have this equation
+x = fx upon z. So if we want to apply
+
+100
+00:13:12,020 --> 00:13:27,090
+this, we have f * x coordinate. It's going
+to be a sub x + lambda d sub x. / what is
+
+101
+00:13:27,090 --> 00:13:41,061
+the c coordinate. It's going to be a sub
+z. + lambda d sub z. Is that clear? Good.
+
+102
+00:13:41,061 --> 00:13:49,062
+So now what we can do is we want to figure
+out what happens to this coordinate of
+
+103
+00:13:49,062 --> 00:13:57,093
+this projection point as the line goes to
+infinity in three dimensional space so how
+
+104
+00:13:57,093 --> 00:14:11,058
+do we find that? Let's consider Lambda
+going to infinity. So then what's gonna
+
+105
+00:14:11,058 --> 00:14:20,041
+happen? What happens to this expression?
+So in this expression, in the expression
+
+106
+00:14:20,041 --> 00:14:29,035
+for x essentially the dominant dome will
+now become lambda dx / lambda dz which
+
+107
+00:14:29,035 --> 00:14:39,095
+will give you f. D sub x upon d sub z.
+Okay? Now, the interesting thing here is
+
+108
+00:14:39,095 --> 00:15:03,023
+that this expression. This expression Does
+not Depend On a So therefore if we have a
+
+109
+00:15:03,023 --> 00:15:10,008
+family of parallel lines, they all will
+have the same direction d but they will go
+
+110
+00:15:10,008 --> 00:15:16,060
+through different points a but the
+projection coordinate x does not depend on
+
+111
+00:15:16,060 --> 00:15:29,001
+that. So, in general. So what we have
+shown is the coordinates of the projection
+
+112
+00:15:38,037 --> 00:15:56,065
+Rf d sub x upon d sub z For the x
+coordinate. And read by analogy we, I
+
+113
+00:15:56,065 --> 00:16:19,083
+haven't and By doing the same process For
+y coordinate We get f d sub y upon d sub z
+
+114
+00:16:19,083 --> 00:16:45,069
+for the y coordinate, And does F d sub x
+upon d sub z, f d sub y upon d sub z The
+
+115
+00:16:45,069 --> 00:17:04,066
+coordinates Of the vanishing point Of this
+family of [inaudible], Okay. Let's take a
+
+116
+00:17:04,066 --> 00:17:05,069
+break here.

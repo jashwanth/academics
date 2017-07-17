@@ -1,0 +1,775 @@
+
+1
+00:00:00,000 --> 00:00:06,040
+Hello Welcome back. So, we're gonna
+continue with our analysis of the Geometry
+
+2
+00:00:06,040 --> 00:00:12,031
+of Binocular Stereopsis. In the previous
+lecture, I talked about The camera
+
+3
+00:00:12,031 --> 00:00:18,003
+configuration where we had fixation
+geometry high. The optical axis of the two
+
+4
+00:00:18,003 --> 00:00:23,090
+cameras intersect and this is typically
+the case and say human vision where the
+
+5
+00:00:23,090 --> 00:00:29,091
+two eyes converge on the same point. Now
+we move on to more general geometries and
+
+6
+00:00:29,091 --> 00:00:35,078
+this one which is very common in the
+design of robot vision assistance which is
+
+7
+00:00:35,078 --> 00:00:41,066
+to keep the two camera optical axis
+parallel to each other so this is You can
+
+8
+00:00:41,066 --> 00:00:46,088
+think of it as a special case of the
+previous one is just the fixation point is
+
+9
+00:00:46,088 --> 00:00:52,004
+infinity And then of course, there's the
+more general case for the optical axis,
+
+10
+00:00:52,004 --> 00:00:57,033
+they don't intersect at all. So, I'm going
+to, for the next few slides focus on the
+
+11
+00:00:57,033 --> 00:01:02,069
+case of optical axis parallel and cut the
+geometry of the relationship between
+
+12
+00:01:02,069 --> 00:01:10,079
+disparity and depth in the setting. Okay
+so this would require a little bit of
+
+13
+00:01:10,079 --> 00:01:17,099
+geometry so let's try to keep everything
+straight. So we have two cameras denoted
+
+14
+00:01:17,099 --> 00:01:25,006
+here by the left eye and the right eye. So
+left eye is the camera's optical center
+
+15
+00:01:25,006 --> 00:01:31,084
+for one camera and re stands for the right
+eye, Meaning, the optical center of the
+
+16
+00:01:31,084 --> 00:01:38,012
+other camera And ce is always is the
+cyclopean eye, the eye which is at the
+
+17
+00:01:38,012 --> 00:01:44,045
+midpoint of the optical centers of the
+left and right eye And the coordinate
+
+18
+00:01:44,045 --> 00:01:50,041
+system for the c is centered from the
+Cyclops e and I And in this coordinate
+
+19
+00:01:50,041 --> 00:01:56,092
+system, we have an x axis and we have a z
+axis Z axis going into depth and x axis as
+
+20
+00:01:56,092 --> 00:02:02,096
+shown here. Okay. So, now what we are
+going to do is to figure where a point p
+
+21
+00:02:02,096 --> 00:02:09,058
+in the world project in the two images. So
+we have f, the focal length has before,
+
+22
+00:02:09,058 --> 00:02:15,056
+Standard Notation for Perspective
+Projection and b stands for the baseline.
+
+23
+00:02:15,056 --> 00:02:21,055
+Baseline is the horizontal distance
+between the left eye and the right eye
+
+24
+00:02:21,055 --> 00:02:27,085
+center. So, that's b To not it here, I
+could measure b between left eye and right
+
+25
+00:02:27,085 --> 00:02:36,007
+eye Horizontal displacement. Okay, So if
+we have a point p then, let's consider
+
+26
+00:02:36,007 --> 00:02:41,074
+where it projects in the, in the left eye.
+So in th e left eye, the ray must go
+
+27
+00:02:41,074 --> 00:02:47,071
+through to the, the, the, the optic the
+center of projection or the pinhole and
+
+28
+00:02:47,071 --> 00:02:53,098
+then the image is produced at the point
+shown here and then the location of that
+
+29
+00:02:54,021 --> 00:03:01,019
+marked as x of l. In the right eye, we
+again have a point b projecting to the
+
+30
+00:03:01,019 --> 00:03:08,006
+location xr, x of r in this case And the
+ray must go through the pin hole indicated
+
+31
+00:03:08,006 --> 00:03:14,004
+here. Okay. Let's figure it out the
+geometry and essentially we have to do
+
+32
+00:03:14,004 --> 00:03:20,004
+similar triangles. It's the same kind of
+story that we have seen before when we
+
+33
+00:03:20,004 --> 00:03:25,080
+were trying to understand prospected
+projection with one camera. So the only
+
+34
+00:03:25,080 --> 00:03:32,018
+ticket in there is that there are a couple
+of different coordinate systems involved
+
+35
+00:03:32,018 --> 00:03:38,084
+and then we need to talk about upper case
+X, Y, and Z For the point b. So the point
+
+36
+00:03:38,084 --> 00:03:45,096
+b is upper case X, upper case Y, upper
+case Z and this is with respect to the
+
+37
+00:03:45,096 --> 00:03:53,089
+Cyclopean Eye. So that's the right place
+to put the coordinate system because we
+
+38
+00:03:53,089 --> 00:03:59,008
+can't choose left or right. We can't favor
+one of them so let's put the coordinate
+
+39
+00:03:59,008 --> 00:04:04,015
+system right there average at the center
+of the two. Okay. So then the coordinate
+
+40
+00:04:04,015 --> 00:04:09,046
+system will be as shown here. This is the,
+the origin is at the cyclopean eye that is
+
+41
+00:04:09,046 --> 00:04:14,053
+the x axis of the cyclopean eye, the z
+axis of the cyclopean eye And now we have
+
+42
+00:04:14,053 --> 00:04:19,066
+to consider these similar triangles. So
+there is one similar triangle which is
+
+43
+00:04:19,066 --> 00:04:27,007
+essentially going to be. This triangle was
+as the triangle here. And what can I see
+
+44
+00:04:27,007 --> 00:04:34,029
+there? So we're going to get x of l / f,
+okay? That expression you see here is the
+
+45
+00:04:34,029 --> 00:04:42,014
+ratio of the base to the high rate And
+Then we have to consider the ratio of this
+
+46
+00:04:42,014 --> 00:04:50,023
+distance. To Z now this distance here to
+do a little bit of thinking and figure out
+
+47
+00:04:50,023 --> 00:04:56,090
+why this is upper case X + b upon two and
+b is the baseline and essentially it's
+
+48
+00:04:56,090 --> 00:05:03,016
+because the origin that shifted by a
+distance by b upon two, b / two and so
+
+49
+00:05:03,016 --> 00:05:09,068
+there's, that's just the shift of, caused
+by the shift of origin. Xr up on f is
+
+50
+00:05:09,068 --> 00:05:17,034
+going to be X - b / two up on z so that's
+we will get for the point xr. And here we
+
+51
+00:05:17,034 --> 00:05:24,038
+have a different set of similar, similar
+triangles that we have to consi der. So,
+
+52
+00:05:24,038 --> 00:05:31,023
+to make sense of these formulas we are
+taking to account that x is a signed
+
+53
+00:05:31,023 --> 00:05:37,014
+quantity. Okay. Once we have these
+expressions, life is actually quite
+
+54
+00:05:37,014 --> 00:05:48,056
+simple. So, we, what is this, parity. This
+parity is going to be xl minus xr. And
+
+55
+00:05:48,056 --> 00:05:56,040
+what is that going to be? That's going to
+be to take to take the difference of these
+
+56
+00:05:56,040 --> 00:06:03,079
+two expressions and that's going to give
+me b / z and of course it's not xl or xr
+
+57
+00:06:03,079 --> 00:06:10,078
+but really xl up on f - xr up on f. So
+therefore we get the formula the
+
+58
+00:06:10,078 --> 00:06:22,075
+dis-parity which is xl minus xr. It's b
+time's f upon c. So I would summarize this
+
+59
+00:06:22,075 --> 00:06:29,042
+formula here where I got rid of, much of
+this clutter. So in the case of parallel
+
+60
+00:06:29,042 --> 00:06:36,044
+optical axis F is the focal length of each
+of the two cameras. D is the baseline, the
+
+61
+00:06:36,044 --> 00:06:42,086
+distance between the left eye and the
+right eye and the point b is somewhere,
+
+62
+00:06:42,086 --> 00:06:49,092
+the disparity so Excel is the coordinate
+of the point b in the left eye. Xr is the
+
+63
+00:06:49,092 --> 00:06:54,092
+coordinate to the point in the right eye.
+And in the dis-parity xl minus xr is
+
+64
+00:06:54,092 --> 00:06:59,092
+simply given by b times f upon c. So, from
+this formula you again see the usual
+
+65
+00:06:59,092 --> 00:07:05,031
+thing. If the baseline is longer, you have
+the cameras for their apart then you get a
+
+66
+00:07:05,031 --> 00:07:10,051
+greater disparity. I mean obviously that
+should be the case because that the real
+
+67
+00:07:10,051 --> 00:07:15,032
+case is gonna baseline zero then you
+should get known your information and
+
+68
+00:07:15,032 --> 00:07:20,062
+obviously dis-parity then is zero And then
+the dis-parity for [inaudible]. So, what
+
+69
+00:07:20,062 --> 00:07:26,093
+that does mean? That means that as he goes
+to infinity. The disparity here is zero.
+
+70
+00:07:28,022 --> 00:07:34,062
+So that should be the case, we call it the
+Parallel Optical Axis and at infinity, the
+
+71
+00:07:34,062 --> 00:07:40,095
+point should project the same location in
+both eyes so that should be no disparity.
+
+72
+00:07:40,095 --> 00:07:45,083
+Okay. So note that to apply these
+formulas, we need to know about
+
+73
+00:07:45,083 --> 00:07:57,050
+correspondence so this is a big idea.
+Correspondents, Correspondence means that
+
+74
+00:07:57,050 --> 00:08:06,064
+I need to know for the point p, there's a
+point p in the wall. And it projects to a
+
+75
+00:08:06,064 --> 00:08:13,060
+point p sub l in the left eye and p sub r
+in the right eye. And I need to figure
+
+76
+00:08:13,060 --> 00:08:19,010
+this correspondent out that such as that
+image location on one eye correspond to
+
+77
+00:08:19,010 --> 00:08:24,040
+such as that image locatio n that I got.
+And this is the take considerable work
+
+78
+00:08:24,040 --> 00:08:28,081
+mostly to the work and stereopsis
+algorithm is about solving the
+
+79
+00:08:28,081 --> 00:08:34,059
+correspondence problem. There are settings
+how on which the correspondence problem is
+
+80
+00:08:34,059 --> 00:08:40,010
+made really easy with the use of active
+sensing. So, there are. This is on the
+
+81
+00:08:40,010 --> 00:08:46,064
+case of so-called range sensors. So, the
+range sensors use extra hardware not just
+
+82
+00:08:46,064 --> 00:08:52,054
+cameras and use some active device to
+project Electromagnetic radiation into
+
+83
+00:08:52,054 --> 00:08:58,038
+the, the scene. It could be lightning, it
+could be a laser, it could be an infrared
+
+84
+00:08:58,038 --> 00:09:03,059
+beam, whatever. And, these made the
+correspondence problem very easy. So I'll
+
+85
+00:09:03,080 --> 00:09:09,078
+gonna show you two examples of ray sense.
+One is the so called prime sense which is
+
+86
+00:09:09,078 --> 00:09:15,041
+used in the Kinect system and many of you
+may have played with these. So, the, the,
+
+87
+00:09:15,041 --> 00:09:21,012
+in the Kinect senses what happens is that
+you have essentially a triangle device.
+
+88
+00:09:21,012 --> 00:09:27,065
+There is an active. Projection of an
+infrared beam into the scene and then that
+
+89
+00:09:27,065 --> 00:09:35,042
+is image. By an, by an IR camera And
+infrared camera And we'll see later that
+
+90
+00:09:35,042 --> 00:09:40,083
+this give rise to certain geometry which
+corresponds to the case of Parallel
+
+91
+00:09:40,083 --> 00:09:46,030
+Optical Axis. At the same time you also
+have an RGB camera to take an ordinary
+
+92
+00:09:46,030 --> 00:09:56,027
+image of the scene. So this is the so
+called triangle relation base device. You
+
+93
+00:09:56,027 --> 00:10:04,034
+can also have Dynaflite senses. So
+Dynaflite senses Very simple. You have
+
+94
+00:10:04,034 --> 00:10:09,054
+essentially something like a laser being
+shot into the world. Then it comes back
+
+95
+00:10:09,054 --> 00:10:14,093
+and the speed of light is finite. So, you
+can measure the amount of time it took and
+
+96
+00:10:14,093 --> 00:10:20,058
+by that you can calculate the distance. So
+there are many devices on the market base
+
+97
+00:10:20,058 --> 00:10:26,017
+on either simulation principles or time of
+flight principles and these devices enable
+
+98
+00:10:26,017 --> 00:10:30,097
+one to directly measure depth values in
+the scene so you can actually get
+
+99
+00:10:30,097 --> 00:10:36,041
+measurements of z at many different
+locations on the scene. So, these, these
+
+100
+00:10:36,041 --> 00:10:45,001
+have been used for automatic card driving
+and video games and all the rest. Let me
+
+101
+00:10:45,001 --> 00:10:51,061
+talk a little bit more about the Kinect
+type senses which you get there from
+
+102
+00:10:51,061 --> 00:10:57,073
+triangulation and I want to compare. The
+case of passive stereopsis with act ive
+
+103
+00:10:57,073 --> 00:11:03,067
+stereopsis, So, passive stereopsis is what
+we just looked out the formula for. Here
+
+104
+00:11:03,067 --> 00:11:09,040
+are two cameras, camera one and camera
+two. Their optical axis are parallel and
+
+105
+00:11:09,040 --> 00:11:15,064
+they actually got this nice formula that
+the disparity is b * f up on z. Okay. So
+
+106
+00:11:15,064 --> 00:11:21,029
+here we have a light originates from
+points in the wall and then it comes to
+
+107
+00:11:21,029 --> 00:11:27,009
+each of the two cameras. So these are
+passive devices, the cameras themselves do
+
+108
+00:11:27,009 --> 00:11:33,052
+not emit any energy. [inaudible] When you
+have a Kinect type device, you'll have an
+
+109
+00:11:33,052 --> 00:11:39,021
+active system. There is some projector of
+light into the scene, some pattern into
+
+110
+00:11:39,021 --> 00:11:44,098
+the scene and then that pattern is imaged
+in the camera. So, the, if you notice the
+
+111
+00:11:44,098 --> 00:11:50,074
+arrows here, there is some energy being
+emitted into the scene, projected into the
+
+112
+00:11:50,074 --> 00:11:55,095
+scene. But notice that the geometry is
+exactly the same. Right There are, the
+
+113
+00:11:55,095 --> 00:12:01,021
+directions of the raise maybe different
+but consider as lines they cause, they're
+
+114
+00:12:01,021 --> 00:12:06,000
+exactly the same geometry. The main
+advantage of active sensing is that it
+
+115
+00:12:06,000 --> 00:12:11,032
+simplifies the problem of estimating point
+correspondences. So if I have projected
+
+116
+00:12:11,032 --> 00:12:16,012
+particularly point and seeing it's a
+bright spot I just see, where is that
+
+117
+00:12:16,012 --> 00:12:21,005
+bright spot image in my camera? I don't
+have to solve for the search for the
+
+118
+00:12:21,005 --> 00:12:26,038
+correspondents by doing some kind of
+search and so on. So, it does make the
+
+119
+00:12:26,038 --> 00:12:31,097
+correspondence problem much easier but. At
+the expense of requiring this active
+
+120
+00:12:31,097 --> 00:12:37,070
+projection of energy and seeing which
+means that it's gonna cost a little bit
+
+121
+00:12:37,070 --> 00:12:43,094
+more and they sent an application where we
+may want to be detected or project energy
+
+122
+00:12:43,094 --> 00:12:49,082
+into a scene and so on and so forth. So
+let's do a little bit of the analysis of
+
+123
+00:12:49,082 --> 00:12:55,069
+the accuracy a triangle relation based
+censor, given that we've the already done
+
+124
+00:12:55,069 --> 00:13:02,040
+the hard work for straight system based on
+triangulation. So, we call the formula for
+
+125
+00:13:02,040 --> 00:13:09,069
+disparity with parallel optical axis.
+Formula for the disparity is xr-xr is bf
+
+126
+00:13:09,069 --> 00:13:19,067
+upon z. So, in other words, you can say
+disparity is some constant. Upon z. Okay,
+
+127
+00:13:19,067 --> 00:13:27,066
+that's gonna be the case or I could say it
+at some other way; z is some other
+
+128
+00:13:27,066 --> 00:13:35,034
+constant upon depth, okay? Kee p this
+relation in mind and we'll look at the,
+
+129
+00:13:35,096 --> 00:13:44,062
+the a formula for the accuracy of depth
+estimation. Okay. So we, we can try to
+
+130
+00:13:44,062 --> 00:13:51,086
+understand what's the error as a function
+of this transform Kinect type sensor. And
+
+131
+00:13:51,086 --> 00:13:56,051
+we can do this purely from geometrical
+analysis. So we recall the, the
+
+132
+00:13:56,051 --> 00:14:02,003
+relationship between this transcend and
+disparity and that relationship is what I
+
+133
+00:14:02,003 --> 00:14:07,001
+showed you in the previous slide. So
+there's, it doesn't matter what the
+
+134
+00:14:07,001 --> 00:14:12,013
+constant is this, some constant, but the
+important point is there an invoice
+
+135
+00:14:12,013 --> 00:14:18,022
+relationship that c is proportional to one
+up on the disparity. Okay. So now we can
+
+136
+00:14:18,022 --> 00:14:24,047
+do calculus. So if I have a little error
+in the measurement of disparity, what does
+
+137
+00:14:24,047 --> 00:14:30,064
+it translate to in terms of an error in
+estimating that? So we can do calculus, we
+
+138
+00:14:30,064 --> 00:14:36,012
+can take the derivatives off z with
+respect to d and do a little bit of
+
+139
+00:14:36,012 --> 00:14:42,029
+manipulation and you can try it yourself.
+We should, we can see that delta z is - z
+
+140
+00:14:42,029 --> 00:14:48,051
+squared up on z * delta d. So, now we can
+take absolute magnitude here since we are
+
+141
+00:14:48,051 --> 00:14:55,037
+trying to concern with errors and we get
+the following formula That the area delta
+
+142
+00:14:55,037 --> 00:15:00,059
+z is related to the area delta d in the
+disparity measurement With this
+
+143
+00:15:00,059 --> 00:15:05,089
+multiplicative factor which is z squared.
+So, that's says that the area is
+
+144
+00:15:05,089 --> 00:15:11,048
+proportional to distance squared. So, this
+give us the prediction that if I am
+
+145
+00:15:11,048 --> 00:15:16,063
+making, using the kinect for depth
+measurement one meter away, I'll have,
+
+146
+00:15:16,063 --> 00:15:22,067
+let's say some error But if I'm looking at
+points which are ten meters away. Then,
+
+147
+00:15:22,067 --> 00:15:31,098
+the, the error will go up by not a fact of
+ten but actually a fact of hundred. So one
+
+148
+00:15:31,098 --> 00:15:37,060
+of my students actually made measurements
+with the Kinect sensor and those
+
+149
+00:15:37,060 --> 00:15:43,044
+measurements here are shown with these
+blue, this deep blue dots where what he
+
+150
+00:15:43,044 --> 00:15:49,005
+did was he, for varying distances in the
+scene, he tried to measure what the
+
+151
+00:15:49,005 --> 00:15:55,035
+quantization that are off the output from
+the Kinect was and those are these little
+
+152
+00:15:55,035 --> 00:16:01,071
+blue dots. And. The red cove here is the
+quadratic figure that comes from this
+
+153
+00:16:01,071 --> 00:16:06,089
+formula because that we know that the
+dependents theoretically should be b
+
+154
+00:16:06,089 --> 00:16:12,035
+squared. And note that the blue dots lie
+exactly on top of this red curve which
+
+155
+00:16:12,035 --> 00:16:17,018
+shows that once in a while geometry does
+have predicted bar. Thank you.

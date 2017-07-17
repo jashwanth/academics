@@ -1,0 +1,800 @@
+
+1
+00:00:00,000 --> 00:00:05,020
+Welcome again and last lecture we talked
+about some properties of Perspective
+
+2
+00:00:05,020 --> 00:00:10,054
+Projection so I'm gonna continue with this
+team today and try to derive a few more
+
+3
+00:00:10,054 --> 00:00:15,082
+interesting properties. So last time we
+studied that parallel lines can merge to a
+
+4
+00:00:15,082 --> 00:00:21,003
+vanishing point. Today, we're gonna take
+up the next property that are listed then
+
+5
+00:00:21,003 --> 00:00:26,037
+which is that nearer objects are lower in
+the image. As you see here, by considering
+
+6
+00:00:26,037 --> 00:00:31,071
+the polls and the bottoms of this polls in
+this diagram. How do we go about proving
+
+7
+00:00:31,071 --> 00:00:38,059
+this? That's the question. So let's start
+by noting that all of these objects are on
+
+8
+00:00:38,059 --> 00:00:45,068
+a ground plane. So, on a ground plane the
+following is true, the y coordinate in the
+
+9
+00:00:45,068 --> 00:00:52,060
+wall satisfies the condition that y= -h.
+So, think of h as the height of the camera
+
+10
+00:00:52,060 --> 00:00:59,006
+or the person taking the picture. So if
+the equation of the ground plane is y =
+
+11
+00:00:59,006 --> 00:01:05,095
+-h, then any point in the ground plane is
+gonna have project to a y coordinate which
+
+12
+00:01:05,095 --> 00:01:12,044
+is y = -fh over z. So that's just from the
+equation of Perspective Projection. So,
+
+13
+00:01:12,044 --> 00:01:18,077
+can we derive anything further? So, let's
+just follow this through. So, suppose we
+
+14
+00:01:18,077 --> 00:01:26,074
+consider. Z going to infinity, so we're
+considering follow a point. What will
+
+15
+00:01:26,074 --> 00:01:34,022
+happen to y? So y will go to zero. So,
+okay, And now we can consider points which
+
+16
+00:01:34,022 --> 00:01:45,052
+are closer to us. So if there are points
+which are nearer to us. What will happen?
+
+17
+00:01:45,052 --> 00:02:00,034
+We'll have y will be more negative. So
+what does that mean? That means that it
+
+18
+00:02:00,034 --> 00:02:14,013
+will be lower in the image, So if we
+consider the points here, These and so
+
+19
+00:02:14,013 --> 00:02:24,018
+forth. So we, we have points associated
+with depths z1, z2, z3 and obviously z3 is
+
+20
+00:02:24,018 --> 00:02:34,019
+greater than z2 which is greater than z1.
+And the associated y coordinates, they are
+
+21
+00:02:34,019 --> 00:02:40,071
+all negative And the y coordinate for the
+point one is the most negative,
+
+22
+00:02:40,071 --> 00:02:48,021
+intermediate are the least negative. So in
+other words, we see that nearer points are
+
+23
+00:02:48,021 --> 00:02:55,012
+going to be lower in the image plane.
+Okay, here's another obvious kind of
+
+24
+00:02:55,012 --> 00:03:01,032
+statement but we want to prove it using
+our techniques that nearer objects look
+
+25
+00:03:01,032 --> 00:03:07,052
+bigger. So what I'm gonna do is I'm gonna
+take up one of these, these, these poles.
+
+26
+00:03:07,052 --> 00:03:17,043
+A nd I'm gonna derive what it's length is
+in the image. So its length in the wall is
+
+27
+00:03:17,043 --> 00:03:25,059
+going to be n. So, that's the height of
+the object out in the wall. In the image,
+
+28
+00:03:25,059 --> 00:03:33,022
+we are going to consider the point
+corresponding to its bottom and its bottom
+
+29
+00:03:33,022 --> 00:03:39,099
+is that x, -h, z. So where does the -h
+arise from? This is the height of the
+
+30
+00:03:39,099 --> 00:03:51,084
+camera. Okay, so what's the top of the
+point going to be? So let's consider this
+
+31
+00:03:51,084 --> 00:03:59,098
+location. So, it's the same x-coordinate,
+the same z-coordinate but the y-coordinate
+
+32
+00:03:59,098 --> 00:04:06,060
+is different and it's larger by l. So, l
+is the height, L is the height of the
+
+33
+00:04:06,060 --> 00:04:13,075
+object so this height is l. So, that gives
+us the following equation for the top of
+
+34
+00:04:13,075 --> 00:04:20,046
+the object. And now, things are pretty
+straight forward. We just have to derive
+
+35
+00:04:20,046 --> 00:04:36,067
+what the bottom projects to. So, what is
+the bottom projector? It's gonna project
+
+36
+00:04:36,067 --> 00:05:01,081
+to fx upon z, -fh upon z. And what does
+the top projector, Fx up on z, Fl-h upon
+
+37
+00:05:01,081 --> 00:05:17,052
+z. So, If I consider The difference
+between this. What is that? That's
+
+38
+00:05:17,052 --> 00:05:25,073
+essentially fl upon z. And that you can
+think of is the vertical size of the image
+
+39
+00:05:25,073 --> 00:05:39,025
+in the projection. And clearly they have
+the property here that large Z Means That
+
+40
+00:05:40,010 --> 00:05:50,048
+This is smaller. So, in a similar way we
+can prove whereas the properties that true
+
+41
+00:05:50,048 --> 00:05:56,000
+of an image created by Perspective
+Projection. So, it's all quite straight
+
+42
+00:05:56,000 --> 00:06:01,090
+forward. You just have to apply these
+rules, fx up on z, fy up on z and just try
+
+43
+00:06:01,090 --> 00:06:07,095
+to figure out what are the appropriate
+choices of x, y, and z to plug in to these
+
+44
+00:06:07,095 --> 00:06:15,055
+formulas. Let's try to get some more
+infusion. But before we do that, I want
+
+45
+00:06:15,055 --> 00:06:21,029
+you to have in mind the physical model
+which are waves in motion. And I have
+
+46
+00:06:21,029 --> 00:06:27,012
+shown that here. So, imagine here that
+there is a person who is standing there
+
+47
+00:06:27,012 --> 00:06:34,039
+looking at some object. This is the object
+in the wall and what we do is we have a
+
+48
+00:06:34,039 --> 00:06:42,099
+pinhole, so this is going to be the
+equivalent of the pinhole. But instead of
+
+49
+00:06:42,099 --> 00:06:49,071
+having the image plane which is at f
+behind the pinhole, we imagine a virtual
+
+50
+00:06:49,071 --> 00:06:56,036
+image plane which is f in front of the
+pinhole. So, it's just the, considering
+
+51
+00:06:56,036 --> 00:07:03,000
+the same f but we are putting it in front
+rat her than in the back as we had
+
+52
+00:07:03,000 --> 00:07:09,044
+earlier, instead of what we had earlier.
+Okay, what [inaudible] going to do this?
+
+53
+00:07:09,044 --> 00:07:15,059
+So essentially, you can imagine that you
+have a transfer in sheet, so you have a
+
+54
+00:07:15,059 --> 00:07:21,051
+transfer in piece of glass which you put
+at a distance of f in front of the
+
+55
+00:07:21,051 --> 00:07:27,035
+pinhole. So, the image is clear to as
+follows. And again the similar triangle
+
+56
+00:07:27,035 --> 00:07:33,082
+reasoning will go through and we will be
+able to derive the projection equations, x
+
+57
+00:07:33,082 --> 00:07:39,013
+= fx upon z, y is fy upon z. And now
+What's cool about this is that you got
+
+58
+00:07:39,013 --> 00:07:44,039
+through the other mind of signs. So In my
+last picture, I talked about getting
+
+59
+00:07:44,039 --> 00:07:49,095
+either minus signs and software or just
+inverting the image top down and left to
+
+60
+00:07:49,095 --> 00:07:55,043
+right. Here, you can think of this is a
+physical model which you can keep in your
+
+61
+00:07:55,043 --> 00:08:00,071
+head as a way in which perspective
+projection happens with no sign inversion.
+
+62
+00:08:00,071 --> 00:08:05,099
+So, one way to think about is that this is
+how an artist operates. An artist is
+
+63
+00:08:05,099 --> 00:08:11,061
+trying to paint a picture of an external
+world on an easel. So, this is going to be
+
+64
+00:08:11,061 --> 00:08:18,058
+a kind of the artist's easel. On which he
+or she is trying to paint this picture of
+
+65
+00:08:18,058 --> 00:08:26,016
+a tree outside. And they want the, the
+picture to be such that a person situated
+
+66
+00:08:26,016 --> 00:08:33,074
+at the right location would get exactly
+the same set of rays from the painting as.
+
+67
+00:08:33,074 --> 00:08:40,032
+He or she would get from the real world
+and then obviously they would, they would
+
+68
+00:08:40,032 --> 00:08:46,037
+imagine the construction like one I've
+shown here. So, what this makes very clear
+
+69
+00:08:46,037 --> 00:08:52,057
+is that, what's very important is the
+location of the pinhole sometimes we will
+
+70
+00:08:52,057 --> 00:09:00,003
+call this the center of projection Because
+all the rays which form the image go
+
+71
+00:09:00,003 --> 00:09:06,097
+through the center of projection. And
+Perspective Projection is really a mapping
+
+72
+00:09:06,097 --> 00:09:12,047
+from points in three-dimensional-space,
+xyz to this collection of rays and what's
+
+73
+00:09:12,047 --> 00:09:17,077
+the collection of rays we are talking
+about? All the rays which go through the
+
+74
+00:09:17,077 --> 00:09:22,080
+center of projection and that abbreviated
+sometimes as COP. So this is the
+
+75
+00:09:22,080 --> 00:09:28,030
+fundamental way to think about it, what,
+once you see it this way, you realize that
+
+76
+00:09:28,030 --> 00:09:33,081
+the projection surface. The projection
+surface that we considered here, it is not
+
+77
+00:09:33,081 --> 00:09:39,028
+very important. I mean, we can put it, put
+a plane there, we could put a sphere so
+
+78
+00:09:39,028 --> 00:09:44,048
+you could imagine that you have a
+transparent globe and the center of that
+
+79
+00:09:44,048 --> 00:09:49,086
+globe is the pinhole or whatever smooth
+surface you like. It doesn't matter. We
+
+80
+00:09:49,086 --> 00:09:55,003
+just need some way of recording the
+intersection of rays on to a surface. So,
+
+81
+00:09:55,003 --> 00:10:00,048
+this shows up some kind of discussions
+when people are confused that when in, in
+
+82
+00:10:00,048 --> 00:10:06,000
+human perception, images are created in
+the retina and the retina is not flat and
+
+83
+00:10:06,000 --> 00:10:11,045
+it's not exactly spherical. It doesn't
+matter, All you need is a way to record in
+
+84
+00:10:11,045 --> 00:10:16,075
+a one to one fashion the set of rays going
+through the pinhole. And each ray
+
+85
+00:10:16,075 --> 00:10:22,069
+corresponding to a set of points of the
+three-dimensional-space. Thinking of it
+
+86
+00:10:22,069 --> 00:10:28,004
+this way also makes some other intrusions
+more evident. What's the right way to
+
+87
+00:10:28,004 --> 00:10:33,006
+measure image size? So, we could think
+about different ways of doing it. You
+
+88
+00:10:33,006 --> 00:10:38,062
+could measure image size and pixels. You
+could measure it in microns and the image
+
+89
+00:10:38,062 --> 00:10:44,017
+sensor. But, let me argue to you that the
+right way to measure image size is visual
+
+90
+00:10:44,017 --> 00:10:49,059
+angle so I've shown that in this diagram.
+So, we have some object out in the wall,
+
+91
+00:10:49,059 --> 00:10:55,034
+and it creates a certain image. But what I
+can do is to measure the length of this
+
+92
+00:10:55,034 --> 00:11:01,014
+image with this visual angle theta and
+this is the visual angle subtended at the
+
+93
+00:11:01,014 --> 00:11:06,086
+center projection. How do we measure this
+theta in a standard way? By radiance or
+
+94
+00:11:06,086 --> 00:11:14,002
+degrees or whatever. So, this is a major
+of, a natural major image size. And once
+
+95
+00:11:14,002 --> 00:11:22,012
+you have this major image size, you can of
+course always convert this into size on
+
+96
+00:11:22,012 --> 00:11:29,063
+the, on the image plane because we're
+going to have a simple relationship. So,
+
+97
+00:11:29,063 --> 00:11:40,011
+theta is equal to sum l upon f, where f is
+the, the distance Between center of
+
+98
+00:11:40,011 --> 00:11:50,011
+projection and the image plane. So, but
+measuring the size of an object on the
+
+99
+00:11:50,011 --> 00:11:56,005
+image plane in degrees therefore is a very
+natural thing. So, we do this all the time
+
+100
+00:11:56,005 --> 00:12:01,071
+when we talk about field of e view of
+cameras of the field of view of the human
+
+101
+00:12:01,071 --> 00:12:07,051
+visual system. We always describe that in
+terms of degrees. We don't measure it out
+
+102
+00:12:07,051 --> 00:12:13,010
+in terms of megapixels o r number of cons
+and so on. Degrees is, subtended at the
+
+103
+00:12:13,010 --> 00:12:21,032
+center of projection is the natural unit.
+I'll give you some examples of what one
+
+104
+00:12:21,032 --> 00:12:28,048
+can do once you realize that this is the
+natural unit. We can. We can calculate for
+
+105
+00:12:28,048 --> 00:12:34,044
+some common objects on what size the
+subtend on the on the [inaudible]. So
+
+106
+00:12:34,044 --> 00:12:40,079
+let's take the example of the human head.
+So the average human head is nine inches
+
+107
+00:12:40,079 --> 00:12:46,027
+high. So, suppose that we are looking at a
+person who is nine feet away. So, then,
+
+108
+00:12:46,027 --> 00:12:52,049
+what you're going to get is angle theta is
+gonna be one upon twelve because there are
+
+109
+00:12:52,049 --> 00:12:58,015
+twelve inches in a foot, So this one upon
+twelve is in radiance of course so that
+
+110
+00:12:58,015 --> 00:13:03,088
+corresponds to 4.8 degrees. So, if the
+person was at eighteen feet what would we
+
+111
+00:13:03,088 --> 00:13:10,066
+get? You would get. That the head
+[inaudible] 2.4 degrees. So, note that
+
+112
+00:13:10,066 --> 00:13:16,068
+this gives you a way of measuring distance
+because let's assume that all human heads
+
+113
+00:13:16,068 --> 00:13:22,014
+are roughly the same. So, the beam has
+access to the, the size subtended on the
+
+114
+00:13:22,014 --> 00:13:27,067
+retina. So is it, if, if the size is 2.5
+degrees you can say I'm looking at a
+
+115
+00:13:27,067 --> 00:13:33,079
+person who is eighteen feet away. So, this
+is quite convenient. Let me conclude my
+
+116
+00:13:33,079 --> 00:13:40,037
+discussion of perspective by trying to
+capture the big story which I think can be
+
+117
+00:13:40,037 --> 00:13:46,087
+summarized in two main principles. First
+principle is that objects which are part
+
+118
+00:13:46,087 --> 00:13:53,037
+of it looks smaller. Looks smaller meaning
+that the angles up tended on the image
+
+119
+00:13:53,037 --> 00:13:59,085
+plane is smaller. And the basic factor is
+the scaling factor of one over z. So when
+
+120
+00:13:59,085 --> 00:14:04,090
+z is larger, you'll gonna get a smaller
+projection on the image. So we have
+
+121
+00:14:04,090 --> 00:14:10,070
+studied this in great detail already. The
+second effect which I wanna point out is
+
+122
+00:14:10,070 --> 00:14:16,009
+that for sharpening. Objects that are
+slanted with respect to the line of sight
+
+123
+00:14:16,009 --> 00:14:21,061
+project to smaller sizes on the image
+plane. And this killing factor here is
+
+124
+00:14:21,061 --> 00:14:27,091
+Cosine Sigma. So let me define sigma. So
+sigma here is, is shown in this figure. So
+
+125
+00:14:27,091 --> 00:14:34,091
+we have the line of sight from the eye and
+then we have the surface normal. The
+
+126
+00:14:34,091 --> 00:14:41,023
+surface normal to the surface which I have
+shown here in blue And sigma is the angle
+
+127
+00:14:41,023 --> 00:14:47,003
+between the two. So, if a surface is dir
+ectly in front of us, sigma will be zero.
+
+128
+00:14:47,003 --> 00:14:52,076
+If the surface is completely edged on,
+then sigma will be 90 degrees. So, sigma
+
+129
+00:14:52,076 --> 00:14:59,001
+is the angle between the line of sight and
+the surface normal. And sometimes we call
+
+130
+00:14:59,001 --> 00:15:09,067
+sigma, the surface slant. And, essentially
+this is gonna cause a further diminishing
+
+131
+00:15:09,067 --> 00:15:15,061
+in size by a factor of cosine sigma. We
+can get into this in more mathematically
+
+132
+00:15:15,061 --> 00:15:21,078
+precise in a more mathematically precise
+way later. But, I think you can get this
+
+133
+00:15:21,078 --> 00:15:26,075
+notion quite intuitively. So, these are
+the two main effects of perspective
+
+134
+00:15:26,075 --> 00:15:32,003
+projection, this [inaudible] effect and a
+[inaudible] effect. This is why if we have
+
+135
+00:15:32,003 --> 00:15:37,044
+a circle in the wall, it will typically
+project to an ellipse and the ratio of the
+
+136
+00:15:37,044 --> 00:15:42,079
+major to minor axis is going to be related
+to how the circular disk is arrayed with
+
+137
+00:15:42,079 --> 00:15:48,078
+respect to the line of sight. Finally, I
+want to conclude by talking about an
+
+138
+00:15:48,078 --> 00:15:55,014
+approximation to Perspective Projection
+called Orthographic Projection and we use
+
+139
+00:15:55,014 --> 00:16:01,065
+this quite a lot. And the reason is that
+it makes the mathematics much simpler at
+
+140
+00:16:01,089 --> 00:16:06,042
+in certain times. When is this
+approximation valid? This is an
+
+141
+00:16:06,042 --> 00:16:12,027
+approximation to perspective and you're
+looking at an object which doesn't have
+
+142
+00:16:12,027 --> 00:16:18,048
+that much depth variation inside it and is
+relatively following. So imagine that here
+
+143
+00:16:18,048 --> 00:16:24,048
+is the, the camera indicated by the eye
+and you're looking at some object and this
+
+144
+00:16:24,048 --> 00:16:29,074
+distance might be like twenty feet or
+something like that. And, the depth
+
+145
+00:16:29,074 --> 00:16:35,086
+variation within the object is more like
+one foot. So that's the kind of scenario.
+
+146
+00:16:35,086 --> 00:16:42,024
+You're looking at some smallish object
+relative to the distance that it is with
+
+147
+00:16:42,024 --> 00:16:48,037
+respect to the camera. So, what happens
+there? Let's derive some equations here.
+
+148
+00:16:48,037 --> 00:16:59,067
+So essentially, the perspective effect is
+going to give me that x = fx up on Z1 And
+
+149
+00:16:59,067 --> 00:17:14,075
+x2 is fx2 up on z2, Okay. Now, what we can
+do is to assume that this f up on z1 and f
+
+150
+00:17:14,075 --> 00:17:25,000
+up on z2 are approximately the same. So,
+if f up on z1 approximately, f up on z2.
+
+151
+00:17:26,022 --> 00:17:38,004
+In which case we can then say x1 is sum
+alpha times x1. And x2 is alpha * x2.
+
+152
+00:17:38,004 --> 00:17:50,017
+Okay. So, this of course is the So, this
+is image, it's the im age quantities. So,
+
+153
+00:17:50,017 --> 00:17:58,067
+what we have here is just scaling. So, a
+scaling of, of the x-coordinate. And what
+
+154
+00:17:58,067 --> 00:18:07,007
+we'll we do for the y-coordinate? It's
+gonna be [inaudible] of the y1 is alpha
+
+155
+00:18:07,007 --> 00:18:20,063
+times. Y1 and y2 is alpha * y2. So, when
+can we make this assumption that f up on
+
+156
+00:18:20,063 --> 00:18:27,068
+z1 is roughly the same as f up on z2.
+It's, it's when the change in depth
+
+157
+00:18:27,068 --> 00:18:40,070
+inside. So when z1 - z2 is small, Relative
+to, To z, and that's the setting image we
+
+158
+00:18:40,070 --> 00:18:46,001
+make Orthographic Projection. So
+Orthographic Projection make you just
+
+159
+00:18:46,001 --> 00:18:51,060
+assume that there's a constant factor of
+[inaudible] do to the distance and the
+
+160
+00:18:51,060 --> 00:19:02,025
+distance is assumed to be approximately
+the same for the whole object, Okay, Thank

@@ -1,0 +1,515 @@
+
+1
+00:00:00,000 --> 00:00:06,065
+Hello, So, let's continue with our lecture
+on Rigid Body Motions. So, in the last
+
+2
+00:00:06,065 --> 00:00:13,047
+lecture we studied the definition of Rigid
+Body Motions which is that if I have
+
+3
+00:00:13,047 --> 00:00:20,054
+points a and b then, the length before the
+transformation is the same as the length
+
+4
+00:00:20,054 --> 00:00:35,039
+after the transformation, That's the
+definition. And then we did an example,
+
+5
+00:00:36,089 --> 00:00:45,056
+And the example was translation. And
+translation is defined as point a gets
+
+6
+00:00:45,056 --> 00:00:53,005
+mapped to the point a + t and you can
+think of t as the shift. Okay, in today's
+
+7
+00:00:53,005 --> 00:01:05,094
+lecture we'll focus on rotations. And what
+I'm gonna do is to try to formally define
+
+8
+00:01:05,094 --> 00:01:11,042
+rotations and just give you the
+mathematical and openings of working
+
+9
+00:01:11,042 --> 00:01:17,061
+comfortably with rotations. So rotations
+of two main properties, they are, first
+
+10
+00:01:17,061 --> 00:01:34,095
+they are Linear Transformations. What do I
+mean by Linear Transformations? So Linear
+
+11
+00:01:34,095 --> 00:01:45,058
+Transformation, if we have points supposed
+a gets mapped to psi of a And b gets
+
+12
+00:01:45,058 --> 00:01:57,047
+mapped to psi of b. Then if I have the
+point alpha a + beta b that should be
+
+13
+00:01:57,047 --> 00:02:14,042
+mapped to alpha psi of a + beta * psi of
+b, This is the definition Of a Linear
+
+14
+00:02:14,042 --> 00:02:19,084
+Transformation. Okay, that's one way to
+think about it abstractly in a
+
+15
+00:02:19,084 --> 00:02:25,086
+mathematical sense. But there is a more
+practical way to think about it which is
+
+16
+00:02:25,086 --> 00:02:42,081
+that, suppose a is a vector. Another way
+Is that psi of a is given by a matrix
+
+17
+00:02:42,081 --> 00:02:55,050
+times a vector a. So here, let's get our
+notation right. This is a matrix. And this
+
+18
+00:02:55,050 --> 00:03:05,068
+is a vector. Okay, let's take up another,
+let's state this more clearly. So, so
+
+19
+00:03:05,068 --> 00:03:32,043
+suppose we have a We have points in r2,
+Then a is A vector Eg, A1, a2, And any
+
+20
+00:03:32,043 --> 00:03:58,083
+Linear Transformation Corresponds to a
+matrix multiplication. So let me indicate
+
+21
+00:03:58,083 --> 00:04:12,053
+this by psi of a is going to be some
+matrix. Let's use b11, b12, b21, b22.
+
+22
+00:04:13,091 --> 00:04:20,078
+Multiplying this vector a. So in other
+words, the vector a by, if we will
+
+23
+00:04:20,078 --> 00:04:27,093
+multiply by some matrix b * this vector a,
+we get the result of this Linear
+
+24
+00:04:27,093 --> 00:04:35,086
+Transformation. And what we can show is
+any Linear Transformation can be expressed
+
+25
+00:04:35,086 --> 00:04:43,050
+by such a matrix multiplication. So, we
+can think equivalently in, in this matrix
+
+26
+00:04:43,050 --> 00:05:01,027
+notation. So I, I'd like to have my points
+Are going to be column v ectors. And so if
+
+27
+00:05:01,027 --> 00:05:16,010
+we have transformations, Linear
+Transformations From two dimensional space
+
+28
+00:05:16,010 --> 00:05:39,042
+to two dimensional space are represented
+by Two by two matrices Has Here And if we
+
+29
+00:05:39,042 --> 00:06:02,073
+are in three-dimensional-space. Then A
+point is Of type B1, b2, b3. So, it's a
+
+30
+00:06:02,073 --> 00:06:26,030
+column vector And any Linear
+Transformation From R3 to r3 Corresponds
+
+31
+00:06:26,030 --> 00:06:46,094
+to Multiplication by Three by three
+matrixes. So we might have a matrix A11,
+
+32
+00:06:46,094 --> 00:07:05,091
+a12, a21, a21, a22, a23, a31, a32, a33 and
+then. We have b1, b2, b3. And this gives
+
+33
+00:07:05,091 --> 00:07:15,000
+me some new column vector. Let's use the
+notation c for this, c1, c2, c3. So, this
+
+34
+00:07:15,000 --> 00:07:29,051
+corresponds to c is the product of Matrix
+Multiplication. In this way and. Is the
+
+35
+00:07:29,051 --> 00:07:49,080
+matrix, a here is the matrix corresponding
+to the Linear Transformation. Okay. So,
+
+36
+00:07:49,080 --> 00:07:55,062
+this is just standard a Linear Algebra.
+Any Linear Transformation can be expressed
+
+37
+00:07:55,062 --> 00:08:01,007
+by a matrix and matrix is obviously a
+Linear Transformation. So, let's go back
+
+38
+00:08:01,007 --> 00:08:22,023
+to Rigid Body Motions. So, we want to
+understand Rigid Body Motions That are
+
+39
+00:08:22,023 --> 00:08:45,040
+also Linear Transformations. Okay, how do
+we do that? So I mean I so we, we, we need
+
+40
+00:08:45,040 --> 00:08:52,053
+to somehow study the condition of Rigid
+Body Motion and add that condition to that
+
+41
+00:08:52,053 --> 00:08:59,013
+of being a Linear Transformation. So,
+we're gonna add a little definition here
+
+42
+00:09:04,029 --> 00:09:32,075
+And Orthogonal Transformation Is a Linear
+Transformation That preserves In a
+
+43
+00:09:32,075 --> 00:09:45,003
+product. So, that's the definition of
+Orthogonal Transformation. So suppose that
+
+44
+00:09:45,003 --> 00:09:55,055
+we have, we have a and we have b. And a
+gets mapped to psi a and b gets mapped to
+
+45
+00:09:55,055 --> 00:10:04,014
+psi b. What do I mean by inner product?
+So, the inner product before the
+
+46
+00:10:04,014 --> 00:10:10,000
+transformation is given by a dot product
+with b, and the inner product after the
+
+47
+00:10:10,000 --> 00:10:17,037
+transformation is given by psi of a dot
+product with psi of b. And these two are
+
+48
+00:10:17,037 --> 00:10:29,013
+equal. And for those of you who have
+forgotten what I mean by inner product A
+
+49
+00:10:29,013 --> 00:10:53,039
+dot b Is also called Scalar Product. So,
+if a is a1a2 and b is b1b2 and I express
+
+50
+00:10:53,039 --> 00:11:07,065
+them as column vectors that ab = a1b1 +
+a2b2. Okay. So, this is the definition.
+
+51
+00:11:07,065 --> 00:11:13,025
+So, essentially what I'm saying is in a
+product preserved, any transformations
+
+52
+00:11:13,025 --> 00:11:19,007
+which have this property, any Lin ear
+Transformation which have this property is
+
+53
+00:11:19,007 --> 00:11:24,089
+called an Orthogonal Transformation. So
+let's try to understand this some
+
+54
+00:11:24,089 --> 00:11:48,041
+properties of Orthogonal Transformations.
+So, one property is that Orthogonal
+
+55
+00:11:48,041 --> 00:12:10,073
+Transformations preserve norms. So if I
+had point a. Okay. So, what do I know? If
+
+56
+00:12:10,073 --> 00:12:19,019
+I have a, that gets transformed to psi of
+a. And let's consider now again the point
+
+57
+00:12:19,019 --> 00:12:25,063
+a, and that gets transformed to psi of a.
+Now consider the dot product before the
+
+58
+00:12:25,063 --> 00:12:36,009
+transformation, that is going to be a dot
+a. So this is before. And now let's
+
+59
+00:12:36,009 --> 00:12:44,001
+consider the dot product after the
+transformation, psi of a dot psi of a. And
+
+60
+00:12:44,001 --> 00:12:51,061
+this is the dot product after the
+transformation. Okay. And by the property
+
+61
+00:12:51,061 --> 00:12:57,005
+that this Orthogonal Transformation
+preserves norms, what do we know? These
+
+62
+00:12:57,005 --> 00:13:08,009
+two must be equal. Okay, Then, let's write
+the south. This means that norm of a
+
+63
+00:13:08,009 --> 00:13:21,026
+squared = the norm of psi of a. Squared.
+So clearly, the norm has been preserved.
+
+64
+00:13:21,026 --> 00:13:39,091
+In other words, length is being preserved.
+So, this might lead you to think that
+
+65
+00:13:39,091 --> 00:13:45,048
+Orthogonal Transformations are consistent
+with the concept of Rigid Body
+
+66
+00:13:45,048 --> 00:13:51,088
+Transformations. But let's prove this more
+generally. So, what we have to do now is
+
+67
+00:13:51,088 --> 00:14:05,032
+to show this. So, more generally We're
+gonna have some point a and this point is
+
+68
+00:14:05,032 --> 00:14:11,033
+gonna get transformed to psi of a. We're
+gonna have a point b, and that's gonna be
+
+69
+00:14:11,033 --> 00:14:28,066
+transformed to psi of b. And what do we
+need to show? We need to show That is
+
+70
+00:14:28,066 --> 00:14:59,050
+equal to If Psi is a, Is an Orthogonal
+Transformation. So that's something to be
+
+71
+00:14:59,050 --> 00:15:20,021
+proved. So how do we prove this? So, let's
+do the following. Let's consider. The
+
+72
+00:15:20,021 --> 00:15:37,001
+length of psi a - psi b, and what is that
+going to be? So this is going to be. So,
+
+73
+00:15:37,001 --> 00:15:45,026
+that's the length of psi a and psi b. And
+the question is, is this equal to the
+
+74
+00:15:45,026 --> 00:15:55,047
+length of. So we don't know whether this
+is true but that's what we'll try to
+
+75
+00:15:55,047 --> 00:16:00,002
+prove. If we can manage to show that the
+two of these are equal, we are in
+
+76
+00:16:00,002 --> 00:16:05,031
+business. So we can expand this out so I'm
+putting a question mark here to imply that
+
+77
+00:16:05,031 --> 00:16:11,069
+we don't know whether this is true or not.
+So what do we get? If we. Expand this out,
+
+78
+00:16:11,069 --> 00:16:31,065
+we are going to get. So, that's what we
+get in the left-hand side and the question
+
+79
+00:16:31,065 --> 00:16:46,066
+is, is this equal to. What we get on the
+right-hand side. Okay. Now, let's make
+
+80
+00:16:46,066 --> 00:17:06,003
+some observations which we'll do on the
+side. So, we have earlier showed that. And
+
+81
+00:17:06,003 --> 00:17:20,084
+we are sure that. Okay, we showed this in
+the previous page. So, that's good. So,
+
+82
+00:17:22,024 --> 00:17:37,073
+and what else do we know? We know that.
+Psi of a dot psi of b is = a dot b. So,
+
+83
+00:17:37,073 --> 00:17:48,097
+these are all true. And one of this is
+true by definition and these were proved
+
+84
+00:17:48,097 --> 00:18:00,011
+and these do approved Previously. Okay,
+So, now we are in business. We are trying
+
+85
+00:18:00,011 --> 00:18:10,023
+to ask the question Is this expression
+equal to this expression? Okay, but we
+
+86
+00:18:10,023 --> 00:18:16,043
+have and we can use some properties here.
+So we just showed that psi of a squared is
+
+87
+00:18:16,043 --> 00:18:22,003
+= a squared. So the length of psi of a is
+the same as the length of a. So this
+
+88
+00:18:22,003 --> 00:18:28,047
+enables us to cancel this guy, these two
+guys are the same. The length of b after
+
+89
+00:18:28,047 --> 00:18:34,063
+the transformation is the same as the
+length of b before the transformation. So,
+
+90
+00:18:34,063 --> 00:18:41,018
+therefore this and this are the same. And
+we also showed that psi a dot product with
+
+91
+00:18:41,018 --> 00:18:47,073
+psi b is the same as a dot product with b.
+And therefore, this term and this term are
+
+92
+00:18:47,073 --> 00:18:57,031
+the same And this is great. Excellent, So,
+we are very happy because we have shown
+
+93
+00:18:57,031 --> 00:19:13,042
+that these are, these two are. Equal. So,
+in other words we have proven This result.
+
+94
+00:19:15,085 --> 00:19:34,079
+Okay, but what does this mean? What this
+means is that. Therefore, psi is a Rigid
+
+95
+00:19:34,079 --> 00:19:51,064
+Body Motion. So, let me summarize the
+result. So, the result is that An
+
+96
+00:19:51,064 --> 00:20:16,075
+Orthogonal Transformation Is A Rigid Body
+Transformation. So just to remind you, we
+
+97
+00:20:16,075 --> 00:20:35,069
+started with the definition of Orthogonal.
+Was that it is linear And it preserves
+
+98
+00:20:35,069 --> 00:20:58,063
+inner products. Okay, So, in other words A
+dot b = psi of a dot psi of b. And the
+
+99
+00:20:58,063 --> 00:21:20,006
+definition of Rigid Body Transformation
+Was that The length of a - b is the same
+
+100
+00:21:20,006 --> 00:21:38,053
+as the length of psi a - psi of b. And,
+what did we proved? We proved That
+
+101
+00:21:38,053 --> 00:22:01,057
+Orthogonal Transformations are rigid, Have
+Rigid Body Transformations. Okay, And, and
+
+102
+00:22:01,057 --> 00:22:19,070
+recall that earlier we proved That
+translations Are Rigid Body
+
+103
+00:22:19,070 --> 00:22:32,070
+Transformations. So there' s, we have two
+examples of this.

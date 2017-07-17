@@ -1,0 +1,1300 @@
+
+1
+00:00:00,000 --> 00:00:04,054
+Hello. Welcome back. So, in the last
+lecture, we talked about various
+
+2
+00:00:04,054 --> 00:00:09,091
+configurations for stereopsis, Various
+configurations in which the two cameras
+
+3
+00:00:09,091 --> 00:00:15,014
+could be arranged And we started the
+Geometry for these different situations.
+
+4
+00:00:15,014 --> 00:00:20,070
+So, one of those was when we have a single
+point of fixation. With the optical axis
+
+5
+00:00:20,070 --> 00:00:25,092
+into set this is what happens in human
+vision where the two eyes can merge on a
+
+6
+00:00:25,092 --> 00:00:30,087
+fixation point. Or you can have this
+special case where the optical axis are
+
+7
+00:00:30,087 --> 00:00:36,022
+parallel so this is the case for example
+in the connect system where you have two
+
+8
+00:00:36,022 --> 00:00:41,011
+cameras arranged with optical axis
+parallel And finally, we are done to the
+
+9
+00:00:41,011 --> 00:00:46,026
+general case and where the two cameras
+correlated by arbitrary rotation and
+
+10
+00:00:46,026 --> 00:00:51,016
+translation. So, the focus of this lecture
+will be on, on the geometry of that case
+
+11
+00:00:51,016 --> 00:00:56,040
+and how we can recover three-dimensional
+structure in that setting. So, let's study
+
+12
+00:00:56,040 --> 00:01:01,073
+the general situation and the general
+situation we have, what is, is described
+
+13
+00:01:01,073 --> 00:01:07,055
+as Epipolar Geometry. There's a point m in
+the world and that projects to m1 and the
+
+14
+00:01:07,055 --> 00:01:13,023
+first camera on m2 and the second camera
+And the camera's two coordinate frame is
+
+15
+00:01:13,023 --> 00:01:18,056
+related to that of the first camera by
+some general rotation and translation.
+
+16
+00:01:18,056 --> 00:01:24,047
+What makes it challenging is that we may
+not know that rotation and translation so
+
+17
+00:01:24,047 --> 00:01:30,001
+this has to be determined itself. This is
+different from the case of say, human
+
+18
+00:01:30,001 --> 00:01:35,078
+vision or in the case of robotic camera
+configuration where we. Get to choose how
+
+19
+00:01:35,078 --> 00:01:40,054
+to place the cameras and therefore we know
+the distance between the cameras and
+
+20
+00:01:40,072 --> 00:01:45,060
+information about the convergence angle
+and so on, which may be known to us from
+
+21
+00:01:45,060 --> 00:01:50,066
+other sensors. In this case we are talking
+about two cameras in general position with
+
+22
+00:01:50,066 --> 00:01:58,079
+unknown rotation and translation. So,
+therefore The problem that we have is that
+
+23
+00:01:58,079 --> 00:02:03,074
+we have some set of points out in the
+world and we must find corresponding
+
+24
+00:02:03,074 --> 00:02:09,008
+points but that don't mean points that are
+some points in the world and it has a
+
+25
+00:02:09,008 --> 00:02:14,055
+projection in the left image in the right
+image and we know which these two points
+
+26
+00:02:14,055 --> 00:02:19,089
+correspond to exactly the same scene poin
+T. We have given n point correspondences.
+
+27
+00:02:19,089 --> 00:02:24,097
+We need to recover the depth of those end
+points and in addition, recover the
+
+28
+00:02:24,097 --> 00:02:30,011
+relationship between the camera which is
+given by rotation and translation. So
+
+29
+00:02:30,011 --> 00:02:35,068
+let's first study when this kind of a case
+arises. This is the most general case but
+
+30
+00:02:35,068 --> 00:02:40,079
+we should vary about whether this is two
+arbitrary general case or does this
+
+31
+00:02:40,079 --> 00:02:45,076
+actually arise in practical applications.
+And the answer is that it does. So,
+
+32
+00:02:45,076 --> 00:02:50,093
+standard example is reconstructing
+three-dimensional object given for this.
+
+33
+00:02:50,093 --> 00:02:55,090
+So you may have downloaded this
+photographs from the Internet such as from
+
+34
+00:02:55,090 --> 00:03:00,094
+Flicker or some other website and this
+photographs could have been taken by
+
+35
+00:03:00,094 --> 00:03:07,009
+different people at different times And
+The question is can we use those
+
+36
+00:03:07,009 --> 00:03:11,072
+photographs together to recover the
+three-dimensional structure of the object
+
+37
+00:03:11,072 --> 00:03:16,099
+being used And this can actually be done
+and that's why we are going to study this
+
+38
+00:03:16,099 --> 00:03:21,093
+situation in detail. Before we proceed
+further I want to point you to some
+
+39
+00:03:21,093 --> 00:03:27,000
+example of work in this direction and this
+is what in a joint project from the
+
+40
+00:03:27,000 --> 00:03:32,030
+University of Washington and Microsoft
+Research and there are number of links
+
+41
+00:03:32,030 --> 00:03:37,040
+that are provided here. Before you proceed
+with the rest of the lecture, I need you
+
+42
+00:03:37,040 --> 00:03:42,036
+to pause this lecture, go and check out
+these websites, look at the demos, look at
+
+43
+00:03:42,036 --> 00:03:47,040
+the reconstructions. I think that will set
+you up much better for our, [inaudible]
+
+44
+00:03:47,040 --> 00:03:54,011
+the rest of this lecture is. Okay, so I
+assume you intend looked at those
+
+45
+00:03:54,011 --> 00:03:59,012
+reconstructions and I'm very curious to
+know how exactly this is done. So, let's
+
+46
+00:03:59,012 --> 00:04:04,025
+get into the details. I'm going to give
+you the big picture. We will not have time
+
+47
+00:04:04,025 --> 00:04:09,026
+to understand all the details that is,
+that is resolved up here of the research
+
+48
+00:04:09,026 --> 00:04:14,002
+and I want to make sure you get the big
+idea. So basic module in, in this
+
+49
+00:04:14,002 --> 00:04:19,082
+algorithms is that recovering 3D structure
+from two views. So, with the so called
+
+50
+00:04:19,082 --> 00:04:25,048
+relative orientation, the rotation and
+translation which is like the two cameras
+
+51
+00:04:25,048 --> 00:04:30,097
+being unknown. How do we do this? There
+are several steps here. I think I will
+
+52
+00:04:30,097 --> 00:04:36,035
+give you the big picture first. So, the
+first step is that we must find. In
+
+53
+00:04:39,000 --> 00:04:41,064
+corresponding points in two views so
+this requires an algorithm and we will
+
+54
+00:04:41,064 --> 00:04:47,076
+study those later in the course. For now,
+suppose that magically somebody tells you
+
+55
+00:04:47,076 --> 00:04:53,065
+here are end points in the first camera
+and he corresponding end points in the
+
+56
+00:04:53,065 --> 00:04:59,032
+second camera, these are given to you.
+Let's assume we have that. Then, what we
+
+57
+00:04:59,032 --> 00:05:06,010
+do is we estimate. Something called E
+matrix, E for essential. It's very related
+
+58
+00:05:06,010 --> 00:05:11,077
+to a popular geometry and this matrix is
+the following. Remember the skew-symmetrix
+
+59
+00:05:11,077 --> 00:05:17,017
+matrix associated with a vector and
+remember that when we have, do you want to
+
+60
+00:05:17,017 --> 00:05:22,071
+construct across product with the vector,
+there is a certain matrix we construct
+
+61
+00:05:22,071 --> 00:05:28,010
+which is the skew-symmetrix matrix that is
+this hat remember? So we can construct
+
+62
+00:05:28,010 --> 00:05:33,071
+such a skew-symmetrix matrix corresponding
+to the translation vector multiply that
+
+63
+00:05:33,071 --> 00:05:41,007
+[inaudible] multiply that by R the rotation.
+And that gives you a matrix E. It turns
+
+64
+00:05:41,007 --> 00:05:50,072
+out that using point correspondences we
+can estimate E. I have to show you how and
+
+65
+00:05:50,072 --> 00:05:57,046
+why this idea works. Once we know E, then.
+We have to kind of factorize e in some way
+
+66
+00:05:57,046 --> 00:06:02,042
+and by factorizing E we can recover R and
+T, the rotation and the translation which
+
+67
+00:06:02,042 --> 00:06:07,014
+relates the cameras. Once we have the
+rotation and the translation, now the job
+
+68
+00:06:07,014 --> 00:06:11,098
+is kind of done because the relationship
+between the two cameras is known now all
+
+69
+00:06:11,098 --> 00:06:16,051
+we have to do is recover depth by
+triangulation because we have the ray in
+
+70
+00:06:16,051 --> 00:06:20,086
+each of the cameras. We extend the rays
+out in space, the two rays should
+
+71
+00:06:20,086 --> 00:06:26,094
+intersect. Where they intersect is where
+the point leaves in the wall. Now, note
+
+72
+00:06:26,094 --> 00:06:32,092
+that the job is actually more complicated
+because we don't just have two cameras. We
+
+73
+00:06:32,092 --> 00:06:39,019
+may have hundreds of cameras or thousands
+of cameras because I think if some tourist
+
+74
+00:06:39,019 --> 00:06:44,082
+sites that are thousands of tourists
+mailing about it and pictures of the same
+
+75
+00:06:44,082 --> 00:06:50,059
+site. And we want to use the information
+from all the photographs. So, there has to
+
+76
+00:06:50,059 --> 00:06:55,057
+be an outer loop which combines
+information from multiple cameras and
+
+77
+00:06:55,057 --> 00:07:01,029
+multiple points. Note that all the points
+will not be seen by the cameras so there
+
+78
+00:07:01,029 --> 00:07:06,097
+might be some subset of points which are
+seen by cameras one and two So, different
+
+79
+00:07:06,097 --> 00:07:12,059
+subset in by cameras three and so forth.
+The algorithm which is used a the stages
+
+80
+00:07:12,080 --> 00:07:18,013
+so called nonlinear least-squares
+optimization procedure called bundle
+
+81
+00:07:18,013 --> 00:07:23,089
+adjustment. And in any nonlinear least-squares
+minimization there is some objective
+
+82
+00:07:23,089 --> 00:07:29,038
+function that we wished to minimize and
+the objective function here is the so
+
+83
+00:07:29,038 --> 00:07:35,007
+called reprojection error. I'm going to
+explain this idea in the subsequent slide.
+
+84
+00:07:35,007 --> 00:07:41,042
+Just to give you an idea of complexity of
+this task, there, I referred in the
+
+85
+00:07:41,042 --> 00:07:47,068
+previous slide to the University of
+Washington and Microsoft Research. They
+
+86
+00:07:47,068 --> 00:07:54,061
+have a reconstruction of the coliseum in
+Rome and this reconstruction was based on
+
+87
+00:07:54,061 --> 00:08:01,004
+2,000 images, so 2,000 different camera
+photographs were taken and there were
+
+88
+00:08:01,004 --> 00:08:06,075
+800,000 points Which we'll use to
+construct this part of the
+
+89
+00:08:06,075 --> 00:08:12,031
+reconstruction. So there's a significant
+engineering problem of how to do this
+
+90
+00:08:12,031 --> 00:08:18,016
+non-linear optimization but we will let
+you skip those details. So let's try to
+
+91
+00:08:18,016 --> 00:08:24,008
+understand these basic steps first. The
+one, the basic inner loop in which
+
+92
+00:08:24,008 --> 00:08:31,017
+is the covering 3d structures from two
+views. Okay. So this is the essential
+
+93
+00:08:31,017 --> 00:08:39,022
+matrix constraint. And the essential
+matrix is defined as a take the skew-symmetric
+
+94
+00:08:39,022 --> 00:08:47,024
+matrix corresponding to translation And
+post to multiply that by R the
+
+95
+00:08:47,024 --> 00:08:54,057
+rotation matrix. So why does this work?
+Okay, I'm going to have to explain that.
+
+96
+00:08:54,057 --> 00:09:00,077
+But first let me just Give you the big
+picture what the constraint is. So they
+
+97
+00:09:00,077 --> 00:09:06,061
+called us geometry for, there's epipolar
+geometry that we started earlier that at
+
+98
+00:09:06,061 --> 00:09:11,087
+some point m in the world, there are the
+camera centers c1 and c2 and the
+
+99
+00:09:11,087 --> 00:09:17,085
+projections are given by m1 and m2. So m,
+c1, c2 defined a plane and that plane is
+
+100
+00:09:17,085 --> 00:09:23,012
+the so called epipolar plane and
+where  it intersect the image planes are called,
+
+101
+00:09:23,012 --> 00:09:28,059
+we get two lines and these are the so
+called epipolar lines. Okay. So, the big
+
+102
+00:09:28,059 --> 00:09:36,012
+picture is that there is a constraint
+which relates the coordinates x1 and x2 of
+
+103
+00:09:36,012 --> 00:09:42,086
+the point m1 and the two cameras so let's
+understand what each of these. So what is
+
+104
+00:09:42,086 --> 00:09:48,087
+x1? So x1 is the coordinates of  the
+projection of m and the first camera m1.
+
+105
+00:09:48,087 --> 00:09:55,029
+So this is going to be a 2-dimensional
+point, it's on the image plane. How are we
+
+106
+00:09:55,029 --> 00:10:01,055
+going to consider it in homogeneous
+coordinates so then it becomes a 3-vector.
+
+107
+00:10:01,055 --> 00:10:08,013
+And in homogeneous coordinates, any scale
+multiple of that vector is also the same.
+
+108
+00:10:08,013 --> 00:10:14,079
+It's not affected by scale multiplication.
+And if you want you can think of this as
+
+109
+00:10:14,079 --> 00:10:21,026
+the ray going through c1 and the point m.
+And the 3-dimensional coordinates of all
+
+110
+00:10:21,026 --> 00:10:29,002
+the points on that ray correspond to the
+homogeneous coordinates of the projection
+
+111
+00:10:29,002 --> 00:10:36,040
+of the point m in the first camera and
+similarly we get x2 and x2 are the
+
+112
+00:10:36,040 --> 00:10:44,077
+homogeneous coordinates of the projection
+of the point m in the second camera. So we
+
+113
+00:10:44,077 --> 00:10:51,097
+get this, there is this, This quite
+magical formula that I've written out
+
+114
+00:10:51,097 --> 00:10:59,086
+here. Okay. Can we derive this formula? I
+want to give you the basic intuition.
+
+115
+00:11:00,077 --> 00:11:06,066
+Okay. The proof is based on the fact that
+there are three rays which are
+
+116
+00:11:06,066 --> 00:11:12,087
+[inaudible]. So if you look at the
+diagram, I have this highlighted in the
+
+117
+00:11:12,087 --> 00:11:19,025
+green, in purple and in this light blue
+color. And what are these three rays?
+
+118
+00:11:19,025 --> 00:11:25,029
+Remember we talked about the epipolar
+constraint which is that there is a
+
+119
+00:11:25,029 --> 00:11:32,085
+certain plane called the epipolar plane.
+So these three Sides of this triangle if
+
+120
+00:11:32,085 --> 00:11:38,032
+you [inaudible] obviously planer. So let's
+see if we can get some mileage out of
+
+121
+00:11:38,032 --> 00:11:44,013
+that. So how do we do this? We are going
+to have to express this constraint in some
+
+122
+00:11:44,013 --> 00:11:49,032
+algebraic way. So basically, what we
+should do is we need to use a consistent
+
+123
+00:11:49,032 --> 00:11:54,052
+coordinate system and the coordinate
+system that we will use is data of the
+
+124
+00:11:54,052 --> 00:11:59,096
+second camera frame. Okay. So, index
+second camera frame, how do I describe
+
+125
+00:12:00,020 --> 00:12:06,078
+what are the three rays that I'm concerned
+with. One ray is the ray corresponding to
+
+126
+00:12:06,078 --> 00:12:12,042
+x2 which is essentially the ray
+corresponding to the projection of m in
+
+127
+00:12:12,042 --> 00:12:19,046
+the second camera. Okay. So I know what
+that is, that's going to be given by the
+
+128
+00:12:19,046 --> 00:12:27,035
+image plane coordinates of x2 and of
+course any scale multiple of that works
+
+129
+00:12:27,035 --> 00:12:35,064
+equally well. I have the translation vect
+or T and that's another ray. Then we have
+
+130
+00:12:35,064 --> 00:12:44,087
+the ray corresponding to m1, m1, c1, m So
+m1, c1, m That's this guy. Okay, but, and
+
+131
+00:12:44,087 --> 00:12:50,015
+that has coordinate x1 but that's in the
+frame of the first camera. That's not good
+
+132
+00:12:50,015 --> 00:12:54,080
+enough for me. I really need to put
+everything in the frame of the second
+
+133
+00:12:54,080 --> 00:12:59,076
+camera And what's going on between these
+two cameras is that there has been a
+
+134
+00:12:59,076 --> 00:13:04,060
+rotation r. So therefore, if I want to
+take the x1 which is in the coordinate
+
+135
+00:13:04,060 --> 00:13:09,056
+frame of the first camera and I want to
+put it in the coordinate frame of the
+
+136
+00:13:09,056 --> 00:13:14,039
+second camera, I have to do a rotation. So
+that give, that I do by this matrix
+
+137
+00:13:14,039 --> 00:13:21,033
+multiplication rx1. So that, so by doing
+that matrix multiplication, rx1 is now put
+
+138
+00:13:21,033 --> 00:13:28,045
+in the coordinate frame of the second
+camera and I've indicated that here so
+
+139
+00:13:28,045 --> 00:13:35,093
+this translated this line here and now
+it's in the coordinate frame center at c2
+
+140
+00:13:35,093 --> 00:13:43,012
+and I have this ray rx1. So we get that
+x2, t and rx1 are all co-planer. Okay.
+
+141
+00:13:43,012 --> 00:13:48,023
+It's just the epipolar, the basic
+constraint of epipolar geometry. So in my
+
+142
+00:13:48,023 --> 00:13:53,075
+last lecture, I went to an, at great line
+for about epipolar geometry and now I'm
+
+143
+00:13:53,075 --> 00:13:58,086
+going to use the constraint in an
+algebraic way to get an equation out. So
+
+144
+00:13:58,086 --> 00:14:04,031
+since this three are co-planer, the triple
+product is zero now. So now, I think I
+
+145
+00:14:04,031 --> 00:14:11,019
+need to remind you what the triple product
+is. So, triple product is a very standard
+
+146
+00:14:11,019 --> 00:14:19,010
+concept from vector algebra So if we have
+vectors v1, v2 and v3 and if they are
+
+147
+00:14:19,010 --> 00:14:25,080
+co-planer. Then the following is true
+that, that take v2 cross v3, the cross
+
+148
+00:14:25,080 --> 00:14:31,069
+product of vector product. That's this
+guy. And then you take the dot product
+
+149
+00:14:31,069 --> 00:14:37,075
+with the third vector and that gives you
+zero. And physical interpretation of this
+
+150
+00:14:37,075 --> 00:14:43,061
+is, this is the volume of the parallel of
+[inaudible] defined by three sides v1, v2
+
+151
+00:14:43,061 --> 00:14:49,061
+and v3. And when this three line up plane,
+the volume of this parallel of [inaudible]
+
+152
+00:14:49,061 --> 00:14:55,066
+must be zero. Okay. Now let's put this in
+odd notation In odd notation. In our
+
+153
+00:14:55,066 --> 00:15:02,059
+notation, first we make it into we want to
+get use this vector notation and we take
+
+154
+00:15:02,059 --> 00:15:09,036
+this [inaudible] and we'll convert it into
+a scale symmetric matrix and we saw that
+
+155
+00:15:09,036 --> 00:15:15,043
+before. So, so, we do cross product with
+v3, I'm going to convert into a vector
+
+156
+00:15:15,043 --> 00:15:21,016
+matrix multiplication after making
+[inaudible] symmetric matrix. And then I
+
+157
+00:15:21,016 --> 00:15:27,028
+have to take a dot product here and the
+dot product when we have, these guys are
+
+158
+00:15:27,028 --> 00:15:33,014
+column vectors so if I take the column
+vector and I transpose it. I get a row
+
+159
+00:15:33,014 --> 00:15:38,096
+vector and then this product then will,
+this will correspond to, to getting the
+
+160
+00:15:38,096 --> 00:15:45,015
+inner product of the dot product. Okay, so
+this is generic, this has nothing to do at
+
+161
+00:15:45,015 --> 00:15:51,027
+epipolar geometry [inaudible] vectors v1,
+v2 and v3 are co-planer, the relationship
+
+162
+00:15:51,027 --> 00:15:57,093
+described here must be true. So let's go
+back. So we have that the vectors x2, t
+
+163
+00:15:57,093 --> 00:16:05,056
+and rx1 are co-planer, so therefore we can
+setup the triple product and that's what
+
+164
+00:16:05,056 --> 00:16:11,054
+is done here. So we take x2 transposed.
+The [inaudible] symmetric matrix
+
+165
+00:16:11,054 --> 00:16:21,025
+corresponding to, Corresponding to, to t
+shows up here that is rx1 which is like
+
+166
+00:16:21,025 --> 00:16:32,073
+one guy and this triple product to zero
+And then what we do is we give this. It
+
+167
+00:16:32,073 --> 00:16:38,076
+gives this matrix a name; they call this
+the matrix e And it's sometimes called the
+
+168
+00:16:38,076 --> 00:16:43,096
+essential matrix. It's certainly is very
+essential to our understanding of
+
+169
+00:16:43,096 --> 00:16:51,025
+stereopsis. Okay. Now, we are ready to get
+the big picture of the so called
+
+170
+00:16:51,025 --> 00:16:57,017
+Longuet-Higgins Eight-point algorithm.
+This is the famous algorithm. It goes back
+
+171
+00:16:57,017 --> 00:17:02,043
+to 1981 and was proposed by, by
+Longuet-Higgins and was named after him.
+
+172
+00:17:02,043 --> 00:17:08,058
+So, what we do is we find, we need to have
+corresponding points in the two views and
+
+173
+00:17:08,058 --> 00:17:14,043
+this algorithm requires eight or more
+points. From these points, we, we proceed
+
+174
+00:17:14,043 --> 00:17:22,038
+in the following steps. We, We estimate
+the e matrix which is the, this particular
+
+175
+00:17:22,038 --> 00:17:28,023
+product of d and r. From this, we do some
+kind of factorization, I'm going to
+
+176
+00:17:28,023 --> 00:17:34,004
+[inaudible] the details of that and that
+gives me the relationship between the two
+
+177
+00:17:34,004 --> 00:17:39,057
+cameras, and once I have the relationship
+between the two cameras, I can recover
+
+178
+00:17:39,057 --> 00:17:45,017
+[inaudible]. Let me give you a little bit
+more intuition about the step, why this
+
+179
+00:17:45,017 --> 00:17:50,088
+works and why we need eight points. Okay.
+So, let's start with the equation. Given
+
+180
+00:17:50,088 --> 00:17:57,010
+projections x1, x2 so x1 and x2 are this
+is the first camera and this is the second
+
+181
+00:17:57,010 --> 00:18:03,002
+camera and x1 and x2 will be measured in
+each camera's coordinates. And we have
+
+182
+00:18:03,002 --> 00:18:08,087
+this relationship that it derives in a
+previous slide that x2 transpose ex1 is
+
+183
+00:18:08,087 --> 00:18:15,076
+equal to zero. What do we know here? So
+the knows are, x2 is known and x1 is
+
+184
+00:18:15,076 --> 00:18:23,064
+known, e is unknown. Alright so these guys
+e is unknown. Okay. Can we solve for e.
+
+185
+00:18:23,064 --> 00:18:31,027
+Well e is actually a [inaudible] matrix so
+that's. Write this out. So we are now just
+
+186
+00:18:31,027 --> 00:18:37,012
+expanded out this equation into the
+coordinates. So, x2 is a three by one
+
+187
+00:18:37,012 --> 00:18:43,070
+vector so x2 transpose [inaudible] is a
+certain row vector, x1 is a column vector
+
+188
+00:18:43,070 --> 00:18:50,069
+which is shown here and then in between we
+have this three by three matrix e which is
+
+189
+00:18:50,069 --> 00:19:00,073
+unknown. Okay But if you write out this
+equation. And. What we get is an equation
+
+190
+00:19:00,073 --> 00:19:07,097
+involving the radius entries in e. And
+remember that x2 is known and x1 is known.
+
+191
+00:19:07,097 --> 00:19:14,094
+So this is actually a linear equation
+where the unknowns are e11, e12, e13, e21,
+
+192
+00:19:14,094 --> 00:19:21,073
+e22, e23, e31, e32, e33. So, there are
+really nine unknowns here and we have one
+
+193
+00:19:21,073 --> 00:19:28,058
+linear equation. Now, imagine that you
+have a new some other Point for which
+
+194
+00:19:28,058 --> 00:19:35,022
+you'll get the coordinates in both cameras
+that will give you another equation and so
+
+195
+00:19:35,022 --> 00:19:41,055
+on. So we get every time we find a pair of
+corresponding points in the two cameras,
+
+196
+00:19:41,055 --> 00:19:47,081
+we get a new linear equation involving
+this, this nine entries of the e matrix.
+
+197
+00:19:47,081 --> 00:19:54,022
+There is one observation we can make here,
+which is that, we can only recover this e
+
+198
+00:19:54,022 --> 00:20:00,033
+matrix up to a scale factor. Why is that?
+Suppose you took the entries of e And
+
+199
+00:20:00,033 --> 00:20:08,012
+replaced, suppose we took e and instead of
+e we have [inaudible] times e Would this
+
+200
+00:20:08,012 --> 00:20:13,042
+equation be exactly the same? Yes, there
+is no way you can solve for the difference
+
+201
+00:20:13,042 --> 00:20:18,071
+between e and the scale of multiple of e
+And in fact, if you think about this from
+
+202
+00:20:18,071 --> 00:20:24,000
+a projective geometry point of view, that
+is exactly correct because in projective
+
+203
+00:20:24,000 --> 00:20:29,003
+geometry, these matrix are always known up
+to an unknown scale factor, up to an
+
+204
+00:20:29,003 --> 00:20:34,012
+unknown non-zero scale factor. So in fact,
+we can never hope to recover nine
+
+205
+00:20:34,012 --> 00:20:39,059
+parameters because there's always been
+this unknown scale factor. So, we can only
+
+206
+00:20:39,059 --> 00:20:45,020
+hope to recover eight parameters. Okay and
+then there will be this unknown scale
+
+207
+00:20:45,020 --> 00:20:50,071
+factor. So Then if, then now you know from
+linear equation theory that if you have,
+
+208
+00:20:50,071 --> 00:20:56,005
+if you have five unknowns, you need five
+equation, So in this case we have eight
+
+209
+00:20:56,005 --> 00:21:00,078
+unknowns, so therefore we need eight
+equations And how do we get eight
+
+210
+00:21:00,078 --> 00:21:06,019
+equations? By having eight corresponding
+points, So this eight is really the nine
+
+211
+00:21:06,019 --> 00:21:11,080
+entries of the essential matrix minus one
+because we can never hope to recover the
+
+212
+00:21:11,080 --> 00:21:17,035
+scale factor, So, this algorithm is called
+the Eight-point algorithm. The beauty is
+
+213
+00:21:17,035 --> 00:21:22,083
+that with eight correspondences you can
+actually just solve linear equations in
+
+214
+00:21:22,083 --> 00:21:28,011
+order to recover the entries of this
+matrix e If you have more than eight
+
+215
+00:21:28,011 --> 00:21:33,033
+points, that fine. There are still the
+same eight unknowns, more point is better,
+
+216
+00:21:33,033 --> 00:21:38,071
+we can do some kind of [inaudible] square
+solution by which we minimize there so
+
+217
+00:21:38,071 --> 00:21:43,069
+more results are better and in, when we
+are solving linear equation, this is
+
+218
+00:21:43,069 --> 00:21:48,094
+what's called an OWA determined linear
+system and we can always solve for that
+
+219
+00:21:48,094 --> 00:21:54,051
+and that's good. So That gives you the
+intuition of how, how the e matrix comes
+
+220
+00:21:54,051 --> 00:21:59,080
+about and how we can estimate it, given
+[inaudible] correspondences. Once we have
+
+221
+00:21:59,080 --> 00:22:04,083
+the e matrix, the e matrix in turns out
+can be factorized to give us all the
+
+222
+00:22:04,083 --> 00:22:09,059
+rotational components and to either
+translation component and I'm going to
+
+223
+00:22:09,059 --> 00:22:14,055
+skip the details. It's, can be found in
+any of the references in this, on the
+
+224
+00:22:14,055 --> 00:22:22,032
+literature And once we have that, we can
+recover that by [inaudible] So just to
+
+225
+00:22:22,032 --> 00:22:28,025
+summarize what we studied so far. The
+basic module for recovering 3D structure
+
+226
+00:22:28,025 --> 00:22:33,094
+from 2-views with unknown relative
+orientation between the cameras, unknown
+
+227
+00:22:33,094 --> 00:22:39,026
+rotation and translation can be
+implemented using the Longuet-Higgins
+
+228
+00:22:39,026 --> 00:22:47,056
+eight point algorithm. Of course, we have
+a more general situation which is that we
+
+229
+00:22:47,056 --> 00:22:53,048
+have many cameras and many points and how
+do we do that But in a loop is this
+
+230
+00:22:53,048 --> 00:22:59,078
+Longuet-Higgins eight-point algorithm. The
+outer loop combines information from all
+
+231
+00:22:59,078 --> 00:23:05,085
+the cameras in a global c oordinate system
+using what's called bundle adjustment.
+
+232
+00:23:05,085 --> 00:23:10,049
+The, this is a least [inaudible]
+minimization procedure and the important
+
+233
+00:23:10,049 --> 00:23:15,025
+point here is what error is being
+minimized. The error that is minimized is
+
+234
+00:23:15,025 --> 00:23:22,029
+so called re-projection error. And I'll
+give you the intuition here. So, we have
+
+235
+00:23:22,029 --> 00:23:27,053
+from this Eight-point algorithm, we
+essentially have a bunch of approximate
+
+236
+00:23:27,053 --> 00:23:33,041
+guesses of the position of the cameras and
+the position of the point in three space
+
+237
+00:23:33,041 --> 00:23:38,072
+with the approximate because of the
+presence of the image noise and all the
+
+238
+00:23:38,072 --> 00:23:44,045
+rest. But once we have guessed 3D position
+to the point, we can use the equation of
+
+239
+00:23:44,045 --> 00:23:50,033
+prospective projection to exactly predict
+where the point should lie in each of the
+
+240
+00:23:50,033 --> 00:23:55,061
+cameras whether point is visible And if
+the image measurement of the coordinates
+
+241
+00:23:55,061 --> 00:24:00,062
+of the point is not exactly there then we
+have some slide discrepancies and that
+
+242
+00:24:00,062 --> 00:24:05,046
+discrepancy is what is called the
+re-projection error. You guessed where the
+
+243
+00:24:05,046 --> 00:24:10,028
+point was in 3D, you predicted where it
+should be in the image, you look for it
+
+244
+00:24:10,028 --> 00:24:15,018
+and you found it to be not exactly there
+but somewhere nearby and so there's a
+
+245
+00:24:15,018 --> 00:24:20,007
+little error there. You sum the errors
+corresponding to all the predictions for
+
+246
+00:24:20,007 --> 00:24:26,015
+all the points and all the views. So we
+get this humongous error function And what
+
+247
+00:24:26,015 --> 00:24:33,006
+we do is we try to adjust the position of
+the cameras and the points in three space
+
+248
+00:24:33,006 --> 00:24:38,073
+such that this error is minimized. So
+it's, it's not a convex optimization
+
+249
+00:24:38,073 --> 00:24:44,012
+problem. It's a non-linear problem where
+you can only find local minimal. If you
+
+250
+00:24:44,012 --> 00:24:49,050
+start off close enough to the right point,
+this procedure works and it's called
+
+251
+00:24:49,050 --> 00:24:55,010
+bundle adjustment that's kind of the term
+we used, I mean for a mathematician, this
+
+252
+00:24:55,010 --> 00:25:00,062
+is just non-linear [inaudible] but in
+vision and really goes back to [inaudible]
+
+253
+00:25:00,062 --> 00:25:06,042
+geometry we called this bundle adjustment.
+Because [inaudible] adjusted is the bundle
+
+254
+00:25:06,042 --> 00:25:11,000
+of rays Going through the center of
+projection of a particular camera.
+
+255
+00:25:11,000 --> 00:25:15,088
+Actually, we have lots of bundles
+corresponding to all the camera positions.
+
+256
+00:25:17,035 --> 00:25:23,053
+I have only given you the big picture of
+the, the, the, this whole line of w ork.
+
+257
+00:25:23,053 --> 00:25:29,062
+Lots and lots of engineering where
+literally decades has gone into make the,
+
+258
+00:25:29,062 --> 00:25:36,011
+making this whole approach work and I
+welcome you to pursue this further. Good
+
+259
+00:25:36,011 --> 00:25:41,096
+introduction can be found in Rick
+Szeliski's book, Chapter seven and this
+
+260
+00:25:41,096 --> 00:25:53,010
+book is available free online so you can
+download it and read and study it. Thank

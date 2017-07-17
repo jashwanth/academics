@@ -1,0 +1,9 @@
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\bin\Debug\gauresh_debug.exe
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\bin\Debug\gauresh_debug.pdb
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\gauresh_debug.gcs.resources
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\gauresh_debug.Properties.Resources.resources
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\gauresh_debug.exe
+C:\Users\Jashwanth\Desktop\practise\gauresh_debug\gauresh_debug\obj\x86\Debug\gauresh_debug.pdb

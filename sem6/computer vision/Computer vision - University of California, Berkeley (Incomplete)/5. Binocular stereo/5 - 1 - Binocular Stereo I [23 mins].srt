@@ -1,0 +1,1090 @@
+
+1
+00:00:00,000 --> 00:00:05,076
+Hello. So, welcome back. In this lecture,
+we will talk about Binocular Stereopsis.
+
+2
+00:00:05,076 --> 00:00:11,001
+So, we previously studied dynamic
+perspective. By dynamic perspective, we
+
+3
+00:00:11,001 --> 00:00:17,000
+meant what happens when the camera moves
+and what happens is that we can recover
+
+4
+00:00:17,000 --> 00:00:23,036
+something some information about depth in
+the scene as well as the movement of the
+
+5
+00:00:23,036 --> 00:00:29,035
+camera. Today, what we will talk about it
+the case when we have two static cameras,
+
+6
+00:00:29,082 --> 00:00:40,025
+But not at the same position. So the
+situation described in this diagram, so
+
+7
+00:00:40,025 --> 00:00:46,075
+it's in this case the setup is
+corresponding to the human system. So we
+
+8
+00:00:46,075 --> 00:00:52,099
+have two eyes, the left eye and the right
+eye which are slightly different
+
+9
+00:00:52,099 --> 00:00:59,065
+locations. We see and object out in the
+world through the images created by the
+
+10
+00:00:59,065 --> 00:01:05,080
+left eye and the image created by the
+right eye. And these two images are
+
+11
+00:01:05,080 --> 00:01:12,084
+slightly different. The difference is
+called disparity. That is the technical
+
+12
+00:01:12,084 --> 00:01:18,026
+term we used for the difference in the
+images between the two eyes. And that
+
+13
+00:01:18,026 --> 00:01:23,082
+disparity is due to depth. So, the way
+that you should think about this is that
+
+14
+00:01:23,082 --> 00:01:29,031
+this is very analogous to optical flow.
+So, optical flow was the difference in
+
+15
+00:01:29,031 --> 00:01:34,092
+position between points in one frame and
+the next frame. Disparity is between the
+
+16
+00:01:34,092 --> 00:01:39,084
+images in one eye versus the image in the
+other eye. So disparity is kind the
+
+17
+00:01:39,084 --> 00:01:45,015
+counterpart of the optical flow. And from
+disparity, you should be able to pull out
+
+18
+00:01:45,015 --> 00:01:50,060
+information which tells us something about
+depth in the scene. Why should that be the
+
+19
+00:01:50,060 --> 00:01:56,006
+case? Well, here's a very simple argument.
+Essentially in perspective projection what
+
+20
+00:01:56,006 --> 00:02:01,057
+we know is that there is a certain ray
+going through the pin hole and the point
+
+21
+00:02:01,057 --> 00:02:07,071
+in the world could lie anywhere on that
+ray. You don't know where exactly. Now,
+
+22
+00:02:07,071 --> 00:02:14,024
+from the second camera, you'll get another
+such ray. In this section of these two
+
+23
+00:02:14,024 --> 00:02:21,011
+rays uniquely defines where the point lies
+in three-dimensional space. So this is my
+
+24
+00:02:21,011 --> 00:02:27,097
+two cameras and label as to c in the left
+and that's what the term Stereopsis means.
+
+25
+00:02:27,097 --> 00:02:35,011
+Stereo means solid and opsis means sight,
+so this is solid sight And binocular
+
+26
+00:02:35,011 --> 00:02:42,009
+implies two eyes. Bi means two and ocular
+m eans two eyes. So, two eyes gives
+
+27
+00:02:42,009 --> 00:02:48,006
+severe, getting solid sight. Now why did
+we want to do this case separately from
+
+28
+00:02:48,006 --> 00:02:53,006
+the case of optical flow? Well, in the
+case of the optical flow we derived the
+
+29
+00:02:53,006 --> 00:02:58,026
+equations using calculus. Essentially the
+assumption was the change was that the
+
+30
+00:02:58,026 --> 00:03:03,040
+small from one frame to next. We don't
+need that assumption anymore in this set
+
+31
+00:03:03,040 --> 00:03:08,056
+of binoculars Stereopsis. The two cameras
+could be arbitrary far apart. And we'll
+
+32
+00:03:08,056 --> 00:03:14,031
+work out formulas which will work in the
+general case. [inaudible] The math
+
+33
+00:03:14,031 --> 00:03:20,069
+simplifies in, in order to give us
+formulas for disparity and depth In
+
+34
+00:03:20,069 --> 00:03:27,007
+different ways depending on the
+configuration of the cameras. So, let's
+
+35
+00:03:27,007 --> 00:03:34,055
+take that up. There can be various camera
+configurations or for that matter, eye
+
+36
+00:03:34,055 --> 00:03:41,048
+configurations. Okay, here is the
+configuration corresponding to normal
+
+37
+00:03:41,048 --> 00:03:48,080
+human vision. We have our two eyes And the
+two eyes are fixated at some point In the
+
+38
+00:03:48,080 --> 00:03:55,032
+world. Okay, Unless you have some disease
+or [inaudible] or lazy eye or one of these
+
+39
+00:03:55,032 --> 00:04:01,039
+problematic-ish diseases. What you
+normally do is that left eye and the right
+
+40
+00:04:01,039 --> 00:04:07,061
+eye are both oriented at the same point we
+are concerned, so that's the point that
+
+41
+00:04:07,061 --> 00:04:13,060
+highest resolution in both left eye and
+the right eye. So, this is a very common
+
+42
+00:04:13,060 --> 00:04:20,004
+configuration for and therefore typical
+human and binocular human or animal
+
+43
+00:04:20,004 --> 00:04:28,075
+vision. So we studied this configuration.
+The special case of this when we consider
+
+44
+00:04:28,075 --> 00:04:35,058
+the fixation point to be it infinitely so
+I'll draw it out like so here are the two
+
+45
+00:04:35,058 --> 00:04:41,042
+eyes. And the optical axis are parallel as
+opposed to the optical axis and
+
+46
+00:04:41,042 --> 00:04:47,041
+intersected. These are a very common
+configuration in the camera systems. For
+
+47
+00:04:47,041 --> 00:04:53,079
+example, in the kinect, you'll have such a
+configuration. You have essentially this
+
+48
+00:04:53,079 --> 00:04:59,087
+configuration with equivalent to, I mean
+parallel optical axis And then of course
+
+49
+00:04:59,087 --> 00:05:04,083
+we can have the general case And general
+case the two cameras can be in any
+
+50
+00:05:04,083 --> 00:05:09,092
+position with respect to another so there
+is camera c1. There is camera c2 and in
+
+51
+00:05:09,092 --> 00:05:14,063
+between what has happened that some
+rotation and some transfers. In general
+
+52
+00:05:14,063 --> 00:05:19,072
+some complete the transformat ion and we
+can look out the relationship we want in
+
+53
+00:05:19,072 --> 00:05:24,087
+that case. But I'd like to start with the
+easy case and, and then we'll move on the,
+
+54
+00:05:24,087 --> 00:05:31,046
+the more complex cases. So first we
+studied the dis-clarity for our fixating
+
+55
+00:05:31,046 --> 00:05:37,052
+binocular system. So here we can just
+think of human vision as a good model the
+
+56
+00:05:37,052 --> 00:05:44,005
+LE standing for the left eye and the right
+eye and typically we fixate at some point
+
+57
+00:05:44,005 --> 00:05:50,011
+B in the world. So the easiest way to see
+this is when you are reading then the
+
+58
+00:05:50,011 --> 00:05:55,071
+letter that you are reading at a
+particular point, that's going to be the
+
+59
+00:05:55,071 --> 00:06:03,075
+point b here, the fixation point. And then
+we can have some arbitrary point q. And
+
+60
+00:06:03,075 --> 00:06:08,077
+this point q is gonna be imaged
+differently in the left eye and the right
+
+61
+00:06:08,077 --> 00:06:14,027
+eye and that difference is what we call
+disparity and this disparity is going to
+
+62
+00:06:14,027 --> 00:06:19,056
+be q to the f. So let's figure this out.
+So imagine that we have our coordinate
+
+63
+00:06:19,056 --> 00:06:25,021
+system in the left eye. Okay. We have an
+origin corresponding to the pinhole. We
+
+64
+00:06:25,021 --> 00:06:31,045
+have a coordinate system in the right eye
+and the origin here is going to be on the
+
+65
+00:06:31,045 --> 00:06:37,047
+optical axis or it's, it's the point p. So
+the projection of the point p is at the
+
+66
+00:06:37,047 --> 00:06:43,079
+origin here in both of these eyes in the
+left and the right eye. And therefore its
+
+67
+00:06:43,079 --> 00:06:49,094
+disparity is zero because it is at the
+same position in both eyes. Sometimes, we
+
+68
+00:06:49,094 --> 00:06:59,031
+use this hard coordinate system called the
+Cyclopean Eye. Okay so the Cyclops. Where
+
+69
+00:06:59,031 --> 00:07:04,046
+these characters from Greek Mythology who
+had one eye on top of the head so if we
+
+70
+00:07:04,046 --> 00:07:09,054
+were to have one eye on our head where
+should it be? Logically the right place to
+
+71
+00:07:09,054 --> 00:07:14,069
+put it is on the midpoint of the line
+joining the left eye and the right eye and
+
+72
+00:07:14,069 --> 00:07:19,039
+we call that the cyclopean eye. I mean
+there is no real eye there. It's just
+
+73
+00:07:19,039 --> 00:07:24,066
+another place to put a coordinate system
+which is neutral between being on the left
+
+74
+00:07:24,066 --> 00:07:31,017
+eye and the right eye. So now we can
+consider where our point q is imaged so
+
+75
+00:07:31,017 --> 00:07:38,048
+the point q is imaged to q sub l in left
+eye and q sub r in the right eye. So
+
+76
+00:07:38,048 --> 00:07:47,070
+what's the definition of disparity?
+Disparity is Defined to be q sub r - q sub
+
+77
+00:07:47,070 --> 00:07:54,032
+l. Now note that qr is a point in
+two-dimensional space and ql is also a
+
+78
+00:07:54,032 --> 00:08:06,021
+point in two-dimensional space so the
+disparity has a horizontal component. And
+
+79
+00:08:06,021 --> 00:08:16,093
+it has a vertical component. Recall that
+when we are doing, we were studying
+
+80
+00:08:16,093 --> 00:08:23,006
+optical flow we had the components u and v
+and those were the horizontal component in
+
+81
+00:08:23,006 --> 00:08:28,099
+the x direction and v the component in the
+vertical direction so the same story is
+
+82
+00:08:28,099 --> 00:08:34,020
+gonna go on here. The main, the component
+which is mainly important is the
+
+83
+00:08:34,020 --> 00:08:39,062
+horizontal component because the eyes are
+separated horizontally so the, the
+
+84
+00:08:39,062 --> 00:08:44,085
+horizontal disparity is the most
+significant one. Okay. So, all we do is,
+
+85
+00:08:44,085 --> 00:08:51,021
+we have got our origins in the left eye
+and the right eye. We measure the, the
+
+86
+00:08:51,021 --> 00:08:57,082
+location of the point q, the projection of
+the point q in the two eyes, q sub l, q
+
+87
+00:08:57,082 --> 00:09:04,050
+sub r. And just take the differences where
+ql and qr are measured in the separate
+
+88
+00:09:04,050 --> 00:09:12,015
+coordinate systems. Okay. Our job now is
+going to be to. Measure disparity,
+
+89
+00:09:12,015 --> 00:09:17,030
+measuring disparity requires finding out
+correspondences what point in the left
+
+90
+00:09:17,030 --> 00:09:22,077
+dimension corresponds ro what point in the
+right dimension and we are going to study
+
+91
+00:09:22,077 --> 00:09:27,060
+that probably later. Today in the next
+field of lectures, we are gonna focus
+
+92
+00:09:27,060 --> 00:09:32,082
+primarily on the geometry of the problem.
+Suppose we know the correspondences, how
+
+93
+00:09:32,082 --> 00:09:38,078
+can we determine that? I want to first
+talk a little bit about binocular eye
+
+94
+00:09:38,078 --> 00:09:45,022
+movements and this a particular interest
+in human version because the human eyes
+
+95
+00:09:45,022 --> 00:09:51,073
+move according to this two basic kind of
+eye movements. So the basic set up is the
+
+96
+00:09:51,073 --> 00:09:58,016
+following. We have the left eye and the
+right eye and CE is the cyclopean eye, the
+
+97
+00:09:58,016 --> 00:10:05,068
+midpoint of left eye and right eye. So I
+have my basic set up and I'm fixated on
+
+98
+00:10:05,068 --> 00:10:13,075
+the point B. Now what I could do is I
+could stay looking in the same direction.
+
+99
+00:10:14,022 --> 00:10:20,036
+Okay? So the cyclopean direction of p has
+not changed but just look at the point
+
+100
+00:10:20,036 --> 00:10:25,092
+which is further away which we call p
+prime So what has changed under this
+
+101
+00:10:26,013 --> 00:10:31,077
+situation in the, under this movement of
+the eyes. So basically, I'm still looking
+
+102
+00:10:31,077 --> 00:10:37,026
+at the same direction but look at the
+point further away. So there is an angle
+
+103
+00:10:37,026 --> 00:10:42,090
+of convergence that we can define if we
+have left eye, the point p and the right
+
+104
+00:10:42,090 --> 00:10:48,040
+eye, we have this angle alpha here. So
+what happens when we look further in the
+
+105
+00:10:48,040 --> 00:10:54,076
+same direction? The angle now becomes beta
+and beta is going to be smaller than alpha
+
+106
+00:10:54,076 --> 00:11:00,083
+And beta would be zero if we look at the
+point infinitely far away. So, movements
+
+107
+00:11:00,083 --> 00:11:06,045
+which only change this angle or
+convergence are called vergence movements.
+
+108
+00:11:06,045 --> 00:11:12,044
+This is the technical term, Vergence. So,
+if I keep looking in the same direction
+
+109
+00:11:12,044 --> 00:11:18,056
+just look nearer farther, I'm going to be
+doing a vergence movement. Okay, There is
+
+110
+00:11:18,056 --> 00:11:24,010
+another movement that we can have where
+which corresponds to us looking in
+
+111
+00:11:24,010 --> 00:11:30,039
+different directions and this is called
+the [inaudible] movement. This corresponds
+
+112
+00:11:30,039 --> 00:11:36,015
+to changing the gaze direction. What do I
+mean by gaze direction? Okay again, we
+
+113
+00:11:36,015 --> 00:11:42,022
+have our left eye, we have the right eye,
+the cyclopean eye, the gaze angle is shown
+
+114
+00:11:42,022 --> 00:11:49,020
+here by this gamma. Gamma is the gaze
+angle. So, there is a straight ahead
+
+115
+00:11:49,020 --> 00:11:54,092
+direction and then there is the angle that
+the optical axis makes of the cyclopean
+
+116
+00:11:54,092 --> 00:12:00,065
+eye makes with respect to that angle which
+we'll call gaze angle. So if I'm looking
+
+117
+00:12:00,065 --> 00:12:06,031
+straight ahead, the gazes angle is zero.
+If I'm looking a little bit off to one
+
+118
+00:12:06,031 --> 00:12:12,023
+side then the gaze angle will be the value
+shown here. Okay so vision movement
+
+119
+00:12:12,023 --> 00:12:18,069
+corresponds to changing the gaze angle but
+keeping the angle of convergence the same.
+
+120
+00:12:18,069 --> 00:12:24,021
+Okay. But that implies the second
+geometrical relationship. So what I'm
+
+121
+00:12:24,021 --> 00:12:30,052
+gonna do is, I have my left eye and the
+right eye and I will change the point of
+
+122
+00:12:30,052 --> 00:12:36,076
+fixation. So, the point of fixation could
+be q1 or q2 or q2 and the condition is
+
+123
+00:12:36,076 --> 00:12:43,018
+that I'm keeping this angle constant so
+therefore are always the same theta. Okay,
+
+124
+00:12:43,018 --> 00:12:49,053
+now we bring in a fact from high school
+geometry which is that under this
+
+125
+00:12:49,053 --> 00:12:56,001
+condition, the locus of the point's q is a
+circle. So, this is a beautiful fact. So,
+
+126
+00:12:56,001 --> 00:13:02,029
+if I consider the left eye and the right
+eye and the point of fixation. Then These
+
+127
+00:13:02,029 --> 00:13:09,017
+three points define a circle and other
+points such as Q2 and Q3 they will subtle
+
+128
+00:13:09,017 --> 00:13:15,012
+the same angle theta. So this is a
+property of circles so f or a circle
+
+129
+00:13:15,012 --> 00:13:22,017
+supposed we have a card defined by left
+eye and right eye and then the angles have
+
+130
+00:13:22,017 --> 00:13:29,013
+attended of Q1 or Q2 or Q3 is always going
+to be the same. That's this angle shown
+
+131
+00:13:29,013 --> 00:13:34,098
+here. So if I keep the angle the of
+convergence the same then the fixation
+
+132
+00:13:34,098 --> 00:13:41,043
+point is essentially going to move on the
+circle and we give a name to the circle,
+
+133
+00:13:41,043 --> 00:13:47,096
+and the circle is called the [inaudible]
+circle. This is named after to researchers
+
+134
+00:13:47,096 --> 00:13:53,071
+from a couple of centuries ago so the
+[inaudible] circle is an important
+
+135
+00:13:53,071 --> 00:14:01,023
+geometrical entity for us to consider.
+Here is a observation. The disparity is
+
+136
+00:14:01,023 --> 00:14:06,099
+zero on the virtual circuit. Okay. Now I
+just need to take you to this, this, this
+
+137
+00:14:06,099 --> 00:14:11,069
+analysis. First of all, what is the
+virtual circuit? So, let's get our
+
+138
+00:14:11,069 --> 00:14:17,051
+notation changed. We have the left eye, we
+have the right eye And we have p which is
+
+139
+00:14:17,051 --> 00:14:28,087
+the point of fixation. So, okay? So far,
+so good And this is going to be the origin
+
+140
+00:14:28,087 --> 00:14:35,030
+of the coordinate system in each of the
+eyes. Okay next, what we have is some
+
+141
+00:14:35,030 --> 00:14:41,065
+general point p prime. Okay Now this
+point, p prime could be anywhere I mean
+
+142
+00:14:41,065 --> 00:14:48,060
+Let us pick a point p prime which happens
+to be on the [inaudible] circle. What we
+
+143
+00:14:48,060 --> 00:14:55,008
+will show is that this point will have
+disparity zero. How do we do that? Okay.
+
+144
+00:14:55,008 --> 00:15:01,052
+So we have to do a little bit of geometry.
+So we have the point B, we have the point
+
+145
+00:15:01,052 --> 00:15:07,041
+B prime so let's look at, first it's good
+to see what the, the definitions of
+
+146
+00:15:07,041 --> 00:15:13,015
+disparity out. So in the left eye we have
+the point BL And the point er is the
+
+147
+00:15:13,015 --> 00:15:18,028
+projection in the right eye. So, these are
+the origins of the coordinate systems.
+
+148
+00:15:18,028 --> 00:15:27,001
+Okay so BL, B by definition has zero
+disparity so B has. Zero disparity. It's
+
+149
+00:15:27,001 --> 00:15:32,088
+the fixation point and it's the origin in
+both the left eye and the right eye, okay.
+
+150
+00:15:32,088 --> 00:15:38,019
+Then, we have the point p prime. And
+that's what we are trying to figure out
+
+151
+00:15:38,019 --> 00:15:43,056
+what's its disparity is. So, p prime
+projects to the r prime in the right eye
+
+152
+00:15:43,056 --> 00:15:48,078
+and pr prime in the left eye And actually,
+what I have to do is to measure this
+
+153
+00:15:48,078 --> 00:15:53,098
+displacement which I am sure [inaudible]
+by alpha. I can measure it in pixels or I
+
+154
+00:15:53,098 --> 00:15:58,054
+can measure it in angles and here I'm
+gonna do within angles. So, in this
+
+155
+00:15:58,054 --> 00:16:04,040
+diagram, these are asserted to be equal.
+That they are both alpha but we have to
+
+156
+00:16:04,040 --> 00:16:14,001
+prove that. Prove. That. Pl and p prime l
+this angle is the same as between pr and
+
+157
+00:16:14,001 --> 00:16:21,055
+pr prime, we have to show this. How do we
+do this? Okay. So let's consider this
+
+158
+00:16:21,055 --> 00:16:29,059
+triangles here. So, these two angles are
+equal by the property that we are looking
+
+159
+00:16:29,059 --> 00:16:37,063
+at the [inaudible] circle. So since it's a
+circle and there's a court, these angle
+
+160
+00:16:37,063 --> 00:16:45,073
+thetas are equal. These angles are equal
+again, standard fact of geometry. If these
+
+161
+00:16:45,073 --> 00:16:53,088
+two angles are equal then, then the
+angles. Here and here must also be equal
+
+162
+00:16:53,088 --> 00:17:00,001
+cuz these are two triangles and if two
+angles are equal, then the third angle
+
+163
+00:17:00,001 --> 00:17:06,014
+must also be equal. If these angles are
+equal, then so must these angles be equal.
+
+164
+00:17:06,014 --> 00:17:12,028
+Okay, and if we call this angle alpha, we
+must call the other angle, alpha. So, So
+
+165
+00:17:12,028 --> 00:17:20,062
+that B, so look at BR, BR prime and that
+is going through the right eye. The angle
+
+166
+00:17:20,062 --> 00:17:29,017
+between them have asserted is equal to the
+angle between BL left eye and BL prime
+
+167
+00:17:29,017 --> 00:17:37,072
+because both of these angles are equal
+over there so therefore they must be equal
+
+168
+00:17:37,072 --> 00:17:44,060
+over here. So, so therefore, we can say
+that p, if pl prime is displaced by an
+
+169
+00:17:44,060 --> 00:17:51,050
+angle alpha, pr is, p prime r is also
+displaced by an angle alpha. So, therefore
+
+170
+00:17:51,050 --> 00:18:01,033
+the disparity is. So, what is disparity?
+So we are to compute b prime r - b prime l
+
+171
+00:18:01,033 --> 00:18:07,022
+which is alpha - alpha which is going to
+be zero. So we just shown the disparity of
+
+172
+00:18:07,022 --> 00:18:12,054
+b prime as zero and what was the property
+of b prime that we use for this
+
+173
+00:18:12,054 --> 00:18:17,078
+calculation that it lies on the
+[inaudible] circle? So for all the points
+
+174
+00:18:17,078 --> 00:18:22,096
+in the [inaudible] circle, the disparity
+is zero. So this is a one way to
+
+175
+00:18:22,096 --> 00:18:30,042
+characterized the [inaudible] circle.
+Let's now take up the case of a point
+
+176
+00:18:30,042 --> 00:18:35,016
+which is not on the [inaudible] circle.
+That's where we expect something
+
+177
+00:18:35,016 --> 00:18:40,030
+interesting. So, what we're gonna do is to
+derive a relationship between the
+
+178
+00:18:40,030 --> 00:18:46,077
+disparity and the depth. So let's do that
+so we have here the left eye and the right
+
+179
+00:18:46,077 --> 00:18:53,029
+eye. I could consider any object here
+point B prime but to make this calculatio
+
+180
+00:18:53,029 --> 00:19:00,013
+n simple I'm going to consider a B prime
+which happens to be in the same direction
+
+181
+00:19:00,013 --> 00:19:06,089
+as B just either further or nearer. Okay.
+The distance between the eyes between left
+
+182
+00:19:06,089 --> 00:19:12,084
+eye and right eye this distance is B. We
+use this term a lot. B stands for
+
+183
+00:19:12,084 --> 00:19:20,009
+baseline. It's a term often used and when
+we talked about stereopsis and baseline is
+
+184
+00:19:20,009 --> 00:19:26,008
+the distance between the two camera
+centers and generally if you have a larger
+
+185
+00:19:26,008 --> 00:19:31,049
+baseline, you are more, you are more
+information for doing and construction
+
+186
+00:19:31,049 --> 00:19:37,048
+stereo depths. Okay. So, we're gonna have
+to do some, a little geometry here. So, so
+
+187
+00:19:37,048 --> 00:19:43,039
+consider the point b left eye, point b and
+then this z axis. So, we have this angle
+
+188
+00:19:43,039 --> 00:19:49,093
+theta and what must be true of, of theta.
+Tangent of theta Is equal to b up on to
+
+189
+00:19:49,093 --> 00:19:55,096
+which is half the baseline that is the
+distance here, divided by z. Okay. Now,
+
+190
+00:19:55,096 --> 00:20:01,099
+consider the point p prime. Okay. Now, p
+prime is further out so the angle of
+
+191
+00:20:01,099 --> 00:20:08,034
+convergence is, or this half angle is
+theta minus delta theta. I'm doing that to
+
+192
+00:20:08,034 --> 00:20:14,094
+make delta theta positive because this is
+gonna be a smaller angle. So the tangent
+
+193
+00:20:14,094 --> 00:20:22,018
+of theta minus delta theta is again b up
+on two which is this half baseline. And
+
+194
+00:20:22,018 --> 00:20:31,015
+then what's the, the base of this, this
+triangle, it is z + delta z. Okay. So
+
+195
+00:20:31,015 --> 00:20:37,011
+that's, that's just a straight forward
+observation and now we'll have to do a
+
+196
+00:20:37,011 --> 00:20:42,085
+little bit of manipulation and what we
+want really is a relationship between
+
+197
+00:20:42,085 --> 00:20:48,079
+disparity which is going to be actually
+two delta theta. And the depth which is
+
+198
+00:20:48,079 --> 00:20:54,087
+going to be delta z Okay? So, we'll make
+the standards small angle approximation
+
+199
+00:20:54,087 --> 00:21:01,018
+that tangent of theta is approximately the
+same as theta. So, tan theta is equals b
+
+200
+00:21:01,018 --> 00:21:07,041
+upon two divided by z will give me this
+formula. Delta - theta and again replacing
+
+201
+00:21:07,041 --> 00:21:12,087
+tan theta, what theta I get to this
+formula. And then I just take the
+
+202
+00:21:12,087 --> 00:21:18,087
+difference here between these two guys.
+That will give me the expression shown
+
+203
+00:21:18,087 --> 00:21:26,075
+here. And if you'll do the algebra, you
+will find that delta theta is b * delta z
+
+204
+00:21:26,075 --> 00:21:32,097
+up on 2z squared. Now, what's the
+disparity? The disparity is two delta
+
+205
+00:21:32,097 --> 00:21:39,073
+theta, why is that so? Well to look here
+carefu lly, so there's pl and then pl
+
+206
+00:21:39,073 --> 00:21:46,085
+prime is p, p prime in the left eye is
+displaced slightly by delta theta. And,
+
+207
+00:21:46,085 --> 00:21:52,079
+what happens in the right eye? It's
+displaced again but in the opposite
+
+208
+00:21:52,079 --> 00:21:58,074
+direction. B prime r is in the opposite
+direction to what it was in the left eye
+
+209
+00:21:58,074 --> 00:22:04,038
+so therefore the difference is actually
+for you to consider one of them will have
+
+210
+00:22:04,038 --> 00:22:10,002
+negative sign so that the difference that
+you're to consider which is always going
+
+211
+00:22:10,002 --> 00:22:18,045
+to be by, the disparity has to be defined
+as. P prim r - p prime l, that's the
+
+212
+00:22:18,045 --> 00:22:28,033
+definition of disparity. So that's gonna
+give me two times delta data. So what does
+
+213
+00:22:28,033 --> 00:22:33,092
+that give? So the disparity is two times
+this expression. So the two in the
+
+214
+00:22:33,092 --> 00:22:39,042
+denominator disappears and we get this
+very nice formula. The disparities
+
+215
+00:22:39,042 --> 00:22:47,033
+baseline b. * delta z up on z squared. So
+what will a system do? A system will
+
+216
+00:22:47,033 --> 00:22:53,093
+typically try to find corresponding
+points, from corresponding points you'll
+
+217
+00:22:53,093 --> 00:23:01,030
+compare the disparity And from that, you
+can, you can estimate the delta z which is
+
+218
+00:23:01,030 --> 00:23:08,007
+the change in depth with respect to the
+fixation point. Let's end here for now.

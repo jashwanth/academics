@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>OpenCV Introduction</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Quick Introduction to OpenCV"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="3rd January, 2013"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Quick Introduction to OpenCV</h1>
+
+
+<p>
+Written for the Computer Vision course at IIIT-H.
+</p>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Assumptions</h2>
+<div class="outline-text-2" id="text-1">
+
+<ul>
+<li>You are familiar with basic Image Processing/Vision terminology.
+</li>
+</ul>
+
+
+<p>
+We hope that you won't have to search around too much after reading this document. It will surely help you understand <b>what</b> you need to search for.
+</p>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Images</h2>
+<div class="outline-text-2" id="text-2">
+
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Conventions in OpenCV</h3>
+<div class="outline-text-3" id="text-2-1">
+
+
+
+<p>
+<img src="opencv-image_69ec79e8e4e6e5f5220998779fafa13058234f2d.png"  alt="opencv-image_69ec79e8e4e6e5f5220998779fafa13058234f2d.png" />
+</p>
+
+<p>
+The image origin is at the top left corner of the image. Note the difference between the X,Y axis and the I,J axis.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> IplImage related</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p><code>IplImage</code> is the OpenCV <code>struct</code> for an image. It basically contains information like the image width, image height, image data, image color depth etc.
+A very simple demo can be found in <a href="readImage.cpp">readImage.cpp</a>. For now, don't worry about the windowing stuff. We'll visit it later.
+</p>
+<p>
+In the later version of OpenCV (&gt;=2.0), there is a structure called as <code>CvMat</code> which is much more powerful (but also slightly more complicated) than <code>IplImage</code>.
+It is also used for storing images. <code>CvMat</code> can be used to manipulate images with as much ease as in <code>Matlab</code>. <sup><a class="footref" name="fnr.1" href="#fn.1">1</a></sup>
+</p>
+</div>
+
+<div id="outline-container-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Naming convention</h4>
+<div class="outline-text-4" id="text-2-2-1">
+
+<p>Any time you need to create a new <code>IplImage</code> (say to store an output image), you will specify certain attributes.
+These can generally be broken down as below
+</p>
+
+
+<pre class="example">IPL_DEPTH_&lt;bit_depth&gt;(S|U|F)
+where
+- bit_depth indicates the depth of each color channel
+- S|U|F indicate what data-type is used to store the image data.
+Example:
+IPL_DEPTH_8U : indicates an 8-bit (per color channel) unsigned integer image.
+</pre>
+
+<p>
+Refer to the file <a href="applyFilter.cpp">applyFilter.cpp</a> for more details.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Reading images</h3>
+<div class="outline-text-3" id="text-2-3">
+
+
+<p>
+<code>IplImage* cvLoadImage( const char* filename, int iscolor)</code>
+</p>
+<p>
+<code>iscolor</code>
+</p><ul>
+<li>if &gt;0, the loaded image will always have 3 channels;
+</li>
+<li>if 0, the loaded image will always have 1 channel;
+</li>
+<li>if &lt;0, the loaded image will be loaded as is (with number of channels depends on the file).
+</li>
+</ul>
+
+<p>Supports most common formats like <code>bmp, jpg, png</code> etc.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Writing images</h3>
+<div class="outline-text-3" id="text-2-4">
+
+<p><code>cvSaveImage( const char* filename, IplImage *img)</code>
+You might find the prototype to be <code>cvSaveImage( const char* filename, CVArr *img)</code>. Don't worry because <code>IplImage</code> is a special case of <code>CvArr</code>.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Access image data</h3>
+<div class="outline-text-3" id="text-2-5">
+
+<p>In most cases handling images as 8-bit unsigned integer arrays is easiest. So try and stick to that.
+</p>
+<p>
+To manipulate pixel <code>(i,j)</code> of <code>IplImage *img</code> you may use
+</p>
+<ul>
+<li><code>cvGet2D(img,i,j), cvSet2D(img,i,j,value)</code> : slow but reliable
+</li>
+<li>Grayscale image: <code>((uchar *)(img-&gt;imageData + i*img-&gt;widthStep))[j]=100</code> : efficient but error prone method
+</li>
+<li>Color Image: 
+</li>
+</ul>
+
+
+
+
+<pre class="src src-c">((<span style="color: #228b22;">uchar</span> *)(img-&gt;imageData + i*img-&gt;widthStep))[j*img-&gt;nChannels + 0]=1; <span style="color: #b22222;">// </span><span style="color: #b22222;">Blue</span>
+((<span style="color: #228b22;">uchar</span> *)(img-&gt;imageData + i*img-&gt;widthStep))[j*img-&gt;nChannels + 1]=2; <span style="color: #b22222;">// </span><span style="color: #b22222;">Green</span>
+((<span style="color: #228b22;">uchar</span> *)(img-&gt;imageData + i*img-&gt;widthStep))[j*img-&gt;nChannels + 2]=3; <span style="color: #b22222;">// </span><span style="color: #b22222;">Red</span>
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Convert between color spaces</h3>
+<div class="outline-text-3" id="text-2-6">
+
+<p> <code>cvCvtColor(src,dst,flags)</code>
+flags : <code>CV_BGR2GRAY, CV_BGR2HSV</code>
+</p>
+<p>
+<b>Important Note</b>: For most of these image related functions wherein you require a <code>dst</code> (destination) image, you need to create the image <i>beforehand</i> using <code>cvCreateImage</code>.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Windowing stuff</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>OpenCV uses the <code>highgui</code> library for windowing. It provides basic windows, sliders, mouse handling, key handling etc.
+</p>
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Creating windows</h3>
+<div class="outline-text-3" id="text-3-1">
+
+
+
+
+
+<pre class="src src-c"><span class="linenr"> 1:  </span><span style="color: #b22222;">//</span><span style="color: #b22222;">create a window with "windowTitle" as the title. The size of the window depends on what you display in it.</span>
+<span class="linenr"> 2:  </span>cvNamedWindow(<span style="color: #bc8f8f;">"windowTitle"</span>,CV_WINDOW_AUTOSIZE);
+<span class="linenr"> 3:  </span><span style="color: #b22222;">//</span><span style="color: #b22222;">Move the window to a (100,100)</span>
+<span class="linenr"> 4:  </span>cvMoveWindow(<span style="color: #bc8f8f;">"windowTitle"</span>,100,100);
+<span class="linenr"> 5:  </span><span style="color: #b22222;">//</span><span style="color: #b22222;">Show the image in the window</span>
+<span class="linenr"> 6:  </span>cvShowImage(<span style="color: #bc8f8f;">"windowTitle"</span>,img);
+<span class="linenr"> 7:  </span><span style="color: #b22222;">//</span><span style="color: #b22222;">cvWaitKey waits till some key is pressed. In our case, it will show the window on screen till some key is pressed</span>
+<span class="linenr"> 8:  </span>cvWaitKey(0);
+<span class="linenr"> 9:  </span>....
+<span class="linenr">10:  </span>....
+<span class="linenr">11:  </span>cvDestroyWindow(<span style="color: #bc8f8f;">"windowTitle"</span>);
+<span class="linenr">12:  </span>
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Mousehandler</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>An example for selecting points in the image by using a mouse.
+</p>
+
+
+<pre class="src src-c"><span class="linenr"> 1:  </span><span style="color: #228b22;">void</span> <span style="color: #0000ff;">mousehandler</span>(<span style="color: #228b22;">int</span> <span style="color: #b8860b;">event</span>,<span style="color: #228b22;">int</span> <span style="color: #b8860b;">x</span>,<span style="color: #228b22;">int</span> <span style="color: #b8860b;">y</span>,<span style="color: #228b22;">int</span> <span style="color: #b8860b;">flags</span>,<span style="color: #228b22;">void</span> *<span style="color: #b8860b;">params</span>)
+<span class="linenr"> 2:  </span>{
+<span class="linenr"> 3:  </span>
+<span class="linenr"> 4:  </span>  <span style="color: #a020f0;">switch</span>(event){
+<span class="linenr"> 5:  </span>      <span style="color: #a020f0;">case</span> CV_EVENT_LBUTTONUP:
+<span class="linenr"> 6:  </span>        printf(<span style="color: #bc8f8f;">"Left button pressed at (%d %d)\n"</span>,x,y);
+<span class="linenr"> 7:  </span>        <span style="color: #a020f0;">break</span>;
+<span class="linenr"> 8:  </span>    }
+<span class="linenr"> 9:  </span>}
+<span class="linenr">10:  </span>
+</pre>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Videos</h2>
+<div class="outline-text-2" id="text-4">
+
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Read frames</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<p>You may read video frames from a file or use your own webcam as an input.
+</p>
+
+
+
+<pre class="src src-c"><span class="linenr"> 1:  </span><span style="color: #228b22;">CvCapture</span> *<span style="color: #b8860b;">capture</span>;
+<span class="linenr"> 2:  </span>
+<span class="linenr"> 3:  </span>capture = cvCaptureFromCAM(0); <span style="color: #b22222;">//</span><span style="color: #b22222;">capture from web-cam</span>
+<span class="linenr"> 4:  </span>capture = cvCaptureFromAVI(<span style="color: #bc8f8f;">"file.avi"</span>); <span style="color: #b22222;">//</span><span style="color: #b22222;">capture from file</span>
+<span class="linenr"> 5:  </span>
+<span class="linenr"> 6:  </span><span style="color: #228b22;">IplImage</span> *<span style="color: #b8860b;">img</span> = cvQueryFrame(capture); <span style="color: #b22222;">//</span><span style="color: #b22222;">read a single frame</span>
+<span class="linenr"> 7:  </span>
+<span class="linenr"> 8:  </span><span style="color: #a020f0;">while</span> (img!= <span style="color: #5f9ea0;">NULL</span>)
+<span class="linenr"> 9:  </span>{
+<span class="linenr">10:  </span>  img = cvQueryFrame(capture); <span style="color: #b22222;">//</span><span style="color: #b22222;">read the entire video</span>
+<span class="linenr">11:  </span>}
+<span class="linenr">12:  </span>
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Get capture information</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<p><code>cvGetCaptureProperty(capture, flags)</code>
+flags
+</p><ul>
+<li><code>CV_CAP_PROP_FRAME_HEIGHT</code>
+</li>
+<li><code>CV_CAP_PROP_FRAME_WIDTH</code>
+</li>
+<li><code>CV_CAP_PROP_FPS</code>
+</li>
+<li><code>CV_CAP_PROP_FRAME_COUNT</code> : Sometimes doesn't work correctly!
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Writing a video</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<p>This is a slightly involved operation. Uses <code>cvCreateVideoWriter</code> etc. functions. For the most part, you will not need to write videos.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Displaying a video</h3>
+<div class="outline-text-3" id="text-4-4">
+
+<p><b>Note</b>:  You will not be able to add any sound while displaying video in the below mentioned manner.
+</p>
+
+
+
+<pre class="src src-c"><span class="linenr"> 1:  </span>capture = cvCaptureFromAVI(<span style="color: #bc8f8f;">"file.avi"</span>); <span style="color: #b22222;">//</span><span style="color: #b22222;">capture from file</span>
+<span class="linenr"> 2:  </span><span style="color: #228b22;">IplImage</span> *<span style="color: #b8860b;">img</span> = cvQueryFrame(capture);
+<span class="linenr"> 3:  </span>
+<span class="linenr"> 4:  </span>cvNamedWindow(<span style="color: #bc8f8f;">"windowTitle"</span>,CV_WINDOW_AUTOSIZE);
+<span class="linenr"> 5:  </span>cvMoveWindow(<span style="color: #bc8f8f;">"windowTitle"</span>,100,100);
+<span class="linenr"> 6:  </span>
+<span class="linenr"> 7:  </span><span style="color: #a020f0;">while</span> (img!=<span style="color: #5f9ea0;">NULL</span>)
+<span class="linenr"> 8:  </span>{
+<span class="linenr"> 9:  </span>  cvShowImage(<span style="color: #bc8f8f;">"windowTitle"</span>,img);
+<span class="linenr">10:  </span>  cvWaitKey(0);
+<span class="linenr">11:  </span>  img = cvQueryFrame(capture);
+<span class="linenr">12:  </span>}
+</pre>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> References</h2>
+<div class="outline-text-2" id="text-5">
+
+<ol>
+<li><a href="http://dasl.mem.drexel.edu/~noahKuntz/openCVTut1.html">http://dasl.mem.drexel.edu/~noahKuntz/openCVTut1.html</a> - Excellent source of tutorials with great example codes.
+</li>
+<li><a href="http://www710.univ-lyon1.fr/~bouakaz/OpenCV-0.9.5/docs/ref/OpenCVRef_Highgui.htm">http://www710.univ-lyon1.fr/~bouakaz/OpenCV-0.9.5/docs/ref/OpenCVRef_Highgui.htm</a> - <code>highgui</code> reference with function prototypes.
+</li>
+<li>The OpenCV Manual   
+</li>
+</ol>
+
+
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn.1" href="#fnr.1">1</a></sup> : For more information on CvMat refer to Chapter 3 of "Learning OpenCV" by Bradski and Kaehler (O'Reilly Publications).
+</p></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

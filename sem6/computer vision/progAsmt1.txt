@@ -1,0 +1,101 @@
+
+			 CS5765 Computer Vision
+
+			Programming Assignment 1
+		     Submission date: Jan 22, 2013
+
+
+The first assignment is to get up to speed with the many of the tools
+and some of the basic techniques used in Computer Vision.  
+You will do
+this by reading, manipulating, and processing a few videos using
+OpenCV. 
+The assignment in totality will involve multiple things:
+
+ 1. Read video files and extract frames from them.
+
+
+ 2. Apply some of the basic image processing operations on these frames
+    and generate a manipulated video back from the changed frames. 
+The
+    following image processing operations should be tried:
+    
+a) Canny edge detection
+    b) Gaussian blurring of frames using different Gaussians
+    c) Bilateral filtering for edge preserving blurring
+       [Learn about this filter if you don't already know]
+    
+d) Any others that you are interested in
+       [This is an opportunity to learn more image processing]
+
+    Demonstrate the learning by making a report on what you achieved.
+    This should not be just through a string of examples you tried.
+    Analyze what you found critically. Learning results from that.
+
+ 3. Process the extracted frames using standard high-level tools
+    available in OpenCV or out on the web. This will involve:
+    a) Face Detection.
+    b) Upper/Lower Body Detection or Person Detection
+    c) Detection of other objects    
+
+    We will specify this part in greater detail sometime before
+    January 10th.
+
+You should install OpenCV on your machines immediately and get started
+with the parts 1 and 2 above. Try out the sample codes as well as go
+through the codes shown in the tutorial.  Start early as you will learn
+more if you try more.
+
+For part 3, see the sample codes available in the OpenCV installation
+package. Code for Face Detection and People Detection are available in
+the samples directory. They use the Haar cascades (Viola-Jones
+algorithm) and HOG descriptor (Dalal-Triggs approach) respectively. In
+each, locate the 'detectMultiScale' function call. 
+Run the face detector
+and people detector on the input video. The above call will return the
+bounding boxes of detected objects. 
+Mark those in the video frame
+directly using green or yellow rectangles. Output the resulting
+processed video.
+
+
+The goal of this is to understand the state of the art in some of the
+detection tasks.  
+You can also vary the parameters of the function call
+ to study how it affects the detection performance.  
+Play around with the
+parameters. Exhaustive documentation is available on the internet for
+these detectors, but you needn't attempt to understand them at this
+stage. (We will learn both in detail later in the class.)
+
+
+You will be given a few images with ground truth information for both
+these detection schemes. 
+You should be able to correlate the detector
+performance with parameter values. 
+Traditional parameters for detectors
+include the miss rate, the detection rate, and the false positive
+rate. 
+Plot of the true positive (or detection) rate against the false
+positive rate is a common method to evaluate detector performance. 
+Play
+around with the threshold parameter and study the detector performance
+on the given images.  
+Bonus points will be awarded if the application
+you create has dynamic trackbars to change the parameters so that the
+changes can be observed in real-time.
+
+
+Please see:
+http://web.iiit.ac.in/~parikshit_s/cv_tutorial_jan13.tar.gz
+
+This tutorial has the html file which was used in class along with some
+sample codes for OpenCV and one external code of Canny edge detection on
+webcam input video.
+
+
+We shall put up more details regarding the tasks to be performed in the
+assignment and also some test videos later.
+
+
+

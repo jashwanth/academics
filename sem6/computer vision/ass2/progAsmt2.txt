@@ -1,0 +1,56 @@
+
+			 CS5765 Computer Vision
+
+			Programming Assignment 2
+		     Submission date: Feb 19, 2013
+
+
+The second assignment is to get used to estimating using image
+measurements, a problem that is common in Computer Vision and several
+other areas. You should get familiar with the use of linear estimation,
+least squares estimation using DLT, and robust estimation using RANSAC.
+
+We will do this in the context of camera calibration, or estimating the
+K, R, and t of the camera matrix P = K [R | t]. We need to have a
+several (at least 6) points for which the 3D world coordinates and the
+2D image coordinates are known.
+
+You have to develop calibration programs using
+
+(a) direct linear transformation using 6 matches to solve for the P
+	matrix.  You can use a linear solver from OpenCV to get the
+	solution.
+
+(b) least squares estimation using SVD using all available matches.
+	You can use SVD from OpenCV or another math library.
+
+(c) RANSAC based approach where the code of (a) is used for the basic
+	solution. Implement your own random sampling and inlier
+	estimation procedures. (You may also compare with the RANSAC
+	process given in OpenCV, but only after you do it yourself)
+
+(d) OpenCV has its own calibration library function. You may use it to
+	compare your results with also. It is important to understand it
+	as that represents the state-of-the-art.
+
+
+From the P matrix, you can use standard decomposition/factorization
+techniques to get K, R, and t.
+
+In each case, the quality of estimate is to be evaluated using the
+measure of reprojection error for all points in the dataset. Report the
+reprojection error on each dataset for all 4 methods. Once again, the
+analysis and the understanding is the real outcome of the assignment,
+not the code and numbers. So, demonstrat it.
+
+
+We will use 2 types of data for evaluation.
+(A) We will make a couple of standard 2D-3D match dataset available in a
+	simple format.
+(B) You can collect your own images where you image objects with several
+	known dimensions. The 3D-to-2D correspondence may be found
+	manually or using a program, but you have to do it yourself.
+	All world measurements have to be in the same coordinate system!
+
+
+

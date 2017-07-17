@@ -1,0 +1,9 @@
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\bin\Debug\port_write.exe
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\bin\Debug\port_write.pdb
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\port_write.Form1.resources
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\port_write.Properties.Resources.resources
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\port_write.exe
+C:\Users\Jashwanth\Desktop\practise\port_write\port_write\obj\x86\Debug\port_write.pdb

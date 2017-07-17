@@ -1,0 +1,535 @@
+
+1
+00:00:00,000 --> 00:00:05,007
+Hi, welcome to the class again. And in
+this lecture, we are gonna study Geometric
+
+2
+00:00:05,007 --> 00:00:09,063
+Transformations, the rations and
+translations. So, you might be wondering
+
+3
+00:00:09,063 --> 00:00:14,090
+why we need to have this lesson on Linear
+Algebra. The reason we need to have this
+
+4
+00:00:14,090 --> 00:00:20,004
+lesson in Linear Algebra is because we
+want to understand how a camera captures
+
+5
+00:00:20,004 --> 00:00:24,086
+an image of an object in the world and
+what happens if the camera moves. So,
+
+6
+00:00:24,086 --> 00:00:30,006
+that's what we wanna understand. So, there
+are two things involved here. So, imagine
+
+7
+00:00:30,006 --> 00:00:41,086
+that we have a camera. And in that camera,
+we have a coordinate system. So, in the
+
+8
+00:00:41,086 --> 00:00:51,010
+coordinate system with the camera, we are
+going to have x, y, and z. Coordinates
+
+9
+00:00:51,010 --> 00:01:06,067
+associated with various points in the
+object. Right, Now, what happens if this
+
+10
+00:01:06,067 --> 00:01:23,056
+object moves? So, all these coordinates
+will change. Coordinates change. Now, is
+
+11
+00:01:23,056 --> 00:01:30,008
+this, is this really fundamental? Suppose
+I have a chair and I moved the chair, is
+
+12
+00:01:30,008 --> 00:01:36,026
+the chair now a different object? In a
+setting sense, no, it's the same object
+
+13
+00:01:36,026 --> 00:01:42,069
+but if I measure the coordinates with
+respect to the camera, those have changed.
+
+14
+00:01:42,069 --> 00:01:49,037
+So we want to distinguish between these,
+these two effects and we use these two
+
+15
+00:01:49,037 --> 00:01:57,094
+terms in computer version. One is pause
+and the other is shape. So, pose refers to
+
+16
+00:01:57,094 --> 00:02:11,068
+the relationship of the object to the
+camera. And it's gonna be characterized by
+
+17
+00:02:11,068 --> 00:02:18,022
+how it is situated with the respect to the
+camera. So if I am looking at an object
+
+18
+00:02:18,022 --> 00:02:24,012
+and then I moved that object, then the
+pause changes, But the shape doesn't
+
+19
+00:02:24,012 --> 00:02:30,058
+change. The shape is, changes only if I
+break that object or tear it apart or some
+
+20
+00:02:30,058 --> 00:02:40,018
+such thing, is independent Of the
+relationship of the object to the camera.
+
+21
+00:02:50,006 --> 00:02:56,053
+So, let me illustrate this with an example
+from high school Geometry. So, suppose I
+
+22
+00:02:56,053 --> 00:03:05,065
+have a triangle. And then I, I can move
+it. So, I can move it to some new place
+
+23
+00:03:05,065 --> 00:03:14,097
+and I can rotate it at the same time. So,
+what happened is that I have translated
+
+24
+00:03:14,097 --> 00:03:29,057
+each. And I have rotated it. But it's the
+same triangle. So, in high school
+
+25
+00:03:29,057 --> 00:03:42,021
+Geometry, we call this the Notion of
+Congruence. So, we'll say that these two
+
+26
+00:03:42,021 --> 00:03:48,094
+triangles Are congruent. And there ar e a
+number of conditions under which, by which
+
+27
+00:03:48,094 --> 00:03:54,040
+we can figure out whether the two
+triangles are congruent. So, we want to
+
+28
+00:03:54,040 --> 00:04:00,016
+develop this idea more generally. And
+basically, what we are gonna come to is
+
+29
+00:04:00,016 --> 00:04:05,078
+some notion that there's certain
+transformations you can do and that does
+
+30
+00:04:05,078 --> 00:04:23,076
+not change the shape. So, shape Of the
+triangle Remains unchanged Under The
+
+31
+00:04:23,076 --> 00:04:54,039
+transformation Of rotation and
+translation. Note, The coordinate's Xy Of
+
+32
+00:04:54,079 --> 00:05:12,035
+radius points on the triangle have
+changed. So, that's the fundamental
+
+33
+00:05:12,035 --> 00:05:38,000
+distinction Pose Changes When we rotate
+and translate the object, Shape Does not.
+
+34
+00:05:40,013 --> 00:05:46,091
+Okay, So, that motivates the study of
+rotations and translations. So, let's
+
+35
+00:05:46,091 --> 00:05:56,013
+think about this more generally. So, we
+have rotations. And I'm just trying to
+
+36
+00:05:56,013 --> 00:06:06,023
+rely on your intuition of what rotations
+are and translations. And now we will
+
+37
+00:06:06,023 --> 00:06:18,018
+operate like mathematicians. Are these
+Special cases Of more general
+
+38
+00:06:18,018 --> 00:06:34,011
+transformations? That's the question. And
+the answer is yes, And these special class
+
+39
+00:06:34,011 --> 00:06:48,053
+of transformations I call Rigid Body
+Transformations. And Rigid Body
+
+40
+00:06:48,053 --> 00:06:55,031
+Transformation include rotations and
+translations as special cases. Sometimes
+
+41
+00:06:55,031 --> 00:07:10,038
+we will use the term Isometry as well.
+Okay, what do I mean by Rigid Body
+
+42
+00:07:10,038 --> 00:07:16,046
+Transformation? So let's think of what we
+mean by the word rigid body. A rigid body
+
+43
+00:07:16,046 --> 00:07:22,054
+is characterized by the fact that if there
+are any points on that rigid body, they
+
+44
+00:07:22,054 --> 00:07:29,084
+have the same relationship with respect to
+each other as the object moves. So, If I
+
+45
+00:07:29,084 --> 00:07:43,041
+have let's say a q. So, I consider this
+cube And then I can take some points on
+
+46
+00:07:43,041 --> 00:08:00,078
+this cube. And if I move this by some
+rotation and translation. What will
+
+47
+00:08:00,078 --> 00:08:11,012
+happen? What will happen is that, the
+distance is Between any pair of points
+
+48
+00:08:15,013 --> 00:08:32,013
+Will remain unchanged, Right. If you move
+the object, the distance between these,
+
+49
+00:08:34,039 --> 00:08:44,044
+The distance between these two points will
+remain the same. So this distance Stays
+
+50
+00:08:44,086 --> 00:08:52,024
+Constant. So, we know that this happens
+for the rotation and translation. Now,
+
+51
+00:08:52,024 --> 00:08:58,003
+let's think of some objects when this
+won't be the case. So, now I will try to
+
+52
+00:08:58,003 --> 00:09:05,063
+draw a balloon. Okay? And now what happens
+to this balloon is that we blow up this
+
+53
+00:09:05,063 --> 00:09:13,066
+balloon, it becomes much bigger. So if I
+have points a and b, Now, these points are
+
+54
+00:09:13,066 --> 00:09:25,063
+much farther apart, a prime and b prime.
+So, the distance Between A prime and b
+
+55
+00:09:25,063 --> 00:09:41,067
+prime is unequal to the distance Between A
+and b. And in this example of the balloon,
+
+56
+00:09:49,067 --> 00:10:06,016
+This is Not A Rigid Body Motion. Okay. So,
+we have seen some examples, an example of
+
+57
+00:10:06,016 --> 00:10:12,000
+a Rigid Body Motion and an example which
+is not a Rigid Body Motion. So, now let's
+
+58
+00:10:12,000 --> 00:10:17,062
+get into the math of this and we have
+define this formally so now we have the
+
+59
+00:10:17,062 --> 00:10:45,044
+formal definition. Rigid Body Motion Is a
+transformation That preserves Distances.
+
+60
+00:10:48,000 --> 00:10:57,000
+Okay, so let's state this more precisely.
+Suppose I have point a, this is in three
+
+61
+00:10:57,000 --> 00:11:05,009
+dimensional space and I have some point b
+and this is also in three dimensional
+
+62
+00:11:05,009 --> 00:11:12,093
+space. Now, I apply some transformation
+and let's see what is the notation psi for
+
+63
+00:11:12,093 --> 00:11:19,041
+this transformation. And, this gives me
+the new location of the point psi a and
+
+64
+00:11:19,041 --> 00:11:26,006
+the new location of the point b which is
+psi b. So, how do I measure the distance
+
+65
+00:11:26,006 --> 00:11:37,040
+between a and b? So, what is the distance
+between a and b. Well, this is given by
+
+66
+00:11:37,040 --> 00:11:44,074
+the length of the vector corresponding to
+the difference between the vectors a and
+
+67
+00:11:44,074 --> 00:11:56,088
+b. So this is just a notation for length.
+So, just to remind you, suppose we have a
+
+68
+00:11:56,088 --> 00:12:18,075
+vector. Vector v which is has three
+components, v1, v2, v3 then the norm of v.
+
+69
+00:12:20,034 --> 00:12:32,024
+None of v is given by B1 squared + b2
+squared + b3 squared and then you take a
+
+70
+00:12:32,024 --> 00:12:38,054
+square root of this whole thing. So, this
+is the notion of length which you studied
+
+71
+00:12:38,054 --> 00:12:44,037
+in high school and in Linear Algebra
+classes. So, what we do here is we, we
+
+72
+00:12:44,037 --> 00:12:50,090
+take the difference between the vectors a
+and b and the we compute the length of the
+
+73
+00:12:50,090 --> 00:12:57,004
+difference and that's the distance between
+a and b. Okay. So the, so now let's use
+
+74
+00:12:57,004 --> 00:13:04,030
+this notation here. So, what's the
+distance here. So the distance is going to
+
+75
+00:13:04,030 --> 00:13:11,090
+be the norm of the difference between a
+and b and what's the difference here? It's
+
+76
+00:13:11,090 --> 00:13:18,066
+psi of a is the point after, is the point
+a after the transformation and psi of b is
+
+77
+00:13:18,066 --> 00:13:25,001
+the point b after the transformation and
+we take the l ength of this difference.
+
+78
+00:13:25,001 --> 00:13:38,099
+So, 8f psi is a, So, we can now define
+this. If Psi is a Rigid Body
+
+79
+00:13:38,099 --> 00:14:00,023
+Transformation Then the length of a - b is
+equal to the length of psi of a - psi of
+
+80
+00:14:00,023 --> 00:14:07,066
+b. Okay, so that's my definition. So, you
+can't really argue with this because this
+
+81
+00:14:07,066 --> 00:14:15,083
+is the definition. Okay, so mathematicians
+always start with some definition inspired
+
+82
+00:14:15,083 --> 00:14:21,038
+by, by physical considerations and that's
+what we have done here. We want to allow
+
+83
+00:14:21,038 --> 00:14:27,013
+for the case when an object moves without
+breaking apart or stretching or some such.
+
+84
+00:14:27,013 --> 00:14:32,013
+We have been inspired by physical
+considerations to define the notion of
+
+85
+00:14:32,013 --> 00:14:37,013
+rigid body transformation but now we are
+going to mathematically precise
+
+86
+00:14:37,013 --> 00:14:43,056
+definition. And what we will do now is to
+just. Try to follow through on this
+
+87
+00:14:43,056 --> 00:14:49,016
+definition. So, now we'll kind of operate
+like mathematicians who use the physical
+
+88
+00:14:49,016 --> 00:14:54,062
+world as inspiration for some definitions
+but then they tried to find examples,
+
+89
+00:14:54,062 --> 00:15:00,001
+proof theorems and so on and so forth. In
+our case, these are going to be about
+
+90
+00:15:00,001 --> 00:15:04,099
+rotations and translations. But first I
+have to prove that rotations and
+
+91
+00:15:04,099 --> 00:15:09,069
+translations are Rigid Body
+Transformations and this is what I will
+
+92
+00:15:09,069 --> 00:15:25,000
+try to do next. So, let's consider
+examples, First is translation, A Rigid
+
+93
+00:15:25,000 --> 00:15:36,041
+Body Motion. That's my question, is it?
+Well, let's define what is translation.
+
+94
+00:15:36,041 --> 00:15:44,032
+So, translation is that you just shift an
+object by some amount. So the if I have a
+
+95
+00:15:45,025 --> 00:15:52,054
+Point a, after the transformation it's
+going to be a + some shift which I'm
+
+96
+00:15:52,054 --> 00:15:58,089
+indicating by t. Right? So, that's the
+definition of translation. So, this is the
+
+97
+00:15:58,089 --> 00:16:19,012
+definition of translation, Okay. Can we
+check That this Is a Rigid Body Motion.
+
+98
+00:16:24,044 --> 00:16:34,097
+How do we do this? Okay, so if we have the
+point a that's gonna get transformed to a
+
+99
+00:16:34,097 --> 00:16:43,045
++ t. If we have the point b, that's going
+to get us from 2b + d. Okay. We have some
+
+100
+00:16:43,045 --> 00:16:50,052
+difference here between the point a and b,
+so this is the distance, this is the
+
+101
+00:16:50,052 --> 00:17:01,087
+original distance. And now, let's figure
+out the distance between these guys. So,
+
+102
+00:17:01,087 --> 00:17:20,070
+the distance between this guy is going to
+be given by A Plus t minus B + t, Correct?
+
+103
+00:17:20,070 --> 00:17:26,016
+And what is this going to be e qual to?
+This is going to be equal to the distance
+
+104
+00:17:27,075 --> 00:17:34,060
+Because the t is canceled out. So this was
+the, the old distance was given. So, this
+
+105
+00:17:34,060 --> 00:17:48,070
+is the new distance. Let me indicate here.
+And the important point is that. These two
+
+106
+00:17:48,070 --> 00:17:57,029
+distances are the same. Few, that's very
+comforting and we have convinced ourselves
+
+107
+00:17:57,029 --> 00:18:04,061
+that translation is a Rigid Body Motion.
+Okay let's take a brake here.

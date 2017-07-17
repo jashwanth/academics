@@ -1,0 +1,635 @@
+
+1
+00:00:00,000 --> 00:00:08,053
+Hello again, So in the last lecture we
+studied the definition of an Orthogonal
+
+2
+00:00:08,053 --> 00:00:16,085
+Matrix. And an Orthogonal Matrix is
+defined by this condition, a transposed a
+
+3
+00:00:16,085 --> 00:00:32,003
+= i and a is an Orthogonal Matrix. Or we
+can say a is the matrix associated with an
+
+4
+00:00:32,003 --> 00:00:56,043
+Orthogonal Transformation. Right, Why do
+we care about this matrices? Let's let the
+
+5
+00:00:56,043 --> 00:01:18,063
+cat out to the bag, Because Rotations And
+reflections Are Orthogonal
+
+6
+00:01:18,063 --> 00:01:35,018
+Transformations. So, we're gonna set this
+up in the second. Let's first consider
+
+7
+00:01:35,018 --> 00:01:41,051
+the, these Orthogonal Matrices in general
+and derive a few of their properties. And
+
+8
+00:01:41,051 --> 00:01:47,092
+from those properties we will see in fact
+that Orthogonal Matrices are exactly two
+
+9
+00:01:47,092 --> 00:01:53,078
+kinds. Either they are rotation or they
+are reflections. So, let's figure this
+
+10
+00:01:53,078 --> 00:02:01,039
+out. So, let's, let's take this
+relationship a transpose to a = i and
+
+11
+00:02:01,039 --> 00:02:12,031
+derive some consequences. So, one
+consequences, some properties. One is that
+
+12
+00:02:12,031 --> 00:02:23,057
+a transpose just a inverse, I showed that
+last time. The second property is based on
+
+13
+00:02:23,057 --> 00:02:32,015
+the fact. That it, we will show that the
+determinant of a is =,,,, + or - one. How
+
+14
+00:02:32,015 --> 00:02:45,087
+do we show this proof? Whenever we have
+matrices if. C is = ab if a matrix c is
+
+15
+00:02:45,087 --> 00:02:56,022
+the product of matrices a and b, then
+Determinant of c is the product of
+
+16
+00:02:56,022 --> 00:03:04,052
+determinant of a * the determinant of b,
+okay? So, let's apply that relationship
+
+17
+00:03:04,052 --> 00:03:16,043
+here. So therefore Determinant of a
+transposed * the determinant of a is going
+
+18
+00:03:16,043 --> 00:03:27,045
+to be = one. So, we showed that the
+determinant of a transposed * the
+
+19
+00:03:27,045 --> 00:03:36,036
+determinant of a = one. Now, we know That
+the determinant of the transpose of a
+
+20
+00:03:36,036 --> 00:03:45,037
+matrix is the same as the determinant of
+the matrix. So therefore, determinant of a
+
+21
+00:03:45,037 --> 00:03:56,015
+squared is = one. This implies that the
+determinant of a is. Equal to plus one or.
+
+22
+00:03:56,097 --> 00:04:04,007
+To determinant of a is equal to -one. So,
+this is a very important property because
+
+23
+00:04:04,007 --> 00:04:10,065
+we have a name for these two kinds of
+matrices. And the determinant of a+1 is
+
+24
+00:04:10,065 --> 00:04:17,050
+equal to the rotation. And when the
+determinant of a is -one, we call that a
+
+25
+00:04:17,050 --> 00:04:26,024
+reflection. And you know? Little while
+you'll see why we choose these terms. But
+
+26
+00:04:26,024 --> 00:04:32,016
+for now, just, you just can see that for
+any Orthogonal Matrix, it must be the case
+
+27
+00:04:32,016 --> 00:04:37,085
+that the determinant is +one or -one, we
+just give names to these two categories.
+
+28
+00:04:37,085 --> 00:04:46,099
+We call one of them rotations and the
+other one reflections. Okay. Okay, let's
+
+29
+00:04:46,099 --> 00:05:01,078
+study another property and this is going
+to be that the columns of, The columns of
+
+30
+00:05:01,078 --> 00:05:17,022
+a are orthonormal. Okay, what do I mean by
+that? Let's first write out a. So, a is
+
+31
+00:05:17,022 --> 00:05:27,033
+some matrix and let's say that, let's do
+it in two dimensions. So, let's say that
+
+32
+00:05:27,033 --> 00:05:41,061
+this is sum vector a1 and sum vector two,
+So, for Two by two, Okay? So far so good.
+
+33
+00:05:41,061 --> 00:05:49,080
+Now, what do we know about such a matrix?
+What is a transpose is going to be. A
+
+34
+00:05:49,080 --> 00:06:00,048
+transposed is going to be Row vector
+corresponding to a1 and row vector
+
+35
+00:06:00,048 --> 00:06:15,075
+corresponding to a2. And we know. That a
+transpose to a = i. But let's calculate
+
+36
+00:06:15,075 --> 00:06:24,009
+what a transpose a is. And let me switch
+to a different color. What is a transposed
+
+37
+00:06:24,009 --> 00:06:30,031
+a? A transposed a is going to be this,
+let's figure out what those entries are
+
+38
+00:06:30,031 --> 00:06:36,062
+gonna be. This entry is going to be a1
+transposed a1. This entry is going to be
+
+39
+00:06:36,062 --> 00:06:48,089
+a2 transposed a2. And this entry is going
+to be a1 transposed. A2 and this will be
+
+40
+00:06:48,089 --> 00:07:01,002
+a2 transposed a1. Okay? But, the key point
+is that this product of a transposed a is
+
+41
+00:07:01,002 --> 00:07:13,038
+equal to the identity. And this tells me
+that therefore A1 transposed to a1 must be
+
+42
+00:07:13,038 --> 00:07:24,064
+equal to one, A1 transposed a2 must be
+equal to zero and the same is true for a2
+
+43
+00:07:24,064 --> 00:07:39,079
+transposed a1 and a2 transposed A2 = one.
+So, let's repeat what we said, a is equal
+
+44
+00:07:39,079 --> 00:08:09,021
+to. So, a is a1 and a2, these are column
+vectors. And the short That. Okay, but
+
+45
+00:08:09,021 --> 00:08:16,049
+what does that mean? That means that the
+columns are orthonormal. By that, I mean
+
+46
+00:08:16,049 --> 00:08:25,068
+what's the length of a1. What's the length
+of a1? It's the same as the length of a2
+
+47
+00:08:25,068 --> 00:08:36,002
+and the, this length is one and that
+follows from. That follows from this
+
+48
+00:08:36,002 --> 00:08:43,086
+property and, And from this observation
+that we had. What else do we know? We
+
+49
+00:08:43,086 --> 00:08:51,004
+know, so therefore, each column is of
+length one and. We also know that a1
+
+50
+00:08:51,004 --> 00:09:00,017
+transpose to a2 is zero. And where did we
+see that? We saw that here. So that says
+
+51
+00:09:00,017 --> 00:09:06,078
+that each column is of length one and if I
+take the dot product of two of these colu
+
+52
+00:09:06,078 --> 00:09:12,039
+mns, that gives you zero. So it's a very
+pretty situation. This means that,
+
+53
+00:09:12,039 --> 00:09:26,074
+essentially. A1 and a2 are Vectors of
+length one. Which are mutually
+
+54
+00:09:26,074 --> 00:09:42,063
+perpendicular? So in other words, you can
+use a1 and a2 to make an orthogonal basis.
+
+55
+00:09:43,048 --> 00:09:48,049
+And this is gonna be true in any
+dimension. In dimension two, dimension
+
+56
+00:09:48,049 --> 00:09:54,007
+three and so forth. So, in dimension two,
+so let's take up the case of dimension
+
+57
+00:09:54,007 --> 00:10:06,079
+two, In r2. If we have that a1 is a column
+vector which is of length one, a1 is
+
+58
+00:10:07,034 --> 00:10:17,032
+Cosine theta, sine theta. We can pick such
+vector without laws [inaudible] of because
+
+59
+00:10:17,032 --> 00:10:24,043
+we know that a1 has to be of length one.
+So, we can just call this cosine theta
+
+60
+00:10:24,043 --> 00:10:35,084
+sine theta, okay? So, what must a2b? Well,
+we know that a2 should also be of length
+
+61
+00:10:35,084 --> 00:10:44,080
+one and a2 has to be. The length of a2
+should be one and it should be the case
+
+62
+00:10:44,080 --> 00:10:51,043
+that a1 transposed a2 is = zero. So I,
+what choice do I have? I essentially have
+
+63
+00:10:51,043 --> 00:11:00,020
+two choices now. I can make a2. So, that
+gives me two choices for a2. Either I
+
+64
+00:11:00,020 --> 00:11:18,043
+could pick minus sign theta cosine theta.
+Or. I could pick Sine theta - cosine
+
+65
+00:11:18,043 --> 00:11:30,083
+theta. So, I really have only these two
+choices. Because the property of these two
+
+66
+00:11:30,083 --> 00:11:36,018
+choices is that they both have length,
+they are of length one that's easy to
+
+67
+00:11:36,018 --> 00:11:47,024
+identify. But in addition, they are
+perpendicular. Okay, but what does this
+
+68
+00:11:47,024 --> 00:11:56,072
+mean? This essentially tells me that the
+matrix a, I have only two choices of this
+
+69
+00:11:56,072 --> 00:12:06,074
+matrix a. This is one choice, cosine theta
+sine theta - sine theta cosine theta. This
+
+70
+00:12:06,074 --> 00:12:25,092
+is one choice Or a is Cosine theta sine
+theta, Sine theta Minus cosine theta, This
+
+71
+00:12:25,092 --> 00:12:32,053
+is the other choice. And that is it. The
+matrix a has an orthogonal matrix and two
+
+72
+00:12:32,053 --> 00:12:37,063
+dimensions can be on only these two
+points. Okay, let's calculate what the
+
+73
+00:12:37,063 --> 00:12:43,028
+determinant of this matrix is and what's
+the determinant here. If you work it out,
+
+74
+00:12:43,028 --> 00:12:48,038
+cosine theta * sine theta is cosine
+squared theta + sine squared theta, the
+
+75
+00:12:48,038 --> 00:12:53,090
+determinant here is +one. In this case,
+what is the determinant? It's minus cosine
+
+76
+00:12:53,090 --> 00:12:59,042
+squared theta - sine squared theta. So,
+the determinant here is -one. And recall
+
+77
+00:12:59,042 --> 00:13:07,000
+that I said that for any Orthogonal Matrix
+the determinant is either + one or - one.
+
+78
+00:13:07,000 --> 00:13:20,099
+And let's now try to get a physical
+picture of this. So, so suppose we have A
+
+79
+00:13:20,099 --> 00:13:45,029
+vector Xy And then consider A * xy, and i
+Cosine theta - sine theta sine theta
+
+80
+00:13:45,029 --> 00:14:12,028
+cosine theta * xy. And this is really
+counter clockwise Rotation by theta Which
+
+81
+00:14:12,028 --> 00:14:18,043
+is very nice. And so we have a, a, you can
+convince yourself that this is true by
+
+82
+00:14:18,043 --> 00:14:34,098
+starting off with what happens with the
+vector one, zero. So, One, zero gets
+
+83
+00:14:34,098 --> 00:14:48,079
+transformed. And the answer is it gets
+transformed to cosine theta, sine theta.
+
+84
+00:14:49,072 --> 00:15:01,085
+So, if we want to set up a little diagram.
+So if we had this initial vector, then
+
+85
+00:15:01,085 --> 00:15:15,036
+after this rotation, it's going to go to.
+This angle is theta. And, If we had a
+
+86
+00:15:15,036 --> 00:15:32,055
+vector here, that vector is going to go
+to. So, this is counterclockwise Rotation
+
+87
+00:15:32,055 --> 00:15:45,032
+[inaudible] theta. So, in two dimensions,
+the story therefore is very simple.
+
+88
+00:15:51,053 --> 00:16:10,036
+There's two kinds of Two kinds of
+Orthogonal Matrices And these are of the
+
+89
+00:16:10,036 --> 00:16:25,034
+type cosine theta - sine theta. Sine
+theta, Cosine theta, Or Cosine theta sine
+
+90
+00:16:25,034 --> 00:16:41,036
+theta, Sine theta - cosine theta. These
+have Determinant + one determinant - one,
+
+91
+00:16:41,036 --> 00:16:55,073
+these are rotations, And these are
+reflections. Okay, I'm not going to derive
+
+92
+00:16:55,073 --> 00:17:14,001
+this here but you can verify That the
+reflection matrix here Corresponds to
+
+93
+00:17:16,005 --> 00:17:39,023
+Reflection Around The line With angle
+Theta equals That angle theta divided by
+
+94
+00:17:39,023 --> 00:17:53,092
+two. Okay, so now let's go to three
+dimensions. In 3D, we'll, Consider the
+
+95
+00:17:53,092 --> 00:18:02,054
+basic properties of rotations. So, we are
+going to have again a matrix with three
+
+96
+00:18:02,054 --> 00:18:14,074
+column vectors, a1, a2, a3. And, similar
+reasoning as in the one [inaudible] Has in
+
+97
+00:18:14,074 --> 00:18:33,014
+the [inaudible]. The length of each of
+these column vectors is going to be. One
+
+98
+00:18:33,014 --> 00:18:56,016
+and The dot product of any two of them is
+zero. So, in other words, a1, a2, a3, they
+
+99
+00:18:56,016 --> 00:19:02,078
+caused upon to a nice orthogonal basis
+rather an orthonormal basis because each
+
+100
+00:19:02,078 --> 00:19:09,015
+of these of unit length. Now in the case
+of two dimensions, we could characterize
+
+101
+00:19:09,015 --> 00:19:14,096
+the rotation by just one angle theta. In
+three dimensions, it's a bit more
+
+102
+00:19:14,096 --> 00:19:21,042
+complicated. We need to specify a rotation
+in a more complex way and it turns out
+
+103
+00:19:21,042 --> 00:19:40,080
+that. We need thr ee parameters To specify
+a rotation and. Phi a rotation in 3D. So
+
+104
+00:19:40,080 --> 00:19:46,027
+let's see if we can convince ourselves of
+that. But, how do we think about this
+
+105
+00:19:46,027 --> 00:19:52,076
+intuitively and we'll think about it as
+algebraic as well. So, intuitively How
+
+106
+00:19:52,076 --> 00:20:05,056
+will you specify a rotation in 3D. We need
+to specify an axis about which the
+
+107
+00:20:05,056 --> 00:20:15,031
+rotation takes place and then we need to
+specify an amount of rotation. So, how
+
+108
+00:20:15,031 --> 00:20:21,064
+many degrees of freedom does the axis
+have? Since the axis is a unit length
+
+109
+00:20:21,064 --> 00:20:27,055
+vector, this means that we need two
+parameters to specify the axis. The
+
+110
+00:20:27,055 --> 00:20:35,036
+rotation is some angles, so that's one. So
+therefore we need two + one Equals three
+
+111
+00:20:35,036 --> 00:20:43,072
+parameters. So that's one way to think
+about it. Let's think about it another way
+
+112
+00:20:43,072 --> 00:20:56,037
+looking at the matrix From the matrix. How
+can I choose a1? How many degrees of
+
+113
+00:20:56,037 --> 00:21:03,088
+freedom do we have for choosing a1? We can
+choose a1 by specifying two parameters.
+
+114
+00:21:05,068 --> 00:21:12,004
+The reason is that the length of a1 is
+constrained; it must be of unit length. So
+
+115
+00:21:12,004 --> 00:21:17,094
+therefore, I can pick a1 with two
+parameters. Then, how many parameters do I
+
+116
+00:21:17,094 --> 00:21:24,039
+have for a2? A2 has to be perpendicular to
+a1, okay? So that in fact specifies a
+
+117
+00:21:24,039 --> 00:21:30,084
+plane in which a2 must lie. It has to be
+of unit length so I just can choose very
+
+118
+00:21:30,084 --> 00:21:38,053
+not plane to pick this unit vector so I
+will get one parameter. And once I pick a1
+
+119
+00:21:38,053 --> 00:21:44,068
+and a2, the third, the third vector is
+constrained. It has to be perpendicular to
+
+120
+00:21:44,068 --> 00:21:50,075
+both them so in fact, it's going to lie
+along the vector product of this. So, a3,
+
+121
+00:21:50,075 --> 00:22:01,014
+it adds no new parameters. So if you add
+it up, we get three parameters. So this
+
+122
+00:22:01,014 --> 00:22:07,054
+algebraic way of looking at the columns of
+the Orthogonal Matrix and using the fact
+
+123
+00:22:07,054 --> 00:22:13,078
+that the columns must be orthonormal gives
+us the same count that there are three
+
+124
+00:22:13,078 --> 00:22:19,095
+parameters which are needed for specifying
+rotation matrix. And I got exactly the
+
+125
+00:22:19,095 --> 00:22:26,020
+same count three when I considered the
+fact that any rotation has to be specified
+
+126
+00:22:26,020 --> 00:22:33,055
+by an axis and an amount of rotation. And
+the next lecture will continue with how we
+
+127
+00:22:33,055 --> 00:22:38,031
+can specify rotations in a convenient way
+and three dimensions.

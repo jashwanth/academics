@@ -1,0 +1,1037 @@
+
+1
+00:00:00,022 --> 00:00:06,072
+Okay. Welcome back. So we're going to
+study parametrizing rotations in 3D. So
+
+2
+00:00:06,072 --> 00:00:14,091
+let's take some easy cases. How do we
+describe a rotation around the x-axis?
+
+3
+00:00:14,091 --> 00:00:21,033
+Well, that's pretty easy because the
+x-axis, nothing much happens. So that's
+
+4
+00:00:21,033 --> 00:00:27,026
+where we have this one and then in the yz
+we have a 2-by-2 matrix as we would have
+
+5
+00:00:27,026 --> 00:00:32,063
+encountered before. So this is an easy
+thing to do. Let's consider rotation about
+
+6
+00:00:32,063 --> 00:00:38,081
+the z-axis. And this is also easy. Because
+in that... As you'll recall that these are
+
+7
+00:00:38,081 --> 00:00:45,043
+the X, Y and Z components. So in the X and
+Y plane, we have a standard 2D rotation
+
+8
+00:00:45,043 --> 00:00:51,064
+matrix. In the Z axis nothing much
+happens. So that's why we have these
+
+9
+00:00:51,064 --> 00:00:56,064
+simple rotation matrices. But what do we
+do in general? That's the question that
+
+10
+00:00:56,064 --> 00:01:00,083
+we'll study in this lecture. What about
+the general case. So there are many
+
+11
+00:01:00,083 --> 00:01:07,029
+different ways of specifying rotations and
+three dimensions, and let's consider what
+
+12
+00:01:07,029 --> 00:01:12,025
+they are. First is othogonal
+matrices, This is very natural. This
+
+13
+00:01:12,025 --> 00:01:19,033
+corresponds to the fact that rotation is
+linear isometric. But orthogonal matrices
+
+14
+00:01:19,046 --> 00:01:25,051
+are redundant because you, you have a
+three by three matrix, so this corresponds
+
+15
+00:01:25,051 --> 00:01:32,014
+to nine parameters. But there are really
+only three genuine parameters. So these
+
+16
+00:01:32,014 --> 00:01:41,001
+nine bit entries in the matrix are
+redundant. And we've like to get out the
+
+17
+00:01:41,001 --> 00:01:45,077
+true degrees of freedom of the problem,
+which corresponds to axis of rotation and
+
+18
+00:01:45,077 --> 00:01:52,016
+the amount of rotation. There's some
+classic techniques out there. Euler angles
+
+19
+00:01:52,016 --> 00:01:59,002
+is one of them. Quaternions is another
+one. This is generalization of the idea of
+
+20
+00:01:59,002 --> 00:02:04,074
+complex numbers, which can be used to
+represent rotation in two dimensions. To a
+
+21
+00:02:04,074 --> 00:02:09,002
+technique that once was representing
+rotation in three dimensions. This was
+
+22
+00:02:09,002 --> 00:02:12,061
+quite a big deal when it was when it was
+invented in the nineteenth century by
+
+23
+00:02:12,061 --> 00:02:16,004
+Hamilton who was one of the great
+mathematicians and physicists of that
+
+24
+00:02:16,004 --> 00:02:24,058
+period. [inaudible] the methodI like those things
+in a much more direct way. And what it
+
+25
+00:02:24,058 --> 00:02:30,053
+does is that it tries to give us a way to
+go back and forth very simply between
+
+26
+00:02:30,053 --> 00:02:35,068
+orthogonal matrices and what, what we should think
+of as a fundamenta natural
+
+27
+00:02:35,068 --> 00:02:40,093
+representation which is a specified
+rotation by giving the axis of rotation
+
+28
+00:02:40,093 --> 00:02:45,055
+and the amount of rotation. Once you have
+that you should be able to write down the
+
+29
+00:02:45,055 --> 00:02:49,072
+orthogonal matrix. Conversely given the
+orthogonal matrix, we should be able to
+
+30
+00:02:49,072 --> 00:02:56,058
+write down what facts in a rotation or
+amount of rotation. We could do this in
+
+31
+00:02:56,058 --> 00:03:03,058
+easy case which we saw in the previous
+slide. Right? For rotation above the X
+
+32
+00:03:03,058 --> 00:03:08,023
+axis and rotation above the Z axis, you
+could do this. But my question for you is,
+
+33
+00:03:08,034 --> 00:03:11,004
+suppose I have an arbitrary axis. I just
+give you some unit vector in, in three,
+
+34
+00:03:11,004 --> 00:03:18,013
+and I give you some amount of rotation.
+Can you construct the rotation matrix for
+
+35
+00:03:18,062 --> 00:03:26,022
+me? Conversely I could give you a rotation
+matrix and I could tell you okay, tell me
+
+36
+00:03:26,022 --> 00:03:30,074
+what's the axis of rotation? Tell me
+what's the amount of rotation? Before we
+
+37
+00:03:30,074 --> 00:03:34,088
+proceed with the lecture you may want to
+stop it right here and try to think about
+
+38
+00:03:34,088 --> 00:03:39,092
+how you might do it, and you may real, you
+may then realize that's it's, it, it's a
+
+39
+00:03:39,092 --> 00:03:45,005
+slightly tricky problem. So we'll, in this
+lecture we'll figure out an efficient way
+
+40
+00:03:45,005 --> 00:03:49,087
+to do this. The big idea is that we are
+going to represent rotations as
+
+41
+00:03:49,087 --> 00:04:12,091
+exponentials of Skew Symmetric Matrices.
+
+42
+00:04:13,014 --> 00:04:16,006
+Okay, so there are some multiples in here,
+
+43
+00:04:16,006 --> 00:04:21,062
+including the term exponential of a
+matrix, skew symmetric matrix. But
+
+44
+00:04:21,062 --> 00:04:25,066
+hopefully by the end of this lecture, you
+will find that all this is very natural.
+
+45
+00:04:25,066 --> 00:04:31,025
+The skew symetrix matrix is going to turn
+out to correspond to the axis of rotation.
+
+46
+00:04:31,025 --> 00:04:37,001
+So what we're going to do is we're going
+to take this axis of rotation. And from
+
+47
+00:04:37,001 --> 00:04:42,055
+that, we will construct a skew symmetric
+matrix. We will then construct the
+
+48
+00:04:42,055 --> 00:04:48,002
+exponential of a matrix in some way. And
+that exponential is going to give me the
+
+49
+00:04:48,002 --> 00:04:52,095
+orthogonal matrix. That's the basic story.
+And then, how do we go back? Essentially,
+
+50
+00:04:52,095 --> 00:04:58,011
+we, for an exponential, the opposite, the
+inverse function is a log. And something
+
+51
+00:04:58,011 --> 00:05:07,027
+like that will work out here. So let's
+start by some review. So you all know the
+
+52
+00:05:07,027 --> 00:05:12,040
+notion of a vector product or cross product
+from physics. So if I'm given two vectors
+
+53
+00:05:12,040 --> 00:05:19,081
+V1 and V2. I've shown them here as vectors
+V1 and V2. We can construct the so called
+
+54
+00:05:19,081 --> 00:05:25,062
+vector product or cross product, which is
+yet another vector W. And, there are
+
+55
+00:05:25,062 --> 00:05:31,017
+properties of this vector W. It's going to
+be in; we construct the plane of V1 and
+
+56
+00:05:31,017 --> 00:05:36,054
+V2. And then the vector W is going to be
+perpendicular to that plane. And its
+
+57
+00:05:36,054 --> 00:05:42,021
+magnitude is related to the magnitudes of
+V1 and V2, and the angle between them. So,
+
+58
+00:05:42,021 --> 00:05:50,038
+the vector W is perpendicular to the plane
+spanned by V1 and V2. So you can review
+
+59
+00:05:50,038 --> 00:05:56,081
+this if you have forgotten this
+definition. I want to just say as well
+
+60
+00:05:56,081 --> 00:06:02,057
+that I will use an alternative notation,
+instead of just using the cross the x I
+
+61
+00:06:02,057 --> 00:06:08,061
+will use this red wedge symbol. But I use
+this for cross product. So, nothing big
+
+62
+00:06:08,061 --> 00:06:15,002
+deal, just a particular notation that, I
+like and is used in more higher
+
+63
+00:06:15,002 --> 00:06:22,026
+mathematical applications. Okay. The next
+thing we need to know about skew-symmetric
+
+64
+00:06:22,026 --> 00:06:30,051
+matrices. A skew-symmetric matrix is
+defined by the property that, a matrix A
+
+65
+00:06:30,051 --> 00:06:35,029
+is said to be skew-symmetric if A is equal
+to minus A transposed. So this is just the
+
+66
+00:06:35,029 --> 00:06:43,062
+definition. But this definition tells us
+something, so you have a three by three
+
+67
+00:06:43,062 --> 00:06:51,027
+matrix A then it must have zeros in
+the diagonal and if it has entries A, B, C
+
+68
+00:06:51,027 --> 00:06:56,036
+in the off diagonal position here then
+entries here minus A, minus B, and
+
+69
+00:06:56,046 --> 00:07:11,091
+minus C, so it's a three by three matrix but
+it has only three parameters. And, what
+
+70
+00:07:11,091 --> 00:07:17,054
+we're going to do is we're going to take
+the axis of rotation. Which is a vector in
+
+71
+00:07:17,054 --> 00:07:23,038
+three dimensional space. And we are gonna
+map it to a skew-symmetric matrix. There
+
+72
+00:07:23,038 --> 00:07:27,064
+is some black magic involved here, which
+will become clear later. Let me just
+
+73
+00:07:27,064 --> 00:07:32,086
+remind you that in this course and in this
+lecture, you may come across concepts that
+
+74
+00:07:32,086 --> 00:07:37,076
+you are a bit rusty on. You may have
+encountered them somewhere in your.
+
+75
+00:07:37,076 --> 00:07:43,079
+Previous linear algebra or physics class
+or also calculus [inaudible] and now you
+
+76
+00:07:43,079 --> 00:07:46,082
+may have forgotten them. Well, if you need
+to revise them just go look them up in
+
+77
+00:07:46,082 --> 00:07:52,087
+Wikipedia. I find their entries on
+mathematical topics to be excellent. Okay.
+
+78
+00:07:52,087 --> 00:08:00,050
+So now let's build up from this connection
+of vector product and skew symmetric
+
+79
+00:08:00,050 --> 00:08:07,065
+matrices. So, this is just the definition
+of vector product, which is the standard
+
+80
+00:08:07,065 --> 00:08:17,005
+definition of vector product. I'm given a
+vector A. And a vector B And then the
+
+81
+00:08:17,005 --> 00:08:22,008
+vector product is another vector and this
+is what the competence will be. So this
+
+82
+00:08:22,008 --> 00:08:30,028
+you can look up. Here's a new idea. We're
+gonna take a vector A. So this is a vector
+
+83
+00:08:30,028 --> 00:08:44,022
+in three. And we're gonna make a matrix A
+HAT Which is a three by three matrix. And
+
+84
+00:08:44,022 --> 00:08:50,010
+the way we are gonna do this is that we
+are gonna take the entries of A and put
+
+85
+00:08:50,010 --> 00:08:54,096
+them at particular locations in this
+matrix. So the vector a has the entries
+
+86
+00:08:54,096 --> 00:09:02,075
+a1, a2, a3. I take these entries a1, a2,
+a3 and I put them in particular locations
+
+87
+00:09:02,075 --> 00:09:09,031
+of this matrix. And now I've got a new
+matrix. So is a three-by-three matrix.
+
+88
+00:09:09,031 --> 00:09:16,028
+Okay. This is just some little bit of
+juggling around. I'm just Nothing big deal
+
+89
+00:09:16,028 --> 00:09:23,016
+so far. The fun begins here. Given this
+matrix, this three by three matrix, an now
+
+90
+00:09:23,016 --> 00:09:28,057
+I do a vector matrix multiplication. I
+multiply a hat and the vector b,
+
+91
+00:09:28,057 --> 00:09:33,003
+which is given by the three components b1,
+b2, b3. And you have to just do this
+
+92
+00:09:33,003 --> 00:09:38,052
+algebra. Take, take this matrix, and take
+this vector, and do the matrix, matrix
+
+93
+00:09:38,052 --> 00:09:49,036
+vector multiplication. And you will get.
+And you'll get this guy which is the same
+
+94
+00:09:49,036 --> 00:09:57,069
+as this guy So in other words. This matrix
+vector product does the same job as
+
+95
+00:09:57,069 --> 00:10:03,065
+creating the vector product or the, the
+cross product that you are familiar with
+
+96
+00:10:03,065 --> 00:10:10,006
+in physics. So we've established a certain
+very natural, simple relationship between
+
+97
+00:10:10,006 --> 00:10:16,077
+skew symetric matrices and this process of
+creating a vector product or cross
+
+98
+00:10:16,077 --> 00:10:21,026
+product. Okay what's the value of this?
+This is just a little mathematical trick.
+
+99
+00:10:21,026 --> 00:10:26,097
+The value will come soon. For that I have
+to build up another notion which is that
+
+100
+00:10:26,097 --> 00:10:33,047
+of exponentials of matrices. Exponential
+of scalars you know, I mean, here's a
+
+101
+00:10:33,047 --> 00:10:40,005
+classic formula. Each of the x is given by
+one + x + x squared upon two victorial +.
+
+102
+00:10:40,005 --> 00:10:48,011
+so on, that's the Taylor series expansion.
+Okay. What is the exponential of a matrix?
+
+103
+00:10:48,030 --> 00:10:56,001
+So here A is some matrix. What's the exponential of a matrix? It's, it's kind of
+
+104
+00:10:56,001 --> 00:11:01,038
+a model equivalent of this formula. But
+instead of one, what is one in the space
+
+105
+00:11:01,038 --> 00:11:06,035
+of matrices. Well, multiplying by one
+leaves the number unchanged. Multiplying
+
+106
+00:11:06,035 --> 00:11:14,064
+by what matrix leaves matrix unchanged.
+It's the identity matrix. Instead of X,
+
+107
+00:11:14,064 --> 00:11:22,006
+well, the objects here are matrices, so
+this should be A. And this should be A
+
+108
+00:11:22,006 --> 00:11:25,001
+squared upon two factor. And what do I
+mean by A squared? Well, it's matrix
+
+109
+00:11:25,001 --> 00:11:32,048
+multiplication. Matrix A multiplied by
+matrix A, plus the matrix. And so on. So
+
+110
+00:11:32,048 --> 00:11:39,096
+this is a formal is like a Taylor series,
+but we can use this to define the
+
+111
+00:11:39,096 --> 00:11:46,048
+exponential of a matrix and in certain
+programming languages such as in Math Lab.
+
+112
+00:11:46,048 --> 00:11:54,061
+You, in fact, have a function called EXPM.
+So if you do EXPM of A that says matrix
+
+113
+00:11:54,061 --> 00:12:00,076
+exponential of A. That will, in fact,
+compute into the A. So this is really a
+
+114
+00:12:00,076 --> 00:12:05,076
+perfectly reasonable object just like the
+E to the X that you've known and loved
+
+115
+00:12:05,076 --> 00:12:16,002
+since, the days of high school, really.
+Okay. So, why is this idea of matrix
+
+116
+00:12:16,002 --> 00:12:22,079
+exponential useful? Let's do one more
+little trick. Let me remind you that
+
+117
+00:12:22,079 --> 00:12:27,055
+exponentials are arises solutions of
+linear diferential equations. So, suppose we have
+
+118
+00:12:27,055 --> 00:12:38,072
+the equation. X dot equals AX, where X dot
+really stands for DX upon DT is X dot X,
+
+119
+00:12:38,072 --> 00:12:44,059
+just the standard notation. The solution
+to this differential equation is that X as
+
+120
+00:12:44,059 --> 00:12:51,096
+a function of time is given by X of zero.
+This is just the initial condition times
+
+121
+00:12:51,096 --> 00:13:03,011
+exponential e To the AT. Again, standard
+result This idea applies when we have X's
+
+122
+00:13:03,011 --> 00:13:10,008
+which are vectors. So here, I have this
+formula, X dot. But this is now a vector.
+
+123
+00:13:10,008 --> 00:13:20,098
+And. It's the, the, this is a differential
+equation. So what's the solution of this
+
+124
+00:13:20,098 --> 00:13:28,026
+differential equation? So, that the
+solution here is going to be, x of t
+
+125
+00:13:28,026 --> 00:13:40,012
+equals e to the a t, and then there will
+be some initial condition x sub 0. So
+
+126
+00:13:40,012 --> 00:13:46,023
+this is the initial condition. And this is
+of course a vector and A to the t
+
+127
+00:13:46,023 --> 00:13:52,072
+is of course another vector. But that's my, matrix
+exponential. So that's a matrix
+
+128
+00:13:52,072 --> 00:14:01,076
+exponential. So this is all very nice,
+because the notion of, scalar linear
+
+129
+00:14:01,076 --> 00:14:06,010
+differenti al equations gives rise to an
+exponential. Your vector differential
+
+130
+00:14:06,010 --> 00:14:14,056
+equation, and now you get, matrix
+exponential. Okay. So now, proceeding
+
+131
+00:14:14,056 --> 00:14:20,098
+right along I want to remind you of this
+equation which you probably encountered in
+
+132
+00:14:20,098 --> 00:14:43,028
+freshman physics. So this Omega here is
+the angular velocity vector. So, so we
+
+133
+00:14:43,028 --> 00:14:56,099
+have the position of a point Q and then Q dot
+is the time derivative. So Q Is given by
+
+134
+00:14:56,099 --> 00:15:10,050
+Omega cross product with Q. We can rewrite
+this using this new trick that we learned.
+
+135
+00:15:10,050 --> 00:15:16,022
+Which is that, when we want to con-,
+construct a vector product, we, we will,
+
+136
+00:15:16,022 --> 00:15:25,064
+we will make up a new matrix. Make a hat.
+And now we will convert it into a, matrix
+
+137
+00:15:25,064 --> 00:15:32,019
+factor multiplication And the solution to
+this differential equation, so now we got
+
+138
+00:15:32,019 --> 00:15:36,028
+a linear differential equation. And the
+solution to this differential equation is,
+
+139
+00:15:36,028 --> 00:15:41,035
+as we studied in the last slide, it's
+going to be given by the initial condition
+
+140
+00:15:41,035 --> 00:15:49,037
+Q0 times the matrix exponential e
+to the omega hat t. And we can work out
+
+141
+00:15:49,037 --> 00:16:00,080
+what e to the omega hat t is. It's going
+to be given by this Taylor series. Now we
+
+142
+00:16:00,080 --> 00:16:06,098
+actually don't have to Computed in this,
+way Which is, to really compute each of
+
+143
+00:16:06,098 --> 00:16:10,079
+these terms and then add them up. There's
+much more efficient ways of doing this.
+
+144
+00:16:10,079 --> 00:16:14,054
+And the reason why there much more
+efficient ways of doing this is because
+
+145
+00:16:14,054 --> 00:16:21,019
+these terms omega hat t omega hat t
+square omega hat t cubed omega hat t
+
+146
+00:16:21,019 --> 00:16:25,068
+to the fourth power and so on. These are
+not all independent After a while. What
+
+147
+00:16:25,068 --> 00:16:31,072
+you, if you work these out, by brute force
+calculation, you'll find that they start
+
+148
+00:16:31,072 --> 00:16:36,084
+to repeat. So you can group these terms
+together, and so on, and so forth. And,
+
+149
+00:16:36,084 --> 00:16:42,080
+I'll give you a little flavor of that by
+showing how we can calculate the second
+
+150
+00:16:42,080 --> 00:16:51,046
+term in the series, the square term. So
+the square term will correspond to
+
+151
+00:16:51,046 --> 00:16:56,051
+the product of, two skew symmetric
+matrices, and I've shown those here. If
+
+152
+00:16:56,051 --> 00:17:02,015
+you work this out, so suppose we have the
+matrix S hat, and then we have S hat
+
+153
+00:17:02,015 --> 00:17:05,024
+squared, which is the product of these two
+matrices. Well, that will turn out to
+
+154
+00:17:05,024 --> 00:17:13,011
+SS transposed minus I. And this is a
+straight algebra thing to do. But let's go
+
+155
+00:17:13,011 --> 00:17:20,009
+back to the formula. It turns out that if
+we collect these even, odd and even terms,
+
+156
+00:17:20,009 --> 00:17:25,088
+can do a little bit of work along the
+lines that I had just illustrated. You can
+
+157
+00:17:25,088 --> 00:17:31,024
+derive a very beautiful formula, and that
+beautiful formula is called Rodriguez
+
+158
+00:17:31,024 --> 00:17:36,024
+formula, and it is given by this
+expression. This is really a beautiful
+
+159
+00:17:36,024 --> 00:17:42,095
+formula. Why? Because given an axis of
+rotation. And what's the axes of rotation?
+
+160
+00:17:42,095 --> 00:17:50,080
+The axes of rotation here is given by S.
+And the axes of rotation here corresponds
+
+161
+00:17:50,080 --> 00:17:56,035
+to this omega vector, normalized. So I
+have taken the omega vector and divided by
+
+162
+00:17:56,035 --> 00:18:02,089
+its, its magnitude. So I have a unit
+length vector S. Given this unit vector S
+
+163
+00:18:02,089 --> 00:18:08,031
+I can make up a matrix, three-by-three,
+skew symmetric matrix and put that here.
+
+164
+00:18:08,031 --> 00:18:16,008
+Okay. What is phi? Phi is the total amount
+of rotation and that is given by the
+
+165
+00:18:16,008 --> 00:18:22,039
+angular velocity, omega multiplied by
+time. So the angular velocity might
+
+166
+00:18:22,039 --> 00:18:26,063
+be radiance per second, time as in
+seconds, so five would be measure in
+
+167
+00:18:26,063 --> 00:18:33,022
+radiance. So if you look at Rodriguez's
+formula here, we have S had and S had
+
+168
+00:18:33,022 --> 00:18:40,071
+squared which are these skew symmetric
+matrices that you can construct if you
+
+169
+00:18:40,071 --> 00:18:45,047
+know the axis of rotation, S. And then we
+have five, which is the amount of
+
+170
+00:18:45,047 --> 00:18:51,019
+rotation, which you know. So given these V
+have the ability to construct R, which is
+
+171
+00:18:51,019 --> 00:18:56,096
+the total rotation matrix. So if you want
+to think about this conceptually, the S
+
+172
+00:18:56,096 --> 00:19:04,058
+hat, the axis of rotation, in a way, it
+specifies. Infinite similar rotation,
+
+173
+00:19:04,058 --> 00:19:10,073
+what happens in a very, very small amount
+of time. Now this process, when you carry
+
+174
+00:19:10,073 --> 00:19:15,009
+it for a finite amount of time, that's
+what gives rise to the finite rotation,
+
+175
+00:19:15,009 --> 00:19:21,039
+which is R. So it's really a
+relationship between a rotation when a
+
+176
+00:19:21,039 --> 00:19:26,068
+finite amount of time has elapsed to the
+amount of change when a very, very small
+
+177
+00:19:26,068 --> 00:19:32,008
+amount of time has elapsed. It's some
+intuitive sense. But this relationship
+
+178
+00:19:32,008 --> 00:19:36,072
+here is a mathematically rigorous
+relationship. I'm trying to just hand wave
+
+179
+00:19:36,072 --> 00:19:44,035
+my way to give you an intuition about
+this. Okay, now we have achieved our grand
+
+180
+00:19:44,035 --> 00:19:50,020
+goal, which is, how do we go from notation
+matrices to an axis angle representation
+
+181
+00:19:50,020 --> 00:19:57,009
+of [inaudible]. So how do I go from, given
+an axis of rotation S, and an amount of
+
+182
+00:19:57,009 --> 00:20:04,094
+rotation theta to R? Well, from S, we can
+construct this S hat. So S is a vector,
+
+183
+00:20:04,094 --> 00:20:26,025
+and this is the skew symmetric matrix. And
+then we can do, just this exponential and
+
+184
+00:20:26,025 --> 00:20:34,042
+that gives me R. Now, this can be
+simplified further and that is Rodriquez
+
+185
+00:20:34,042 --> 00:20:43,088
+formula. Okay. So that's how we can go
+from an access and a mount [inaudible]
+
+186
+00:20:43,088 --> 00:20:49,001
+rotation to the matrix R. How do we do the
+converse problem? I give you a three by
+
+187
+00:20:49,001 --> 00:20:53,021
+three rotation matrix and I want you to
+tell me what's the axis of rotation and
+
+188
+00:20:53,021 --> 00:20:59,067
+what's the amount of rotation. Well, you
+actually can do the equivalent, the
+
+189
+00:20:59,067 --> 00:21:04,088
+inverse of exponential, which is, log. And
+it turns out that in math lab, there is,
+
+190
+00:21:04,088 --> 00:21:09,021
+in fact, a command by which you can take
+the log of the R matrix, and that will
+
+191
+00:21:09,021 --> 00:21:14,050
+give you theta S hat. But there are other
+ways. Let me show you how we can get the
+
+192
+00:21:14,050 --> 00:21:19,095
+angle theta, the total amount of rotation.
+Well, it turns out that the trace of
+
+193
+00:21:19,095 --> 00:21:25,067
+R. And what's the trace of R? It's
+the sum of the diagonal entries. This is
+
+194
+00:21:25,067 --> 00:21:44,058
+equal to one plus two cosign theta and you
+can verify this from Rodriguez formula. So
+
+195
+00:21:44,058 --> 00:21:48,058
+since we know what the rotational matrix
+are we can compute theta so we know
+
+196
+00:21:48,058 --> 00:21:53,066
+the amount of rotation. What about the
+axis of rotation? What can we do? Well,
+
+197
+00:21:53,066 --> 00:22:02,001
+here is one observation, compute the
+eigen vector of R corresponding to
+
+198
+00:22:02,001 --> 00:22:15,023
+eigen value One Because what, what,
+what's the property of the access of
+
+199
+00:22:15,023 --> 00:22:19,034
+rotation? When you apply the rotation, the
+points which lie on the access do not
+
+200
+00:22:19,034 --> 00:22:24,007
+change. So that's why they must correspond
+to an eigen vector of eigen value 1. So
+
+201
+00:22:24,007 --> 00:22:28,004
+that's why we're doing it. But there are a
+zillion other ways. You can take Rodriguez
+
+202
+00:22:28,004 --> 00:22:37,098
+formula and manipulate it around. So, use,
+You can use Rodriguez. And you can have R
+
+203
+00:22:37,098 --> 00:22:44,048
+and the matrix R transposed. And then from
+these, you can kind of pull out S hat. And
+
+204
+00:22:44,048 --> 00:22:49,041
+once we have the S hat matrix, you can
+easily read out the, the axis of rot
+
+205
+00:22:49,041 --> 00:22:56,007
+ation. So we have, thus, achieved our
+grand goal which is to be able to go back
+
+206
+00:22:56,007 --> 00:23:00,058
+and forth between rotation matrices, which
+are orthogonal matrices, three-by-three
+
+207
+00:23:00,058 --> 00:23:08,011
+matrices, to an axis of rotation
+representation. Now we can choose
+
+208
+00:23:08,011 --> 99:59:59,000
+whichever one makes more sense for our
+purposes.

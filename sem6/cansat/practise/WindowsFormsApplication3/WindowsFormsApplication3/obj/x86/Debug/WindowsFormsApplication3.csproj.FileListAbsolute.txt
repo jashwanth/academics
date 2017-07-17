@@ -1,0 +1,6 @@
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.PropertyPage.resources
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Jashwanth\Desktop\practise\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResGen.write.1.tlog
