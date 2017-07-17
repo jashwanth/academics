@@ -1,0 +1,42 @@
+ncverilog(64): 09.20-s024: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncverilog	09.20-s024: Started on Jan 29, 2014 at 16:12:28 IST
+ncverilog
+	101s.v
+	101s_tb.v
+	/home/ushasri/Assignment2/Upload2/201131016/101s.v
+file: 101s.v
+file: 101s_tb.v
+file: /home/ushasri/Assignment2/Upload2/201131016/101s.v
+	module worklib.stu:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+stu  S1 (A,SY);
+         |
+ncelab: *W,CUVMPW (./101s_tb.v,6|9): port sizes differ in port connection.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.stu:v <0x0b8f6211>
+			streams:   8, words:  2150
+		worklib.tb:v <0x00c393f4>
+			streams:   2, words:  1906
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              3       3
+		Registers:            2       2
+		Scalar wires:        16       -
+		Vectored wires:      11       -
+		Initial blocks:       1       1
+		Cont. assignments:   17      25
+		Pseudo assignments:   1       1
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+ncsim> source /opt/cadence/Cadence-IC615/IUS92/tools/inca/files/ncsimrc
+ncsim> run
+Fail 0000000001 Gold=0 RoldGold=3
+Simulation complete via $finish(1) at time 2 NS + 0
+./101s_tb.v:19 					$finish;
+ncsim> exit
+TOOL:	ncverilog	09.20-s024: Exiting on Jan 29, 2014 at 16:12:29 IST  (total: 00:00:01)

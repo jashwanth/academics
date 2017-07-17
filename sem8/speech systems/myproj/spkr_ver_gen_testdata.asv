@@ -1,0 +1,16 @@
+% file to create testcases for speaker verification system
+% combining test cases from testwavedata and trainwavedata folders to timitdata
+clear all;
+clc;
+mkdir('spkrverifydata');
+r1 = randi(10,1,10);
+r2 = randi(98,1,100);
+allspk=dir('timitdata/*');
+for i=3:length(allspk)
+    str=allspk(i).name;
+    mkdir(fullfile('spkrverifydata',str));
+    wav_train =dir(fullfile('timitdata',str,'*.wav'));
+    copyfile((fullfile('timitdata',str,wav_train(5).name)),(fullfile('spkrverifydata',allspk(r2(i)).name,'incorrect.wav')),'f');
+    copyfile((fullfile('timitwavdata',tr_data(i).name,wav_test(j).name)),(fullfile('timitdata',tr_data(i).name,wav_test(j).name)),'f');
+    end;    
+end;

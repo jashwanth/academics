@@ -1,0 +1,18 @@
+ncverilog(64): 09.20-s024: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncverilog	09.20-s024: Started on Jan 29, 2014 at 16:13:06 IST
+ncverilog
+	maxmin_band.v
+	maxmin_band_tb.v
+	/home/ushasri/Assignment2/Upload2/201131016/maxmin_band.v
+file: maxmin_band.v
+file: maxmin_band_tb.v
+file: /home/ushasri/Assignment2/Upload2/201131016/maxmin_band.v
+	module worklib.stu:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+stu SILVER (a,b,amax,amin,sG,sE,sL);
+         |
+ncelab: *E,CUVWLP (./maxmin_band_tb.v,6|9): Too many module port connections.
+ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	ncverilog	09.20-s024: Exiting on Jan 29, 2014 at 16:13:06 IST  (total: 00:00:00)

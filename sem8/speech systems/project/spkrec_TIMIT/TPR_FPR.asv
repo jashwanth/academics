@@ -1,0 +1,51 @@
+clear all;
+clc;
+%% verification with GMM modelling
+clear all;
+clc;
+mkdir('spkrverifydata_mat');
+test_mat = dir('spkrverifydata_mat');
+test = dir('spkrverifydata');
+
+a=dir('allcleanmodels_16/*.mat');
+threshold = zeros(length(a),length(c));
+ for i=3:length(test)
+     c=dir(fullfile('spkrverifydata',test(i).name,'*.wav'));
+     for j=1:length(c)
+          fname=fullfile('spkrverifydata',test(i).name,c(j).name);
+          [y,FS,FFX]=wavread(fname);
+          sig=y.*y;
+          E=mean(sig);
+          Threshold=0.04*E;
+          k=1;
+          for b=1:100:(length(sig)-100)
+              if((sum(sig(b:b+100)))/100 > Threshold)
+                  dest(k:k+100)=y(b:b+100);
+                  k=k+100;
+               end;
+          end;
+          dest=dest';
+          clear  FS FFX Threshold E sig y ;
+   % clear fname dest;        
+        y1=mfcc_rasta_delta_pkm_v1(dest,8000,13,26,20,10,0,0,1);
+ mkdir(fullfile('mfcc_test',a(i).name));
+ save(fullfile('mfcc_test',a(i).name, regexprep(allwav(j).name, '.wav', '')),'y1');
+ clear y1 dest fname  ;
+end;
+end;
+     load(fullfile('allcleanmodels_16',strcat(b (i).name,'.mat')));
+     % claimed speaker = b(i).name;
+     for j=1:length(c)
+         load(fullfile('mfcc_test',b(i).name,c(j).name));
+         verification = zeros(2,1);
+         verification(1) = mean(log(gmmprob(MIX,y1))/length(y1));
+        for k=1:length(a)
+             if(~strcmp(strcat(b(i).name,'.mat'),a(k).name))
+                load(fullfile('allcleanmodels_16',a(k).name));
+                verification(2) = verification(2) + mean(log(gmmprob(MIX,y1)/(length(b)-3)));
+             end
+        end
+        threshold(i-2,j) = verification(1)-verification(2);
+        clear verification y1;
+     end
+ end     

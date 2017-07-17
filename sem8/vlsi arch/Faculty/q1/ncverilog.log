@@ -1,0 +1,46 @@
+ncverilog(64): 09.20-s024: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncverilog	09.20-s024: Started on Jan 29, 2014 at 16:08:54 IST
+ncverilog
+	maxmin.v
+	maxmin_tb.v
+	/home/ushasri/Assignment2/Upload2/201131016/maxmin.v
+file: maxmin.v
+file: maxmin_tb.v
+file: /home/ushasri/Assignment2/Upload2/201131016/maxmin.v
+	module worklib.stu:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+stu U2  (a,b,Smax,Smin);
+     |
+ncelab: *W,CUVWSP (./maxmin_tb.v,8|5): 1 output port was not connected:
+ncelab: (/home/ushasri/Assignment2/Upload2/201131016/maxmin.v,5): out
+
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.stu:v <0x50e9b42c>
+			streams:   0, words:     0
+		worklib.tb:v <0x479c446e>
+			streams:   3, words:  7873
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              3       3
+		Primitives:           1       1
+		Registers:            2       2
+		Scalar wires:         4       -
+		Expanded wires:      32       4
+		Vectored wires:      18       -
+		Initial blocks:       1       1
+		Cont. assignments:    1       9
+		Pseudo assignments:   2       2
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+ncsim> source /opt/cadence/Cadence-IC615/IUS92/tools/inca/files/ncsimrc
+ncsim> run
+Error1: 30  20:Expected= 30 Produced=  z Expected= 20 Produced=  z
+Simulation complete via $finish(1) at time 1 NS + 0
+./maxmin_tb.v:14 					$finish;
+ncsim> exit
+TOOL:	ncverilog	09.20-s024: Exiting on Jan 29, 2014 at 16:08:56 IST  (total: 00:00:02)

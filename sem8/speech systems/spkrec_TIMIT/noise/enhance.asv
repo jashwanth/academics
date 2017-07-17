@@ -1,0 +1,14 @@
+
+a=dir('testwavdata_babble/*');
+for i=3:length(a)
+       mkdir(fullfile('testwavdata_babble_en',a(i).name));
+       allwav=dir(fullfile('testwavdata_babble',a(i).name,'*.wav'));
+      
+        for j=1:length(allwav)
+            inFile=fullfile('testwavdata_babble',a(i).name,allwav(j).name);
+    inFile1=fullfile('testwavdata_babble',a(i).name,allwav(j).name);
+    [sp1 fs1] =wavread(inFile1);
+    var1  = specsubm(sp1,fs1);
+    wavwrite(var1,fs,fullfile('testwavdata_babble',a(i).name,allwav(j).name));
+        end;
+   end;

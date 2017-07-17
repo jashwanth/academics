@@ -1,0 +1,19 @@
+% combining test cases from testwavedata and trainwavedata folders to timitdata
+clear all;
+clc;
+allspk=dir('timitdata/*');
+tr_data  = dir('trainwavdata');
+tst_data = dir('testwavdata');
+for i=3:length(tr_data)
+    str=tr_data(i).name;
+    mkdir(fullfile('timitdata',str));
+    wav_train =dir(fullfile('trainwavdata',tr_data(i).name,'*.wav'));
+    wav_test = dir(fullfile('testwavdata',tst_data(i).name,'*.wav'));s
+    for(j=1:8)   
+        copyfile((fullfile('trainwavdata',tr_data(i).name,wav_train(j).name)),(fullfile('traindata',str,sprintf('%d.wav',j))),'f');
+    end;
+    for(j=1:2)
+         copyfile((fullfile('testwavdata',tst_data(i).name,wav_test(j).name)),(fullfile('testdata',str,sprintf('%d.wav',j))),'f');   
+    end;
+        
+end;

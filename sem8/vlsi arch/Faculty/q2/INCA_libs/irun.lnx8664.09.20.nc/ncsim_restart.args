@@ -1,0 +1,23 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-MESSAGES
+-EMGRLOG
+ncverilog.log
+-XLSTIME
+1390992148
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.09.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.09.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.09.20.nc/hdl.var
+-XLNAME
+ncverilog
+-XLVERSION
+"TOOL:	ncverilog	09.20-s024"
+-XLNAME
+./INCA_libs/irun.lnx8664.09.20.nc/CADENCEPC-08_5859
